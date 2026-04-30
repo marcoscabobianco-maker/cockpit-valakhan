@@ -79,7 +79,31 @@
 
 ## Estado al deploy
 
-- v5n LIVE con: hex map overland (path histórico + río continuo + drag-tap), dungeon image mode con fog-of-war paint-with-finger sobre mapa Cía Zafiro al 6/4/2026, GM/Player toggle global, multi-monster from encounter, mortal wounds calculator, treasure parser, combat tracker con bestiario, 9 mapas Kanka integrados como visor.
+- **v5t LIVE** con todas las fases A-H. Ver `CHANGELOG.md` para historial detallado.
+
+### Modos disponibles
+- 🗺 **Mapa**: hex grid Valakhan (132 hexes, 1 hex = 3 millas), drag-tap para mover, path histórico con marcadores de día (`d35`, `d36`...), río continuo, river overlay, auto-encounter al avanzar watch.
+- 🜍 **Dungeon**: room graph + imagen real Cía Zafiro con fog-of-war paint-with-finger (canvas overlay, dedo borra niebla).
+- ⚔ **Combate**: tracker con HP/AC/iniciativa, multi-monster from encounter, cargar PCs/foes, mortal wounds calculator (ACKS RAW Combat IV).
+- 🎲 **Encuentro**: ACKS RAW por terrain + tabla local + roll distance/surprise/reaction + → Combat directo.
+- 👥 **PCs**: 11 PCs con HP overrides, conditions toggleables, level-up, + cargar todos al combate.
+- 📚 **Data**: NPCs Aurëpos / Lugares / Facciones / Sesiones / Quests / Combat Ref / 9 Mapas. Click → modal detalle full.
+- 📜 **Sesión**: lista sesiones + log live + notas por hex + Notes index global + 3 botones export Markdown.
+
+### Topbar
+- Selector campaña (4 opciones) + tag de sistema
+- Calendario: día / watch / **luna** (8 fases, click → modal con efectos Ravenloft)
+- Botón ▶ Avanzar watch (con auto-encounter check + full-moon warnings)
+- Botón **🜂 GM / 👁 Player** (toggle vista)
+- Botón **🎲 Auto** (toggle auto-encounter)
+- Botón **🛠 Tools ACKS** → abre `/tools/` en pestaña nueva (Vite/React: spells, bestiary, mortal wounds, weather, hireling, treasure, etc.)
+
+### Settlement Panel (en hex panel cuando es ciudad)
+- Class I-VI con población, magia max, hirelings/semana, stockpile gp
+- 🎲 Tirar hirelings esta semana
+- 🎲 Mercantile venture (2d6 supply&demand)
+- 📰 Tirar rumor (12 default + 4 Helix-specific + 4 Stejara-specific)
+- 🏛 Encuentro distrito (Avenue day/night, Slums, Market, Temple, Docks, Tavern)
 
 ## Licencia
 
