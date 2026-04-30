@@ -1,0 +1,5698 @@
+{
+  "id": "acks_core",
+  "name": "ACKS Imperial Imprint — Core Rulebook",
+  "system": "acks",
+  "version": "v116 (Imperial Imprint)",
+  "_doc": "Reglas y tablas comunes a todas las campañas ACKS. Importado del acks-assistant (Marcos). Las campañas ACKS referencian este rulebook con `referenceRulebook: 'acks_core'`.",
+  "_source": "C:/Users/Usuario/Desktop/ACKS asistente/jj_encounters_weather.json + judges_screen_tables.json + acks-assistant/src/data/",
+  "movement": {
+    "_doc": "ACKS Imperial Imprint Rulebook Ch.6",
+    "exploration": {
+      "rate": 120,
+      "unit": "ft/turn",
+      "duration_min": 10
+    },
+    "combat": {
+      "rate": 40,
+      "unit": "ft/round",
+      "duration_sec": 10
+    },
+    "running": {
+      "rate": 120,
+      "unit": "ft/round",
+      "duration_sec": 10
+    },
+    "expedition": {
+      "_doc": "Variable mi/día por terrain. Ver wilderness.expedition_rates"
+    }
+  },
+  "lightSources": {
+    "torch": {
+      "radius_ft": 30,
+      "duration_turns": 6,
+      "duration_human": "1 hora"
+    },
+    "lantern": {
+      "radius_ft": 30,
+      "duration_turns": 24,
+      "duration_human": "4 horas (1 frasco aceite)"
+    },
+    "infravision": {
+      "radius_ft": 60,
+      "duration": "permanente (racial)"
+    },
+    "candle": {
+      "radius_ft": 5,
+      "duration_turns": 2
+    }
+  },
+  "wilderness": {
+    "_doc": "ACKS JJ Ch.2 Section B — Wilderness Adventures",
+    "encounter_frequency_by_activity": [
+      [
+        "Activity",
+        "Civilized",
+        "Borderlands",
+        "Outlands",
+        "Unsettled"
+      ],
+      [
+        "Hunting",
+        "Once per attempt",
+        "Once per attempt",
+        "Once per attempt",
+        "Once per attempt"
+      ],
+      [
+        "Managing Traps",
+        "None",
+        "None",
+        "Once per 6 traps",
+        "Once per 6 traps"
+      ],
+      [
+        "Resting/Stationary (day)",
+        "None",
+        "None",
+        "Once per 12 hours",
+        "Once per 12 hours"
+      ],
+      [
+        "Resting/Stationary (night)",
+        "None",
+        "Once per 12 hours",
+        "Once per 12 hours",
+        "Once per 12 hours"
+      ],
+      [
+        "Searching",
+        "Once per hour",
+        "Once per hour",
+        "Once per hour",
+        "Once per hour"
+      ],
+      [
+        "Traveling",
+        "Once per hex",
+        "Once per hex",
+        "Once per hex",
+        "Once per hex"
+      ]
+    ],
+    "evasion_throws_by_territory": [
+      [
+        "",
+        "Civilized + Road",
+        "Civilized or\nBorderlands  + Road",
+        "Borderlands or \nOutlands + Road",
+        "Outlands or\nWilderness + Road",
+        "Wilderness"
+      ],
+      [
+        "Column Shift, Roll Again",
+        "1",
+        "1",
+        "1",
+        "1",
+        "-"
+      ],
+      [
+        "No Encounter",
+        "2-11",
+        "2 –  10",
+        "2 – 8",
+        "2 – 8",
+        "1 – 6"
+      ],
+      [
+        "Civilized Encounter",
+        "12-20",
+        "11 – 17",
+        "9 – 13",
+        "9 – 11",
+        "-"
+      ],
+      [
+        "Monster Encounter",
+        "-",
+        "18",
+        "14 – 15",
+        "12 – 15",
+        "6 – 12"
+      ],
+      [
+        "Dangerous Terrain Encounter",
+        "-",
+        "19",
+        "16 – 17",
+        "16 – 17",
+        "13 – 15"
+      ],
+      [
+        "Valuable Terrain Encounter",
+        "-",
+        "20",
+        "18 – 19",
+        "18 – 19",
+        "16 – 18"
+      ],
+      [
+        "Unique Terrain Encounter",
+        "-",
+        "-",
+        "20",
+        "20",
+        "19 – 20"
+      ]
+    ],
+    "monster_rarity_by_territory": [
+      [
+        "Dice Roll (d20)",
+        "Civilized",
+        "Borderlands",
+        "Outlands",
+        "Wilderness"
+      ],
+      [
+        "Common",
+        "1-14",
+        "1-12",
+        "1-10",
+        "1-8"
+      ],
+      [
+        "Uncommon",
+        "15-19",
+        "13-18",
+        "11-15",
+        "9-14"
+      ],
+      [
+        "Rare",
+        "20",
+        "19-20",
+        "16-19",
+        "15-18"
+      ],
+      [
+        "Very Rare",
+        "-",
+        "-",
+        "20",
+        "19-20"
+      ]
+    ],
+    "civilized_encounters_BGSFH": [
+      [
+        "Die Roll\n(1d20)",
+        "Barrens,\nDesert",
+        "Grassland,\nScrubland",
+        "Forest",
+        "Hills,\nMountains"
+      ],
+      [
+        "1",
+        "Men, Bandits",
+        "Men, Bandits",
+        "Men, Bandits",
+        "Men, Bandits"
+      ],
+      [
+        "2",
+        "Men, Brigands",
+        "Men, Brigands",
+        "Men, Bandits",
+        "Men, Bandits"
+      ],
+      [
+        "3",
+        "Men, Commoners",
+        "Men, Commoners",
+        "Men, Brigands",
+        "Men, Brigands"
+      ],
+      [
+        "4",
+        "Men, Commoners",
+        "Men, Commoners",
+        "Men, Brigands",
+        "Men, Brigands"
+      ],
+      [
+        "5",
+        "Men, Commoners",
+        "Men, Commoners",
+        "Men, Berserkers",
+        "Men, Berserkers"
+      ],
+      [
+        "6",
+        "Men, Commoners",
+        "Men, Commoners",
+        "Men, Merchants",
+        "Men, Merchants"
+      ],
+      [
+        "7",
+        "Men, Merchants",
+        "Men, Commoners",
+        "Men, Commoners",
+        "Men, Commoners"
+      ],
+      [
+        "8",
+        "Men, Merchants",
+        "Men, Commoners",
+        "Men, Commoners",
+        "Men, Commoners"
+      ],
+      [
+        "9",
+        "Men, Merchants",
+        "Men, Commoners",
+        "Men, Commoners",
+        "Men, Patrollers"
+      ],
+      [
+        "10",
+        "Men, Nomads",
+        "Men, Merchants",
+        "Men, Commoners",
+        "Men, Pilgrims"
+      ],
+      [
+        "11",
+        "Men, Nomads",
+        "Men, Merchants",
+        "Men, Merchant",
+        "Gnome"
+      ],
+      [
+        "12",
+        "Men, Nomads",
+        "Men, Merchants",
+        "Men, Patrollers",
+        "Gnome"
+      ],
+      [
+        "13",
+        "Men, Nomads",
+        "Men, Merchants",
+        "Men, Pilgrims",
+        "Hafling"
+      ],
+      [
+        "14",
+        "Men, Nomads",
+        "Men, Patrollers",
+        "Elf",
+        "Halfling"
+      ],
+      [
+        "15",
+        "Men, Patrollers",
+        "Men, Patrollers",
+        "Elf",
+        "Dwarf"
+      ],
+      [
+        "16",
+        "Men, Patrollers",
+        "Men, Patrollers",
+        "Elf",
+        "Dwarf"
+      ],
+      [
+        "17",
+        "Men, Pilgrims",
+        "Men, Pilgrims",
+        "Elf",
+        "Dwarf"
+      ],
+      [
+        "18",
+        "Men, Pilgrims",
+        "Men, Pilgrims",
+        "Gnome",
+        "Dwarf"
+      ],
+      [
+        "19",
+        "Men, Pilgrims",
+        "Men, Pilgrims",
+        "Gnome",
+        "Dwarf"
+      ],
+      [
+        "20",
+        "Ghoul, Desert",
+        "Lycan., Werewolf",
+        "Lycan., Werebear",
+        "Dwarf"
+      ]
+    ],
+    "civilized_encounters_JSR": [
+      [
+        "Die Roll\n(1d20)",
+        "Jungle",
+        "Swamp",
+        "River\n(desert, jungle)",
+        "River\n(other)"
+      ],
+      [
+        "1",
+        "Men, Adventurers",
+        "Men, Bandits",
+        "Men, Bandits",
+        "Men, Bandits"
+      ],
+      [
+        "2",
+        "Men, Bandits",
+        "Men, Brigands",
+        "Men, Brigands",
+        "Men, Brigands"
+      ],
+      [
+        "3",
+        "Men, Brigands",
+        "Men, Merchants",
+        "Men, Merchants",
+        "Men, Merchants"
+      ],
+      [
+        "4",
+        "Men, Merchants",
+        "Men, Commoners",
+        "Men, Commoners",
+        "Men, Commoners"
+      ],
+      [
+        "5",
+        "Men, Commoners",
+        "Men, Patrollers",
+        "Men, Patrollers",
+        "Men, Patrollers"
+      ],
+      [
+        "6",
+        "Men, Commoners",
+        "Men, Pilgrims",
+        "Men, Pilgrims",
+        "Men, Pilgrims"
+      ],
+      [
+        "7",
+        "Men, Commoners",
+        "",
+        "",
+        ""
+      ],
+      [
+        "8",
+        "Men, Commoners",
+        "",
+        "",
+        ""
+      ],
+      [
+        "9",
+        "Men, Patrollers",
+        "",
+        "",
+        ""
+      ],
+      [
+        "10",
+        "Men, Patrollers",
+        "",
+        "",
+        ""
+      ],
+      [
+        "11",
+        "Men, Pilgrims",
+        "",
+        "",
+        ""
+      ],
+      [
+        "12",
+        "Men, Pilgrims",
+        "",
+        "",
+        ""
+      ],
+      [
+        "13",
+        "Men, Tribesmen",
+        "",
+        "",
+        ""
+      ],
+      [
+        "14",
+        "Men, Tribesmen",
+        "",
+        "",
+        ""
+      ],
+      [
+        "15",
+        "Men, Tribesmen",
+        "",
+        "",
+        ""
+      ],
+      [
+        "16",
+        "Men, Tribesmen",
+        "",
+        "",
+        ""
+      ],
+      [
+        "17",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "18",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "19",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "20",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "weather": {
+    "Weather Modifiers": [
+      [
+        "Modifier",
+        "Temperature (+0 or less)",
+        "Temperature (+1 or more)",
+        "Precipitation",
+        "Wind"
+      ],
+      [
+        "-7 or less",
+        "Frigid (-95 F or less)",
+        "-",
+        "Sunbaked",
+        "Still"
+      ],
+      [
+        "-6",
+        "Frigid (-85 to -94 F)",
+        "-",
+        "Sunbaked",
+        "Still"
+      ],
+      [
+        "-5",
+        "Frigid (-75 to 84 F)",
+        "-",
+        "Sunbaked",
+        "Still"
+      ],
+      [
+        "-4",
+        "Frigid (-70 to -74 F)",
+        "-",
+        "Sunbaked",
+        "Still"
+      ],
+      [
+        "-3",
+        "Frigid (-40 to -49 F)",
+        "-",
+        "Sunbaked",
+        "Still"
+      ],
+      [
+        "-2",
+        "Frigid (-25 to -39 F)",
+        "-",
+        "Clear",
+        "Still"
+      ],
+      [
+        "-1",
+        "Frigid (-12 to -24 F)",
+        "-",
+        "Clear",
+        "Still"
+      ],
+      [
+        "0",
+        "Very Cold (-5 to -11 F)",
+        "-",
+        "Clear",
+        "Still"
+      ],
+      [
+        "1",
+        "Very Cold (-10 to 5 F)",
+        "-",
+        "Clear",
+        "Still"
+      ],
+      [
+        "2",
+        "Very Cold (6 to 15 F)",
+        "-",
+        "Clear",
+        "Still"
+      ],
+      [
+        "3",
+        "Quite Cold (16 to 25 F)",
+        "Chilly (51 to 56 F)",
+        "Clear",
+        "Still"
+      ],
+      [
+        "4",
+        "Quite Cold (26 to 32 F)",
+        "Chilly (57 to 62 F)",
+        "Partly Cloud",
+        "Still"
+      ],
+      [
+        "5",
+        "Cold (33 to 36 F)",
+        "Brisk (63 to 67 F)",
+        "Mostly Cloudy",
+        "Gentle"
+      ],
+      [
+        "6",
+        "Cold (37 to 40 F)",
+        "Balmy (68 to 71 F)",
+        "Overcast",
+        "Gentle"
+      ],
+      [
+        "7",
+        "Chilly (41 to 50 F)",
+        "Balmy (72 to 74 F)",
+        "Drizzly",
+        "Moderate"
+      ],
+      [
+        "8",
+        "Chilly (51 to 55 F)",
+        "Balmy (75 to 79 F)",
+        "Drizzly",
+        "Moderate"
+      ],
+      [
+        "9",
+        "Brisk (56 to 60 F)",
+        "Warm (80 to 82 F)",
+        "Drizzly",
+        "Moderate"
+      ],
+      [
+        "10",
+        "Brisk (61 to 65 F)",
+        "Warm (83 to 86 F)",
+        "Rainy",
+        "Strong"
+      ],
+      [
+        "11",
+        "Balmy (66 to 68 F)",
+        "Hot (87 to 90 F)",
+        "Rainy",
+        "Strong"
+      ],
+      [
+        "12",
+        "Balmy (69 to 72 F)",
+        "Hot (91 to 94 F)",
+        "Rainy",
+        "Very Strong, Windy"
+      ],
+      [
+        "13",
+        "-",
+        "Sweltering (95 to 100 F)",
+        "Rainy",
+        "Very Strong, Windy"
+      ],
+      [
+        "14",
+        "-",
+        "Sweltering (100 to 104 F)",
+        "Rainy",
+        "Gale, Stormy"
+      ],
+      [
+        "15",
+        "-",
+        "Sweltering (105 to 108 F)",
+        "Rainy",
+        "Gale, Stormy"
+      ],
+      [
+        "16",
+        "-",
+        "Sweltering (109 to 112 F)",
+        "Rainy",
+        "Gale, Stormy"
+      ],
+      [
+        "17",
+        "-",
+        "Sweltering (113 to 115 F)",
+        "Rainy",
+        "Gale, Stormy"
+      ],
+      [
+        "18",
+        "-",
+        "Sweltering (116 to 120 F)",
+        "Rainy",
+        "Gale, Stormy"
+      ],
+      [
+        "19 or more",
+        "-",
+        "Sweltering (121 F or more)",
+        "Rainy",
+        "Gale, Stormy"
+      ]
+    ],
+    "Climate Zones (Koppen)": [
+      [
+        "Köppen Code",
+        "Name",
+        "Biome",
+        "Typical ACKS II Terrain Type"
+      ],
+      [
+        "Af",
+        "Tropical rainforest",
+        "Rainforest",
+        "Jungle"
+      ],
+      [
+        "Am",
+        "Tropical monsoon",
+        "Rainforest",
+        "Jungle"
+      ],
+      [
+        "Aw",
+        "Tropical savanna with a dry winter",
+        "Savanna",
+        "Grassland (savanna)"
+      ],
+      [
+        "As",
+        "Tropical Savanna with a dry summer",
+        "Savanna",
+        "Grassland (savanna)"
+      ],
+      [
+        "BWh",
+        "Hot arid desert",
+        "Desert",
+        "Desert (sandy or rocky)"
+      ],
+      [
+        "BWk",
+        "Cold arid desert",
+        "Desert",
+        "Desert (sandy or rocky)"
+      ],
+      [
+        "BSh",
+        "Hot semi-arid steppe",
+        "Semi-Arid Desert",
+        "Barrens (rocky)"
+      ],
+      [
+        "BSk",
+        "Cold semi-arid steppe",
+        "Steppe",
+        "Grassland (steppe)"
+      ],
+      [
+        "Csa",
+        "Temperate with a dry hot summer",
+        "Scrub",
+        "Scrubland (low, sparse or high, dense)"
+      ],
+      [
+        "Csb",
+        "Temperate with a dry warm summer",
+        "Scrub or Forest",
+        "Scrubland (high, dense) or Forest (open)"
+      ],
+      [
+        "Csc",
+        "Temperate with a dry cold summer",
+        "Forest",
+        "Forest (closed)"
+      ],
+      [
+        "Cwa",
+        "Temperate with a dry winter and hot summer",
+        "Forest",
+        "Forest (deciduous)"
+      ],
+      [
+        "Cwb",
+        "Temperate with a dry winter and warm summer",
+        "Forest",
+        "Forest (deciduous"
+      ],
+      [
+        "Cwc",
+        "Temperate with a dry winter and cold summer",
+        "Forest",
+        "Forest (deciduous)"
+      ],
+      [
+        "Cfa",
+        "Temperate and damp year-round with a hot summer",
+        "Forest",
+        "Forest (deciduous)"
+      ],
+      [
+        "Cfb",
+        "Temperate and damp year-round with a warm summer",
+        "Forest",
+        "Forest (deciduous)"
+      ],
+      [
+        "Cfc",
+        "Temperate and damp year-round with a cold summer",
+        "Taiga",
+        "Forest (taiga)"
+      ],
+      [
+        "Dsa",
+        "Continental with a hot dry summer",
+        "Forest",
+        "Forest (deciduous)"
+      ],
+      [
+        "Dsb",
+        "Continental with a warm dry summer",
+        "Taiga",
+        "Forest (taiga)"
+      ],
+      [
+        "Dsc",
+        "Continental with a cold dry summer",
+        "Taiga",
+        "Forest (taiga)"
+      ],
+      [
+        "Dsd",
+        "Continental with a dry summer and very cold winter",
+        "Taiga",
+        "Forest (taiga)"
+      ],
+      [
+        "Dwa",
+        "Continental with a dry winter and hot summer",
+        "Steppe",
+        "Grassland (steppe)"
+      ],
+      [
+        "Dwb",
+        "Continental with a dry winter and warm summer",
+        "Steppe",
+        "Grassland (steppe)"
+      ],
+      [
+        "Dwc",
+        "Continental with a dry winter and cold summer",
+        "Steppe",
+        "Grassland (steppe)"
+      ],
+      [
+        "Dwd",
+        "Continental with a dry winter and very cold winter",
+        "Tundra",
+        "Barrens (tundra)"
+      ],
+      [
+        "Dfa",
+        "Continental and damp year-round with a hot summer",
+        "Prairie",
+        "Grassland (prairie)"
+      ],
+      [
+        "Dfb",
+        "Continental and damp year-round with a warm summer",
+        "Taiga",
+        "Forest (taiga)"
+      ],
+      [
+        "Dfc",
+        "Continental and damp year-round with a cold summer",
+        "Taiga",
+        "Forest (taiga)"
+      ],
+      [
+        "Dfd",
+        "Continental and damp year-round with a very cold winter",
+        "Taiga or Tundra",
+        "Forest (taiga) or Barrens (tundra)"
+      ],
+      [
+        "ET",
+        "Polar tundra",
+        "Tundra",
+        "Barrens (tundra)"
+      ],
+      [
+        "EF",
+        "Polar ice cap",
+        "Tundra",
+        "Barrens (tundra)"
+      ]
+    ],
+    "Seasonal Temperature by Climate": [
+      [
+        "Climate",
+        "Winter",
+        "Spring",
+        "Summer",
+        "Fall"
+      ],
+      [
+        "Af",
+        "T +3 (day), +0 (night), P -3, W +2",
+        "T +2 (day), +0 (night), P -2, W +0",
+        "T +2 (day), +0 (night), P -2, W +0",
+        "T +1 (day), +0 (night), P -1, W +0"
+      ],
+      [
+        "Am",
+        "T +2 (day), +0 (night), P -1, W +2",
+        "T +7 (day), +0 (night), P -1, W +0",
+        "T +6 (day), +0 (night), P +4, W +0",
+        "T +4 (day), +0 (night), P -1 W +0"
+      ],
+      [
+        "Aw",
+        "T +5 (day), +0 (night), P -5, W +2",
+        "T +4 (day), +0 (night), P -4, W +0",
+        "T +3 (day), +0 (night), P -1, W +0",
+        "T +3 (day), +0 (night), P -4 W +0"
+      ],
+      [
+        "As",
+        "T +4 (day), +0 (night), P -1, W +2",
+        "T +4 (day), +0 (night), P -2, W +0",
+        "T +4 (day), +0 (night), P -5, W +0",
+        "T +4 (day), +0 (night), P -3 W +0"
+      ],
+      [
+        "BWh",
+        "T +1 (day), +0 (night), P -5, W +2",
+        "T +6 (day), +0 (night), P -5, W +0",
+        "T +7 (day), +2 (night), P -5, W +0",
+        "T +4 (day), +0 (night), P +0 W +0"
+      ],
+      [
+        "BWk",
+        "T +0 (day), -4 (night), P -4, W +2",
+        "T +0 (day), +0 (night), P -5, W +0",
+        "T +2 (day), +0 (night), P -4, W +0",
+        "T +0 (day), -1 (night), P -5 W +0"
+      ],
+      [
+        "BSh",
+        "T +6 (day), +0 (night), P -5, W +2",
+        "T +7 (day), +3 (night), P -3, W +0",
+        "T +5 (day), +2 (night), P -2, W +0",
+        "T +6 (day), +2 (night), P -5 W +0"
+      ],
+      [
+        "BSk",
+        "T +0 (day), -1 (night), P -4, W +2",
+        "T +1 (day), +0 (night), P -4, W +0",
+        "T +4 (day), +0 (night), P -5, W +0",
+        "T +0 (day), +0 (night), P -4 W +0"
+      ],
+      [
+        "Csa",
+        "T +0 (day), +0 (night), P -4, W +2",
+        "T +1 (day), +0 (night), P -4, W +0",
+        "T +3 (day), +0 (night), P -4, W +0",
+        "T +1 (day), +0 (night), P -3 W +0"
+      ],
+      [
+        "Csb",
+        "T +0 (day), +0 (night), P -2, W +2",
+        "T +0 (day), +0 (night), P -3, W +0",
+        "T +2 (day), +0 (night), P -4, W +0",
+        "T +0 (day), +0 (night), P -1 W +0"
+      ],
+      [
+        "Csc",
+        "T +0 (day), +0 (night), P +2, W +2",
+        "T +0 (day), +0 (night), P -3, W +0",
+        "T +0 (day), +0 (night), P -3, W +0",
+        "T +0 (day), +0 (night), P -2 W +0"
+      ],
+      [
+        "Cwa",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Cwb",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Cwc",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Cfa",
+        "T +0 (day), +0 (night), P -3, W +2",
+        "T +2 (day), +0 (night), P -2, W +0",
+        "T +4 (day), +1 (night), P -1, W +0",
+        "T +1 (day), +0 (night), P -4 W +0"
+      ],
+      [
+        "Cfb",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Cfc",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Dsa",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Dsb",
+        "T -2 (day), -5 (night), P -4, W +2",
+        "T +1 (day), -2 (night), P -2, W +0",
+        "T +3 (day), +1 (night), P -3, W +0",
+        "T +0 (day), -1 (night), P -3 W +0"
+      ],
+      [
+        "Dsc",
+        "T -2 (day), -3 (night), P -2, W +2",
+        "T +1 (day), -1 (night), P -3, W +0",
+        "T +2 (day), -1 (night), P -2, W +0",
+        "T -1 (day), -1 (night), P -1 W +0"
+      ],
+      [
+        "Dsd",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Dwa",
+        "T +0 (day), -3 (night), P -5, W +2",
+        "T +1 (day), +0 (night), P -4, W +0",
+        "T +3 (day), +0 (night), P -2, W +0",
+        "T +0 (day), +0 (night), P -1 W +0"
+      ],
+      [
+        "Dwb",
+        "T -1 (day), -3 (night), P -4, W +2",
+        "T +2 (day), +0 (night), P -3, W +0",
+        "T +3 (day), +1 (night), P -3, W +0",
+        "T +0 (day), +0 (night), P -3 W +0"
+      ],
+      [
+        "Dwc",
+        "T -1 (day), -5 (night), P -4, W +2",
+        "T +0 (day), -3 (night), P -4, W +0",
+        "T +1 (day), -1 (night), P -2, W +0",
+        "T +0 (day), -2 (night), P -3 W +0"
+      ],
+      [
+        "Dwd",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Dfa",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Dfb",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "Dfc",
+        "T -2 (day), -5 (night), P -4, W +2",
+        "T +1 (day), -2 (night), P -4, W +0",
+        "T +2 (day), 0 (night), P -3, W +0",
+        "T -1 (day), -2 (night), P -3 W +0"
+      ],
+      [
+        "Dfd",
+        "T -9 (day), -11 (night), P -4, W +2",
+        "T +0 (day), -4 (night), P -4, W +0",
+        "T +2 (day), -2 (night), P -4, W +0",
+        "T-5 (day), -6 (night), P -5 W +0"
+      ],
+      [
+        "ET",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "EF",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ]
+  },
+  "dungeon": {
+    "_doc": "ACKS JJ Ch.2 Section A — Dungeon Adventures",
+    "turn_minutes": 10,
+    "wandering_check": {
+      "die": "1d6",
+      "threshold": "1 in 6",
+      "cadence_turns": 2
+    },
+    "wandering_monsters": {
+      "Wandering Monster Frequency": [
+        [
+          "Monster Level",
+          "Monster Level",
+          "Monster Level",
+          "Monster Level",
+          "Monster Level",
+          "Monster Level",
+          "Monster Level"
+        ],
+        [
+          "Dungeon Level",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        [
+          "1",
+          "1-9",
+          "10-11",
+          "12",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "2",
+          "1-3",
+          "4-9",
+          "10-11",
+          "12",
+          "-",
+          "-"
+        ],
+        [
+          "3",
+          "1",
+          "2-3",
+          "4-9",
+          "10-11",
+          "12",
+          "-"
+        ],
+        [
+          "4",
+          "-",
+          "1",
+          "2-3",
+          "4-9",
+          "10-11",
+          "12"
+        ],
+        [
+          "5",
+          "-",
+          "-",
+          "1",
+          "2-3",
+          "4-9",
+          "10-12"
+        ],
+        [
+          "6",
+          "-",
+          "-",
+          "-",
+          "1",
+          "2-3",
+          "4-12"
+        ]
+      ],
+      "Wandering Monsters (Monster Level 1, Monster Level 2, Monster Level 3)": [
+        [
+          "Roll",
+          "Monster Level 1",
+          "Monster Level 2",
+          "Monster Level 3"
+        ],
+        [
+          "1",
+          "Goblin (2d4)",
+          "Gnoll (1d6)",
+          "Bugbear (2d4)"
+        ],
+        [
+          "2",
+          "Kobold (4d4)",
+          "Hobgoblin (1d6)",
+          "Lycanthrope, Werewolf (1d6)"
+        ],
+        [
+          "3",
+          "Morlock (1d12)",
+          "Lizardman (2d4)",
+          "Ogre (1d6)"
+        ],
+        [
+          "4",
+          "Orc (2d4)",
+          "Troglodyte (1d8)",
+          "Hobgholl (1d6)"
+        ],
+        [
+          "5",
+          "Beetle, Luminous (1d8)",
+          "Bat, Giant (1d10)",
+          "Ant, Giant (2d4)"
+        ],
+        [
+          "6",
+          "Centipede, Giant (2d4)",
+          "Fly, Giant Carnivorous (1d8)",
+          "Lizard, Giant Draco (1d3)"
+        ],
+        [
+          "7",
+          "Ferret, Giant (1d8)",
+          "Locust, Cavern (1d10)",
+          "Scorpion, Giant (1d6)"
+        ],
+        [
+          "8",
+          "Rat, Giant (3d6)",
+          "Snake, Pit Viper (1d8)",
+          "Wolf, Dire (1d4)"
+        ],
+        [
+          "9",
+          "Men, Brigand (2d4)",
+          "Ghoul, Grave (1d6)",
+          "Carrion Horror (1d3)"
+        ],
+        [
+          "10",
+          "Skeleton (3d4)",
+          "Men, Berserker (1d6)",
+          "Gargoyle (1d6)"
+        ],
+        [
+          "11",
+          "Strige (1d10)",
+          "Zombie (2d4)",
+          "Wight (1d6)"
+        ],
+        [
+          "12",
+          "NPC Party (Lvl 1) (1d4+2)",
+          "NPC Party (Lvl 2) (1d4+2)",
+          "NPC Party (Lvl 4) (1d4+2)"
+        ]
+      ],
+      "Wandering Monsters (Monster Level 4, Monster Level 5, Monster Level 6)": [
+        [
+          "Roll",
+          "Monster Level 4",
+          "Monster Level 5",
+          "Monster Level 6"
+        ],
+        [
+          "1",
+          "Lycanthrope, Wereboar (1d4)",
+          "Ettin (1d2)",
+          "Cyclops (1)"
+        ],
+        [
+          "2",
+          "Lycanthrope, Weretiger (1d4)",
+          "Giant, Hill (1d4)",
+          "Giant, Cloud (1d2)"
+        ],
+        [
+          "3",
+          "Minotaur (1d6)",
+          "Giant, Stone (1d2)",
+          "Worm, Giant Black (1d2)"
+        ],
+        [
+          "4",
+          "Boar, Giant (1d4)",
+          "Troll (1d8)",
+          "Devil Boar (1d4)"
+        ],
+        [
+          "5",
+          "Owlbeast (1d4)",
+          "Arane (1)",
+          "Dragon (20 HD) (1)"
+        ],
+        [
+          "6",
+          "",
+          "Worm, Great White (1d3)",
+          "Hydra (12 HD) (1)"
+        ],
+        [
+          "7",
+          "Acanthaspis, Giant (1d4)",
+          "Basilisk (1d6)",
+          "Gorgon (1d2)"
+        ],
+        [
+          "8",
+          "Snake, Giant Python (1d3)",
+          "Hell Hound, Greater (2d4)",
+          "Lamia (1)"
+        ],
+        [
+          "9",
+          "Cockatrice (1d4)",
+          "Salamander, Flame (1d4+1)",
+          "Attercop, Demonic (1)"
+        ],
+        [
+          "10",
+          "Medusa (1d3)",
+          "Spectre (1d4)",
+          "Skittering Maw (1)"
+        ],
+        [
+          "11",
+          "Wraith (1d4)",
+          "Wyvern (1d2)",
+          "Vampire (9 HD) (1d4)"
+        ],
+        [
+          "12",
+          "NPC Party (Lvl 5) (1d4+2)",
+          "NPC Party (Lvl 8) (1d4+3)",
+          "NPC Party (Lvl 14) (1d4+3)"
+        ]
+      ]
+    },
+    "rest_requirement": {
+      "every_turns": 6,
+      "rest_duration": 1,
+      "_doc": "1 turn rest cada 6 turnos activos. Sin rest = fatigue."
+    },
+    "actions_per_turn": [
+      "search 10x10 area (1 turn)",
+      "listen at door (1 round)",
+      "force door (1 turn)",
+      "pick lock (1 turn)",
+      "pray/spell prep (1 turn)",
+      "rest (1 turn)"
+    ]
+  },
+  "monster_encounters_by_terrain": {
+    "Barrens (sandy)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Baboon, Rock",
+        "Acanthaspis, Giant",
+        "Barghest, Lesser",
+        "Amphisbaena"
+      ],
+      [
+        "2",
+        "Bear, Cave",
+        "Ant, Giant",
+        "Blood Hound",
+        "Báleygr"
+      ],
+      [
+        "3",
+        "Beastman, Goblin",
+        "Beastman, Bugbear",
+        "Dakhanavar, Lesser",
+        "Barghest, Greater"
+      ],
+      [
+        "4",
+        "Beastman, Orc",
+        "Beastman, Gnoll",
+        "Death Charger",
+        "Basilisk, Petrifying"
+      ],
+      [
+        "5",
+        "Cat, Cougar",
+        "Beastman, Hobgoblin",
+        "Dragon",
+        "Bronze Bull"
+      ],
+      [
+        "6",
+        "Dog, Hunting (wild dog)",
+        "Centipede, Giant",
+        "Gargoyle",
+        "Child of Nasga"
+      ],
+      [
+        "7",
+        "Herd Animal (wild goat)",
+        "Ghoul, Desert",
+        "Griffon",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "8",
+        "Horse, Steppe",
+        "Giant, Hill",
+        "Harpy",
+        "Doppelganger"
+      ],
+      [
+        "9",
+        "Hyena, Ordinary",
+        "Hyena, Giant",
+        "Hippogriff",
+        "Hell Hound"
+      ],
+      [
+        "10",
+        "Jackal",
+        "Lycan, Werewolf",
+        "Mummy",
+        "Khepri"
+      ],
+      [
+        "11",
+        "Men, Brigands",
+        "Ogre",
+        "Pegasus",
+        "Lammasu"
+      ],
+      [
+        "12",
+        "Raptor, Ordinary",
+        "Raptor, Giant",
+        "Rust Beast",
+        "Manticore"
+      ],
+      [
+        "13",
+        "Raptor, Small",
+        "Roc, Small",
+        "Shadow",
+        "Medusa"
+      ],
+      [
+        "14",
+        "Skeleton",
+        "Scorpion, Giant",
+        "Skeletal Slayer",
+        "Mummy Lord"
+      ],
+      [
+        "15",
+        "Snake, Pit Viper",
+        "Snake, Giant Rattlesnake",
+        "Specter",
+        "Rakshasa"
+      ],
+      [
+        "16",
+        "Zombie",
+        "Spider, Giant Crab",
+        "Vampire",
+        "Salamander, Flame"
+      ],
+      [
+        "17",
+        "",
+        "Spider, Giant Tarantula",
+        "Wolf, Warg",
+        "Spell Tyrant"
+      ],
+      [
+        "18",
+        "",
+        "Strige",
+        "Worm, Giant White",
+        "Worm, Giant Black"
+      ],
+      [
+        "19",
+        "",
+        "Troll",
+        "Wyvern",
+        ""
+      ],
+      [
+        "20",
+        "",
+        "Wolf, Dire",
+        "",
+        ""
+      ]
+    ],
+    "Barrens (tundra)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Bear, Polar",
+        "Ant, Giant",
+        "Barghest, Lesser",
+        "Barghest, Greater"
+      ],
+      [
+        "2",
+        "Cat, Cougar",
+        "Beastman, Orc",
+        "Blood Hound",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "3",
+        "Cat, Panther",
+        "Beastman, Bugbear",
+        "Cat, Saber-Tooth",
+        "Salamander, Frost"
+      ],
+      [
+        "4",
+        "Cat, Tiger",
+        "Beastman, Gnoll",
+        "Dakhanavar, Lesser",
+        "Spell Tyrant"
+      ],
+      [
+        "5",
+        "Dog, Hunting",
+        "Beastman, Hobgoblin",
+        "Death Charger",
+        "Worm, Giant Black"
+      ],
+      [
+        "6",
+        "Dog, War",
+        "Hoarflesh",
+        "Dragon",
+        "Worm, Great Ice"
+      ],
+      [
+        "7",
+        "Herd Animal",
+        "Lycan, Werewolf",
+        "Gargoyle",
+        ""
+      ],
+      [
+        "8",
+        "Men, Brigands",
+        "Mammoth",
+        "Giant, Frost",
+        ""
+      ],
+      [
+        "9",
+        "Raptor, Ordinary",
+        "Ogre",
+        "Griffon",
+        ""
+      ],
+      [
+        "10",
+        "Raptor, Small",
+        "Raptor, Giant",
+        "Lycan, Werebear",
+        ""
+      ],
+      [
+        "11",
+        "Skeleton",
+        "Rhino, Wooly",
+        "Shadow",
+        ""
+      ],
+      [
+        "12",
+        "Wolf, Ordinary",
+        "Strix",
+        "Skeletal Slayer",
+        ""
+      ],
+      [
+        "13",
+        "",
+        "Troll",
+        "Specter",
+        ""
+      ],
+      [
+        "14",
+        "",
+        "Wolf, Dire",
+        "Wolf, Warg",
+        ""
+      ],
+      [
+        "15",
+        "",
+        "",
+        "Worm, Giant White",
+        ""
+      ],
+      [
+        "16",
+        "",
+        "",
+        "Wyvern",
+        ""
+      ],
+      [
+        "17",
+        "",
+        "",
+        "Hobgholl",
+        ""
+      ],
+      [
+        "18",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "19",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "20",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "Desert (all)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Beastman, Orc",
+        "Acanthaspis, Giant",
+        "Barghest, Lesser",
+        "Amphisbaena"
+      ],
+      [
+        "2",
+        "Camel",
+        "Ant, Giant",
+        "Blood Hound",
+        "Balegyr"
+      ],
+      [
+        "3",
+        "Cat, Cheetah",
+        "Beastman, Bugbear",
+        "Dakhanavar, Lesser",
+        "Barghest, Greater"
+      ],
+      [
+        "4",
+        "Cat, Lion",
+        "Beastman, Gnoll",
+        "Death Charger",
+        "Basilisk, Petrifying"
+      ],
+      [
+        "5",
+        "Dog, Hunting",
+        "Beastman, Hobgoblin",
+        "Dragon",
+        "Bronze Bull"
+      ],
+      [
+        "6",
+        "Dog, War",
+        "Centipede, Giant",
+        "Gargoyle",
+        "Child of Nasga"
+      ],
+      [
+        "7",
+        "Herd Animal",
+        "Ghoul, Desert",
+        "Giant, Fire",
+        "Chimera"
+      ],
+      [
+        "8",
+        "Hyena, Ordinary",
+        "Hyena, Giant",
+        "Griffon",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "9",
+        "Jackal",
+        "Lizard, Giant Gecko",
+        "Lycan, Weretiger",
+        "Doppelganger"
+      ],
+      [
+        "10",
+        "Men, Merchants",
+        "Lizard, Giant Tuatara",
+        "Minotaur",
+        "Hell Hound"
+      ],
+      [
+        "11",
+        "Men, Nomads",
+        "Ogre",
+        "Mummy",
+        "Khepri"
+      ],
+      [
+        "12",
+        "Raptor, Ordinary",
+        "Raptor, Giant",
+        "Rust Beast",
+        "Lammasu"
+      ],
+      [
+        "13",
+        "Raptor, Small",
+        "Roc, Small",
+        "Shadow",
+        "Manticore"
+      ],
+      [
+        "14",
+        "Skeleton",
+        "Scorpion, Giant",
+        "Skeletal Slayer",
+        "Medusa"
+      ],
+      [
+        "15",
+        "Snake, Pit Viper",
+        "Snake, Giant Rattlesnake",
+        "Specter",
+        "Mummy Lord"
+      ],
+      [
+        "16",
+        "Wolf, Ordinary",
+        "Spider, Giant Crab",
+        "Vampire",
+        "Rakshasa"
+      ],
+      [
+        "17",
+        "Zombie",
+        "Spider, Giant Tarantula",
+        "Wolf, Warg",
+        "Salamander, Flame"
+      ],
+      [
+        "18",
+        "",
+        "Troll",
+        "Worm, Giant White",
+        "Spell Tyrant"
+      ],
+      [
+        "19",
+        "",
+        "Wolf, Dire",
+        "Wyvern",
+        "Sphinx"
+      ],
+      [
+        "20",
+        "",
+        "",
+        "",
+        "Thrassian"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        "Worm, Giant Black"
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "Grassland (farmland)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Bear, Black",
+        "Ant, Giant",
+        "Blood Hound",
+        "N/A"
+      ],
+      [
+        "2",
+        "Beastman, Goblin",
+        "Beastman, Bugbear",
+        "Devil Boar",
+        "N/A"
+      ],
+      [
+        "3",
+        "Beastman, Kobold",
+        "Beastman, Gnoll",
+        "Draugr",
+        "N/A"
+      ],
+      [
+        "4",
+        "Beastman, Orc",
+        "Beastman, Hobgoblin",
+        "Faerie, Brownie",
+        "N/A"
+      ],
+      [
+        "5",
+        "Boar, Ordinary",
+        "Bee, Giant Killer",
+        "Faerie, Pixiee",
+        "N/A"
+      ],
+      [
+        "6",
+        "Dog, Hunting",
+        "Beetle, Giant Bombardier",
+        "Faerie, Spriggan",
+        "N/A"
+      ],
+      [
+        "7",
+        "Dog, War",
+        "Beetle, Giant Lumi0us",
+        "Gargoyle",
+        "N/A"
+      ],
+      [
+        "8",
+        "Equine, Donkey",
+        "Beetle, Giant Tiger",
+        "Griffon",
+        "N/A"
+      ],
+      [
+        "9",
+        "Equine, Light Horse",
+        "Boar, Giant",
+        "Lycan, Werebear",
+        "N/A"
+      ],
+      [
+        "10",
+        "Equine, Medium Horse",
+        "Centipede, Giant",
+        "Rust Beast",
+        "N/A"
+      ],
+      [
+        "11",
+        "Herd Animal",
+        "Dragonfly, Giant",
+        "Shadow",
+        "N/A"
+      ],
+      [
+        "12",
+        "Men, Brigands",
+        "Fly, Giant Carnivorous",
+        "Specter",
+        "N/A"
+      ],
+      [
+        "13",
+        "Men, Merchants",
+        "Ghoul, Grave",
+        "Doppelganger",
+        "N/A"
+      ],
+      [
+        "14",
+        "Raptor, Small",
+        "Halfling",
+        "Hobgholl",
+        "N/A"
+      ],
+      [
+        "15",
+        "Rhino, Ordinary",
+        "Lizard, Giant Tuatara",
+        "Faerie, Srpite",
+        "N/A"
+      ],
+      [
+        "16",
+        "Skeleton",
+        "Lycan, Wereboar",
+        "",
+        "N/A"
+      ],
+      [
+        "17",
+        "Snake, Pit Viper",
+        "Lycan, Wererat",
+        "",
+        "N/A"
+      ],
+      [
+        "18",
+        "Swarm, Rat",
+        "Lycan, Werewolf",
+        "",
+        "N/A"
+      ],
+      [
+        "19",
+        "Zombie",
+        "Ogre",
+        "",
+        "N/A"
+      ],
+      [
+        "20",
+        "Bear, Black",
+        "Raptor, Giant",
+        "",
+        "N/A"
+      ],
+      [
+        "",
+        "",
+        "Roc, Small",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Snake, Giant Rattlesnake",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Strix",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Troll",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Varmint, Giant Weasel",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    ],
+    "Grassland (prairie)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Beastman, Goblin",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Beastman, Kobold",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Bronze Bull"
+      ],
+      [
+        "3",
+        "Beastman, Orc",
+        "Beastman, Bugbear",
+        "Attercop, Hideous",
+        "Doppelganger"
+      ],
+      [
+        "4",
+        "Boar, Ordinary",
+        "Beastman, Gnoll",
+        "Attercop, Monstrous",
+        "Equine, Mule"
+      ],
+      [
+        "5",
+        "Cat, Cheetah",
+        "Beastman, Hobgoblin",
+        "Blood Hound",
+        "Gorgon"
+      ],
+      [
+        "6",
+        "Cat, Lion",
+        "Bee, Giant Killer",
+        "Death Charger",
+        "Slug, Giant"
+      ],
+      [
+        "7",
+        "Cat, Panther",
+        "Beetle, Giant Bombardier",
+        "Devil Boar",
+        "Spell Tyrant"
+      ],
+      [
+        "8",
+        "Dog, Hunting",
+        "Beetle, Giant Lumi0us",
+        "Dragon",
+        ""
+      ],
+      [
+        "9",
+        "Dog, War",
+        "Beetle, Giant Tiger",
+        "Draugr",
+        ""
+      ],
+      [
+        "10",
+        "Elf",
+        "Boar, Giant",
+        "Faerie, Pixie",
+        ""
+      ],
+      [
+        "11",
+        "Equine, Donkey",
+        "Centipede, Giant",
+        "Faerie, Spriggan",
+        ""
+      ],
+      [
+        "12",
+        "Equine, Light Horse",
+        "Dragonfly, Giant",
+        "Gargoyle",
+        ""
+      ],
+      [
+        "13",
+        "Equine, Medium Horse",
+        "Elephant",
+        "Griffon",
+        ""
+      ],
+      [
+        "14",
+        "Equine, Steppe Horse",
+        "Fly, Giant Carnivorous",
+        "Hippogriff",
+        ""
+      ],
+      [
+        "15",
+        "Herd Animal",
+        "Ghoul, Grave",
+        "Lycan, Werebear",
+        ""
+      ],
+      [
+        "16",
+        "Hyena, Ordinary",
+        "Halfling",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "17",
+        "Men, Berserkers",
+        "Hoarflesh",
+        "Shadow",
+        ""
+      ],
+      [
+        "18",
+        "Men, Brigands",
+        "Hyena, Giant",
+        "Specter",
+        ""
+      ],
+      [
+        "19",
+        "Men, Merchants",
+        "Lizard, Giant Tuatara",
+        "Vampire",
+        ""
+      ],
+      [
+        "20",
+        "Men, Nomads",
+        "Lycan, Wereboar",
+        "Hobgholl",
+        ""
+      ],
+      [
+        "",
+        "Raptor, Small",
+        "Lycan, Wererat",
+        "Faerie, Sprite",
+        ""
+      ],
+      [
+        "",
+        "Rhino, Ordinary",
+        "Lycan, Werewolf",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Skeleton",
+        "Ogre",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Snake, Pit Viper",
+        "Raptor, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Swarm, Rat",
+        "Roc, Small",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Zombie",
+        "Snake, Giant Rattlesnake",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Strix",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Troll",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Varmint, Giant Weasel",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wasp, Giant",
+        "",
+        ""
+      ]
+    ],
+    "Grassland (savanna)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Beastman, Goblin",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Beastman, Kobold",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Bronze Bull"
+      ],
+      [
+        "3",
+        "Beastman, Orc",
+        "Beastman, Bugbear",
+        "Attercop, Hideous",
+        "Doppelganger"
+      ],
+      [
+        "4",
+        "Boar, Ordinary",
+        "Beastman, Gnoll",
+        "Attercop, Monstrous",
+        "Equine, Mule"
+      ],
+      [
+        "5",
+        "Cat, Cheetah",
+        "Beastman, Hobgoblin",
+        "Blood Hound",
+        "Gorgon"
+      ],
+      [
+        "6",
+        "Cat, Lion",
+        "Bee, Giant Killer",
+        "Death Charger",
+        "Slug, Giant"
+      ],
+      [
+        "7",
+        "Cat, Panther",
+        "Beetle, Giant Bombardier",
+        "Devil Boar",
+        "Spell Tyrant"
+      ],
+      [
+        "8",
+        "Dog, Hunting",
+        "Beetle, Giant Lumi0us",
+        "Dragon",
+        ""
+      ],
+      [
+        "9",
+        "Dog, War",
+        "Beetle, Giant Tiger",
+        "Draugr",
+        ""
+      ],
+      [
+        "10",
+        "Elf",
+        "Boar, Giant",
+        "Faerie, Pixie",
+        ""
+      ],
+      [
+        "11",
+        "Equine, Donkey",
+        "Centipede, Giant",
+        "Faerie, Spriggan",
+        ""
+      ],
+      [
+        "12",
+        "Equine, Light Horse",
+        "Dragonfly, Giant",
+        "Gargoyle",
+        ""
+      ],
+      [
+        "13",
+        "Equine, Medium Horse",
+        "Elephant",
+        "Griffon",
+        ""
+      ],
+      [
+        "14",
+        "Equine, Steppe Horse",
+        "Fly, Giant Carnivorous",
+        "Hippogriff",
+        ""
+      ],
+      [
+        "15",
+        "Herd Animal",
+        "Ghoul, Grave",
+        "Lycan, Weretiger",
+        ""
+      ],
+      [
+        "16",
+        "Hyena, Ordinary",
+        "Halfling",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "17",
+        "Men, Berserkers",
+        "Hoarflesh",
+        "Shadow",
+        ""
+      ],
+      [
+        "18",
+        "Men, Brigands",
+        "Hyena, Giant",
+        "Specter",
+        ""
+      ],
+      [
+        "19",
+        "Men, Merchants",
+        "Lizard, Giant Tuatara",
+        "Vampire",
+        ""
+      ],
+      [
+        "20",
+        "Men, Nomads",
+        "Ogre",
+        "Faerie, Sprite",
+        ""
+      ],
+      [
+        "",
+        "Raptor, Small",
+        "Raptor, Giant",
+        "Hobgholl",
+        ""
+      ],
+      [
+        "",
+        "Rhino, Ordinary",
+        "Roc, Small",
+        "Faerie, Sprite",
+        ""
+      ],
+      [
+        "",
+        "Skeleton",
+        "Snake, Giant Rattlesnake",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Snake, Pit Viper",
+        "Strix",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Swarm, Rat",
+        "Troll",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Zombie",
+        "Varmint, Giant Weasel",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wasp, Giant",
+        "",
+        ""
+      ]
+    ],
+    "Grassland (steppe)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Beastman, Goblin",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Beastman, Kobold",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Bronze Bull"
+      ],
+      [
+        "3",
+        "Beastman, Orc",
+        "Beastman, Bugbear",
+        "Attercop, Hideous",
+        "Doppelganger"
+      ],
+      [
+        "4",
+        "Boar, Ordinary",
+        "Beastman, Gnoll",
+        "Attercop, Monstrous",
+        "Equine, Mule"
+      ],
+      [
+        "5",
+        "Cat, Cheetah",
+        "Beastman, Hobgoblin",
+        "Blood Hound",
+        "Gorgon"
+      ],
+      [
+        "6",
+        "Cat, Lion",
+        "Bee, Giant Killer",
+        "Death Charger",
+        "Slug, Giant"
+      ],
+      [
+        "7",
+        "Cat, Panther",
+        "Beetle, Giant Bombardier",
+        "Devil Boar",
+        "Spell Tyrant"
+      ],
+      [
+        "8",
+        "Dog, Hunting",
+        "Beetle, Giant Lumi0us",
+        "Dragon",
+        ""
+      ],
+      [
+        "9",
+        "Dog, War",
+        "Beetle, Giant Tiger",
+        "Draugr",
+        ""
+      ],
+      [
+        "10",
+        "Elf",
+        "Boar, Giant",
+        "Faerie, Pixiee",
+        ""
+      ],
+      [
+        "11",
+        "Equine, Donkey",
+        "Centipede, Giant",
+        "Faerie, Spriggan",
+        ""
+      ],
+      [
+        "12",
+        "Equine, Light Horse",
+        "Dragonfly, Giant",
+        "Faerie, Sprite",
+        ""
+      ],
+      [
+        "13",
+        "Equine, Medium Horse",
+        "Elephant",
+        "Gargoyle",
+        ""
+      ],
+      [
+        "14",
+        "Equine, Steppe Horse",
+        "Fly, Giant Carnivorous",
+        "Griffon",
+        ""
+      ],
+      [
+        "15",
+        "Herd Animal",
+        "Ghoul, Grave",
+        "Hippogriff",
+        ""
+      ],
+      [
+        "16",
+        "Hyena, Ordinary",
+        "Halfling",
+        "Hobgholl",
+        ""
+      ],
+      [
+        "17",
+        "Men, Berserkers",
+        "Hoarflesh",
+        "Lycan, Weretiger",
+        ""
+      ],
+      [
+        "18",
+        "Men, Brigands",
+        "Hyena, Giant",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "19",
+        "Men, Merchants",
+        "Lizard, Giant Tuatara",
+        "Shadow",
+        ""
+      ],
+      [
+        "20",
+        "Men, Nomads",
+        "Lycan, Werewolf",
+        "Specter",
+        ""
+      ],
+      [
+        "",
+        "Raptor, Small",
+        "Ogre",
+        "Vampire",
+        ""
+      ],
+      [
+        "",
+        "Rhino, Ordinary",
+        "Raptor, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Skeleton",
+        "Roc, Small",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Snake, Pit Viper",
+        "Snake, Giant Rattlesnake",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Swarm, Rat",
+        "Strix",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Zombie",
+        "Troll",
+        "",
+        ""
+      ],
+      [
+        "",
+        "Beastman, Goblin",
+        "Varmint, Giant Weasel",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wasp, Giant",
+        "",
+        ""
+      ]
+    ],
+    "Forest (deciduous)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Bat, Ordinary",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Barghest, Greater"
+      ],
+      [
+        "2",
+        "Bear, Grizzy",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Bronze Bull"
+      ],
+      [
+        "3",
+        "Beastman, Goblin",
+        "Bat, Giant",
+        "Attercop, Hideous",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "4",
+        "Beastman, Orc",
+        "Beastman, Bugbear",
+        "Attercop, Monstrous",
+        "Doppelganger"
+      ],
+      [
+        "5",
+        "Boar, Ordinary",
+        "Beastman, Gnoll",
+        "Barghest, Lesser",
+        "Faerie, Redcap"
+      ],
+      [
+        "6",
+        "Cat, Panther",
+        "Beastman, Hobgoblin",
+        "Bat, Giant Vampire",
+        "Galdrtré"
+      ],
+      [
+        "7",
+        "Dog, Hunting",
+        "Beetle, Giant Bombardier",
+        "Blood Hound",
+        "Hell Hawk"
+      ],
+      [
+        "8",
+        "Dog, War",
+        "Beetle, Giant Luminous",
+        "Centaur",
+        "Hydra"
+      ],
+      [
+        "9",
+        "Elf",
+        "Beetle, Giant Tiger",
+        "Cyclops",
+        "Medusa"
+      ],
+      [
+        "10",
+        "Herd Animal",
+        "Boar, Giant",
+        "Dakhanavar, Lesser",
+        "Salamander, Frost"
+      ],
+      [
+        "11",
+        "Hyena, Ordinary",
+        "Centipede, Giant",
+        "Devil Boar",
+        "Slug, Giant"
+      ],
+      [
+        "12",
+        "Men, Brigands",
+        "Dragonfly, Giant",
+        "Dragon",
+        "Spell Tyrant"
+      ],
+      [
+        "13",
+        "Men, Merchants",
+        "Frog, Giant",
+        "Draugr",
+        "Unicorn"
+      ],
+      [
+        "14",
+        "Raptor, Ordinary",
+        "Ghoul, Grave",
+        "Faerie, Piskie",
+        "Barghest, Greater"
+      ],
+      [
+        "15",
+        "Raptor, Small",
+        "Ghoul, Marsh",
+        "Faerie, Pixiee",
+        "Bronze Bull"
+      ],
+      [
+        "16",
+        "Skeleton",
+        "Giant, Hill",
+        "Faerie, Spriggan",
+        ""
+      ],
+      [
+        "17",
+        "Snake, Pit Viper",
+        "Hoarflesh",
+        "Faerie, Sprite",
+        ""
+      ],
+      [
+        "18",
+        "Swarm, Bat",
+        "Hyena, Giant",
+        "Gargoyle",
+        ""
+      ],
+      [
+        "19",
+        "Swarm, Rat",
+        "Lycan, Wereboar",
+        "Griffon",
+        ""
+      ],
+      [
+        "20",
+        "Wolf, Ordinary",
+        "Lycan, Wererat",
+        "Hag",
+        ""
+      ],
+      [
+        "",
+        "Zombie",
+        "Lycan, Werewolf",
+        "Hippogriff",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Ogre",
+        "Lycan, Werebear",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Owlbeast",
+        "Lycan, Weretiger",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Raptor, Giant",
+        "Nymph, Dryad",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Roc, Small",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Scorpion, Giant",
+        "Shadow",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Spider, Giant Black Widow",
+        "Skeletal Slayer",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Spider, Giant Tarantula",
+        "Snake, Giant Constricting Viper",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Strix",
+        "Specter",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Stymph",
+        "Treeherder",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Tick, Giant",
+        "Vampire",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Troll",
+        "Wolf, Warg",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wasp, Giant",
+        "Yali",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wolf, Dire",
+        "",
+        ""
+      ]
+    ],
+    "Forest (taiga)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Bat, Ordinary",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Bear, Grizzy",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Barghest, Greater"
+      ],
+      [
+        "3",
+        "Bear, Polar",
+        "Bat, Giant",
+        "Attercop, Hideous",
+        "Bronze Bull"
+      ],
+      [
+        "4",
+        "Beastman, Goblin",
+        "Beastman, Bugbear",
+        "Attercop, Monstrous",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "5",
+        "Beastman, Orc",
+        "Beastman, Gnoll",
+        "Barghest, Lesser",
+        "Doppelganger"
+      ],
+      [
+        "6",
+        "Boar, Ordinary",
+        "Beastman, Hobgoblin",
+        "Bat, Giant Vampire",
+        "Faerie, Redcap"
+      ],
+      [
+        "7",
+        "Cat, Cougar",
+        "Beetle, Giant Bombardier",
+        "Blood Hound",
+        "Galdrtre"
+      ],
+      [
+        "8",
+        "Cat, Panther",
+        "Beetle, Giant Lumi0us",
+        "Cat, Saber-Tooth",
+        "Hell Hawk"
+      ],
+      [
+        "9",
+        "Cat, Tiger",
+        "Beetle, Giant Tiger",
+        "Centaur",
+        "Hydra"
+      ],
+      [
+        "10",
+        "Dog, Hunting",
+        "Boar, Giant",
+        "Cyclops",
+        "Medusa"
+      ],
+      [
+        "11",
+        "Dog, War",
+        "Centipede, Giant",
+        "Dakhanavar, Lesser",
+        "Salamander, Frost"
+      ],
+      [
+        "12",
+        "Elf",
+        "Dragonfly, Giant",
+        "Devil Boar",
+        "Slug, Giant"
+      ],
+      [
+        "13",
+        "Herd Animal",
+        "Frog, Giant",
+        "Dragon",
+        "Spell Tyrant"
+      ],
+      [
+        "14",
+        "Men, Brigands",
+        "Ghoul, Grave",
+        "Draugr",
+        "Unicorn"
+      ],
+      [
+        "15",
+        "Men, Merchants",
+        "Ghoul, Marsh",
+        "Faerie, Piskie",
+        "Worm, Great Ice"
+      ],
+      [
+        "16",
+        "Raptor, Ordinary",
+        "Giant, Hill",
+        "Faerie, Pixie",
+        ""
+      ],
+      [
+        "17",
+        "Raptor, Small",
+        "Hoarflesh",
+        "Faerie, Spriggan",
+        ""
+      ],
+      [
+        "18",
+        "Skeleton",
+        "Lycan, Wereboar",
+        "Faerie, Sprite",
+        ""
+      ],
+      [
+        "19",
+        "Snake, Pit Viper",
+        "Lycan, Wererat",
+        "Gargoyle",
+        ""
+      ],
+      [
+        "20",
+        "Swarm, Bat",
+        "Lycan, Werewolf",
+        "Giant, Frost",
+        ""
+      ],
+      [
+        "",
+        "Swarm, Rat",
+        "Mammoth",
+        "Griffon",
+        ""
+      ],
+      [
+        "",
+        "Wolf, Ordinary",
+        "Ogre",
+        "Hag",
+        ""
+      ],
+      [
+        "",
+        "Zombie",
+        "Owlbeast",
+        "Hippogriff",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Raptor, Giant",
+        "Lycan, Werebear",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Rhino, Wooly",
+        "Lycan, Weretiger",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Roc, Small",
+        "Nymph, Dryad",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Scorpion, Giant",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Spider, Giant Black Widow",
+        "Shadow",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Spider, Giant Tarantula",
+        "Skeletal Slayer",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Strix",
+        "Specter",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Stymph",
+        "Treeherder",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Tick, Giant",
+        "Vampire",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Troll",
+        "Wolf, Warg",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wasp, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wolf, Dire",
+        "",
+        ""
+      ]
+    ],
+    "Hills (any)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Bear, Grizzy",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Beastman, Goblin",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Barghest, Greater"
+      ],
+      [
+        "3",
+        "Beastman, Kobold",
+        "Bee, Giant Killer",
+        "Attercop, Hideous",
+        "Basilisk, Noxious"
+      ],
+      [
+        "4",
+        "Beastman, Orc",
+        "Beetle, Giant Bombardier",
+        "Attercop, Monstrous",
+        "Basilisk, Petrifying"
+      ],
+      [
+        "5",
+        "Boar, Ordinary",
+        "Beetle, Giant Lumi0us",
+        "Barghest, Lesser",
+        "Bronze Bull"
+      ],
+      [
+        "6",
+        "Cat, Cougar",
+        "Beetle, Giant Tiger",
+        "Blood Hound",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "7",
+        "Dog, Hunting",
+        "Boar, Giant",
+        "Centaur",
+        "Equine, Mule"
+      ],
+      [
+        "8",
+        "Dog, War",
+        "Centipede, Giant",
+        "Dakhanavar, Lesser",
+        "Faerie, Redcap"
+      ],
+      [
+        "9",
+        "Dwarf",
+        "Dragonfly, Giant",
+        "Dragon",
+        "Gorgon"
+      ],
+      [
+        "10",
+        "Equine, Donkey",
+        "Ghoul, Grave",
+        "Draugr",
+        "Rakshasa"
+      ],
+      [
+        "11",
+        "Equine, Light Horse",
+        "Giant, Hill",
+        "Faerie, Piskie",
+        "Salamander, Flame"
+      ],
+      [
+        "12",
+        "Equine, Medium Horse",
+        "Hoarflesh",
+        "Faerie, Pixie",
+        "Salamander, Frost"
+      ],
+      [
+        "13",
+        "Equine, Steppe Horse",
+        "Hyena, Giant",
+        "Faerie, Spriggan",
+        "Spell Tyrant"
+      ],
+      [
+        "14",
+        "Herd Animal",
+        "Lycan, Wereboar",
+        "Faerie, Sprite",
+        "Titan, Greater"
+      ],
+      [
+        "15",
+        "Hyena, Ordinary",
+        "Lycan, Wererat",
+        "Gargoyle",
+        "Titan, Lesser"
+      ],
+      [
+        "16",
+        "Men, Brigands",
+        "Lycan, Werewolf",
+        "Giant, Frost",
+        ""
+      ],
+      [
+        "17",
+        "Raptor, Ordinary",
+        "Ogre",
+        "Giant, Stone",
+        ""
+      ],
+      [
+        "18",
+        "Raptor, Small",
+        "Owlbeast",
+        "Gnome",
+        ""
+      ],
+      [
+        "19",
+        "Skeleton",
+        "Raptor, Giant",
+        "Griffon",
+        ""
+      ],
+      [
+        "20",
+        "Snake, Pit Viper",
+        "Roc, Small",
+        "Hippogriff",
+        ""
+      ],
+      [
+        "",
+        "Wolf, Ordinary",
+        "Spider, Giant Black Widow",
+        "Lycan, Werebear",
+        ""
+      ],
+      [
+        "",
+        "Zombie",
+        "Spider, Giant Tarantula",
+        "Lycan, Weretiger",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Strix",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Stymph",
+        "Shadow",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Troll",
+        "Specter",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wasp, Giant",
+        "Troglodyte",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wolf, Dire",
+        "Wolf, Warg",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Yali",
+        ""
+      ]
+    ],
+    "Jungle (any)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Beastman, Goblin",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Beastman, Orc",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Basilisk, Noxious"
+      ],
+      [
+        "3",
+        "Boar, Ordinary",
+        "Beastman, Bugbear",
+        "Attercop, Hideous",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "4",
+        "Cat, Cheetah",
+        "Beastman, Gnoll",
+        "Attercop, Monstrous",
+        "Hydra"
+      ],
+      [
+        "5",
+        "Cat, Panther",
+        "Bee, Giant Killer",
+        "Blood Hound",
+        "Medusa"
+      ],
+      [
+        "6",
+        "Cat, Tiger",
+        "Beetle, Giant Bombardier",
+        "Cyclops",
+        "Rakshasa"
+      ],
+      [
+        "7",
+        "Elf",
+        "Beetle, Giant Lumi0us",
+        "Dakhanavar, Lesser",
+        "Salamander, Flame"
+      ],
+      [
+        "8",
+        "Gorilla, Cave",
+        "Beetle, Giant Tiger",
+        "Dragon",
+        "Slug, Giant"
+      ],
+      [
+        "9",
+        "Herd Animal",
+        "Boar, Giant",
+        "Gargoyle",
+        "Spell Tyrant"
+      ],
+      [
+        "10",
+        "Hippopotamus",
+        "Centipede, Giant",
+        "Giant, Fire",
+        "Thrassian"
+      ],
+      [
+        "11",
+        "Men, Berserkers",
+        "Dragonfly, Giant",
+        "Griffon",
+        "Attercop, Demonic"
+      ],
+      [
+        "12",
+        "Men, Brigands",
+        "Fly, Giant Carnivorous",
+        "Hippogriff",
+        "Basilisk, Noxious"
+      ],
+      [
+        "13",
+        "Skeleton",
+        "Frog, Giant",
+        "Lycan, Weretiger",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "14",
+        "Snake, Pit Viper",
+        "Ghoul, Marsh",
+        "Neanderthal",
+        "Hydra"
+      ],
+      [
+        "15",
+        "Snake, Spitting Cobra",
+        "Giant, Hill",
+        "Rust Beast",
+        "Medusa"
+      ],
+      [
+        "16",
+        "Zombie",
+        "Lizard, Giant Chameleon",
+        "Shadow",
+        "Rakshasa"
+      ],
+      [
+        "17",
+        "",
+        "Lizard, Giant Draco",
+        "Snake, Giant Constricting Viper",
+        "Salamander, Flame"
+      ],
+      [
+        "18",
+        "",
+        "Lizard, Giant Gecko",
+        "Specter",
+        "Slug, Giant"
+      ],
+      [
+        "19",
+        "",
+        "Lizardmen",
+        "Terror Bird",
+        "Spell Tyrant"
+      ],
+      [
+        "20",
+        "",
+        "Lycan, Wereboar",
+        "Treeherder",
+        "Thrassian"
+      ],
+      [
+        "",
+        "",
+        "Lycan, Wererat",
+        "Troglodyte",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Raptor, Giant",
+        "Vampire",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Roc, Small",
+        "Yali",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Scorpion, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Snake, Giant Python",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Spider, Giant Black Widow",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Spider, Giant Crab",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Strix",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Stymph",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Tick, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Troll",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wasp, Giant",
+        "",
+        ""
+      ]
+    ],
+    "Mountains (forested/rocky)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Baboon, Rock",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Bear, Cave",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Balegyr"
+      ],
+      [
+        "3",
+        "Beastman, Goblin",
+        "Beetle, Giant Bombardier",
+        "Attercop, Hideous",
+        "Barghest, Greater"
+      ],
+      [
+        "4",
+        "Beastman, Kobold",
+        "Beetle, Giant Lumi0us",
+        "Attercop, Monstrous",
+        "Basilisk, Noxious"
+      ],
+      [
+        "5",
+        "Beastman, Orc",
+        "Beetle, Giant Tiger",
+        "Barghest, Lesser",
+        "Basilisk, Petrifying"
+      ],
+      [
+        "6",
+        "Camel",
+        "Centipede, Giant",
+        "Blood Hound",
+        "Bronze Bull"
+      ],
+      [
+        "7",
+        "Cat, Cougar",
+        "Ghoul, Grave",
+        "Dakhanavar, Lesser",
+        "Chimera"
+      ],
+      [
+        "8",
+        "Cat, Tiger",
+        "Giant, Hill",
+        "Dragon",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "9",
+        "Dwarf",
+        "Lycan, Wereboar",
+        "Draugr",
+        "Equine, Mule"
+      ],
+      [
+        "10",
+        "Equine, Donkey",
+        "Lycan, Wererat",
+        "Faerie, K0cker",
+        "Faravahar"
+      ],
+      [
+        "11",
+        "Equine, Light Horse",
+        "Lycan, Werewolf",
+        "Gargoyle",
+        "Hell Hawk"
+      ],
+      [
+        "12",
+        "Equine, Medium Horse",
+        "Ogre",
+        "Giant, Fire",
+        "Hydra"
+      ],
+      [
+        "13",
+        "Equine, Steppe Horse",
+        "Owlbeast",
+        "Giant, Stone",
+        "Khepri"
+      ],
+      [
+        "14",
+        "Herd Animal",
+        "Raptor, Giant",
+        "Gnome",
+        "Manticore"
+      ],
+      [
+        "15",
+        "Men, Brigands",
+        "Roc, Small",
+        "Griffon",
+        "Medusa"
+      ],
+      [
+        "16",
+        "Raptor, Ordinary",
+        "Scorpion, Giant",
+        "Grimlock",
+        "Rakshasa"
+      ],
+      [
+        "17",
+        "Raptor, Small",
+        "Snake, Giant Rattlesnake",
+        "Hag",
+        "Roc, Giant"
+      ],
+      [
+        "18",
+        "Skeleton",
+        "Spider, Giant Black Widow",
+        "Harpy",
+        "Salamander, Flame"
+      ],
+      [
+        "19",
+        "Snake, Pit Viper",
+        "Spider, Giant Tarantula",
+        "Hippogriff",
+        "Spell Tyrant"
+      ],
+      [
+        "20",
+        "Swarm, Bat",
+        "Stymph",
+        "Lycan, Werebear",
+        "Titan, Greater"
+      ],
+      [
+        "",
+        "Wolf, Ordinary",
+        "Troll",
+        "Lycan, Weretiger",
+        "Titan, Lesser"
+      ],
+      [
+        "",
+        "Zombie",
+        "Wolf, Dire",
+        "Neanderthal",
+        "Worm, Giant Black"
+      ],
+      [
+        "",
+        "",
+        "",
+        "Pegasus",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Roc, Large",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Shadow",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Skeletal Slayer",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Specter",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Troglodyte",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Vampire",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Wolf, Warg",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Worm, Giant White",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Wyvern",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Yali",
+        ""
+      ]
+    ],
+    "Mountains (snowy)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Bear, Cave",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Bear, Polar",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Balegyr"
+      ],
+      [
+        "3",
+        "Beastman, Goblin",
+        "Beetle, Giant Bombardier",
+        "Attercop, Hideous",
+        "Barghest, Greater"
+      ],
+      [
+        "4",
+        "Beastman, Kobold",
+        "Beetle, Giant Lumi0us",
+        "Attercop, Monstrous",
+        "Basilisk, Noxious"
+      ],
+      [
+        "5",
+        "Beastman, Orc",
+        "Beetle, Giant Tiger",
+        "Barghest, Lesser",
+        "Basilisk, Petrifying"
+      ],
+      [
+        "6",
+        "Cat, Cougar",
+        "Centipede, Giant",
+        "Blood Hound",
+        "Bronze Bull"
+      ],
+      [
+        "7",
+        "Cat, Tiger",
+        "Ghoul, Grave",
+        "Cat, Saber-Tooth",
+        "Chimera"
+      ],
+      [
+        "8",
+        "Dwarf",
+        "Giant, Hill",
+        "Dakhanavar, Lesser",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "9",
+        "Equine, Donkey",
+        "Hoarflesh",
+        "Dragon",
+        "Equine, Mule"
+      ],
+      [
+        "10",
+        "Equine, Light Horse",
+        "Lycan, Werewolf",
+        "Draugr",
+        "Faravahar"
+      ],
+      [
+        "11",
+        "Equine, Medium Horse",
+        "Mammoth",
+        "Faerie, K0cker",
+        "Hell Hawk"
+      ],
+      [
+        "12",
+        "Equine, Steppe Horse",
+        "Ogre",
+        "Gargoyle",
+        "Hydra"
+      ],
+      [
+        "13",
+        "Herd Animal",
+        "Owlbeast",
+        "Giant, Frost",
+        "Khepri"
+      ],
+      [
+        "14",
+        "Men, Brigands",
+        "Raptor, Giant",
+        "Giant, Stone",
+        "Manticore"
+      ],
+      [
+        "15",
+        "Raptor, Ordinary",
+        "Roc, Small",
+        "Gnome",
+        "Medusa"
+      ],
+      [
+        "16",
+        "Raptor, Small",
+        "Scorpion, Giant",
+        "Griffon",
+        "Rakshasa"
+      ],
+      [
+        "17",
+        "Skeleton",
+        "Snake, Giant Rattlesnake",
+        "Grimlock",
+        "Roc, Giant"
+      ],
+      [
+        "18",
+        "Snake, Pit Viper",
+        "Spider, Giant Black Widow",
+        "Hag",
+        "Salamander, Frost"
+      ],
+      [
+        "19",
+        "Swarm, Bat",
+        "Spider, Giant Tarantula",
+        "Harpy",
+        "Spell Tyrant"
+      ],
+      [
+        "20",
+        "Wolf, Ordinary",
+        "Stymph",
+        "Hippogriff",
+        "Titan, Greater"
+      ],
+      [
+        "",
+        "",
+        "",
+        "Lycan, Werebear",
+        "Titan, Lesser"
+      ],
+      [
+        "",
+        "",
+        "",
+        "Neanderthal",
+        "Worm, Giant Black"
+      ],
+      [
+        "",
+        "",
+        "",
+        "Pegasus",
+        "Worm, Great Ice"
+      ],
+      [
+        "",
+        "",
+        "",
+        "Roc, Large",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Shadow",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Skeletal Slayer",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Specter",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Troglodyte",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Vampire",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Wolf, Warg",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Worm, Giant White",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Wyvern",
+        ""
+      ],
+      [
+        "",
+        "",
+        "",
+        "Yali",
+        ""
+      ]
+    ],
+    "River (non-desert/jungle)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Bear, Black",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Beastman, Orc",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Doppelganger"
+      ],
+      [
+        "3",
+        "Boar, Ordinary",
+        "Beastman, Bugbear",
+        "Attercop, Hideous",
+        "Rakshasa"
+      ],
+      [
+        "4",
+        "Cat, Panther",
+        "Beastman, Gnoll",
+        "Attercop, Monstrous",
+        "Salamander, Frost"
+      ],
+      [
+        "5",
+        "Crocodile, Ordinary",
+        "Beastman, Hobgoblin",
+        "Blood Hound",
+        "Skittering Maw"
+      ],
+      [
+        "6",
+        "Dog, Hunting",
+        "Bee, Giant Killer",
+        "Crocodile, Giant",
+        "Slug, Giant"
+      ],
+      [
+        "7",
+        "Dog, War",
+        "Beetle, Giant Bombardier",
+        "Devil Boar",
+        "Spell Tyrant"
+      ],
+      [
+        "8",
+        "Elf",
+        "Beetle, Giant Lumi0us",
+        "Dragon",
+        ""
+      ],
+      [
+        "9",
+        "Herd Animal",
+        "Beetle, Giant Tiger",
+        "Faerie, Nixie",
+        ""
+      ],
+      [
+        "10",
+        "Men, Brigands",
+        "Boar, Giant",
+        "Faerie, Pixie",
+        ""
+      ],
+      [
+        "11",
+        "Men, Merchants",
+        "Centipede, Giant",
+        "Faerie, Spriggan",
+        ""
+      ],
+      [
+        "12",
+        "Men, Pirates",
+        "Crab, Giant",
+        "Faerie, Sprite",
+        ""
+      ],
+      [
+        "13",
+        "Raptor, Ordinary",
+        "Crocodile, Large",
+        "Gargoyle",
+        ""
+      ],
+      [
+        "14",
+        "Skeleton",
+        "Dragonfly, Giant",
+        "Griffon",
+        ""
+      ],
+      [
+        "15",
+        "Swarm, Rat",
+        "Fish, Giant Catfish",
+        "Hag",
+        ""
+      ],
+      [
+        "16",
+        "Varmint, Giant Rat",
+        "Fish, Giant Piranha",
+        "Hippogriff",
+        ""
+      ],
+      [
+        "17",
+        "Zombie",
+        "Fish, Giant Surgeon",
+        "Lycan, Werebear",
+        ""
+      ],
+      [
+        "18",
+        "",
+        "Fly, Giant Carnivorous",
+        "Lycan, Weretiger",
+        ""
+      ],
+      [
+        "19",
+        "",
+        "Frog, Giant",
+        "Nymph, Naiad",
+        ""
+      ],
+      [
+        "20",
+        "",
+        "Ghoul, Marsh",
+        "Nymph, Oread",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Leech, Giant",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Lizardmen",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Lycan, Wereboar",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Lycan, Wererat",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Lycan, Werewolf",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Ogre",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Raptor, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Roc, Small",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Strix",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Tick, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Toad, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Triton",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Troll",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Varmint, Giant Shrew",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wasp, Giant",
+        "",
+        ""
+      ]
+    ],
+    "River (desert/jungle)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Bear, Black",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Beastman, Orc",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Doppelganger"
+      ],
+      [
+        "3",
+        "Boar, Ordinary",
+        "Beastman, Bugbear",
+        "Attercop, Hideous",
+        "Rakshasa"
+      ],
+      [
+        "4",
+        "Camel",
+        "Beastman, Gnoll",
+        "Attercop, Monstrous",
+        "Salamander, Flame"
+      ],
+      [
+        "5",
+        "Cat, Cheetah",
+        "Beastman, Hobgoblin",
+        "Blood Hound",
+        "Skittering Maw"
+      ],
+      [
+        "6",
+        "Cat, Lion",
+        "Bee, Giant Killer",
+        "Crocodile, Giant",
+        "Slug, Giant"
+      ],
+      [
+        "7",
+        "Cat, Panther",
+        "Beetle, Giant Bombardier",
+        "Devil Boar",
+        "Spell Tyrant"
+      ],
+      [
+        "8",
+        "Cat, Tiger",
+        "Beetle, Giant Lumi0us",
+        "Dragon",
+        ""
+      ],
+      [
+        "9",
+        "Crocodile, Ordinary",
+        "Beetle, Giant Tiger",
+        "Faerie, Nixie",
+        ""
+      ],
+      [
+        "10",
+        "Dog, Hunting",
+        "Boar, Giant",
+        "Faerie, Pixie",
+        ""
+      ],
+      [
+        "11",
+        "Dog, War",
+        "Centipede, Giant",
+        "Faerie, Spriggan",
+        ""
+      ],
+      [
+        "12",
+        "Elf",
+        "Crab, Giant",
+        "Faerie, Sprite",
+        ""
+      ],
+      [
+        "13",
+        "Herd Animal",
+        "Crocodile, Large",
+        "Gargoyle",
+        ""
+      ],
+      [
+        "14",
+        "Hippopotamus",
+        "Dragonfly, Giant",
+        "Giant, Fire",
+        ""
+      ],
+      [
+        "15",
+        "Hyena, Ordinary",
+        "Fish, Giant Catfish",
+        "Griffon",
+        ""
+      ],
+      [
+        "16",
+        "Jackal",
+        "Fish, Giant Piranha",
+        "Hag",
+        ""
+      ],
+      [
+        "17",
+        "Men, Brigands",
+        "Fish, Giant Surgeon",
+        "Hippogriff",
+        ""
+      ],
+      [
+        "18",
+        "Men, Merchants",
+        "Fly, Giant Carnivorous",
+        "Lycan, Weretiger",
+        ""
+      ],
+      [
+        "19",
+        "Men, Pirates",
+        "Frog, Giant",
+        "Nymph, Naiad",
+        ""
+      ],
+      [
+        "20",
+        "Raptor, Ordinary",
+        "Ghoul, Marsh",
+        "Nymph, Oread",
+        ""
+      ],
+      [
+        "",
+        "Skeleton",
+        "Hyena, Giant",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "",
+        "Swarm, Rat",
+        "Leech, Giant",
+        "Shadow",
+        ""
+      ],
+      [
+        "",
+        "Varmint, Giant Rat",
+        "Lizardmen",
+        "Specter",
+        ""
+      ],
+      [
+        "",
+        "Zombie",
+        "Lycan, Wererat",
+        "Vampire",
+        ""
+      ],
+      [
+        "",
+        "Skeleton",
+        "Ogre",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Raptor, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Roc, Small",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Strix",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Tick, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Toad, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Triton",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Troll",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Varmint, Giant Shrew",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Wasp, Giant",
+        "",
+        ""
+      ]
+    ],
+    "Swamp (any)": [
+      [
+        "Die Roll (1d20)",
+        "Common",
+        "Uncommon",
+        "Rare",
+        "Very Rare"
+      ],
+      [
+        "1",
+        "Beastman, Goblin",
+        "Acanthaspis, Giant",
+        "Arane",
+        "Attercop, Demonic"
+      ],
+      [
+        "2",
+        "Beastman, Orc",
+        "Ant, Giant",
+        "Attercop, Foul",
+        "Basilisk, Noxious"
+      ],
+      [
+        "3",
+        "Crocodile, Ordinary",
+        "Beastman, Gnoll",
+        "Attercop, Hideous",
+        "Catoblepas"
+      ],
+      [
+        "4",
+        "Men, Brigands",
+        "Beastman, Hobgoblin",
+        "Attercop, Monstrous",
+        "Dakhanavar, Greater"
+      ],
+      [
+        "5",
+        "Skeleton",
+        "Bee, Giant Killer",
+        "Blood Hound",
+        "Hell Hawk"
+      ],
+      [
+        "6",
+        "Swarm, Insect",
+        "Beetle, Giant Bombardier",
+        "Crocodile, Giant",
+        "Hydra"
+      ],
+      [
+        "7",
+        "Swarm, Rat",
+        "Beetle, Giant Lumi0us",
+        "Dakhanavar, Lesser",
+        "Medusa"
+      ],
+      [
+        "8",
+        "Zombie",
+        "Beetle, Giant Tiger",
+        "Dragon",
+        "Rakshasa"
+      ],
+      [
+        "9",
+        "Beastman, Goblin",
+        "Carrion Horror",
+        "Faerie, Pixie",
+        "Salamander, Frost"
+      ],
+      [
+        "10",
+        "Beastman, Orc",
+        "Centipede, Giant",
+        "Faerie, Spriggan",
+        "Skittering Maw"
+      ],
+      [
+        "11",
+        "Crocodile, Ordinary",
+        "Crab, Giant",
+        "Faerie, Sprite",
+        "Slug, Giant"
+      ],
+      [
+        "12",
+        "Men, Brigands",
+        "Crocodile, Large",
+        "Gargoyle",
+        "Spell Tyrant"
+      ],
+      [
+        "13",
+        "Skeleton",
+        "Dragonfly, Giant",
+        "Griffon",
+        "Thrassian"
+      ],
+      [
+        "14",
+        "Swarm, Insect",
+        "Fish, Giant Catfish",
+        "Hag",
+        ""
+      ],
+      [
+        "15",
+        "Swarm, Rat",
+        "Fly, Giant Carnivorous",
+        "Hippogriff",
+        ""
+      ],
+      [
+        "16",
+        "Zombie",
+        "Frog, Giant",
+        "Nymph, Naiad",
+        ""
+      ],
+      [
+        "17",
+        "",
+        "Ghoul, Marsh",
+        "Rust Beast",
+        ""
+      ],
+      [
+        "18",
+        "",
+        "Leech, Giant",
+        "Shadow",
+        ""
+      ],
+      [
+        "19",
+        "",
+        "Lizardmen",
+        "Skeletal Slayer",
+        ""
+      ],
+      [
+        "20",
+        "",
+        "Lycan, Wereboar",
+        "Specter",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Lycan, Wererat",
+        "Troglodyte",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Lycan, Werewolf",
+        "Vampire",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Ogre",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Raptor, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Roc, Small",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Scorpion, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Spider, Giant Crab",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Spider, Giant Tarantula",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Strix",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Stymph",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Tick, Giant",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        "Troll",
+        "",
+        ""
+      ]
+    ]
+  },
+  "terrain_encounters": {
+    "Treasure Types by Terrain": [
+      [
+        "Terrain",
+        "Treasure Type"
+      ],
+      [
+        "Clear, Grass, Scrub",
+        "K"
+      ],
+      [
+        "Hills, Barren, Swamp",
+        "N"
+      ],
+      [
+        "Desert, Mountain",
+        "N,D"
+      ],
+      [
+        "Woods",
+        "L,D"
+      ],
+      [
+        "Jungle",
+        "K,C"
+      ],
+      [
+        "River",
+        "L"
+      ],
+      [
+        "Ocean",
+        "O"
+      ]
+    ],
+    "Dungeon Types": [
+      [
+        "Roll",
+        "Dungeon Type",
+        "Roll",
+        "Dungeon Type"
+      ],
+      [
+        "1",
+        "Aqueduct",
+        "11",
+        "Monument"
+      ],
+      [
+        "2",
+        "Barrow mound",
+        "12",
+        "Mine"
+      ],
+      [
+        "3",
+        "Bridge",
+        "13",
+        "Observatory"
+      ],
+      [
+        "4",
+        "Castle",
+        "14",
+        "Prison"
+      ],
+      [
+        "5",
+        "Colossus",
+        "15",
+        "Outpost"
+      ],
+      [
+        "6",
+        "Cottage",
+        "16",
+        "Shrine/temple"
+      ],
+      [
+        "7",
+        "Keep",
+        "17",
+        "Tomb"
+      ],
+      [
+        "8",
+        "Manor",
+        "18",
+        "Tower"
+      ],
+      [
+        "9",
+        "Mausoleum",
+        "19",
+        "Villa"
+      ],
+      [
+        "10",
+        "Monastery",
+        "20",
+        "Wizard’s dungeon"
+      ]
+    ],
+    "Valuable Terrain (1d12)": [
+      [
+        "Valuable Terrain (1d12)",
+        "Valuable Terrain (1d12)"
+      ],
+      [
+        "1",
+        "Cache"
+      ],
+      [
+        "2",
+        "Food"
+      ],
+      [
+        "3",
+        "Fountain"
+      ],
+      [
+        "4",
+        "Hidden Settlement"
+      ],
+      [
+        "5",
+        "Monster Carcass"
+      ],
+      [
+        "6",
+        "Ore"
+      ],
+      [
+        "7",
+        "Ruin"
+      ],
+      [
+        "8",
+        "Safe Haven"
+      ],
+      [
+        "9",
+        "Shortcut"
+      ],
+      [
+        "10",
+        "Useful Herbs"
+      ],
+      [
+        "11",
+        "Vista"
+      ],
+      [
+        "12",
+        "Double"
+      ]
+    ],
+    "Ore Types (1d100)": [
+      [
+        "1d100",
+        "Ore"
+      ],
+      [
+        "01-35",
+        "Stone"
+      ],
+      [
+        "36-75",
+        "Iron"
+      ],
+      [
+        "76-95",
+        "Copper"
+      ],
+      [
+        "96-97",
+        "Silver-lead"
+      ],
+      [
+        "98-99",
+        "Gemstone"
+      ],
+      [
+        "100",
+        "Gold"
+      ]
+    ],
+    "Ore Terrain Modifier": [
+      [
+        "Terrain",
+        "Modifier"
+      ],
+      [
+        "Clear, Grass, Scrub",
+        "0"
+      ],
+      [
+        "Hills, Mountains, Woods, River",
+        "+2"
+      ],
+      [
+        "Jungle, Swamp, Ocean, Desert, Barren",
+        "+4"
+      ]
+    ],
+    "Safe Haven (1d10)": [
+      [
+        "Safe Haven (1d10)",
+        "Safe Haven (1d10)"
+      ],
+      [
+        "1",
+        "A talus cave on a rocky slope."
+      ],
+      [
+        "2",
+        "A forested dell hidden by fells that flank it on either side."
+      ],
+      [
+        "3",
+        "A rocky ledge inaccessible except by one easily-guarded route."
+      ],
+      [
+        "4",
+        "A meadow surrounded by a nigh-impenetrable thicket of thorny briar."
+      ],
+      [
+        "5",
+        "A clearing concealed by a dense grove of trees."
+      ],
+      [
+        "6",
+        "A deep gully with high sides."
+      ],
+      [
+        "7",
+        "A narrow crevice with rocky overhangs."
+      ],
+      [
+        "8",
+        "An abandoned cabin, hut, or tree house."
+      ],
+      [
+        "9",
+        "An abandoned warren with underground tunnels dug by giant varmints."
+      ],
+      [
+        "10",
+        "A limestone cave with a grotto."
+      ]
+    ],
+    "Useful Herbs (1d12)": [
+      [
+        "Useful Herbs (1d12)",
+        "Useful Herbs (1d12)"
+      ],
+      [
+        "1",
+        "Belladonna"
+      ],
+      [
+        "2",
+        "Birthwort"
+      ],
+      [
+        "3",
+        "Comfrey"
+      ],
+      [
+        "4",
+        "Garlic"
+      ],
+      [
+        "5",
+        "Goldenrod"
+      ],
+      [
+        "6",
+        "Wolfsbane"
+      ],
+      [
+        "7",
+        "Woundwort"
+      ],
+      [
+        "8",
+        "Aloe"
+      ],
+      [
+        "9",
+        "Bitterwood"
+      ],
+      [
+        "10",
+        "Horsetail"
+      ],
+      [
+        "11",
+        "Lungwort"
+      ],
+      [
+        "12",
+        "Willow-bark"
+      ]
+    ],
+    "Dangerous Terrain (1d12)": [
+      [
+        "Dangerous Terrain (1d12)",
+        "Dangerous Terrain (1d12)"
+      ],
+      [
+        "1",
+        "Awful Despoiling"
+      ],
+      [
+        "2",
+        "Challenge"
+      ],
+      [
+        "3",
+        "Challenge"
+      ],
+      [
+        "4",
+        "Enshrouding Terrain"
+      ],
+      [
+        "5",
+        "Foul Fountain"
+      ],
+      [
+        "6",
+        "Plague"
+      ],
+      [
+        "7",
+        "Poison"
+      ],
+      [
+        "8",
+        "Snare"
+      ],
+      [
+        "9",
+        "Spoilage"
+      ],
+      [
+        "10",
+        "Trap"
+      ],
+      [
+        "11",
+        "Wasteland"
+      ],
+      [
+        "12",
+        "Double"
+      ]
+    ],
+    "Obstacle Types": [
+      [
+        "Obstacle Type",
+        "Obstacle Type",
+        "Obstacle Type",
+        ""
+      ],
+      [
+        "Die Roll",
+        "Challenge",
+        "Example Obstacle",
+        "Dimensions"
+      ],
+      [
+        "1",
+        "Balancing Traverse (narrow)",
+        "Broken rope-bridge across ravine",
+        "1d4+4” width, 1d6!x100’ length, 1d6!x100’ high"
+      ],
+      [
+        "2",
+        "Balancing Traverse (precarious)",
+        "Precarious ledge along a cliff face",
+        "1d4/2” width, 1d6 x100’ length, 1d6!x100’ high"
+      ],
+      [
+        "3",
+        "Climbing (easy)",
+        "Rocky, scrambling ascent up a hill",
+        "1d6!x100’ height"
+      ],
+      [
+        "4",
+        "Climbing (sheer)",
+        "Sheer ascent of cliff or mountain",
+        "1d6!x100’ height"
+      ],
+      [
+        "5",
+        "Crawling Traverse",
+        "Chasm, gap, or ravine",
+        "1d6!x100’ height"
+      ],
+      [
+        "6",
+        "Crawling Traverse or Jumping",
+        "Boulders over lava",
+        "1d10 platforms, 3d10’ diameter, 3d10’ apart"
+      ],
+      [
+        "7",
+        "Climbing (easy) or Rappeling",
+        "Scrambling descent down slope",
+        "1d6! x 100’ height"
+      ],
+      [
+        "8",
+        "Climbing (sheer) or Rappeling",
+        "Sheer descent down cliff",
+        "1d6! X 100’ length"
+      ],
+      [
+        "9",
+        "Squeezing",
+        "Crevice, fissure, or slot canyon",
+        "1d2’ width, 1d6!x40’ length"
+      ],
+      [
+        "10",
+        "Swimming or Crawling Traverse",
+        "Unfordable waters",
+        "1d6!x40’ width, -1d3 penalty to Swimming throws"
+      ]
+    ],
+    "Poison Types (1d20)": [
+      [
+        "(1d20)",
+        "Poison",
+        "Target"
+      ],
+      [
+        "1",
+        "3d10 doses of yew",
+        "4+"
+      ],
+      [
+        "2",
+        "3d10 doses of pit viper venom",
+        "11+"
+      ],
+      [
+        "3",
+        "4d6 doses of hellebore",
+        "8+"
+      ],
+      [
+        "4",
+        "4d6 doses of hemlock",
+        "8+"
+      ],
+      [
+        "5",
+        "2d10 doses of giant killer bee venom",
+        "11+"
+      ],
+      [
+        "6",
+        "2d10 doses of carcass scavenger venom",
+        "11+"
+      ],
+      [
+        "7",
+        "3d6 doses of foxglove",
+        "14+"
+      ],
+      [
+        "8",
+        "3d6 doses of sea snake venom",
+        "11+"
+      ],
+      [
+        "9",
+        "3d6 doses of giant black widow venom",
+        "11+"
+      ],
+      [
+        "10",
+        "3d6 doses of giant rattlesnake venom",
+        "11+"
+      ],
+      [
+        "11",
+        "2d6+1 doses of belladonna",
+        "11+"
+      ],
+      [
+        "12",
+        "2d6+1 doses of henbane",
+        "8+"
+      ],
+      [
+        "13",
+        "2d6+1 doses of wolfsbane",
+        "11+"
+      ],
+      [
+        "14",
+        "2d6+1 doses of giant tarantula venom",
+        "11+"
+      ],
+      [
+        "15",
+        "2d6+1 doses of giant scorpion venom",
+        "11+"
+      ],
+      [
+        "16",
+        "2d4 doses of rockfish venom",
+        "11+"
+      ],
+      [
+        "17",
+        "2d4 doses of wyvern venom",
+        "11+"
+      ],
+      [
+        "18",
+        "1d3 doses of curare",
+        "20+"
+      ],
+      [
+        "19",
+        "1d3 doses of purple worm venom",
+        "11+"
+      ],
+      [
+        "20",
+        "1d3 doses of dragon blood",
+        "11+"
+      ]
+    ],
+    "Unique Terrain (1d12)": [
+      [
+        "Unique Terrain (1d12)",
+        "Unique Terrain (1d12)"
+      ],
+      [
+        "1",
+        "Complex Map"
+      ],
+      [
+        "2",
+        "Curse"
+      ],
+      [
+        "3",
+        "Empowering Place"
+      ],
+      [
+        "4",
+        "Lesser Terrain"
+      ],
+      [
+        "5",
+        "Magical Place"
+      ],
+      [
+        "6",
+        "Magical Resource"
+      ],
+      [
+        "7",
+        "Monstrous Shadow"
+      ],
+      [
+        "8",
+        "Place of Power"
+      ],
+      [
+        "9",
+        "Portal"
+      ],
+      [
+        "10",
+        "Relic"
+      ],
+      [
+        "11",
+        "Truly Unique"
+      ],
+      [
+        "12",
+        "Double"
+      ]
+    ],
+    "Unique Treasure (1d6)": [
+      [
+        "Roll (1d6)",
+        "Treasure Type",
+        "Average Value"
+      ],
+      [
+        "1",
+        "K",
+        "5,000 gp average value"
+      ],
+      [
+        "2",
+        "L, J",
+        "10,000 gp average value"
+      ],
+      [
+        "3",
+        "P",
+        "17,000 gp average value"
+      ],
+      [
+        "4",
+        "Q",
+        "22,000 gp average value"
+      ],
+      [
+        "5",
+        "Ox2",
+        "24,000 gp average value"
+      ],
+      [
+        "6",
+        "Q, N",
+        "31,000 gp average value"
+      ]
+    ],
+    "Curse Types (1d10)": [
+      [
+        "Curse (1d10)",
+        "Curse (1d10)"
+      ],
+      [
+        "1",
+        "Infectious:  The curse is infectious in some fashion."
+      ],
+      [
+        "2",
+        "Transformational: The curse transforms its victims."
+      ],
+      [
+        "3",
+        "Intermittent: The curse applies only at specific times."
+      ],
+      [
+        "4",
+        "Devastating: The effect of the curse is greater than normal."
+      ],
+      [
+        "5",
+        "Horrifying: The curse makes the victim fearsome to their allies."
+      ],
+      [
+        "6",
+        "Confusing: The curse affects the victim's thought patterns."
+      ],
+      [
+        "7",
+        "Forgetful: The curse affects the victim's memory."
+      ],
+      [
+        "8",
+        "Enfeebling: The curse affects the victim's physical attributes."
+      ],
+      [
+        "9",
+        "Locational: The curse affects the location, rather than specific victims."
+      ],
+      [
+        "10",
+        "Object: The curse is tied to an object, and affects its bearers or wielders."
+      ]
+    ],
+    "Complex Map Types (1d10)": [
+      [
+        "Type (1d10)",
+        "Type (1d10)"
+      ],
+      [
+        "1-4",
+        "Sinkhole of evil"
+      ],
+      [
+        "5-6",
+        "Pinnacle of good"
+      ],
+      [
+        "7",
+        "Aerie of elemental air"
+      ],
+      [
+        "8",
+        "Edifice of elemental earth"
+      ],
+      [
+        "9",
+        "Furnace of elemental fire"
+      ],
+      [
+        "10",
+        "Well of elemental water"
+      ]
+    ],
+    "Complex Map Power (1d12)": [
+      [
+        "Power (1d12)",
+        "Power (1d12)"
+      ],
+      [
+        "1-11",
+        "Minor"
+      ],
+      [
+        "12",
+        "Roll again on the Major Power Table"
+      ]
+    ],
+    "Complex Map Major Power (1d12)": [
+      [
+        "Major Power (1d12)",
+        "Major Power (1d12)"
+      ],
+      [
+        "1-11",
+        "Major"
+      ],
+      [
+        "12",
+        "Supreme"
+      ]
+    ]
+  },
+  "settlements": {
+    "_doc": "ACKS Rulebook Ch.8 — Visiting Settlements. Market Class determines availability, services, encounters.",
+    "market_classes": {
+      "I": {
+        "label": "Class I — Metropolitan",
+        "population": "100,000+",
+        "families": "20,000+",
+        "services": "All available, including 6th level magic",
+        "loanable_funds_gp": 100000,
+        "investment_opportunities_gp": 100000
+      },
+      "II": {
+        "label": "Class II — Urban",
+        "population": "20,000-99,999",
+        "families": "5,000+",
+        "services": "Most services, 5th level magic",
+        "loanable_funds_gp": 25000,
+        "investment_opportunities_gp": 25000
+      },
+      "III": {
+        "label": "Class III — Large Town",
+        "population": "5,000-19,999",
+        "families": "1,250+",
+        "services": "Many services, 4th level magic",
+        "loanable_funds_gp": 5000,
+        "investment_opportunities_gp": 5000
+      },
+      "IV": {
+        "label": "Class IV — Town",
+        "population": "1,250-4,999",
+        "families": "300+",
+        "services": "Basic services, 3rd level magic, henchmen 1d6+3/wk",
+        "loanable_funds_gp": 1250,
+        "investment_opportunities_gp": 1250
+      },
+      "V": {
+        "label": "Class V — Village",
+        "population": "300-1,249",
+        "families": "75+",
+        "services": "Limited services, 2nd level magic",
+        "loanable_funds_gp": 250,
+        "investment_opportunities_gp": 250
+      },
+      "VI": {
+        "label": "Class VI — Hamlet",
+        "population": "75-299",
+        "families": "20+",
+        "services": "Very limited, 1st level magic only",
+        "loanable_funds_gp": 50,
+        "investment_opportunities_gp": 50
+      }
+    },
+    "_settlement_encounters_doc": "ACKS RB Ch.8 Visiting Settlements section has hourly encounter checks by district (Avenue/Slums/Temple District/etc.)"
+  },
+  "mercantile": {
+    "_doc": "ACKS Rulebook Ch.8 — Mercantile Ventures. Trade routes between settlements. Supply & Demand drives prices.",
+    "process": [
+      "1. Buy goods at Class A market (baseline_price)",
+      "2. Travel to Class B market (consume Supply, encounter checks)",
+      "3. Roll Supply & Demand (2d6 + modifiers)",
+      "4. Apply price modifier from result",
+      "5. Sell goods at modified price"
+    ],
+    "supply_demand_mechanic": {
+      "_doc": "JJ Ch.2 — Mercantile Ventures",
+      "die": "2d6",
+      "modifiers": [
+        "+1 if destination is Class I or II",
+        "+1 if Class A goods to Class B markets",
+        "-1 if same class market",
+        "-1 if Class B goods returning to Class A",
+        "+1 per neighboring market with shortage of this good",
+        "-1 per neighboring market with surplus"
+      ],
+      "results": {
+        "2-": "Outraged refusal — cannot sell",
+        "3-5": "Reluctant purchase — 50% baseline",
+        "6-8": "Standard market — 100% baseline",
+        "9-11": "Eager market — 120% baseline",
+        "12+": "Frenzy — 150% baseline"
+      }
+    },
+    "baseline_cargo_by_class": {
+      "I": {
+        "cargo_st": 30000,
+        "toll_cp_per_st": 0.2,
+        "tariff_pct": 25
+      },
+      "II": {
+        "cargo_st": 15000,
+        "toll_cp_per_st": 0.4,
+        "tariff_pct": 20
+      },
+      "III": {
+        "cargo_st": 6000,
+        "toll_cp_per_st": 0.6,
+        "tariff_pct": 15
+      },
+      "IV": {
+        "cargo_st": 1500,
+        "toll_cp_per_st": 1.0,
+        "tariff_pct": 10
+      },
+      "V": {
+        "cargo_st": 400,
+        "toll_cp_per_st": 1.5,
+        "tariff_pct": 5
+      },
+      "VI": {
+        "cargo_st": 100,
+        "toll_cp_per_st": 2.0,
+        "tariff_pct": 0
+      }
+    }
+  },
+  "_links_to_data": {
+    "abilities": "C:/Users/Usuario/Desktop/ACKS asistente/acks-assistant/src/data/abilities.json",
+    "monsters": "C:/Users/Usuario/Desktop/ACKS asistente/acks-assistant/src/data/monsters.json",
+    "spells": "C:/Users/Usuario/Desktop/ACKS asistente/acks-assistant/src/data/spells.json",
+    "magic_items": "C:/Users/Usuario/Desktop/ACKS asistente/acks-assistant/src/data/magic_items.json",
+    "treasure": "C:/Users/Usuario/Desktop/ACKS asistente/acks-assistant/src/data/treasure.json",
+    "_doc": "Estos JSONs son demasiado grandes para inlinear (1MB+). El cockpit V5C los carga vía fetch cuando necesita."
+  }
+}

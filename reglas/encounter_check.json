@@ -1,0 +1,65 @@
+{
+  "id": "encounter_check",
+  "description": "Mecánica de chequeo de encuentro. Cuándo se tira, qué dado, cómo se interpreta.",
+  "abstract": {
+    "name": "Encounter Check",
+    "process": [
+      "1. Determinar trigger (entrada a unidad espacial, paso de tiempo, GM-trigger)",
+      "2. Tirar dado contra umbral (modificado por: pace, civilization, terrain hostility)",
+      "3. Si éxito, consultar tabla por (terrain, tier)",
+      "4. Tirar para resultado específico en tabla (random index)",
+      "5. Determinar distancia y sorpresa",
+      "6. Tirar reaction (hostil/neutro/amistoso)",
+      "7. Resolver narrativamente"
+    ],
+    "tierMapping": {
+      "_doc": "El 'tier' es transversal. El cockpit usa este alias.",
+      "abstract_tier": ["1", "2", "3", "4"],
+      "a5e": ["Tier 1", "Tier 2", "Tier 3", "Tier 4"],
+      "acks_rarity": ["Common", "Uncommon", "Rare", "Very Rare"],
+      "clan_category": ["Novato", "Veterano (low)", "Veterano (high)", "Maestro"]
+    }
+  },
+  "implementations": {
+    "a5e": {
+      "trigger": "Entrada a region",
+      "die": "1d20",
+      "thresholdRule": "DC del tier (T1=12, T2=14, T3=16, T4=18). Mod por pace: fast +2, slow -2.",
+      "table": "encounters[terrain][tier] (4 entries por tier típicamente)",
+      "distance": "GM narrative (default close para drama)",
+      "surprise": "Stealth vs Perception (passive)",
+      "reaction": "GM-adjudicated o tabla custom",
+      "frequency": "1 por region tipicamente"
+    },
+    "acks": {
+      "trigger": "Cada watch en wilderness, cada 2 turns en dungeon",
+      "die": "1d6 (clásico)",
+      "thresholdRule": "Civilized 4-in-6, Borderlands 3-in-6, Outlands 2-in-6, Wilderness 1-in-6",
+      "table": "monster_encounters[terrain] con columnas (Common, Uncommon, Rare, Very Rare). Tirar 1d20 para rarity, después 1d20 dentro de columna.",
+      "distance": "Wilderness: 4d6 × 10 yards. Dungeon: 2d6 × 10 feet.",
+      "surprise": "1d6 cada side, 1-2 surprised",
+      "reaction": "2d6 reaction roll: 2 hostile, 3-5 unfriendly, 6-8 neutral, 9-11 indifferent, 12 friendly",
+      "frequency": "1 cada 2 watches o turn (por defecto)"
+    },
+    "clan": {
+      "trigger": "GM ad-hoc",
+      "die": "no formal, GM decide",
+      "thresholdRule": "narrativo",
+      "table": "GM elige del bestiario por categoría apropiada",
+      "distance": "narrativo",
+      "surprise": "tirada Sagaz si aplica",
+      "reaction": "narrativo",
+      "frequency": "cuando la escena lo pide"
+    }
+  },
+  "cockpitImplementation": {
+    "v5b_current": "1d6, 1-2 hits, random pick from table. Funciona como ACKS-default lite. NO usa tier todavía.",
+    "v5c_target": [
+      "Leer trigger del campaign.system",
+      "Leer die + threshold del campaign._systemConfig",
+      "Indexar encounters por (terrain, tier)",
+      "Resolver distance + surprise + reaction según sistema",
+      "Loggear cada paso de la cadena (cada tirada)"
+    ]
+  }
+}

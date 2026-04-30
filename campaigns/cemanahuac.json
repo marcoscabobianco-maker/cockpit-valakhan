@@ -1,0 +1,122 @@
+{
+  "id": "cemanahuac",
+  "name": "Cemanahuac — Los Sesenta",
+  "subtitle": "Mexica · Ce-Ácatl · Aventura inicial CLAN",
+  "system": "clan",
+  "scale": { "size": 6, "unit": "millas", "label": "Escala regional / hex 6mi" },
+  "calendar": {
+    "yearLabel": "Ce-Ácatl",
+    "watches": ["Mañana", "Tarde", "Noche"],
+    "watchesPerDay": 3
+  },
+  "terrains": {
+    "chinampa": { "name": "Chinampas", "color": "#4a8b7d", "icon": "🌾", "desc": "Cultivos flotantes en lago, transitable lento." },
+    "bosque":   { "name": "Bosque pino-encino", "color": "#3d5a3a", "icon": "🌲", "desc": "Templado, frecuente en mesetas centrales." },
+    "selva":    { "name": "Selva", "color": "#2d4a2a", "icon": "🌴", "desc": "Densa, peligrosa, lluviosa." },
+    "cerro":    { "name": "Cerro / Sierra", "color": "#6b5a3a", "icon": "⛰", "desc": "Elevación rocosa." },
+    "volcan":   { "name": "Volcán", "color": "#4a2a1a", "icon": "🌋", "desc": "Sagrado y peligroso." },
+    "pedregal": { "name": "Pedregal / Desierto", "color": "#8b7d5a", "icon": "🪨", "desc": "Árido, sin agua." },
+    "ciudad":   { "name": "Ciudad", "color": "#c44a3a", "icon": "🏛", "desc": "Asentamiento mexica grande." },
+    "ruina":    { "name": "Ruina", "color": "#6b5a4a", "icon": "🜍", "desc": "Sitio antiguo, posible dungeon." },
+    "agua":     { "name": "Lago/Río", "color": "#2a4a6b", "icon": "🌊", "desc": "Cuerpo de agua." },
+    "camino":   { "name": "Camino", "color": "#a89070", "icon": "🛤", "desc": "Ruta despejada, +velocidad." }
+  },
+  "encounters": {
+    "bosque":   ["Nahualli Coyotl (1, novato)", "Banda de cazadores tlaxcaltecas (1d4)", "Jaguar (1)", "Pochteca extraviado", "Ningún encuentro"],
+    "selva":    ["Ocelote (1)", "Serpiente coralillo grande", "Patrulla mexica", "Espíritus del bosque (1d3 chaneque)", "Ningún encuentro"],
+    "cerro":    ["Cabra montés", "Sacerdote eremita", "Águila gigante", "Bandidos (1d6)", "Ningún encuentro"],
+    "volcan":   ["Tezcatlipoca-aspecto (cuidado)", "Río de lava cruzando", "Guardián de obsidiana", "Ofrenda olvidada (loot)", "Ningún encuentro"],
+    "pedregal": ["Coyotes (2d4)", "Comerciante chichimeca", "Tormenta de polvo", "Cráneos antiguos", "Ningún encuentro"],
+    "ciudad":   ["Patrulla mexica (1d4)", "Pochteca con caravana", "Festividad religiosa", "Sacerdote dando aviso", "Ningún encuentro"],
+    "ruina":    ["Tlacatecolotl (1, veterano)", "Trampa antigua activa", "Tesoro olvidado", "Eco de ritual perdido", "Ningún encuentro"],
+    "agua":     ["Pescadores en canoa", "Caimán (1d3)", "Niebla espesa", "Cuerpo flotando", "Ningún encuentro"],
+    "chinampa": ["Campesinos curiosos", "Niño con mensaje", "Recolector de juncos", "Patrulla de chinampaneca", "Ningún encuentro"],
+    "camino":   ["Caravana de pochtecas", "Guerrero solitario", "Patrulla mexica", "Mensajero corriendo", "Ningún encuentro"]
+  },
+  "bestiary": [
+    { "id": "nahualli_coyotl", "name": "Nahualli Coyotl", "category": "Novato", "hd": 1, "notes": "Tecpatl ritual ágil, mandíbula desgarradora. Confunde con Sagaz." },
+    { "id": "tlacatecolotl", "name": "Tlacatecolotl", "category": "Veterano", "hd": 4, "notes": "Hechicero búho, vuela, ataca con maleficios." },
+    { "id": "jaguar", "name": "Jaguar", "category": "Novato", "hd": 3, "notes": "Acecho. Sorpresa 4 en 6." },
+    { "id": "ocelote", "name": "Ocelote", "category": "Novato", "hd": 1, "notes": "Manchado. Trepa." },
+    { "id": "chaneque", "name": "Chaneque", "category": "Novato", "hd": 1, "notes": "Espíritu pequeño del bosque. Confunde caminos." },
+    { "id": "tzitzimitl", "name": "Tzitzimitl", "category": "Maestro", "hd": 8, "notes": "Estrella demonio. Solo en eclipse." }
+  ],
+  "npcs": [
+    { "id": "xiuhpetlatl", "name": "Xiuhpetlatl", "role": "Pochteca anciano (Estera de Turquesa)", "hex": "C4", "notes": "Patrón del Clan, contrata para detectar al infiltrado." },
+    { "id": "mazatl_ohtli", "name": "Mazatl Ohtli", "role": "Maestro del ritual de Coatépec", "hex": "F2", "notes": "Anciano de Texcoco. Voz aguda." },
+    { "id": "tlacaelel", "name": "Tlacaélel", "role": "Cihuacóatl, mano derecha del Tlatoani", "hex": "C4", "notes": "Ordena la expedición a Aztlán." },
+    { "id": "moctezuma_i", "name": "Moctezuma Ilhuicamina", "role": "Tlatoani de Tenochtitlan", "hex": "C4", "notes": "Huehue Moctezuma. Rey." }
+  ],
+  "hexes": [
+    { "col": 0, "row": 0, "terrain": "cerro", "name": "Sierra Norte" },
+    { "col": 0, "row": 1, "terrain": "cerro", "name": "" },
+    { "col": 0, "row": 2, "terrain": "bosque", "name": "" },
+    { "col": 0, "row": 3, "terrain": "bosque", "name": "Bosque de Pinos" },
+    { "col": 0, "row": 4, "terrain": "pedregal", "name": "" },
+    { "col": 0, "row": 5, "terrain": "pedregal", "name": "Pedregal Sur" },
+    { "col": 1, "row": 0, "terrain": "cerro", "name": "" },
+    { "col": 1, "row": 1, "terrain": "bosque", "name": "" },
+    { "col": 1, "row": 2, "terrain": "bosque", "name": "" },
+    { "col": 1, "row": 3, "terrain": "agua", "name": "Lago Xochimilco" },
+    { "col": 1, "row": 4, "terrain": "chinampa", "name": "" },
+    { "col": 1, "row": 5, "terrain": "pedregal", "name": "" },
+    { "col": 2, "row": 0, "terrain": "bosque", "name": "" },
+    { "col": 2, "row": 1, "terrain": "bosque", "name": "" },
+    { "col": 2, "row": 2, "terrain": "agua", "name": "" },
+    { "col": 2, "row": 3, "terrain": "ciudad", "name": "Tenochtitlan", "isCity": true },
+    { "col": 2, "row": 4, "terrain": "agua", "name": "Lago Texcoco" },
+    { "col": 2, "row": 5, "terrain": "bosque", "name": "" },
+    { "col": 3, "row": 0, "terrain": "bosque", "name": "" },
+    { "col": 3, "row": 1, "terrain": "agua", "name": "" },
+    { "col": 3, "row": 2, "terrain": "ciudad", "name": "Tlatelolco", "isCity": true, "hasNPC": "xiuhpetlatl" },
+    { "col": 3, "row": 3, "terrain": "agua", "name": "" },
+    { "col": 3, "row": 4, "terrain": "chinampa", "name": "" },
+    { "col": 3, "row": 5, "terrain": "bosque", "name": "" },
+    { "col": 4, "row": 0, "terrain": "bosque", "name": "" },
+    { "col": 4, "row": 1, "terrain": "bosque", "name": "" },
+    { "col": 4, "row": 2, "terrain": "ciudad", "name": "Texcoco", "isCity": true },
+    { "col": 4, "row": 3, "terrain": "camino", "name": "Camino a Coatépec" },
+    { "col": 4, "row": 4, "terrain": "bosque", "name": "" },
+    { "col": 4, "row": 5, "terrain": "selva", "name": "" },
+    { "col": 5, "row": 0, "terrain": "volcan", "name": "Popocatépetl" },
+    { "col": 5, "row": 1, "terrain": "cerro", "name": "" },
+    { "col": 5, "row": 2, "terrain": "bosque", "name": "" },
+    { "col": 5, "row": 3, "terrain": "ruina", "name": "Cerro de Coatépec", "isDungeon": "coatepec", "hasNPC": "mazatl_ohtli" },
+    { "col": 5, "row": 4, "terrain": "selva", "name": "" },
+    { "col": 5, "row": 5, "terrain": "selva", "name": "" },
+    { "col": 6, "row": 0, "terrain": "volcan", "name": "Iztaccíhuatl" },
+    { "col": 6, "row": 1, "terrain": "cerro", "name": "" },
+    { "col": 6, "row": 2, "terrain": "bosque", "name": "" },
+    { "col": 6, "row": 3, "terrain": "bosque", "name": "Hacia Tlaxcala" },
+    { "col": 6, "row": 4, "terrain": "selva", "name": "" },
+    { "col": 6, "row": 5, "terrain": "selva", "name": "" },
+    { "col": 7, "row": 0, "terrain": "cerro", "name": "" },
+    { "col": 7, "row": 1, "terrain": "ciudad", "name": "Tlaxcala", "isCity": true, "hostile": true },
+    { "col": 7, "row": 2, "terrain": "bosque", "name": "" },
+    { "col": 7, "row": 3, "terrain": "selva", "name": "" },
+    { "col": 7, "row": 4, "terrain": "selva", "name": "" },
+    { "col": 7, "row": 5, "terrain": "selva", "name": "" }
+  ],
+  "dungeons": {
+    "coatepec": {
+      "name": "Cerro de Coatépec — Cueva Ritual",
+      "rooms": {
+        "1": { "x": 50,  "y": 350, "w": 60, "h": 40, "name": "Sendero de subida", "desc": "Camino empedrado al cerro. Copal en el aire." },
+        "2": { "x": 150, "y": 350, "w": 70, "h": 60, "name": "Boca de la cueva", "desc": "Cuatro fogatas, una por rumbo del mundo." },
+        "3": { "x": 280, "y": 280, "w": 80, "h": 60, "name": "Recinto del ritual", "desc": "Esteras, hongos, ungüentos. Aquí los sesenta beben." },
+        "4": { "x": 280, "y": 380, "w": 60, "h": 50, "name": "Pozo del eco", "desc": "Pozo natural, agua sagrada. Eco extraño." },
+        "5": { "x": 420, "y": 280, "w": 70, "h": 60, "name": "Cámara de Mazatl", "desc": "Donde duerme el maestro del ritual." },
+        "6": { "x": 420, "y": 380, "w": 70, "h": 60, "name": "Cámara de los infiltrados", "desc": "Aquí podría esconderse el tlacatecolotl.", "gmOnly": true },
+        "7": { "x": 560, "y": 330, "w": 80, "h": 70, "name": "Altar del Quinto Sol", "desc": "Altar antiguo. Visión del nahualli al beber." }
+      },
+      "connections": [[1,2],[2,3],[2,4],[3,5],[3,6],[5,7],[6,7]],
+      "startRoom": 1
+    }
+  },
+  "initialState": {
+    "calendar": { "year": "Ce-Ácatl", "day": 1, "watchIdx": 0 },
+    "pcPosition": { "scale": "regional", "hex": "3,2" },
+    "fogOfWar": { "3,2": "explored", "2,3": "discovered", "3,3": "discovered", "4,2": "discovered", "3,1": "discovered", "2,2": "discovered" },
+    "selectedHex": "3,2"
+  }
+}

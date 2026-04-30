@@ -1,0 +1,50 @@
+{
+  "id": "weather",
+  "description": "Determinación del clima por unidad de tiempo. Afecta encounter, travel, supply, mood.",
+  "abstract": {
+    "name": "Weather Roll",
+    "process": [
+      "1. Al inicio de la unidad de tiempo (día / region), tirar weather",
+      "2. Modificar por season + climate zone",
+      "3. Aplicar consecuencias (encounter mod, pace mod, supply mod, fatigue/strife mod)",
+      "4. Loggear weather del día"
+    ],
+    "consequences": ["pace_modifier", "encounter_modifier", "supply_modifier", "visibility", "fatigue_strife_mod"]
+  },
+  "implementations": {
+    "a5e": {
+      "trigger": "Entrada a region",
+      "die": "1d20",
+      "table": "Weather table by season + climate zone (en T&T). Tier 4 zones tienen weather extremo más probable.",
+      "examples": ["Clear", "Light rain", "Heavy rain", "Storm", "Hailstorm (challenge)", "Blizzard (challenge)"],
+      "consequences": "Storm/Blizzard activan exploration challenge separado. Heavy rain: pace -1, fatigue check.",
+      "source": "Trials & Treasures, Weather chapter"
+    },
+    "acks": {
+      "trigger": "Inicio de día",
+      "die": "2d6",
+      "table": "JJ Ch.2 Section B 'Weather'. Modificadores por Köppen zone (temperate/tropical/arid/cold) + season (spring/summer/fall/winter).",
+      "examples": ["Pleasant", "Hot", "Cold", "Storm", "Heavy storm (forced shelter)", "Tornado/hurricane"],
+      "consequences": "Heavy storm: encounter -50%, no hex movement. Cold: extra ration + fire.",
+      "source": "ACKS Imperial Imprint Judges Journal Ch.2 Section B"
+    },
+    "clan": {
+      "trigger": "Narrativo",
+      "die": "—",
+      "table": "GM describe el clima como parte de la escena.",
+      "examples": ["narrativo"],
+      "consequences": "Narrativos. Puede modificar tiradas por sentido común (lluvia → desventaja perception).",
+      "source": "GM-adjudicated"
+    }
+  },
+  "cockpitImplementation": {
+    "v5b_current": "No implementado. Placeholder en panel DB.",
+    "v5c_target": [
+      "Auto-roll weather al avanzar día",
+      "Display weather actual en header (icono ☀ ☁ 🌧 ⛈ ❄)",
+      "Aplicar modifiers a próximo encounter check",
+      "Notificar a través del log",
+      "Tablas por sistema en _systemConfig.weatherTable"
+    ]
+  }
+}

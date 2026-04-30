@@ -1,0 +1,2100 @@
+{
+  "id": "novatos_ravenloft",
+  "name": "Novatos ONG — Valakhan de la Bruma",
+  "subtitle": "ACKS · Ravenloft 2e · Domain de Caladán · Mapa físico",
+  "system": "acks",
+  "referenceRulebook": "acks_core",
+  "scale": {
+    "size": 3,
+    "unit": "millas",
+    "label": "1 hex = 3 millas (mapa físico de Marcos)"
+  },
+  "calendar": {
+    "yearLabel": "492 IY (Valachhan)",
+    "watches": [
+      "Mañana",
+      "Tarde",
+      "Noche"
+    ],
+    "watchesPerDay": 3,
+    "_doc": "Ravenloft brumas: tiempo no fluye al exterior. Calendario interno del domain."
+  },
+  "_settingNotes": {
+    "domain": "Valachhan (Ravenloft 2e adaptado por Marcos)",
+    "darklord": "Caladán (PJ-vampiro nosferatu, fusionado con el Señor Pantera anterior). Otra mesa.",
+    "frontiers": "Brumas cierran el dominio. 'Que nadie salga ni entre.'",
+    "tone": "Gótico, aislado, decadente. Pueblos de Ravenloft 2e (estilo Vistani).",
+    "_kanka_world": {
+      "name": "FarolClub - ACKS Grand Campaign",
+      "url": "https://app.kanka.io/w/farolbarrowmaze",
+      "continent": "Aurëpos",
+      "_doc": "Kanka world de Marcos en español. Contiene Helix castellanizado + NPCs adicionales. Requiere login para detalle. PENDIENTE: Marcos exportar JSON del world o generar API token read-only.",
+      "visible_characters_partial": [
+        "Varghoulis (Federico Müller)",
+        "Ixchel (Valentina Gigli)",
+        "Olveg (Kronamon)",
+        "Basilio Elendesa (Kronamon)",
+        "Malefa (Kronamon)",
+        "Lyncho 'Tío Jerry' (Kronamon)",
+        "Barton (Kronamon)",
+        "Urland Valeriano (Kronamon)",
+        "Aledis de Rougiet (Mauro-GM)",
+        "Asfrid Milfdottir (Mauro-GM)"
+      ],
+      "visible_locations_partial": [
+        "Fuerte Compañia del Zafiro (Federico Müller)",
+        "Ciudad de Adwenn (Kronamon) — no canónica del módulo, custom",
+        "Turos Tem (Mauro-GM) — conexión con Sakkara/Sinister Stone",
+        "Principado de Westmerc (Mauro-GM)",
+        "Ducado de Adwenn (Mauro-GM)",
+        "El Condado de Aerik (Mauro-GM) — Duchy of Aerik del módulo Barrowmaze, en español",
+        "Dinasparc (Kronamon)",
+        "Fuerte Ironwolf (Mauro-GM) — adaptación de Ironguard Motte",
+        "Cabaña de la Madre Sapo (Mauro-GM) — Mother of Toads en español"
+      ]
+    },
+    "key_lore": [
+      "Bellaca = Lali (prometida del Barón Argus) → leucrotta + Árbol Gulthias en el pozo de Sunless Citadel",
+      "Ardis Vala = adaptación de Halls of Arden Vul a Valachhan, accesible por Long Falls (cascadas)",
+      "Sunless Citadel y Ardis Vala están conectados narrativamente: Bellaca promete 'tesoros detrás de la cascada'",
+      "Barrowmaze (con base en Helix, mapa de El Condado de Aerik) es otro megadungeon en pantano del dominio",
+      "Tablet of Chaos (Nergal) está en Barrowmaze, custodiada por el Keeper of the Tablet, vigilada por Ossithrax el Beholder. Orcus y Set la buscan",
+      "Numa Pompilio = druida del Círculo de Dietrus, su esencia alimenta el Árbol",
+      "Turos Tem (Sakkara) está en Aurëpos también — la mesa de Mauro-GM"
+    ]
+  },
+  "terrains": {
+    "bosque": {
+      "name": "Bosque",
+      "color": "#2d3a2a",
+      "icon": "🌲",
+      "desc": "New Forest, Nuna Forest, etc."
+    },
+    "bosque_oscuro": {
+      "name": "Bosque oscuro",
+      "color": "#1f2a1d",
+      "icon": "🌲",
+      "desc": "Bosque denso, gótico Ravenloft."
+    },
+    "pantano": {
+      "name": "Pantano",
+      "color": "#3d4a3a",
+      "icon": "🌫",
+      "desc": "The Fenn, Valtos Marshes — Barrowmaze territory."
+    },
+    "marsh": {
+      "name": "Marsh",
+      "color": "#4a5a4a",
+      "icon": "🌾",
+      "desc": "Marsh / Swamp del leyenda mapa."
+    },
+    "ruina": {
+      "name": "Ruina",
+      "color": "#5a4a3a",
+      "icon": "🜍",
+      "desc": "Ruined City Arden Vul."
+    },
+    "cascadas": {
+      "name": "Cascadas",
+      "color": "#3a5a7d",
+      "icon": "💧",
+      "desc": "Long Falls / Long Stair."
+    },
+    "montaña": {
+      "name": "Montaña",
+      "color": "#5a5a5a",
+      "icon": "⛰",
+      "desc": "Cordilleras / Table Rock."
+    },
+    "rio": {
+      "name": "Río",
+      "color": "#3a5a8a",
+      "icon": "💧",
+      "desc": "Arden River, Bilstream, Muddy River."
+    },
+    "lago": {
+      "name": "Lago",
+      "color": "#2a4a6b",
+      "icon": "🌊",
+      "desc": "Hidden Lake, lagunas."
+    },
+    "pueblo": {
+      "name": "Pueblo",
+      "color": "#a06030",
+      "icon": "🏘",
+      "desc": "Settlement (humano)."
+    },
+    "castillo": {
+      "name": "Castillo",
+      "color": "#7a5040",
+      "icon": "🏰",
+      "desc": "Castle (Caladán's, Castleton, Castillo Ironguard)."
+    },
+    "special": {
+      "name": "Special Site",
+      "color": "#a04060",
+      "icon": "★",
+      "desc": "Sitio especial / dungeon entry."
+    },
+    "camino": {
+      "name": "Camino",
+      "color": "#8a7050",
+      "icon": "🛤",
+      "desc": "Camino entre asentamientos."
+    },
+    "brumas": {
+      "name": "Brumas",
+      "color": "#1a1a2a",
+      "icon": "🌫",
+      "desc": "Frontera Ravenloft. Intransitable."
+    },
+    "praderas": {
+      "name": "Praderas",
+      "color": "#4a5a3a",
+      "icon": "🌾",
+      "desc": "Open ground."
+    }
+  },
+  "encounters": {
+    "bosque": [
+      "Lobos hambrientos (1d6)",
+      "Bandidos del camino (2d4)",
+      "Pantera encantada (1) — siervo de Bellaca",
+      "Aventureros perdidos",
+      "Ningún encuentro"
+    ],
+    "pantano": [
+      "Ghouls del cementerio (1d3)",
+      "Hombre-rana (2d4)",
+      "Bandidos refugiados",
+      "Cuerpo sin cabeza",
+      "Ningún encuentro"
+    ],
+    "ruina": [
+      "Bestia residual (HD 3-5)",
+      "Goblin scout group (1d4)",
+      "Cazador de tesoros rival",
+      "Estatua animada",
+      "Ningún encuentro"
+    ],
+    "cascadas": [
+      "Beastman scout (Niños de Deino)",
+      "Halfling thug (Plumthorn)",
+      "Sun-Scarred Knight solitario",
+      "Pochteca de Newmarket",
+      "Ningún encuentro"
+    ],
+    "montaña": [
+      "Cabra montañera",
+      "Águila gigante",
+      "Eremita demente",
+      "Sombras en la roca",
+      "Ningún encuentro"
+    ],
+    "pueblo": [
+      "Vistani de paso",
+      "Patrulla local",
+      "Mercader sospechoso",
+      "Niño con mensaje",
+      "Ningún encuentro"
+    ],
+    "barranco": [
+      "Ratas gigantes (3d4)",
+      "Voz que llama por nombre (Bellaca)",
+      "Esqueletos arqueros (2d6)",
+      "Sombra (HD 4)",
+      "Ningún encuentro"
+    ],
+    "camino": [
+      "Caravana mercante",
+      "Patrulla de Mirela",
+      "Mensajero a caballo",
+      "Cuerpo en la zanja",
+      "Ningún encuentro"
+    ],
+    "brumas": [
+      "IMPASSABLE — Brumas devuelven al party",
+      "Ningún encuentro (no se puede entrar)"
+    ]
+  },
+  "bestiary": [
+    {
+      "id": "bellaca",
+      "name": "Bellaca (leucrotta + Árbol)",
+      "category": "Boss",
+      "hd": 8,
+      "ac": 2,
+      "notes": "Imita voces. Conectada al Árbol Gulthias. Vulnerable a llamarla 'Lali'. Ver Bellaca.md"
+    },
+    {
+      "id": "shadow",
+      "name": "Sombra",
+      "category": "Veteran",
+      "hd": 4,
+      "ac": 7,
+      "notes": "Drena fuerza permanente. Inmune a armas no-mágicas o sin daño +1."
+    },
+    {
+      "id": "skeleton_archer",
+      "name": "Esqueleto arquero",
+      "category": "Novato",
+      "hd": 1,
+      "ac": 7,
+      "notes": "Medio daño cortantes. Vulnerable a armas contundentes."
+    },
+    {
+      "id": "calcryx",
+      "name": "Calcryx (dragón blanco juvenil)",
+      "category": "Boss-Mini",
+      "hd": 6,
+      "ac": 0,
+      "notes": "Aliento de hielo 4d4. CAPTURADO por party S2 (atado en Sunless Citadel)."
+    },
+    {
+      "id": "kobold_elite",
+      "name": "Kobold de élite (Yusdrayl guard)",
+      "category": "Novato+",
+      "hd": 1,
+      "ac": 5,
+      "notes": "Lanzas de hueso de dragón, armadura quitina. Aliados temporales del party."
+    },
+    {
+      "id": "hobgoblin_chief",
+      "name": "Durnn (jefe hobgoblin)",
+      "category": "Veteran",
+      "hd": 3,
+      "ac": 4,
+      "notes": "MUERTO S2 — flecha de Kael en el ojo durante Sleep."
+    },
+    {
+      "id": "twig_blight",
+      "name": "Twig Blight",
+      "category": "Novato-",
+      "hd": 0.5,
+      "ac": 9,
+      "notes": "Espía de Bellaca. Cae al pozo cuando no hay testigos."
+    },
+    {
+      "id": "tablet_of_chaos_undead",
+      "name": "Undead potenciado por Tablet (Barrowmaze)",
+      "category": "Variable",
+      "hd": "+1 HD vs base",
+      "ac": "—",
+      "notes": "Sinkhole of Evil de Barrowmaze. +saves, +morale, divine turn -2 penalty."
+    },
+    {
+      "id": "ossithrax_beholder",
+      "name": "Ossithrax Pejorative (Beholder)",
+      "category": "Boss",
+      "hd": 45,
+      "ac": -2,
+      "notes": "Beholder del Area 10. 10 ojos: anti-magic + 9 rays. Marcos: stats completas en Barrowmaze p.166."
+    },
+    {
+      "id": "barrowmaze_skeleton",
+      "name": "Skeleton (Barrowmaze, Sinkhole)",
+      "category": "Novato+",
+      "hd": 1.5,
+      "ac": 7,
+      "notes": "+1 HD por Sinkhole. Half damage cortantes."
+    },
+    {
+      "id": "mongrelmen",
+      "name": "Mongrelmen (Barrowmaze faction)",
+      "category": "Variable",
+      "hd": "1d6 typical",
+      "ac": 7,
+      "notes": "Faction de Barrowmaze. Comerciables. Party intercambió hacha por mapa en S5 con Ale."
+    }
+  ],
+  "npcs": [
+    {
+      "id": "mirela_valcan",
+      "name": "Mirela Valcan",
+      "role": "Patrona del party (Stejara). Madre de Dargos y Luminita.",
+      "hex": "F5",
+      "notes": "Recompensa: 250po/hijo vivo, 125po anillo si muerto. Hipoteca la casa por sus hijos."
+    },
+    {
+      "id": "padre_simon",
+      "name": "Padre Simón",
+      "role": "Clérigo de Ammonar (Stejara)",
+      "hex": "F5",
+      "notes": "Vela que se apaga. Envió a Yuremi al party."
+    },
+    {
+      "id": "vasile",
+      "name": "Vasile",
+      "role": "Tabernero — Jabalí Gris (Stejara)",
+      "hex": "F5",
+      "notes": "Atiende sin entusiasmo. Sabe rumores."
+    },
+    {
+      "id": "rurik",
+      "name": "Rurik",
+      "role": "Herrero (Stejara)",
+      "hex": "F5",
+      "notes": "Bebe whisky. Fabricó las 6 mazas para los esqueletos. Mirada de mil yardas."
+    },
+    {
+      "id": "baba_ileana",
+      "name": "Baba Ileana",
+      "role": "Vidente Vistani (Stejara)",
+      "hex": "F5",
+      "notes": "Lee Tarokka. Sus infusiones (sidra de manzana blanca) salvan vidas. Mortal Wound saviour."
+    },
+    {
+      "id": "bellaca",
+      "name": "Bellaca",
+      "role": "Antagonista principal — leucrotta + Árbol Gulthias",
+      "hex": "F6",
+      "notes": "En el pozo de Sunless Citadel. Imita voz de Lali. Promete 'tesoros detrás de la cascada' (Ardis Vala)."
+    },
+    {
+      "id": "hector_risco",
+      "name": "Héctor Risco",
+      "role": "Ranger (NPC traidor) — DESAPARECIDO",
+      "hex": "F6",
+      "notes": "Cayó al pozo S2 (compulsión Bellaca). Carta Tarokka: El Traidor. Linaje Argus."
+    },
+    {
+      "id": "yusdrayl",
+      "name": "Reina Yusdrayl",
+      "role": "Reina kobold (Sunless Citadel L1)",
+      "hex": "F6",
+      "notes": "Aliada temporal. Dio llave de Puerta del Dragón. Habla dracónico."
+    },
+    {
+      "id": "axe",
+      "name": "Axe",
+      "role": "Judge ACKS de la mesa Barrowmaze adulta",
+      "hex": "—",
+      "notes": "Otra mesa. Marcos juega ahí (Clara Bladedancer)."
+    },
+    {
+      "id": "lord_kell_ironguard",
+      "name": "Lord Viscount Kell Ironguard",
+      "role": "Lvl 7 Fighter (Retired). Señor del duchy.",
+      "hex": "—",
+      "notes": "Patrón nominal de Helix. Está en Ironguard Motte."
+    },
+    {
+      "id": "krothos_ironguard",
+      "name": "Krothos Ironguard",
+      "role": "Hijo del Lord. Ruler nominal de Helix.",
+      "hex": "D3",
+      "notes": "Inmaduro. Despreciado por la gente. Acompañado siempre por Ollis Blackfell."
+    },
+    {
+      "id": "ollis_blackfell",
+      "name": "Ollis Blackfell",
+      "role": "Consejero de Krothos. 'Weasel-looking en black robes.'",
+      "hex": "D3",
+      "notes": "Sospechoso."
+    },
+    {
+      "id": "ossithrax",
+      "name": "Ossithrax Pejorative",
+      "role": "BEHOLDER (Barrowmaze Area 10)",
+      "hex": "—",
+      "notes": "Final boss exterior al endgame del módulo. p.157-166."
+    },
+    {
+      "id": "keeper_of_tablet",
+      "name": "Keeper of the Tablet",
+      "role": "Guardian de la Tablet of Chaos",
+      "hex": "—",
+      "notes": "Endgame Barrowmaze. p.167."
+    },
+    {
+      "id": "mother_of_toads",
+      "name": "The Mother of Toads / Madre Sapo",
+      "role": "Lvl 4 MU/Lvl 3 Cleric of Impurax. Bruja del pantano.",
+      "hex": "—",
+      "notes": "Vive cerca de Bogtown. Crea balms si las PCs flatter. Tiene 'Cabaña de la Madre Sapo' en Kanka."
+    },
+    {
+      "id": "varghoulis",
+      "name": "Varghoulis",
+      "role": "Personaje (jugador: Federico Müller)",
+      "hex": "?",
+      "notes": "De Kanka FarolClub. Detalle pendiente."
+    },
+    {
+      "id": "olveg",
+      "name": "Olveg",
+      "role": "Personaje (Kronamon)",
+      "hex": "?",
+      "notes": "De Kanka. Detalle pendiente."
+    },
+    {
+      "id": "basilio_elendesa",
+      "name": "Basilio Elendesa",
+      "role": "Personaje (Kronamon)",
+      "hex": "?",
+      "notes": "De Kanka. Detalle pendiente."
+    },
+    {
+      "id": "malefa",
+      "name": "Malefa",
+      "role": "Personaje (Kronamon)",
+      "hex": "?",
+      "notes": "De Kanka. Detalle pendiente."
+    },
+    {
+      "id": "lyncho_tio_jerry",
+      "name": "Lyncho 'Tío Jerry'",
+      "role": "Personaje (Kronamon)",
+      "hex": "?",
+      "notes": "De Kanka. Detalle pendiente."
+    },
+    {
+      "id": "barton",
+      "name": "Barton",
+      "role": "Personaje (Kronamon)",
+      "hex": "?",
+      "notes": "De Kanka. Detalle pendiente."
+    },
+    {
+      "id": "urland_valeriano",
+      "name": "Urland Valeriano",
+      "role": "Personaje (Kronamon) — ¿es Ulrand de Sakkara?",
+      "hex": "?",
+      "notes": "Probablemente conexión con Sakkara/Türos Tem. Detalle pendiente."
+    },
+    {
+      "id": "asfrid_milfdottir",
+      "name": "Asfrid Milfdottir",
+      "role": "Personaje (Mauro-GM)",
+      "hex": "?",
+      "notes": "De Kanka. Detalle pendiente."
+    },
+    {
+      "id": "argus_baron",
+      "name": "Barón Argus",
+      "role": "Barón de Ritornelo. Cazador. Prometido perdido de Lali (Bellaca).",
+      "hex": "6,7",
+      "notes": "Linaje protegido por Bellaca. Hector Risco lleva su sangre."
+    },
+    {
+      "id": "lali_origen",
+      "name": "Lali (origen de Bellaca)",
+      "role": "Mujer prometida del Barón Argus, raptada por el Señor Oscuro anterior. Convertida en leucrotta = Bellaca.",
+      "hex": "6,7",
+      "notes": "Su voz sigue siendo la misma. Vulnerabilidad de Bellaca al ser llamada 'Lali'."
+    },
+    {
+      "id": "caladan_darklord",
+      "name": "Caladán",
+      "role": "★ Darklord de Valakhan. Vampiro nosferatu fusionado con el Señor Pantera anterior.",
+      "hex": "3,9",
+      "notes": "PJ-darklord otra mesa (Agustín). Cierra las brumas. 'Que nadie salga ni entre.'"
+    },
+    {
+      "id": "ale_humerez",
+      "name": "Alejandro 'Ale' Humérez",
+      "role": "Master sustituto S4-S6 (Marcos en México). Corrió Barrowmaze entry.",
+      "hex": "—",
+      "notes": "Confirmó: mapas 236→234→Sala 74A. Mongrels contactados. Silas Disfigured → Deck of Many Things → La Luna (3 deseos, 1 gastado)."
+    },
+    {
+      "id": "patriarca_abad",
+      "name": "Patriarca/Abad (nombre pendiente)",
+      "role": "NPC introducido por Marcos en S3 (transición mitad). Guía al party hacia Barrowmaze.",
+      "hex": "?",
+      "notes": "Marcos confirmar nombre y origen. Posible link al lore Set/Crom/Ammonar."
+    }
+  ],
+  "hexes": [
+    {
+      "col": 0,
+      "row": 0,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 0,
+      "terrain": "montaña",
+      "name": ""
+    },
+    {
+      "col": 2,
+      "row": 0,
+      "terrain": "montaña",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 0,
+      "terrain": "montaña",
+      "name": ""
+    },
+    {
+      "col": 4,
+      "row": 0,
+      "terrain": "montaña",
+      "name": ""
+    },
+    {
+      "col": 5,
+      "row": 0,
+      "terrain": "ruina",
+      "name": "Arden Vul (norte)",
+      "isDungeon": "ardis_vala"
+    },
+    {
+      "col": 6,
+      "row": 0,
+      "terrain": "montaña",
+      "name": ""
+    },
+    {
+      "col": 7,
+      "row": 0,
+      "terrain": "montaña",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 0,
+      "terrain": "montaña",
+      "name": "The Fingers"
+    },
+    {
+      "col": 9,
+      "row": 0,
+      "terrain": "montaña",
+      "name": ""
+    },
+    {
+      "col": 10,
+      "row": 0,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 1,
+      "terrain": "montaña",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 1,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 2,
+      "row": 1,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 1,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 4,
+      "row": 1,
+      "terrain": "pueblo",
+      "name": "Glastonville",
+      "isCity": true,
+      "marketClass": "V"
+    },
+    {
+      "col": 5,
+      "row": 1,
+      "terrain": "cascadas",
+      "name": "Long Falls (Arden Vul)",
+      "isDungeon": "ardis_vala"
+    },
+    {
+      "col": 6,
+      "row": 1,
+      "terrain": "pantano",
+      "name": "The Fenn (norte)"
+    },
+    {
+      "col": 7,
+      "row": 1,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 1,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 9,
+      "row": 1,
+      "terrain": "montaña",
+      "name": ""
+    },
+    {
+      "col": 10,
+      "row": 1,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 2,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 2,
+      "terrain": "bosque",
+      "name": "The Long Run"
+    },
+    {
+      "col": 2,
+      "row": 2,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 2,
+      "terrain": "bosque",
+      "name": "The Paw"
+    },
+    {
+      "col": 4,
+      "row": 2,
+      "terrain": "pueblo",
+      "name": "Gosterwick",
+      "isCity": true
+    },
+    {
+      "col": 5,
+      "row": 2,
+      "terrain": "pueblo",
+      "name": "Helix",
+      "isCity": true,
+      "marketClass": "V",
+      "isDungeon": "barrowmaze",
+      "_doc": "Pueblo base de Barrowmaze. Pop 632."
+    },
+    {
+      "col": 6,
+      "row": 2,
+      "terrain": "pantano",
+      "name": "The Fenn (Barrowmaze)",
+      "isDungeon": "barrowmaze"
+    },
+    {
+      "col": 7,
+      "row": 2,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 2,
+      "terrain": "lago",
+      "name": "Hidden Lake"
+    },
+    {
+      "col": 9,
+      "row": 2,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 10,
+      "row": 2,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 3,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 3,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 2,
+      "row": 3,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 3,
+      "terrain": "bosque",
+      "name": "Rocky"
+    },
+    {
+      "col": 4,
+      "row": 3,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 5,
+      "row": 3,
+      "terrain": "bosque",
+      "name": "Raccoon Tier"
+    },
+    {
+      "col": 6,
+      "row": 3,
+      "terrain": "rio",
+      "name": "Arden River"
+    },
+    {
+      "col": 7,
+      "row": 3,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 3,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 9,
+      "row": 3,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 10,
+      "row": 3,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 4,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 4,
+      "terrain": "pueblo",
+      "name": "Fynnn Synn",
+      "isCity": true,
+      "marketClass": "VI"
+    },
+    {
+      "col": 2,
+      "row": 4,
+      "terrain": "bosque_oscuro",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 4,
+      "terrain": "bosque_oscuro",
+      "name": "New Forest"
+    },
+    {
+      "col": 4,
+      "row": 4,
+      "terrain": "bosque_oscuro",
+      "name": ""
+    },
+    {
+      "col": 5,
+      "row": 4,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 6,
+      "row": 4,
+      "terrain": "rio",
+      "name": "Arden River"
+    },
+    {
+      "col": 7,
+      "row": 4,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 4,
+      "terrain": "bosque_oscuro",
+      "name": "Nuna Forest"
+    },
+    {
+      "col": 9,
+      "row": 4,
+      "terrain": "bosque_oscuro",
+      "name": ""
+    },
+    {
+      "col": 10,
+      "row": 4,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 5,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 5,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 2,
+      "row": 5,
+      "terrain": "bosque_oscuro",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 5,
+      "terrain": "pueblo",
+      "name": "Old Adwenn",
+      "isCity": true,
+      "marketClass": "IV",
+      "_doc": "Adwenn — ciudad histórica del Kanka FarolClub."
+    },
+    {
+      "col": 4,
+      "row": 5,
+      "terrain": "bosque_oscuro",
+      "name": ""
+    },
+    {
+      "col": 5,
+      "row": 5,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 6,
+      "row": 5,
+      "terrain": "rio",
+      "name": "Arden River"
+    },
+    {
+      "col": 7,
+      "row": 5,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 5,
+      "terrain": "bosque_oscuro",
+      "name": ""
+    },
+    {
+      "col": 9,
+      "row": 5,
+      "terrain": "bosque_oscuro",
+      "name": ""
+    },
+    {
+      "col": 10,
+      "row": 5,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 6,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 6,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 2,
+      "row": 6,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 6,
+      "terrain": "bosque",
+      "name": "Arboldelps Cintis"
+    },
+    {
+      "col": 4,
+      "row": 6,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 5,
+      "row": 6,
+      "terrain": "special",
+      "name": "Ciudadela Sin Sol",
+      "isDungeon": "sunless_citadel",
+      "_doc": "★ El dungeon donde está Bellaca. Sesiones 1-2 jugadas."
+    },
+    {
+      "col": 6,
+      "row": 6,
+      "terrain": "rio",
+      "name": "Arden River"
+    },
+    {
+      "col": 7,
+      "row": 6,
+      "terrain": "pueblo",
+      "name": "Stejara",
+      "isCity": true,
+      "marketClass": "V",
+      "hasNPC": "mirela_valcan",
+      "_doc": "★ BASE DEL PARTY. Mirela, Padre Simón, Baba Ileana, Rurik, Vasile."
+    },
+    {
+      "col": 8,
+      "row": 6,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 9,
+      "row": 6,
+      "terrain": "rio",
+      "name": "Bilstream"
+    },
+    {
+      "col": 10,
+      "row": 6,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 7,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 7,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 2,
+      "row": 7,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 7,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 4,
+      "row": 7,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 5,
+      "row": 7,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 6,
+      "row": 7,
+      "terrain": "special",
+      "name": "★ Ritornelo",
+      "_doc": "Pueblo donde Lali (Bellaca) esperaba a Argus. Conexión narrativa Bellaca."
+    },
+    {
+      "col": 7,
+      "row": 7,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 7,
+      "terrain": "pueblo",
+      "name": "Valde Mora",
+      "isCity": true,
+      "marketClass": "VI"
+    },
+    {
+      "col": 9,
+      "row": 7,
+      "terrain": "rio",
+      "name": "Bilstream"
+    },
+    {
+      "col": 10,
+      "row": 7,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 8,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 8,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 2,
+      "row": 8,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 8,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 4,
+      "row": 8,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 5,
+      "row": 8,
+      "terrain": "camino",
+      "name": "Camino al sur"
+    },
+    {
+      "col": 6,
+      "row": 8,
+      "terrain": "camino",
+      "name": ""
+    },
+    {
+      "col": 7,
+      "row": 8,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 8,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 9,
+      "row": 8,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 10,
+      "row": 8,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 9,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 9,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 2,
+      "row": 9,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 9,
+      "terrain": "pueblo",
+      "name": "Caladán's",
+      "isCity": true,
+      "marketClass": "IV",
+      "hostile": true,
+      "_doc": "★★ Asiento del Darklord Caladán (vampiro nosferatu, Señor Pantera). PJ-darklord otra mesa."
+    },
+    {
+      "col": 4,
+      "row": 9,
+      "terrain": "rio",
+      "name": "Muddy River"
+    },
+    {
+      "col": 5,
+      "row": 9,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 6,
+      "row": 9,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 7,
+      "row": 9,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 9,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 9,
+      "row": 9,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 10,
+      "row": 9,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 10,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 10,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 2,
+      "row": 10,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 10,
+      "terrain": "castillo",
+      "name": "Castleton",
+      "isCity": true,
+      "_doc": "Castillo de Caladán."
+    },
+    {
+      "col": 4,
+      "row": 10,
+      "terrain": "marsh",
+      "name": "Valtos Marshes"
+    },
+    {
+      "col": 5,
+      "row": 10,
+      "terrain": "marsh",
+      "name": ""
+    },
+    {
+      "col": 6,
+      "row": 10,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 7,
+      "row": 10,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 10,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 9,
+      "row": 10,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 10,
+      "row": 10,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 0,
+      "row": 11,
+      "terrain": "brumas",
+      "name": ""
+    },
+    {
+      "col": 1,
+      "row": 11,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 2,
+      "row": 11,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 3,
+      "row": 11,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 4,
+      "row": 11,
+      "terrain": "bosque",
+      "name": ""
+    },
+    {
+      "col": 5,
+      "row": 11,
+      "terrain": "praderas",
+      "name": ""
+    },
+    {
+      "col": 6,
+      "row": 11,
+      "terrain": "praderas",
+      "name": ""
+    },
+    {
+      "col": 7,
+      "row": 11,
+      "terrain": "praderas",
+      "name": ""
+    },
+    {
+      "col": 8,
+      "row": 11,
+      "terrain": "montaña",
+      "name": "Table Rock"
+    },
+    {
+      "col": 9,
+      "row": 11,
+      "terrain": "praderas",
+      "name": ""
+    },
+    {
+      "col": 10,
+      "row": 11,
+      "terrain": "brumas",
+      "name": "To Norolloon (sur)"
+    }
+  ],
+  "dungeons": {
+    "sunless_citadel": {
+      "name": "La Ciudadela Sin Sol",
+      "status": "level_1_partial",
+      "_progress": "Sesiones 1-2 jugadas. Nivel 1 controlado en alianza con kobolds. Puerta del Dragón abierta (llave en mano). Hector cayó al pozo de Bellaca.",
+      "rooms": {
+        "1": {
+          "x": 50,
+          "y": 350,
+          "w": 70,
+          "h": 50,
+          "name": "Barranco / Trampa",
+          "desc": "Descenso 50ft. Trampa de adoquín falso (aguja envenenada — desactivada S2)."
+        },
+        "2": {
+          "x": 160,
+          "y": 350,
+          "w": 60,
+          "h": 50,
+          "name": "Patio de la Torre",
+          "desc": "Torre con runas de Gulthias. 8 esqueletos arqueros (limpiados S1)."
+        },
+        "3": {
+          "x": 270,
+          "y": 280,
+          "w": 70,
+          "h": 50,
+          "name": "Trono Kobold",
+          "desc": "Yusdrayl, dos guardias élite. Aliados temporales."
+        },
+        "4": {
+          "x": 270,
+          "y": 360,
+          "w": 70,
+          "h": 50,
+          "name": "Cripta de la Sombra",
+          "desc": "Sarcófago de mármol negro con caballero dracónico. Sombra inside. Yuremi turned S2."
+        },
+        "5": {
+          "x": 380,
+          "y": 280,
+          "w": 70,
+          "h": 50,
+          "name": "Trampa de Gas (Área 34)",
+          "desc": "Meepo + Zuki + Sakosh + Erky muertos S2."
+        },
+        "6": {
+          "x": 380,
+          "y": 360,
+          "w": 80,
+          "h": 60,
+          "name": "Salón del Jefe (Durnn)",
+          "desc": "Durnn muerto. Grenl rendida. 4 mazas en uso."
+        },
+        "7": {
+          "x": 500,
+          "y": 320,
+          "w": 70,
+          "h": 50,
+          "name": "Calcryx",
+          "desc": "Dragón blanco juvenil. Capturado, atado, devuelto a Yusdrayl."
+        },
+        "8": {
+          "x": 600,
+          "y": 320,
+          "w": 80,
+          "h": 70,
+          "name": "Pozo de Bellaca",
+          "desc": "POZO PROFUNDO. Luz violácea. Bellaca + Árbol Gulthias. Hector ahí abajo.",
+          "gmOnly": true
+        }
+      },
+      "connections": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "startRoom": 1
+    },
+    "barrowmaze": {
+      "name": "Barrowmaze (módulo Greg Gillespie 2022, 4ed Complete)",
+      "status": "in_progress_partial",
+      "_progress": "Módulo OFICIAL. PARTY exploró ~3 sesiones (S3-S5) con Judge sustituto. ESTRUCTURA HORIZONTAL west→east: dificultad creciente. 10 Areas mayores. Endgame: Tablet of Chaos.",
+      "_lore": "Cult of Nergal escondió Tablet of Chaos en el laberinto. Sus hijos Orcus + Set lo destronaron, ahora están en guerra civil. Ambos cultos buscan la Tablet en el dungeon. Mientras, los muertos suben.",
+      "_module_meta": {
+        "system": "OSR genérico (compatible ACKS)",
+        "regional_setting": "Duchy of Aerik → adaptado a Valachhan por Marcos",
+        "starts_level": 1,
+        "settlements": [
+          "Helix (base)",
+          "Ironguard Motte (15mi NE)",
+          "Bogtown (30mi NE)",
+          "Old Dwarf Bridge (20mi)"
+        ]
+      },
+      "rooms": {
+        "helix": {
+          "x": 20,
+          "y": 320,
+          "w": 90,
+          "h": 50,
+          "name": "Helix (base, pop 632)",
+          "desc": "Lawful Neutral. Lord Viscount Kell Ironguard (vía Krothos). Adventurers welcome."
+        },
+        "barrow_mounds": {
+          "x": 130,
+          "y": 320,
+          "w": 100,
+          "h": 50,
+          "name": "The Barrow Mounds (exterior)",
+          "desc": "Campo de túmulos. Random crypt generator. ~10mi swamp desde Helix (½ día)."
+        },
+        "area_1": {
+          "x": 250,
+          "y": 240,
+          "w": 90,
+          "h": 45,
+          "name": "Area 1: Forbidden Antechamber",
+          "desc": "Entrada principal al dungeon. p.61."
+        },
+        "area_2": {
+          "x": 360,
+          "y": 240,
+          "w": 90,
+          "h": 45,
+          "name": "Area 2: Haunted Tombs",
+          "desc": "p.81."
+        },
+        "area_3": {
+          "x": 470,
+          "y": 240,
+          "w": 90,
+          "h": 45,
+          "name": "Area 3: Deserted Dormitory",
+          "desc": "p.94."
+        },
+        "area_4": {
+          "x": 580,
+          "y": 240,
+          "w": 90,
+          "h": 45,
+          "name": "Area 4: Death Vault of the Chosen",
+          "desc": "p.100."
+        },
+        "area_5": {
+          "x": 250,
+          "y": 310,
+          "w": 90,
+          "h": 45,
+          "name": "Area 5: Secret Shrine of Set",
+          "desc": "Cult of Set sub-area. p.103."
+        },
+        "area_6": {
+          "x": 360,
+          "y": 310,
+          "w": 90,
+          "h": 45,
+          "name": "Area 6: Forgotten Crypts",
+          "desc": "p.112."
+        },
+        "area_7": {
+          "x": 470,
+          "y": 310,
+          "w": 90,
+          "h": 45,
+          "name": "Area 7: Chaos Sepulcher of Elements",
+          "desc": "p.124."
+        },
+        "area_8": {
+          "x": 580,
+          "y": 310,
+          "w": 90,
+          "h": 45,
+          "name": "Area 8: Temple of Orcus",
+          "desc": "Cult of Orcus. p.139.",
+          "gmOnly": true
+        },
+        "area_9": {
+          "x": 250,
+          "y": 380,
+          "w": 130,
+          "h": 50,
+          "name": "Area 9: Secret Vault of the Unholy Relic",
+          "desc": "p.153.",
+          "gmOnly": true
+        },
+        "area_10": {
+          "x": 400,
+          "y": 380,
+          "w": 130,
+          "h": 50,
+          "name": "Area 10: Lair of Ossithrax Pejorative",
+          "desc": "El BEHOLDER (Ossithrax). Final boss exterior al endgame. p.157.",
+          "gmOnly": true
+        },
+        "tablet": {
+          "x": 560,
+          "y": 380,
+          "w": 110,
+          "h": 50,
+          "name": "★ The Tablet of Chaos",
+          "desc": "Endgame. Cerrar la grieta = romper Sinkhole of Evil. Custodiada por Keeper of the Tablet. p.167-168.",
+          "gmOnly": true
+        },
+        "map_236": {
+          "x": 130,
+          "y": 420,
+          "w": 100,
+          "h": 45,
+          "name": "Mapa 236 (S4)",
+          "desc": "Recorrido en S4. Tesoros normales + tabletas con mapas."
+        },
+        "map_234": {
+          "x": 250,
+          "y": 420,
+          "w": 100,
+          "h": 45,
+          "name": "Mapa 234 — Mongrels (S5)",
+          "desc": "S5: Intercambio con Mongrels (hacha por mapa)."
+        },
+        "74A": {
+          "x": 380,
+          "y": 420,
+          "w": 130,
+          "h": 45,
+          "name": "★ Sala 74A (party HERE)",
+          "desc": "POSICIÓN ACTUAL post-S6. Silas usó La Luna del Deck of Many Things. 2 deseos pendientes.",
+          "current_party": true
+        }
+      },
+      "connections": [
+        [
+          "helix",
+          "barrow_mounds"
+        ],
+        [
+          "barrow_mounds",
+          "area_1"
+        ],
+        [
+          "area_1",
+          "area_2"
+        ],
+        [
+          "area_2",
+          "area_3"
+        ],
+        [
+          "area_3",
+          "area_4"
+        ],
+        [
+          "area_1",
+          "area_5"
+        ],
+        [
+          "area_5",
+          "area_6"
+        ],
+        [
+          "area_6",
+          "area_7"
+        ],
+        [
+          "area_4",
+          "area_8"
+        ],
+        [
+          "area_7",
+          "area_9"
+        ],
+        [
+          "area_8",
+          "area_10"
+        ],
+        [
+          "area_9",
+          "area_10"
+        ],
+        [
+          "area_10",
+          "tablet"
+        ],
+        [
+          "area_1",
+          "map_236"
+        ],
+        [
+          "map_236",
+          "map_234"
+        ],
+        [
+          "map_234",
+          "74A"
+        ]
+      ],
+      "startRoom": "helix",
+      "_party_progress_estimate": "S3-S5 con sustituto: probablemente Helix + Barrow Mounds exterior + Areas 1-2 (Forbidden Antechamber + Haunted Tombs). PCs novatos (lvl 1-2) no llegan a Areas 5+ todavía.",
+      "_pendingFromMarcos": "Confirmar al volver: rooms keyed visitadas, casualties, loot encontrado, NPCs alcanzados, conexiones reveladas."
+    },
+    "ardis_vala": {
+      "name": "Ardis Vala (Halls of Arden Vul adaptado)",
+      "status": "not_entered",
+      "_progress": "Megadungeon de 1161 páginas, 10 niveles principales + 15 sub-niveles, 12 facciones. Adaptado a Valachhan por Marcos. Marcos tiene material en C:/Users/Usuario/Desktop/Rol Biblioteca Absoluta/Arden_Vul_Working/. Bellaca conoce el camino ('detrás de la cascada').",
+      "rooms": {
+        "ext_burdocks": {
+          "x": 50,
+          "y": 50,
+          "w": 100,
+          "h": 60,
+          "name": "Burdocks Valley / Newmarket",
+          "desc": "Pueblo Class V exterior. Knights of Azure Shield (Lady Alexia)."
+        },
+        "ext_long_falls": {
+          "x": 200,
+          "y": 50,
+          "w": 90,
+          "h": 60,
+          "name": "Long Falls + Long Stair",
+          "desc": "Cascada y escalera tallada. Acceso alternativo a niveles bajos."
+        },
+        "ext_ruined_city": {
+          "x": 50,
+          "y": 130,
+          "w": 100,
+          "h": 60,
+          "name": "Ruined City",
+          "desc": "Ruinas superficiales, ~30 puntos de acceso."
+        },
+        "ext_pyramid": {
+          "x": 200,
+          "y": 130,
+          "w": 90,
+          "h": 60,
+          "name": "Pyramid of Thoth",
+          "desc": "Entrada principal a L3."
+        },
+        "L1": {
+          "x": 50,
+          "y": 230,
+          "w": 80,
+          "h": 50,
+          "name": "L1 — The Basement",
+          "desc": "Nivel principiante. 12 áreas. Sin facciones."
+        },
+        "L2": {
+          "x": 150,
+          "y": 230,
+          "w": 80,
+          "h": 50,
+          "name": "L2 — Howling Caves / Well of Light",
+          "desc": "44 áreas. Sacerdotes de Thoth. Babuinos."
+        },
+        "L3": {
+          "x": 250,
+          "y": 230,
+          "w": 80,
+          "h": 50,
+          "name": "L3 — Halls of Thoth ★",
+          "desc": "166 áreas. NIVEL MÁS GRANDE. Beastmen, Goblins, Halflings, Priscians."
+        },
+        "L4": {
+          "x": 350,
+          "y": 230,
+          "w": 80,
+          "h": 50,
+          "name": "L4 — Forum of Set",
+          "desc": "122 áreas. Culto de Set, Stephania."
+        },
+        "L5": {
+          "x": 450,
+          "y": 230,
+          "w": 80,
+          "h": 50,
+          "name": "L5 — Obsidian Gates",
+          "desc": "106 áreas. Tecnología rudishva. Psalor Ki."
+        },
+        "L6": {
+          "x": 50,
+          "y": 310,
+          "w": 80,
+          "h": 50,
+          "name": "L6 — Troll Lifts/Arena",
+          "desc": "134 áreas. Hub social: Inn of the Lost, Arena, Troll Lifts."
+        },
+        "L7": {
+          "x": 150,
+          "y": 310,
+          "w": 80,
+          "h": 50,
+          "name": "L7 — Court of Troll Thegn",
+          "desc": "108 áreas. Varboka. PASAPORTES requeridos."
+        },
+        "L8": {
+          "x": 250,
+          "y": 310,
+          "w": 80,
+          "h": 50,
+          "name": "L8 — Nether Reaches",
+          "desc": "122 áreas. Salvaje oeste. Sin control de facción."
+        },
+        "L9": {
+          "x": 350,
+          "y": 310,
+          "w": 80,
+          "h": 50,
+          "name": "L9 — Floor of Great Chasm",
+          "desc": "95 áreas. Bosques de hongos. Ogre Magi."
+        },
+        "L10": {
+          "x": 450,
+          "y": 310,
+          "w": 80,
+          "h": 50,
+          "name": "L10 — Ziggurat de Kauket",
+          "desc": "38 áreas. 100% heqeti. 3,400 años. Reepsiq."
+        }
+      },
+      "connections": [
+        [
+          "ext_burdocks",
+          "ext_ruined_city"
+        ],
+        [
+          "ext_long_falls",
+          "ext_pyramid"
+        ],
+        [
+          "ext_ruined_city",
+          "L1"
+        ],
+        [
+          "ext_pyramid",
+          "L3"
+        ],
+        [
+          "ext_long_falls",
+          "L2"
+        ],
+        [
+          "L1",
+          "L3"
+        ],
+        [
+          "L2",
+          "L3"
+        ],
+        [
+          "L3",
+          "L4"
+        ],
+        [
+          "L3",
+          "L5"
+        ],
+        [
+          "L5",
+          "L6"
+        ],
+        [
+          "L5",
+          "L9"
+        ],
+        [
+          "L6",
+          "L7"
+        ],
+        [
+          "L6",
+          "L8"
+        ],
+        [
+          "L8",
+          "L9"
+        ],
+        [
+          "L9",
+          "L10"
+        ]
+      ],
+      "startRoom": "ext_long_falls",
+      "_links": {
+        "router": "C:/Users/Usuario/Desktop/Rol Biblioteca Absoluta/Arden_Vul_Working/ROUTER_ARDEN_VUL.md",
+        "factions_doc": "Ver ROUTER tablas matriz de relaciones (12 facciones)",
+        "marcos_adaptation": "C:/Users/Usuario/Desktop/ACKS asistente/ARDIS VALA/"
+      }
+    }
+  },
+  "pcs": [
+    {
+      "id": "aldric_voss",
+      "name": "Aldric Voss",
+      "class": "Fighter (Tank)",
+      "level": 1,
+      "hp": "9/9",
+      "ac": 5,
+      "player": "Roman",
+      "alive": true,
+      "tarokka": null,
+      "joined": "S2",
+      "notes": "Mercenario veterano. Mirada de sargento."
+    },
+    {
+      "id": "barcock_moo",
+      "name": "Barcock Moo",
+      "class": "Shaman (druida)",
+      "level": 1,
+      "hp": "7/7",
+      "ac": 3,
+      "player": "Mane",
+      "alive": true,
+      "tarokka": "The Miser",
+      "joined": "S1",
+      "notes": "Druida. Lee runas. Casi muere por panteras."
+    },
+    {
+      "id": "brock_rocksfield",
+      "name": "Brock Rocksfield",
+      "class": "Dwarven Vaultguard",
+      "level": 1,
+      "hp": "11/11",
+      "ac": 5,
+      "player": "Alejo",
+      "alive": true,
+      "tarokka": null,
+      "joined": "S2",
+      "notes": "Habla goblin. HP máximo. Detecta trampas. Casi muere por Sombra (-1 STR permanente)."
+    },
+    {
+      "id": "dimitri_vanz",
+      "name": "Dimitri Vanz",
+      "class": "Mage",
+      "level": 1,
+      "hp": "4/4",
+      "ac": 1,
+      "player": "Agustín",
+      "alive": true,
+      "tarokka": "The Conjurer",
+      "joined": "S1",
+      "notes": "16 años. Pulmón perforado S2 + renguera S1. Salvado 2x por Mortal Wound."
+    },
+    {
+      "id": "hector_risco",
+      "name": "Héctor Risco",
+      "class": "Explorer (NPC)",
+      "level": 1,
+      "hp": "7/7",
+      "ac": 3,
+      "player": "Bruno",
+      "alive": "missing",
+      "tarokka": "The Traitor",
+      "joined": "S1",
+      "notes": "DESAPARECIDO en S2. Cayó al pozo de Bellaca. Linaje Argus."
+    },
+    {
+      "id": "kael_bruma",
+      "name": "Kael Bruma",
+      "class": "Fighter (Archer)",
+      "level": 1,
+      "hp": "9/9",
+      "ac": 3,
+      "player": "Marto",
+      "alive": true,
+      "tarokka": null,
+      "joined": "S2",
+      "notes": "Silencioso. Mató a Durnn de un flechazo en el ojo S2."
+    },
+    {
+      "id": "kira_yuki",
+      "name": "Kira Yuki",
+      "class": "Assassin (half-elf)",
+      "level": 1,
+      "hp": "8/8",
+      "ac": 3,
+      "player": "Lara",
+      "alive": true,
+      "tarokka": null,
+      "joined": "S1",
+      "notes": "Asesina. Enciende velas. Tiene historia con Klemidius."
+    },
+    {
+      "id": "klemidius_wartz",
+      "name": "Klemidius Wartz",
+      "class": "Thief",
+      "level": 2,
+      "hp": "4/4",
+      "ac": 4,
+      "player": "Espa",
+      "alive": true,
+      "tarokka": "The Missionary",
+      "joined": "S1",
+      "notes": "PRIMER NIVEL UP. -1 STR permanente por Sombra."
+    },
+    {
+      "id": "mortan",
+      "name": "Mortan",
+      "class": "Crusader (Ammonar)",
+      "level": 1,
+      "hp": "7/7",
+      "ac": 4,
+      "player": "Pato",
+      "alive": true,
+      "tarokka": "The Healer",
+      "joined": "S1",
+      "notes": "Concusión + INT -2 permanente por Mortal Wound S1."
+    },
+    {
+      "id": "silas",
+      "name": "Silas el Huérfano del Umbral",
+      "class": "Warlock",
+      "level": 1,
+      "hp": "5/5",
+      "ac": 1,
+      "player": "Pedro",
+      "alive": true,
+      "tarokka": "The Invoker",
+      "joined": "S1",
+      "notes": "Voz sepulcral (CHA -1 con Lawful/Neutral). Detect Magic, ve sombras entre sombras. | **DESEOS PENDIENTES**: 2 (Deck of Many Things — La Luna en S6). Gastó 1 salvando al grupo. Powers Check stage 2 (Disfigured).",
+      "_deck_wishes_remaining": 2
+    },
+    {
+      "id": "yuremi",
+      "name": "Yuremi",
+      "class": "Crusader (Ammonar)",
+      "level": 1,
+      "hp": "7/7",
+      "ac": 5,
+      "player": "Mara",
+      "alive": true,
+      "tarokka": null,
+      "joined": "S2",
+      "notes": "Cruzada novata. Llega tarde. Turn Undead salvó vidas vs Sombra S2."
+    }
+  ],
+  "sessions": [
+    {
+      "id": "S1",
+      "date": "2026-03-26",
+      "title": "El Camino Viejo + La Ciudadela",
+      "judge": "Marcos",
+      "marcos_present": true,
+      "summary": "Panteras encantadas, Stejara, Mirela, Baba Ileana lee Tarokka, primer descenso, esqueletos arqueros, retirada con heridos graves. Mortan + Dimitri salvados por sidra de manzana blanca."
+    },
+    {
+      "id": "S2",
+      "date": "2026-04-02",
+      "title": "El Regreso — Catorce contra la Oscuridad",
+      "judge": "Marcos",
+      "marcos_present": true,
+      "summary": "+4 PCs (Aldric, Brock, Kael, Yuremi). Trampa de adoquín, Puerta del Dragón sellada, kobolds aliados, Meepo, gas trap (Meepo+kobolds elite muertos), Sombra (Brock cae, Yuremi turn), Calcryx capturado, Durnn matado por Kael, Hector cae al pozo de Bellaca."
+    },
+    {
+      "id": "S3",
+      "date": "2026-04-?",
+      "title": "Cierre de la Ciudadela + el Patriarca",
+      "judge": "Marcos",
+      "marcos_present": true,
+      "summary": "TERMINA la aventura de la Ciudadela Sin Sol. En la transición de mitad de sesión: aparece el abad/patriarca como NPC que guía al party hacia Barrowmaze (norte). NOMBRE DEL PATRIARCA: pendiente — Marcos confirmar.",
+      "_pendingFromMarcos": "Confirmar nombre del patriarca/abad introducido."
+    },
+    {
+      "id": "S4",
+      "date": "2026-04-?",
+      "title": "Camino a Helix (siguiendo al patriarca) + Mapa 236",
+      "judge": "Alejandro 'Ale' Humérez (sustituto)",
+      "marcos_present": false,
+      "summary": "Ale toma el mando. Party sigue al patriarca hacia Barrowmaze. Llegan a Helix → exterior Barrowmaze → recorren el mapa 236 sin casualties. Tesoros normales y tabletas con mapas."
+    },
+    {
+      "id": "S5",
+      "date": "2026-04-?",
+      "title": "Mapa 234 — Mongrels",
+      "judge": "Alejandro 'Ale' Humérez (sustituto)",
+      "marcos_present": false,
+      "summary": "Avanzan al mapa 234. **Encuentro con los Mongrels (Mongrelmen)** — buen intercambio: cambian un hacha por un mapa. Solo facción contactada."
+    },
+    {
+      "id": "S6",
+      "date": "2026-04-?",
+      "title": "Sala 74A — La Luna y los 3 Deseos",
+      "judge": "Alejandro 'Ale' Humérez (sustituto)",
+      "marcos_present": false,
+      "summary": "Llegan a la **Sala 74A** (posición actual). Silas (Warlock, Disfigured 2 power checks fallados) lee una tableta. Por su estado, la tableta se transmuta en **Deck of Many Things**. Saca **La Luna (Bruma)** → 3 deseos. **Gastó 1 deseo salvando al grupo**. Nadie murió. XP al día por Ale.",
+      "_critical_state": "Silas tiene 2 deseos pendientes. Tablet of Chaos resonó."
+    }
+  ],
+  "initialState": {
+    "calendar": {
+      "year": "492 IY (Valachhan)",
+      "day": 35,
+      "watchIdx": 0
+    },
+    "_calendar_doc": "S5 terminó ~día 35. ~21 días desde S2. Party está en Helix recuperándose, preparando próximo movimiento.",
+    "pcPosition": {
+      "scale": "local",
+      "hex": "5,2",
+      "dungeon": "barrowmaze",
+      "room": "74A"
+    },
+    "_pcPosition_doc": "Sala 74A de Barrowmaze (entry desde Helix). Llegaron vía mapas 236→234 con Ale.",
+    "fogOfWar": {
+      "7,6": "explored",
+      "5,6": "explored",
+      "6,6": "discovered",
+      "8,6": "discovered",
+      "7,5": "discovered",
+      "7,7": "discovered",
+      "8,7": "discovered",
+      "6,7": "discovered",
+      "5,2": "discovered",
+      "6,2": "discovered",
+      "5,3": "discovered",
+      "6,3": "discovered",
+      "6,4": "discovered",
+      "6,5": "discovered"
+    },
+    "selectedHex": "7,6",
+    "_acks_party": {
+      "supply_rations_total": 25,
+      "supply_water_total": 25,
+      "torches": 15,
+      "lantern_oil_flasks": 5,
+      "calcryx_captured": true,
+      "_doc_calcryx": "Atado en Sunless Citadel territorio kobold (F6). Yusdrayl tiene la custodia. ¿Lo recogemos al volver?",
+      "dragon_door_key": true,
+      "barrowmaze_known_areas": "~25% L1 mapeado en S3-S5",
+      "current_objective": "Próximo movimiento (decidir): (a) seguir explorando Barrowmaze L1, (b) viajar 4 días al NW hacia Long Falls / Ardis Vala (la cascada) — Bellaca prometió 'tesoros detrás de la cascada' y Hector está perdido ahí, (c) volver a Stejara a reportar a Mirela.",
+      "barrowmaze_progress": "Mapas 236, 234 → Sala 74A (S4-S6 con Ale)",
+      "silas_wishes_remaining": 2,
+      "mongrels_relations": "Buenos (intercambio S5)",
+      "guide_following": "patriarca_abad (NPC introducido S3)"
+    }
+  },
+  "items": [
+    {
+      "id": "deck_of_many_cards_silas",
+      "name": "Deck of Many Things (manchado, Silas)",
+      "type": "Magic Item — único",
+      "origin": "Tableta de Barrowmaze leída por Silas Disfigured (2 power checks). Corrupción Ravenloft + Tablet of Chaos transmutó la tableta.",
+      "current_state": "1 carta sacada: La Luna (Bruma). Restantes en deck.",
+      "notes": "Silas tiene 2 deseos pendientes."
+    }
+  ]
+}

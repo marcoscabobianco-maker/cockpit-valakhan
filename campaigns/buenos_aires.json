@@ -1,0 +1,131 @@
+{
+  "id": "buenos_aires",
+  "name": "Buenos Aires Mega Campaign",
+  "subtitle": "Level Up A5e · West Marches · Continuada",
+  "system": "a5e",
+  "scale": { "size": 24, "unit": "millas", "label": "Hex 24mi (A5e default, normal pace = 1 hex/día)" },
+  "calendar": {
+    "yearLabel": "Año 1",
+    "watches": ["Mañana", "Tarde", "Noche"],
+    "watchesPerDay": 3,
+    "_a5e_note": "A5e maneja unidades de día/hora, no formaliza watches. El cockpit los usa por compatibilidad multi-sistema."
+  },
+  "_systemConfig": {
+    "system": "a5e",
+    "_doc": "Slots de Level Up A5e — completados en ITER 3 (29 abril 2026).",
+
+    "supply": {
+      "_doc": "Supply = journey HP del party. Cada day-of-travel consume Supply.",
+      "perPCPerDay": 1,
+      "encumbrancePerSupply": 1,
+      "zeroEffect": "Comienza fatigue. 1 nivel por día sin Supply hasta long rest con Supply.",
+      "huntAndGather": "+1 Supply por día por PC haciendo la activity (Survival check)",
+      "cookReduction": "0.75 (-25% consumo si alguien hace Cook activity)"
+    },
+
+    "travelPace": {
+      "_doc": "Pace afecta velocidad, encounters y fatigue.",
+      "slow":   { "milesPerDay": 18, "encounterMod": -2, "stealthOK": true,  "forcedMarchSave": false, "scoutBonus": 1 },
+      "normal": { "milesPerDay": 24, "encounterMod": 0,  "stealthOK": false, "forcedMarchSave": false, "scoutBonus": 0 },
+      "fast":   { "milesPerDay": 30, "encounterMod": 2,  "stealthOK": false, "forcedMarchSave": true,  "scoutBonus": -1 }
+    },
+
+    "journeyActivities": [
+      { "id": "befriend_animal", "name": "Befriend Animal", "skill": "Animal Handling", "success": "1 animal sigue al party hasta peligro", "fail": "—" },
+      { "id": "busk", "name": "Busk", "skill": "Acrobatics/Athletics/Performance", "success": "1 gp/día + 1 gp por punto sobre DC", "fail": "—" },
+      { "id": "chronicle", "name": "Chronicle", "skill": "History", "success": "Expertise die a History/Survival en region", "fail": "Nada" },
+      { "id": "cook", "name": "Cook", "skill": "Cook's utensils o Survival", "success": "-25% Supply consumo del party", "fail": "—" },
+      { "id": "cover_tracks", "name": "Cover Tracks", "skill": "Survival", "success": "+1 día separación de perseguidores", "fail": "Perseguidores cerca" },
+      { "id": "entertain", "name": "Entertain", "skill": "Performance", "success": "Bonus contra Strife", "fail": "—" },
+      { "id": "gather_components", "name": "Gather Components", "skill": "Arcana o Nature", "success": "1d4 gp componentes/día + bonus por DC", "fail": "—" },
+      { "id": "gossip", "name": "Gossip", "skill": "Investigation o Persuasion", "success": "Rumor del Narrator", "fail": "—" },
+      { "id": "harvest", "name": "Harvest", "skill": "Medicine o Nature (kit)", "success": "+1 use healer's satchel/día", "fail": "—" },
+      { "id": "hunt_and_gather", "name": "Hunt and Gather", "skill": "Survival", "success": "+1 Supply/día", "fail": "—" },
+      { "id": "pray", "name": "Pray", "skill": "Religion", "success": "Advantage 1 check + posible boon", "fail": "Dioses no escuchan" },
+      { "id": "rob", "name": "Rob", "skill": "Intimidation o Sleight of Hand", "success": "1d8 gp/semana", "fail": "—" },
+      { "id": "scout", "name": "Scout", "skill": "Perception", "success": "Revela regions adyacentes + posible discovery", "fail": "Nada" },
+      { "id": "track", "name": "Track", "skill": "Survival (opposed)", "success": "Sigue presa", "fail": "-1 día de presa" }
+    ],
+
+    "fatigueStrife": {
+      "_doc": "Reemplazan Exhaustion 5e. Niveles 0-6. Fatigue=físico, Strife=mental.",
+      "fatigueLevels": ["sin efecto", "disadv ability", "speed halved", "disadv attacks/saves", "HP max halved", "speed 0", "death"],
+      "strifeLevels":  ["sin efecto", "disadv social", "disadv concentration", "disadv attacks", "disadv saves", "incapacitated", "broken (catatónico)"],
+      "recoveryRule": "Long rest reduce -1 SOLO si en Haven con Supply. Nivel 1 puede recuperarse con descanso normal."
+    },
+
+    "haven": {
+      "_doc": "Lugar seguro: comida + dormir sin riesgo razonable. Necesario para recuperar fatigue/strife ≥2.",
+      "criteria": ["techo", "comida disponible", "sin amenaza de combate o elementos"],
+      "examples": ["taberna", "fortaleza aliada", "cueva sellada con guardia", "casa de NPC amistoso"]
+    },
+
+    "regionTiers": {
+      "_doc": "Tier de región (1-4) define dificultad de encounters y challenges. NO depende del nivel del party.",
+      "1": { "label": "Tier 1 (1-4 lvl)", "encounterDC": 12, "challengeDC": 12 },
+      "2": { "label": "Tier 2 (5-10 lvl)", "encounterDC": 14, "challengeDC": 14 },
+      "3": { "label": "Tier 3 (11-16 lvl)", "encounterDC": 16, "challengeDC": 16 },
+      "4": { "label": "Tier 4 (17-20 lvl)", "encounterDC": 18, "challengeDC": 18 }
+    },
+
+    "explorationChallenges": {
+      "_doc": "Eventos del entorno que NO son monstruos. Tirar al entrar a region o por watch.",
+      "examples": ["Blizzard", "Dense fog", "Hail storm", "Sandstorm", "Tornado", "Thunderstorm", "Mudslide", "Quicksand", "Avalanche"],
+      "penalties": ["fatigue", "strife", "supply loss", "damage", "hit dice expense", "equipment damage", "disease", "time loss"]
+    },
+
+    "discoveries": {
+      "_doc": "Cosas notables que los PCs descubren al explorar. Pre-keyed por region. Cuando se consume, queda en log.",
+      "categories": ["NPC encounter", "location", "hazard", "complication", "lore", "treasure", "shortcut"]
+    }
+  },
+
+  "terrains": {
+    "_doc": "TODO: completar terrenos de Buenos Aires Mega Campaign. Vacíos por ahora.",
+    "_template_country_roads": { "name": "Country Roads", "color": "#a89070", "icon": "🛤", "desc": "Caminos rurales transitados.", "supplyMod": 0, "paceMod": 0 },
+    "_template_feywood": { "name": "Feywood", "color": "#5a7d4a", "icon": "🍄", "desc": "Bosque feérico, traits raros.", "supplyMod": 0, "paceMod": 0, "tier": 2 }
+  },
+
+  "regions": {
+    "_doc": "TODO: definir regions específicas. Cada region puede agrupar varios hexes con mismo terrain/tier.",
+    "_template_holdenshire": {
+      "id": "holdenshire",
+      "name": "Holdenshire",
+      "tier": 1,
+      "terrain": "country_roads",
+      "traits": ["civilizado", "patrullado"],
+      "weatherTable": "temperate",
+      "challenges": ["bandidos","tormenta","caballo herrado"]
+    }
+  },
+
+  "encounters": {
+    "_doc": "TODO: tablas de encuentros por (terrain, tier). Ejemplo: encounters['country_roads'][1] = [...]"
+  },
+
+  "bestiary": [
+    { "_doc": "TODO: criaturas A5e. Schema: { id, name, cr, hd, hp, ac, alignment, type, notes }" }
+  ],
+
+  "npcs": [
+    { "_doc": "TODO: NPCs estables. Schema: { id, name, role, hex, notes, faction, attitude }" }
+  ],
+
+  "hexes": [],
+
+  "dungeons": {
+    "_doc": "TODO: keyed dungeons (Sunless Citadel, Barrowmaze, custom...)."
+  },
+
+  "initialState": {
+    "calendar": { "year": "Año 1", "day": 1, "watchIdx": 0 },
+    "pcPosition": { "scale": "regional", "hex": "0,0" },
+    "fogOfWar": {},
+    "selectedHex": null,
+    "_a5e_party": {
+      "supply": 14,
+      "pace": "normal",
+      "pcs": []
+    }
+  }
+}

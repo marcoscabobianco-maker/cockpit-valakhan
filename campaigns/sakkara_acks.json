@@ -1,0 +1,67 @@
+{
+  "id": "sakkara_acks",
+  "name": "Sinister Stone of Sakkara — ACKS S1",
+  "subtitle": "ACKS Imperial Imprint · Auran Empire · Türos Tem",
+  "system": "acks",
+  "scale": { "size": 6, "unit": "millas", "label": "Escala regional / hex 6mi" },
+  "calendar": {
+    "yearLabel": "492 IY",
+    "watches": ["Mañana", "Tarde", "Noche"],
+    "watchesPerDay": 3,
+    "_doc": "ACKS usa watches de exploration (~4-8h) más combat rounds dentro. El cockpit unifica a 3 watches/día."
+  },
+  "_systemConfig": {
+    "system": "acks",
+    "_doc": "Slots ACKS — placeholder. Ver campaign/CHANGELOG.md de la campaña real para data completa.",
+    "_links": {
+      "rulebook": "G:/Mi unidad/02_ROL_Y_MEGACAMPAÑA/.../ACKS-Rulebook.docx",
+      "judgesJournal": "G:/Mi unidad/02_ROL_Y_MEGACAMPAÑA/.../ACKS-JudgesJournal.docx",
+      "asistentePWA": "C:/Users/Usuario/Desktop/ACKS asistente/acks-assistant/"
+    },
+    "movementRates": {
+      "exploration": "120'/turno (10 min)",
+      "combat": "40'/round (10 sec)",
+      "running": "120'/round",
+      "expedition": "variable mi/día por terreno"
+    },
+    "lightSources": {
+      "torch": { "radius": 30, "duration_turns": 6 },
+      "lantern": { "radius": 30, "duration_turns": 24 },
+      "infravision": { "radius": 60, "duration": "permanente" }
+    }
+  },
+  "terrains": {
+    "_doc": "ACKS usa 16 terrain types en JJ Ch.2. Mover desde acks-assistant/data/encounters.json en V5C."
+  },
+  "encounters": {
+    "_doc": "ACKS encounter tables por terrain ya extraídas en acks-assistant/src/data/. Linkear, no duplicar."
+  },
+  "bestiary": [
+    { "_doc": "473 monstruos en MM-IIA + MM-IIB. Linkear desde acks-assistant/src/data/monsters.json." }
+  ],
+  "npcs": [
+    { "id": "ulrand_valerian", "name": "Legate Ulrand Valerian", "role": "Comandante de Türos Tem", "hex": "?", "notes": "Da el patronazgo inicial al partido." }
+  ],
+  "hexes": [
+    { "_doc": "TODO: hex map de Türos Tem región (300mi alrededor del fuerte fronterizo). Por ahora solo placeholder de 1 hex." },
+    { "col": 0, "row": 0, "terrain": "ciudad", "name": "Türos Tem", "isCity": true }
+  ],
+  "dungeons": {
+    "sakkara_l1": {
+      "_doc": "Sinister Stone of Sakkara Level 1. Ya existe sakkara-map.jsx con 25+ rooms detalladas. En V5C importar.",
+      "name": "Sinister Stone of Sakkara — Nivel 1",
+      "rooms": {
+        "1": { "x": 50, "y": 300, "w": 40, "h": 30, "name": "Entrada", "desc": "Escalera tallada en roca. Templo enterrado." }
+      },
+      "connections": [],
+      "startRoom": 1,
+      "_source": "C:/Users/Usuario/Desktop/ACKS asistente/campaign/dungeon/sakkara-map.jsx"
+    }
+  },
+  "initialState": {
+    "calendar": { "year": "492 IY", "day": 1, "watchIdx": 0 },
+    "pcPosition": { "scale": "regional", "hex": "0,0" },
+    "fogOfWar": { "0,0": "explored" },
+    "selectedHex": "0,0"
+  }
+}

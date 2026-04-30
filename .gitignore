@@ -1,0 +1,34 @@
+# Kanka export (large, derived from worldbook JSON)
+_kanka_export/
+
+# Local image cache (deployed separately)
+cockpit-imgs/
+
+# Build scripts (regenerable)
+_build_*.py
+_check_*.js
+_rebuild_*.py
+_mine_kanka.py
+_update_*.py
+*.pyc
+__pycache__/
+
+# Old prototypes (keep only v5j and v5n)
+prototipo_v5.html
+prototipo_v5b.html
+prototipo_v5c.html
+prototipo_v5d.html
+prototipo_v5e.html
+prototipo_v5f.html
+prototipo_v5g.html
+prototipo_v5h.html
+prototipo_v5i.html
+prototipo_v5k.html
+prototipo_v5m.html
+
+# Claude config
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

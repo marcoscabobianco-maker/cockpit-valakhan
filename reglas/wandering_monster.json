@@ -1,0 +1,47 @@
+{
+  "id": "wandering_monster",
+  "description": "Mecánica de wandering monster (encuentro aleatorio en dungeon). Subset de encounter_check pero con su propia frecuencia y tabla.",
+  "abstract": {
+    "name": "Wandering Monster",
+    "differentFromOverlandEncounter": "Trigger es paso de tiempo en dungeon, no movimiento de region.",
+    "process": [
+      "1. Cada N turns en dungeon, tirar dado",
+      "2. Si éxito, consultar wandering table del nivel del dungeon",
+      "3. Determinar approach: misma sala / sala adyacente / pasillo / unknown",
+      "4. Distance + surprise + reaction (similar a encounter_check)",
+      "5. Wandering monsters tipicamente NO tienen treasure (excepto excepciones)"
+    ]
+  },
+  "implementations": {
+    "a5e": {
+      "trigger": "GM-adjudicated, default each scene",
+      "die": "GM elige (default 5e DMG random encounters)",
+      "table": "Random encounter table del environment (CR-appropriate)",
+      "treasure": "GM elige (default sin treasure)"
+    },
+    "acks": {
+      "trigger": "Cada 2 dungeon turns",
+      "die": "1d6, 1=encounter",
+      "table": "Wandering monster table por dungeon level (1-12). Cada nivel tiene su tabla de 1d12 entries.",
+      "approach": "1d8 direction roll",
+      "treasure": "Generalmente no llevan treasure (excepto casos especiales)",
+      "source": "ACKS Imperial Imprint Judges Journal Ch.2 Section A"
+    },
+    "clan": {
+      "trigger": "narrativo",
+      "die": "—",
+      "table": "GM elige del bestiario apropiado",
+      "treasure": "narrativo"
+    }
+  },
+  "cockpitImplementation": {
+    "v5b_current": "Implementado: 1d6, 1=hit, random pick del bestiary completo.",
+    "v5c_target": [
+      "Tabla por dungeon level (no bestiary completo)",
+      "Approach roll (1d8 direction)",
+      "Distance específico (2d6 × 10 ft en ACKS)",
+      "Auto-trigger cada 2 turns (configurable por sistema)",
+      "Notificar al GM antes de tirar (\"toca wandering check, ¿tirás?\")"
+    ]
+  }
+}

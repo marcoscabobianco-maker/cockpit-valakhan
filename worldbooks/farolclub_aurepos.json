@@ -1,0 +1,2356 @@
+{
+  "id": "farolclub_aurepos",
+  "name": "FarolClub - ACKS Grand Campaign (Aurëpos)",
+  "_doc": "Worldbook compartido entre múltiples mesas: Mauro-GM, Kronamon, Federico Müller, Marcos. Setting Aurëpos (continent), incluye Condado de Aerik (Barrowmaze), Turos Tem (Sakkara), Westmerc, Adwenn.",
+  "_kanka_export_meta": {
+    "exported_from": "Kanka workspace farolbarrowmaze",
+    "export_date": "2026-04-29",
+    "stats": {
+      "characters": 121,
+      "locations": 62,
+      "organisations": 9,
+      "families": 11,
+      "items": 2,
+      "journals": 20,
+      "events": 8,
+      "quests": 5,
+      "maps": 11
+    }
+  },
+  "characters": [
+    {
+      "id": 1603446,
+      "name": "Aegys Ardhave",
+      "type": "PJ",
+      "title": "Elven courtier",
+      "sex": "Female",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1319530,
+      "name": "Alaster",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1356060,
+      "name": "Aledis de Rougiet",
+      "type": "PJ",
+      "title": "",
+      "sex": "Femenino",
+      "age": "16 años",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Un ágil par de manos se deslizan entre los surcos que guardan misterios, mientras un par de ojos devoran avidamente el saber oculto que se erige frente a ellos. No hay código, trampa u obstáculo que se interponga entre ella y su anhelo por saberlo todo . Aunque, en algunos casos, puede ganarse más con fuerza que con maña. En todo caso, Aledis está dispuesta a explorar sus posibilidades. Criada entre carpinteros, herreros y maestros de oficios, aprendió a utilizar todas las herramientas a su alca"
+    },
+    {
+      "id": 1494495,
+      "name": "Alesta Zegura",
+      "type": "PJ",
+      "title": "Poet",
+      "sex": "Female",
+      "age": "19",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Hija de un maestro artesano del condado de [location:5897143], Alesta es la menor de tres hermanos, y el hecho de haber nacido mujer no se convirtió en un impedimento para ser la última de su familia en ingresar a la Torre del Conocimiento de su tierra para aprender los secretos del mundo y la magia. Hasta los 18 años, recibió una educación primorosa en su hogar, digna de las damas nobles y cortesanas, incluyendo conocimientos en música y artes, lenguas y también saberes para manejarse en el mun"
+    },
+    {
+      "id": 1284502,
+      "name": "Alzo Danuth",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1492732,
+      "name": "Ammonar",
+      "type": "",
+      "title": "Portador de la Luz, Dador de Leyes, Señor del Alba",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1422138,
+      "name": "Argant Herve",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1502851,
+      "name": "Arlanoc Hemisen Curo",
+      "type": "NPC",
+      "title": "Duque",
+      "sex": "Male",
+      "age": "50",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "El Duque Hemisen Curo, de 50 años, es un epicúreo reconocido por la calidad de su mesa. Maravilla a los invitados con platos sazonados con especias de todo Aurëpos. Con ocido como el \"León del Norte\", quien reclama descendencia de los primeros reyes de Serelind y la Casa de Tane. Dona generosamente a la Enclave del Roble Sagrado para financiar sus investigaciones y su propia pasión por la genealogía. El conde está casado con Meliara Kynn, hermana de la Serekela de Westmerc. Han sido bendecidos c"
+    },
+    {
+      "id": 1422149,
+      "name": "Arnd Cobblestone",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1494333,
+      "name": "Asfrid Milfdottir",
+      "type": "PJ",
+      "title": "Hunter",
+      "sex": "Female",
+      "age": "22",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Nacida en los Reinos de Jutland, Asfrid vivió y creció en su clan junto al rio en paz. Siendo la menor en una familia con 5 hermanos, ella fue rápida en aprender a tomar las cosas por la fuerza y usar la violencia para imponerse. Con muchos problemas de ira y una gran sed de violencia, se caso a los 21 y trabajo en el barco de pesca con sus hermanos. Pero todo eso termino cuando un día volvió a casa para encontrar que su esposo se había ido con otra. Llena de rabia, se fue del Reino de Jutland y"
+    },
+    {
+      "id": 1522938,
+      "name": "Avelus Kydoros",
+      "type": "PNJ",
+      "title": "Comandante de la Guardia",
+      "sex": "Male",
+      "age": "33",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "El comandante de la Guardia de la Ciudad, el Tribuno Avellus Kyrdoros originario de Tirenia es de tendencia conservadora, con mandíbula cuadrada y postura erguida. Kyrdoros es un soldado curtido de una familia militar que cree firmemente que la justicia es más importante que la misericordia. A través de su liderazgo firme y su determinación inquebrantable, comanda a un subalterno y a 20 oficiales (5 arqueros compuestos, 5 infantes pesados veteranos y 10 infantes pesados). Estos oficiales forman "
+    },
+    {
+      "id": 1284661,
+      "name": "Bandrik Ironstone",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1431728,
+      "name": "Barto Hienderoca",
+      "type": "PNJ",
+      "title": "Dueño de Jarra de Piedra",
+      "sex": "Male",
+      "age": "43",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Barto es un enano Juto que prefirió autoexilioarse de su Bóveda antes de ser considerado en falta por su infraproducción de decoraciones de piedra. Hoy en día es dueño de La Posada del Jarro de Piedra en la [location:5647147]. El lugar no solo sirve como un lugar de encuentro acogedor para los habitantes y visitantes, sino que también actúa como un frente discreto para las operaciones clandestinas de la [family:5642368]en la ciudad. Entre risas y canciones, los tratos oscuros se entrelazan con l"
+    },
+    {
+      "id": 1363700,
+      "name": "Barton",
+      "type": "PJ",
+      "title": "Venturer",
+      "sex": "Male",
+      "age": "35",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Barton \"Gold\" Bukranis proviene de una región asolada por la decadencia y la inestabilidad, donde su familia se dedicaba al comercio en medio del caos. Aprendió las artes de la diplomacia y la negociación desde una edad temprana, habilidades que lo acompañarían a lo largo de su vida. Durante un período de agitación y conflictos, Barton se enroló en el ejército para preservar la paz y proteger las rutas comerciales que eran vitales para su región natal. Fue durante su servicio militar que perfecc"
+    },
+    {
+      "id": 1503010,
+      "name": "Basilio Elendesa",
+      "type": "NPC",
+      "title": "Principe",
+      "sex": "Male",
+      "age": "68",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Tras una generación de paz y prosperidad, Basilio sigue siendo uno de los gobernantes más exitosos y de más largo reinado de Westmerc. Tiene el amor de la mayoría del pueblo común y el respeto a regañadientes de la nobleza. Sin embargo, debido a que no ha nombrado un heredero, su muerte podría precipitar una crisis de sucesión. El siguiente jefe del clan Elendsa, elegido por el consejo de sucesión del clan, se convertirá en el nuevo monarca. La sucesión favorece al hijo legítimo mayor, pero está"
+    },
+    {
+      "id": 1359732,
+      "name": "Baxarías da Benfica",
+      "type": "PJ",
+      "title": "Cruzado",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Un misterioso cruzado venido de tierras muy lejanas, llegado a [location:5023715] para exorcizar el mal y esparcir la sagrada fe a [character:5023738]. En su corta estadía en el pueblo, poco es lo que se sabe de él y mucho lo que se especula. Desde un primer momento llamó la atención por su abundante armadura y un paño con una cruz cubriéndole siempre el rostro, pero alarmó verlo con un armamento tan ligero. Se rumorea que vendió su equipo por un par de monedas. Otros dicen que trocó un martillo"
+    },
+    {
+      "id": 1492790,
+      "name": "Bel",
+      "type": "",
+      "title": "Príncipe de la Masacre, Señor de la Guerra",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1505757,
+      "name": "Bertram “Gordoberto” Beswill",
+      "type": "PNJ",
+      "title": "Tabernero y Carnicero",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Atiende el Grano Dorado en el poblado de [location:5937529], también conocida por su cerveza con sabor a pis (“Golden rain” en vez de Grain, le han dicho al respecto). Se dice que ha ayudado a satisfacer los deseos perversos del conde [character:5927862]. También hay rumores que tiene acceso a carne de troll, que cae mal pero sabe ser abundante."
+    },
+    {
+      "id": 1287129,
+      "name": "Billworth Turgen",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Turgen es dueño de [location:5039464] en [location:5023715] y también actúa como el agente local para los clientes de la compañía de caravanas más grande [organisation:5030625] con sede en [location:5023717]. Ha operado su tienda durante muchos años y es un nombre de confianza en el pueblo. Turgen conoce a todos y su tienda proporciona la mayoría de los productos comerciales necesarios en el día a día del pueblo."
+    },
+    {
+      "id": 1319525,
+      "name": "Bollo",
+      "type": "NPC",
+      "title": "Tabernero",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Un guerrero fornido en su juventud, el fornido Bollo se retiró de la aventura para abrir [location:5161085] después de recibir una flecha en la rodilla. Bollo es un hombre honesto y justo. Tiene una risa fuerte y lista. Normalmente lleva un delantal de cuero gastado y su antiguo martillo de guerra y escudo cuelgan detrás de la barra."
+    },
+    {
+      "id": 1431716,
+      "name": "Borgos Villenir",
+      "type": "PNJ",
+      "title": "Capo",
+      "sex": "Male",
+      "age": "43",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "El sub-jefe de la [location:5644530] para la [organisation:5642368] es Borgos Villenir (mitad Kryseano mitad Kemeshi, 43 años, cabeza rapada, cicatriz larga a lo largo de su cuero cabelludo). Borgos es un antiguo aventurero y tiene una debilidad por \"su tipo de escoria\". Tolerará el robo independiente siempre y cuando no atraiga atención no deseada al gremio o le cause problemas. Conoce todas las mentiras, maquinaciones y trucos habituales que los aventureros suelen intentar en \"su\" ciudad y no "
+    },
+    {
+      "id": 1422136,
+      "name": "Bran Harvey",
+      "type": "Henchman",
+      "title": "Mejor Ayudante",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Bran, un joven audaz y valiente, se animó a unirse como porta antorcha de un grupo de intrépidos aventureros que se dirigían a las peligrosas tumbas del pantano conocido como Barrowmaze. Aunque muchos dudaban de su capacidad, Bran demostró su tenacidad y determinación al sobrevivir a cada desafío que enfrentaba.Su destino se entrelazó con el del mercader aventurero Barton Gold Bukranis, quien, en un fatídico incidente, cayó en una trampa mortal en las profundidades de las tumbas. Bran, demostran"
+    },
+    {
+      "id": 1501680,
+      "name": "Brule Armstrong",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "El compañero de confianza de [character:5920178] en todo."
+    },
+    {
+      "id": 1492727,
+      "name": "Calefa",
+      "type": "",
+      "title": "Dama de la Fortuna, Madre del Luto",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1295396,
+      "name": "Cella",
+      "type": "NPC",
+      "title": "La Devota",
+      "sex": "Female",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Rescatada como huérfana y criada por [character:5061115], Cella es una devota seguidora de [character:5023738]. Tiene el cabello negro corto y unos penetrantes ojos azul pálido. Es tranquila y reservada."
+    },
+    {
+      "id": 1284657,
+      "name": "Corutta Barrelhouse",
+      "type": "NPC",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1282811,
+      "name": "Crom",
+      "type": "Deidad Antigua",
+      "title": "Dios de la Fuerza y la Batalla",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Un Antiguo, [character:5023645] es adorado principalmente por luchadores, guardabosques, bárbaros y clérigos. Debido a la constante amenaza de monstruos y humanoides monstruosos desde el Barrowmoor y los bosques circundantes, la fe en Crom entre los guerreros y mercenarios ha permanecido firme en comparación con la de [character:5023635] y [character:5023561]. Los clérigos de Crom buscan avanzar en su fe a través de la fuerza de las armas y hazañas audaces en la batalla."
+    },
+    {
+      "id": 1502860,
+      "name": "Declaen Caledeth",
+      "type": "NPC",
+      "title": "Duque",
+      "sex": "Male",
+      "age": "51",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Declaen Caldeth, una figura inteligente y poderosa en Westmerc. Está casado con la inválida Lady Ialny Valador y tiene tres hijos. Su hija mayor, [character:5924236], está casada con el Duque [character:5924237]. Su hijo, Sir Urian, es un noble caballero de alta estatura, conocido más por su destreza en combate que por su sabiduría. Camissa, la más joven, ha alcanzado recientemente la edad matrimonial y su padre es cauteloso respecto a los pretendientes."
+    },
+    {
+      "id": 1492784,
+      "name": "Dirgion",
+      "type": "",
+      "title": "Portador de la Perdición, Señor de la Muerte y el Renacimiento",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1422135,
+      "name": "Drake",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1508712,
+      "name": "El Rabioso",
+      "type": "",
+      "title": "Mago Loco",
+      "sex": "Male",
+      "age": "65",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Es un mago de pueblo que tiene su choza cerca de los [location:5937333] de [location:5937529]. Le dicen “rabioso” por su mal temperamento y le disgusta hablar de su anterior relación con la Torre de Conocimiento de [location:5897143]. Conoce la zona y se dice investiga la locación de las cuevas de viejos hidromantes río arriba. Sabe de pociones y tiene una comadreja llamada “Whiskers”."
+    },
+    {
+      "id": 1460162,
+      "name": "Eydis",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "La forma preferida de Eydis es la de una joven núbil con grandes ojos y cabello rojo recogido en un moño. Es la bibliotecaria del grupo y guarda una colección de libros raros."
+    },
+    {
+      "id": 1501701,
+      "name": "Farwyn",
+      "type": "",
+      "title": "",
+      "sex": "Female",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1501691,
+      "name": "Ferwig el Frenético",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1284593,
+      "name": "Fraile Fergus",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1492792,
+      "name": "Galmorm",
+      "type": "",
+      "title": "Envenenador, Gran Tramposo",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1295397,
+      "name": "Gamdar",
+      "type": "NPC",
+      "title": "El Acolyte",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Gamdar recientemente se unió a la fe de [character:5023738] en [location:5023715]. Su sangre mixta entre humano y orco le da una apariencia extraña. Tiene dos pequeños colmillos que sobresalen a cada lado de su boca, lo que dificulta la comprensión de su habla."
+    },
+    {
+      "id": 1284658,
+      "name": "Garrick Barrelhouse",
+      "type": "NPC",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1290241,
+      "name": "Gern",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1357599,
+      "name": "Godfrey Wensley",
+      "type": "PJ",
+      "title": "Scout",
+      "sex": "Male",
+      "age": "19",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Godfrey Wensley es un cazador furtivo de 19 años nacido en 704 A.D, que recientemente tuvo problemas por estar depredando donde no tenía permiso. Godfrey está convencido de que en este mundo solo manda el dinero, y está decidido en enfrentar los túmulos en busca de riquezas y gloria."
+    },
+    {
+      "id": 1505813,
+      "name": "Grota Dogrota Beswill",
+      "type": "PNJ",
+      "title": "“La nena”",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Hija de [character:5937303] ayuda a su padre con el servicio de la única posada taberna y carnicería/panadería de [location:5937529]. Es buena panadera y es protegida por él casi siempre. De todos modos, sueña con alguna vez ver el mundo más grande, quizás conocer a un príncipe azul y escapar a las atenciones del conde y de su peligroso hijo."
+    },
+    {
+      "id": 1460163,
+      "name": "Gydis",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "La forma preferida de Gydis es la de una mujer alta y llamativa con rasgos aristocráticos, cabello rubio blanco y uñas largas. La bruja sylvan guarda una colección de capas de piel en su armario. Las capas están cosidas juntas con pieles de aparentemente todos los animales diferentes del bosque. Siempre viste con la ultima capa de su colección."
+    },
+    {
+      "id": 1284603,
+      "name": "Hamock Quesoduro",
+      "type": "NPC",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1319365,
+      "name": "Harnold Huwen Reginald",
+      "type": "NPC",
+      "title": "Joyero y prestamista",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Harnold Huwen Reginald (o H.H.R) Huffnpuff ejerce su oficio como joyero y prestamista en el pueblo de Helix. Es un mediano con una cabellera de rizos marrones y una amplia sonrisa que parece extenderse casi de oreja a oreja. Siempre se presenta a nuevos clientes de manera grandiosa diciendo: \"H.H.R Huffnpuff, joyero, prestamista y proveedor de antigüedades antiguas. ¿En qué puedo servirle?\" Huffnpuff proviene de una larga línea de joyeros. Tiene un ojo agudo para la evaluación y una mente astuta"
+    },
+    {
+      "id": 1319554,
+      "name": "Hendon",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1284500,
+      "name": "Herik Anguson",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1284595,
+      "name": "Hermana Titar",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1282787,
+      "name": "Herne el Cazador",
+      "type": "Deidad Antigua",
+      "title": "Semidiós de la Caza, los Pantanos y los Bosques.",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "[character:5023561] es uno de los Anganach o Antiguos. El culto a [character:5023738] ha reemplazado a Herne en años recientes, pero hay aquellos que todavía rezan y ofrecen sacrificios a él. Herne es el dios de los bosques del norte, pantanos y las criaturas que los habitan. Prefiere tomar la forma de un ciervo o un hombre con la cabeza de ciervo con astas. Herne elige a un hijo favorecido, un druida, bárbaro, guardabosques o guerrero, para que lo sirva como Guardián del Bosque. Algunos creen q"
+    },
+    {
+      "id": 1284498,
+      "name": "H.H.R Huffnpuff",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1525332,
+      "name": "Hrodland Oswaldsson",
+      "type": "Henchman",
+      "title": "Mago",
+      "sex": "Male",
+      "age": "36 años",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Mago originario de las tierras de Jutland, donde fue aprendiz y asistente de un teólogo. Por mera curiosidad, se unió a una compañía de aventureros de aspecto endeble pero precedidos por ciertas historias de gloria, que se encontraban de paso por [location:5023717] con la intención de acrecentarlas, capturando la fortaleza donde se refugiaba la banda de una tal Renata. En el transcurso de la expedición, su único golpe certero en la cima de la torre del ruinoso castillo fue decisivo para dar muer"
+    },
+    {
+      "id": 1284652,
+      "name": "Huetin Blackstock",
+      "type": "NPC",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1390134,
+      "name": "Hugo",
+      "type": "PNJ",
+      "title": "Caco demon",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Enano demoníaco que brotó de la magia que curó a Aledis."
+    },
+    {
+      "id": 1492735,
+      "name": "Ianna",
+      "type": "Deidad Antigua",
+      "title": "Leona, Reina de la Victoria",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Ianna, Diosa de la DualidadIanna es una deidad venerada desde antes del [note:5542114]. De hecho, antaño se conoció a su fundadora paladina Thalia Crystalia, como la profeta que reunió los aspectos de diosas hermanas muchas veces rivales, Hoy en día, es conocida por sus aspectos duales de amor y guerra. Su culto está representado por el Templo de la Espada y el Velo, que en realidad son dos órdenes en uno, reflejando las facetas complementarias de la divinidad.El Templo del Velo emplea sacerdoti"
+    },
+    {
+      "id": 1283773,
+      "name": "Impurax",
+      "type": "Deidad Antigua",
+      "title": "Dios de la Decadencia, la Corrupción y la Peste.",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Poco se sabe acerca del antiguo dios Impurax. Se cree que sus fieles consistían en una orden secreta de druidas corruptos. Estas brujas y hechiceros vivían en el Barrowmoor y poseían un extraño poder sobre ciertas criaturas y monstruos, pero poco se ha oído hablar de su fe durante décadas. Impurax es el enemigo natural de [character:5023635] y [character:5023561]. Cuentos populares dicen que el hijo favorecido de Herne murió hace décadas en una gran batalla contra los seguidores de Impurax."
+    },
+    {
+      "id": 1469744,
+      "name": "Invafor",
+      "type": "PJ",
+      "title": "",
+      "sex": "Male",
+      "age": "23",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1492782,
+      "name": "Iskara",
+      "type": "",
+      "title": "Reina Demonio, Madre de Monstruos, Emperatriz de Aquello que Existió Antes",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1492737,
+      "name": "Istreus",
+      "type": "",
+      "title": "Maestro de Secretos, Vidente sin Ojos",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1357191,
+      "name": "Ixchel",
+      "type": "PJ",
+      "title": "Totem Bearer",
+      "sex": "Femenino",
+      "age": "19",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Ixchel nació en un lugar completamente diferente, con costumbres olvidadas en el tiempo. Su tribu, Chee' Rax' Kaq' fue el único hogar desde que tiene memoria. Nunca conoció a su madre, ya que esta murió dando a luz, y fue criada por su padre, El Sajal Akicita. Un guerrero con gran valor y una gran conexión con el dios guerrero Crom, el destino de la joven Ixchel fue formándose de forma rápida e inesperada. Alrededor de sus 3 años, la vida de Ixchel cambio para siempre. Era una noche de alegría, "
+    },
+    {
+      "id": 1501695,
+      "name": "Jorgin",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1492787,
+      "name": "Kaleth",
+      "type": "",
+      "title": "Vigilante Oscuro, Ojo Ancestral",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1290237,
+      "name": "Karg Barrigota",
+      "type": "NPC",
+      "title": "Maestro Herrero",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Karg Barrigota es el maestro herrero en la herrería [location:5047772]. Barrigota es un hábil artesano y sirve a la aldea en diversos roles como herrero, armero y forjador de armas según sea necesario. Karg es ampliamente conocido y respetado en Helix. Su joven primo, [character:5047819], sirve como su aprendiz."
+    },
+    {
+      "id": 1319332,
+      "name": "Kell Ironguard",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1501702,
+      "name": "Krisko Proudfoot",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1290246,
+      "name": "Krothos Ironguard",
+      "type": "NPC",
+      "title": "Marques",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1502858,
+      "name": "Lady Thilisa",
+      "type": "NPC",
+      "title": "",
+      "sex": "Female",
+      "age": "27",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Más de un caballero soltero ve las oportunidades presentes. Lady Thilisa, la hija del Duque [character:5924238], no carece de amigos masculinos. Rechaza todos los avances y permanece fiel a su esposo [character:5924606]."
+    },
+    {
+      "id": 1492801,
+      "name": "Lammala",
+      "type": "",
+      "title": "Madre del Mar, la de los Tentáculos",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1662159,
+      "name": "Lyncho “Tío Jerry”",
+      "type": "PJ",
+      "title": "Necromante Medium",
+      "sex": "Male",
+      "age": "55",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Lyncho Bukranis, conocido comúnmente como Tío Jerry, es una figura envuelta en misterio. Sin embargo, es sabido que conoce y/o proviene de la región de [location:5023715]. Una sensibilidad ante el aura funeraria del pantano de las [location:5027483] lo llevó a abrazar las artes de la necromancia. Lyncho es descrito a menudo como un hombre de negros ropajes y vejez descuidada. Solo su pelo lleva algún tipo de dedicación en un raro peinado. Su fingida sordera que suple con una corneta contribuye a"
+    },
+    {
+      "id": 1284517,
+      "name": "Madre Sapo",
+      "type": "NPC",
+      "title": "",
+      "sex": "Female",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "La Madre Sapo es una mujer baja y fea, con una boca ancha y grandes ojos abultados. Fue desterrada de Bogtown por actos atroces de brujería que incluían plagas de enfermedades, enjambres de insectos y una pestilencia de ranas y sapos en la aldea. Ahora vive sola en una pequeña choza en el pantano, rodeada por su parentela batracia. Si se entabla amistad con ella, y sobre todo si es adulada con efusión por atractivos personajes masculinos, ocasionalmente ofrecerá crear ungüentos para sanación (si"
+    },
+    {
+      "id": 1532237,
+      "name": "Maeise Dúnaidh",
+      "type": "PJ",
+      "title": "Bladedancer",
+      "sex": "Female",
+      "age": "18 años",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Entrenada en el templo de la diosa Ianna dentro de la orden de ma espada, con la misión de detener el avance de las fuerzas caóticas."
+    },
+    {
+      "id": 1489200,
+      "name": "Malefa",
+      "type": "PNJ",
+      "title": "Hermana",
+      "sex": "Female",
+      "age": "25",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Cuida los pobres y a las prostitutas maltratadas. Desapareció recientemente, al menos no se la ve más recibiendo a los heridos."
+    },
+    {
+      "id": 1501670,
+      "name": "Marcelus",
+      "type": "",
+      "title": "El Medio",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Hechicero extremadamente rico y astuto. Él tiene un libro de hechizos con todos los hechizos de primer nivel, y no se opone a vender acceso para obtener ganancias financieras."
+    },
+    {
+      "id": 1319542,
+      "name": "Mazzahs el Magnífico",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Mazzahs el Magnífico es un extraño mago que dirige el capitulo de la Torre del Conocimiento en Helix, llamada localmente [location:5161158]. Mazzahs da una mala primera impresión. Su ojo izquierdo es ligeramente más grande que el derecho, lo que le da una apariencia de ojos saltones. Su gorro de mago está torcido y sus túnicas están decoradas con pequeños amuletos y baratijas que tintinean mientras camina."
+    },
+    {
+      "id": 1284496,
+      "name": "Merda",
+      "type": "NPC",
+      "title": "Camarera",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Merda es hermosa pero más baja y de constitución más esbelta que las otras camareras debido a su herencia medio elfa. Tiene mal genio y siempre llega tarde para atender las mesas."
+    },
+    {
+      "id": 1492841,
+      "name": "Miriya",
+      "type": "PJ",
+      "title": "La Roja",
+      "sex": "Female",
+      "age": "89",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1492738,
+      "name": "Mityara",
+      "type": "",
+      "title": "Noble Dama, Madre de la Misericordia",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1522925,
+      "name": "Mónica Avelar",
+      "type": "PNJ",
+      "title": "Tesorera de la Torre de Conocimiento",
+      "sex": "Female",
+      "age": "27",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Mónica Avelar, una maga encantadora y misteriosa, era conocida en Adwenn por su belleza pelirroja y su elegancia al vestir túnicas diáfanas. Como tesorera de la Torre de Conocimiento, su deber era manejar los recursos mágicos con habilidad y precisión. Sin embargo, detrás de su apariencia serena y su devoción en el templo, Mónica ocultaba oscuros secretos y ambiciones retorcidas.Aunque se ganaba el afecto de muchos atendiendo a los heridos y encendiendo inciensos en el templo, también disfrutaba"
+    },
+    {
+      "id": 1489211,
+      "name": "Morneia",
+      "type": "PNJ",
+      "title": "Matriarca",
+      "sex": "Femenino",
+      "age": "71",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "La sacerdotisa de mayor rango se ve como, anciana demacrada con la espalda encorvada. Esta Hermana del Luto vestida de gris se muestra en público solo en días sagrados estacionales o cuando la llaman para lanzar alguna poderosa invocación más allá de las habilidades de sus pares. En otros momentos, se dedica a la oración casi constantemente. Últimamente ha decidido vendarse los ojos para comprender las profecías mejor, o para no ver lo que hay en el sótano. La Matriarca Morneia está segura de qu"
+    },
+    {
+      "id": 1492797,
+      "name": "Nargund",
+      "type": "",
+      "title": "Lobo del Crepúsculo, Señor de la Caza",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1492793,
+      "name": "Nasga",
+      "type": "",
+      "title": "Amante del Dolor y el Placer, Princesa de las Rosas, Serpiente",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1492740,
+      "name": "Naurivus",
+      "type": "",
+      "title": "Patrono de los Exploradores, Señor de los Vientos",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1283788,
+      "name": "Nergal",
+      "type": "Deidad Antigua",
+      "title": "Gran Dios de la Muerte, los No Muertos y el Inframundo",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Uno de los Anganach, Nergal una vez gobernó el Inframundo y las esferas de la Muerte y los No Muertos. Fue destronado y presumiblemente destruido por sus hijos [character:5027474] y [character:5027452]. Antes de su presunta muerte, Nergal aseguró que sus seguidores enterraran su artefacto más poderoso, la [item:5027482], en lo profundo de [location:5027483]. Con el tiempo, la Tabla ha convocado a los muertos a resurgir. Si la Tabla retiene la última esencia remanente de Nergal o si él todavía ex"
+    },
+    {
+      "id": 1501703,
+      "name": "Odo Furryfoot",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1501697,
+      "name": "Olen",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1319333,
+      "name": "Ollis Blackfell",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1522926,
+      "name": "Olveg",
+      "type": "PNJ",
+      "title": "Maestro de la Torre de Conocimiento",
+      "sex": "Male",
+      "age": "42",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Olveg el Verde, maestro de la torre de conocimiento de Adwenn, era un hechicero renombrado por su destreza en las artes arcanas de la batalla. Sin embargo, detrás de su imponente figura de barba gris y vestimenta verde, yacía un oscuro secreto del pasado. En su juventud, tuvo un romance prohibido con una Gorgona, del cual nació una hija que, con el tiempo, se transformó en una peligrosa medusa.Con el corazón afligido por la culpa, Olveg se aventura en solitario por el Bosque Ennegrecido en busca"
+    },
+    {
+      "id": 1283786,
+      "name": "Orcus",
+      "type": "Deidad Nueva",
+      "title": "Dios de los No Muertos, la Muerte y el Inframundo",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Orcus y su hermano [character:5027452] unieron sus fuerzas para derrocar a [character:5027484]. Esto resultó en una guerra civil en la que ambos hermanos poseían una parte del poder de su padre. Orcus, consciente de la Tabla del Caos, sabía que quien poseyera el artefacto podría inclinar el equilibrio de poder y reclamar el control del inframundo. Los acólitos de Orcus están comprometidos con la aniquilación de [character:5027452] y sus seguidores. En la actualidad, [character:5027452] y Orcus c"
+    },
+    {
+      "id": 1492798,
+      "name": "Ornaron",
+      "type": "",
+      "title": "Padrino de las Tormentas, Hacedor de Truenos",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1431616,
+      "name": "Orsin Firith",
+      "type": "NPC",
+      "title": "Conde",
+      "sex": "Male",
+      "age": "41",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "El Barón Orsin Firith adquirió su título en 715. Su padre, Sir Jerin Firith, se casó con la Princesa Lenera Elendsa en 672. El enérgico y ambicioso Orsin tiene un reclamo al trono. Sir Orsin es el Lord Mariscal de Oselmarch y comanda a algunos de los soldados mejor entrenados de Rorn para asegurar la frontera contra los [note:5641998]. El conde es un guerrero consumado y un líder brillante. Perdió un ojo luchando contra los Pagaelin en 718 y cuenta con la lealtad de sus hombres."
+    },
+    {
+      "id": 1287128,
+      "name": "Osen",
+      "type": "NPC",
+      "title": "Maestro de Gremio",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "El Maestro de Gremio Osen, un antiguo aventurero retirado, llegó a Helix el verano pasado cuando supo del descubrimiento de un gran campo de túmulos en el Barrowmoor. Aunque sus días de aventura ya han quedado atrás, Osen creó un gremio de mercenarios para representar y organizar la mano de obra local. Los recientes rumores de oro y tesoros en Barrowmaze aseguran que Osen tiene un flujo constante de individuos desesperados (y codiciosos) que esperan ganar una rápida moneda de oro."
+    },
+    {
+      "id": 1295395,
+      "name": "Othar",
+      "type": "NPC",
+      "title": "Hermano",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Othar es de aspecto prolijo y causa una excelente primera impresión. Está dedicado a establecer a San Ygg como la deidad principal en [location:5023715] y sus alrededores."
+    },
+    {
+      "id": 1319538,
+      "name": "Perni Ticklebottom",
+      "type": "NPC",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1409160,
+      "name": "Quentin",
+      "type": "PJ",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1492795,
+      "name": "Ravanor",
+      "type": "",
+      "title": "Príncipe Amargo, Rey Ornamentado",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1501705,
+      "name": "Redenlin",
+      "type": "",
+      "title": "",
+      "sex": "Female",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1501689,
+      "name": "Renata",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "[character:5920274] , también conocida como \"la Ladrón\" o \"la Podrida\", y su variopinto equipo viven en un reduto secreto en el [location:5030845]. Renata y su banda emboscan caravanas y exigen tributo por su \"protección\". Existen muchos rumores sobre ella. Algunos dicen que es de sangre noble. Otros dicen que alguna vez fue la ranger favorita de [character:5023561] pero ahora vive en desgracia. Otros más afirman que tiene conexiones con el gremio de ladrones con sede en [location:5023716]. Inde"
+    },
+    {
+      "id": 1501690,
+      "name": "Renata",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1282830,
+      "name": "San Ygg",
+      "type": "Deidad Nueva",
+      "title": "Dios de la Rectitud.",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "San Ygg, una vez un gran heroe de la [note:5541723] luego de morir, fue exaltado y elevado a la Santidad en reconocimiento por llevar la religion Empyrea a las barbaricas tierras del norte. San Ygg es la deidad legítima de la rectitud y la luz. San Ygg cree en los más altos estándares morales. Es autojustificado y posee un temperamento indignado hacia aquellos que no logran ver la naturaleza justa de sus acciones. San Ygg es el más influyente de los dioses \"civilizados\" o Futurus en la región. S"
+    },
+    {
+      "id": 1282825,
+      "name": "Santa Arcantryl",
+      "type": "Deidad Nueva",
+      "title": "Diosa de la Magia",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Arcantryl fue exaltada como una santa de la [note:5541723] luego de inmolarse en un cataclismo magico para evitar que fuerzas Cthonicas exparsieran su corrupcion por las tierras de Rorn. Desde entonces, es vista como la patrona de los practicantes de magias arcanas de la region, y guardiana contra las artes Necromanticas. Arcantryl es una de las nuevas deidades o Futurus. Arcantryl obtiene su poder del conocimiento de las leyes del universo y la existencia. Ella cree en comprender la estructura "
+    },
+    {
+      "id": 1502973,
+      "name": "Sedris Meleken",
+      "type": "NPC",
+      "title": "Conde",
+      "sex": "Male",
+      "age": "27",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "El Duque Sedris Meleken, de 27 años, un hombre de honor renombrado, se encuentra actualmente fuera del castillo en busca de un asesino. Partió temprano en el año 723 y sus propiedades son gestionadas por su brillante y radiante esposa, [character:5924236], de 23 años. Todavía no tienen hijos; si el Duque no regresa, 12 generaciones de descendencia directa llegarán a su fin."
+    },
+    {
+      "id": 1283779,
+      "name": "Set",
+      "type": "Deidad Nueva",
+      "title": "Dios de las Serpientes, la Muerte y el Inframundo",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Set y su hermano [character:5027474] destronaron a su padre [character:5027484] para tomar el control del inframundo. Después de completar la tarea, se enfrentaron entre sí para establecer un control total sobre las esferas de poder de su padre. Comenzó una guerra por el control del inframundo. Se produjo un punto muerto en el que cada hijo controlaba una parte del poder de Nergal. Para inclinar la balanza, Set reunió a sus nigromantes y les ordenó que encontraran la [item:5027482|Tabla del Caos"
+    },
+    {
+      "id": 1282807,
+      "name": "Silvanus",
+      "type": "Deidad Antigua",
+      "title": "Dios de la Naturaleza y el Equilibrio.",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Como uno de los Anganach, la fe en [character:5023635] llegó con los primeros asentamientos humanos. Su religión ha sido en gran parte, pero no exclusivamente, reemplazada por el culto a [character:5023738] . Silvanus, también llamado el Hombre Verde, supervisa el equilibrio en la naturaleza: la ley y el caos, la luz y la oscuridad, el crecimiento y la decadencia, la vida y la muerte. Durante generaciones, los guardabosques y druidas buscaron la guía y protección de Silvanus. También se consider"
+    },
+    {
+      "id": 1510061,
+      "name": "Stodius Mal",
+      "type": "NPC",
+      "title": "Maestro de Mercenarios",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1319556,
+      "name": "Tamson",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1319526,
+      "name": "Taycee",
+      "type": "NPC",
+      "title": "Camarera",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Taycee es el arquetipo de la camarera femenina, de curvas generosas y pelirroja. Es bonita pero sarcástica, con un sentido del humor sardónico. Ha trabajado para [character:5161082] por años."
+    },
+    {
+      "id": 1492803,
+      "name": "Telith",
+      "type": "",
+      "title": "Gran Madre Tierra, Huevo de las Montañas",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1431711,
+      "name": "Theremus Augilian Dariune",
+      "type": "NPC",
+      "title": "Duque",
+      "sex": "Male",
+      "age": "47",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "El Duque Theremus Augilian reside en la fortaleza del la [location:5647147] con su familia y sirvientes. Su madre fue la Princesa Kethele Elendsa, lo que le otorga un reclamo al trono del principado. Se están llevando a cabo negociaciones para desposar a su hijo mayor, Scina, con la Princesa Cheselyne Elendsa. Ella tiene un fuerte reclamo al trono, al igual que cualquier hijo del matrimonio. Últimamente está muy preocupado por la amenaza que representan los bárbaros Jutos y considera que es una "
+    },
+    {
+      "id": 1460164,
+      "name": "Thydis",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "La forma preferida de Thydis es la de una bella elfa ágil con ojos azules y cabello negro hasta la cintura, atado con un corselete de cuero. Siempre se rocía con este exquisito perfume de jazmín de Argollëa , una fragancia que ella codicia por encima de todas las demás."
+    },
+    {
+      "id": 1501694,
+      "name": "Tomli",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1501681,
+      "name": "Torvik Calanon",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Torvik, ingenuo y confiado, ha arriesgado su vida para ayudar a extraños en varias ocasiones. Sus amigos han advertido que será su perdición si no se vuelve más sabio, ¡por Crom! Su distintivo cota de malla roja está encantada y hace juego con su escudo."
+    },
+    {
+      "id": 1492741,
+      "name": "Türas",
+      "type": "",
+      "title": "Mariscal de Justicia, Juez del Valor",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1284499,
+      "name": "Umlar",
+      "type": "NPC",
+      "title": "el tabernero",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1319527,
+      "name": "Urgritte",
+      "type": "NPC",
+      "title": "Camarera",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Urgritte es fuerte y alta, pero posee una constitución femenina. Tiene largos cabellos rubios dorados trenzados. Urgritte parece provenir de estirpe guerrera Jutta y tiene un fuerte acento. Ha trabajado en [location:5161085] durante unos meses."
+    },
+    {
+      "id": 1583119,
+      "name": "Urland Valeriano",
+      "type": "NPC",
+      "title": "Conde",
+      "sex": "",
+      "age": "45",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "El Conde de [location:6238104] es un soldado profesional de 45 años de una rama menor de la gran casa [family:6238112]. Mide un poco más de 6 pies, tiene ojos verde lodoso, nariz aquilina y cabello entrecano peinado hacia adelante sobre una frente orgullosa. Desde que las huestes de las tierras fronterizas fueron llamadas hace dos años, [character:6238111] ha carecido del personal necesario para proteger verdaderamente su condado. Valeriano se toma sus responsabilidades en serio y se esfuerza po"
+    },
+    {
+      "id": 1284514,
+      "name": "Urnst Gunter",
+      "type": "NPC",
+      "title": "Supervisor de la Caravana Estandar de Plata - Bogtown",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Gunter trabaja como supervisor comercial de la [location:5030700]"
+    },
+    {
+      "id": 1319550,
+      "name": "Valeron",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1284605,
+      "name": "Vandal Barbablanca",
+      "type": "NPC",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 2379083,
+      "name": "Varghoulis",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1319555,
+      "name": "Vina",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1503419,
+      "name": "Wevran Ethesiel",
+      "type": "NPC",
+      "title": "Conde",
+      "sex": "Male",
+      "age": "48",
+      "location": "",
+      "location_id": null,
+      "entry_summary": "Al igual que su padre, el conde de [location:5937529]es un hombre cuyas ambiciones superan con creces sus modestas habilidades. Ha estado involucrado en numerosas intrigas y no es muy confiable. Cualquier solicitud hábilmente redactada para halagar su vanidad probablemente será escuchada. Su insensatez podría llevarlo un día a cometer traición. Wevran es viudo; su esposa murió al dar a luz. A menudo organiza festines suntuosos con diversiones depravadas y macabras. Sir Romlach Ethasiel (también "
+    },
+    {
+      "id": 1422137,
+      "name": "Yuna Brittany",
+      "type": "",
+      "title": "",
+      "sex": "",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    },
+    {
+      "id": 1319557,
+      "name": "Yusef",
+      "type": "NPC",
+      "title": "",
+      "sex": "Male",
+      "age": "",
+      "location": "",
+      "location_id": null,
+      "entry_summary": ""
+    }
+  ],
+  "locations": [
+    {
+      "id": 1339530,
+      "name": "Afonmard",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155155,
+      "name": "Barrowmaze",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1154084,
+      "name": "Bogtown",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155949,
+      "name": "Bosque Ennegrecido",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155890,
+      "name": "Bosque Wyrdwood",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1303967,
+      "name": "Cabaña de la Madre Sapo",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1341188,
+      "name": "Campamentos extramuros",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1186928,
+      "name": "Carpintero/Flechero",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1156027,
+      "name": "Castillo Ironguard",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1282334,
+      "name": "Ciudad de Adwenn",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1281559,
+      "name": "Condado de Kobing",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1333469,
+      "name": "Dinasparc",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1339184,
+      "name": "Dinasporth",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1331853,
+      "name": "Dreist Ar Boud",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1281554,
+      "name": "Ducado de Adwenn",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1282311,
+      "name": "Ducado de Aven",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1282317,
+      "name": "Ducado de Kerrier",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1282306,
+      "name": "Ducado de Kresen",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155980,
+      "name": "El Barril Goteante",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1154054,
+      "name": "El Condado de Aerik",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1186790,
+      "name": "El Cuarzo Rosado - Joyeria y Prestamista",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155981,
+      "name": "El Dragon Negro",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1157897,
+      "name": "El Emporio de Turgen.",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155916,
+      "name": "El Escudo Roto",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1186923,
+      "name": "El Faisán Fétido",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1186915,
+      "name": "El Farol Azaroso",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1160923,
+      "name": "El Hacha y el Yunque",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155977,
+      "name": "El Medianito Hinchado",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1186933,
+      "name": "El molino",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1156017,
+      "name": "El Regalo Inesperado",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155898,
+      "name": "El Troll Tostado",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1468100,
+      "name": "Fuerte Compañia del Zafiro",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1363495,
+      "name": "Fuerte Ironwolf",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1343660,
+      "name": "Grano Dorado",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1157887,
+      "name": "Gremio de Mercenarios",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1154083,
+      "name": "Helix",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1263158,
+      "name": "Imperio Aureo Occidental",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1263157,
+      "name": "Imperio Aureo Oriental",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1355173,
+      "name": "Jarro de Piedra",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1281558,
+      "name": "Kastel Dor",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1186926,
+      "name": "La Aguja del Hechicero",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1156024,
+      "name": "La Pala Brillante",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1156026,
+      "name": "La Sede de la Compañía de Caravanas Estándar de Plata",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155887,
+      "name": "Moon Peaks",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1154085,
+      "name": "Mota de Ironguard",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155971,
+      "name": "Pequeño templo a Crom",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1157888,
+      "name": "Plaza del Pueblo (lugar de encuentro central y mercado).",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1281553,
+      "name": "Principado de Westmerc",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1263303,
+      "name": "Reino de Rorn",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1240462,
+      "name": "República Marítima de Corcano",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1165414,
+      "name": "Río Moorwash",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1240470,
+      "name": "Rodos",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155975,
+      "name": "Santuario a Arcantryl",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155913,
+      "name": "Santuario a Crom",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1165421,
+      "name": "Santuario de San Ygg",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155918,
+      "name": "Sucursal Bogtown de la Compañía de Caravanas Estándar de Plata.",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1165415,
+      "name": "Sucursal Helix de la Compañía de Caravanas Estándar de Plata",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155961,
+      "name": "Templo a San Ygg",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155914,
+      "name": "Templo a Silvanus",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1328940,
+      "name": "Tierras Principales",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1404810,
+      "name": "Turos Tem",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 1155950,
+      "name": "Viejo Puente Enano",
+      "type": "",
+      "parent": "",
+      "parent_id": null,
+      "is_map_private": false,
+      "entry_summary": ""
+    }
+  ],
+  "organisations": [
+    {
+      "id": 248642,
+      "name": "Acólitos de Orcus",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 247483,
+      "name": "Compañía de Caravanas Estándar de Plata",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 274216,
+      "name": "Familia Argol",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 286278,
+      "name": "La banda de Marcelus",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 286282,
+      "name": "La banda de Renata",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 247471,
+      "name": "Las Manos Sombrias",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 286283,
+      "name": "Los Bastardos de Bogtown",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 247069,
+      "name": "Orden de la Cruz Carmesí",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 265471,
+      "name": "Tribu Chee' Rax' Kaq",
+      "type": "",
+      "entry_summary": ""
+    }
+  ],
+  "families": [
+    {
+      "id": 156401,
+      "name": "Augilian Dariune",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 163761,
+      "name": "Beswill",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 149219,
+      "name": "Bukranis",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 163428,
+      "name": "Caledeth",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 163427,
+      "name": "Curo",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 163441,
+      "name": "Elendsa",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 163474,
+      "name": "Ethasiel",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 156394,
+      "name": "Firith",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 144636,
+      "name": "Ironguard",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 163437,
+      "name": "Meleken",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 171653,
+      "name": "Valerian",
+      "type": "",
+      "entry_summary": ""
+    }
+  ],
+  "items": [
+    {
+      "id": 348350,
+      "name": "Periapt of Proof Against Alignment Detection",
+      "type": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 341071,
+      "name": "Tabla del Caos",
+      "type": "",
+      "entry_summary": ""
+    }
+  ],
+  "journals_index": [
+    {
+      "id": 109755,
+      "name": "Cronicas Barrowmaze",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 99855,
+      "name": "Cuaderno Zafiro",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 100685,
+      "name": "Descenso y caída",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 99897,
+      "name": "Oraciones de una Seguidora de Silvannus",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 100065,
+      "name": "Planes",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 100750,
+      "name": "Planes",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 102207,
+      "name": "Planes",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 104582,
+      "name": "Planes",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 99876,
+      "name": "Primera expedicion bajo los Tumulos",
+      "type": "",
+      "date": "0723-11-05",
+      "entry_summary": ""
+    },
+    {
+      "id": 110667,
+      "name": "Sesion 10",
+      "type": "",
+      "date": "0724-03-16",
+      "entry_summary": ""
+    },
+    {
+      "id": 112071,
+      "name": "Sesion 11",
+      "type": "",
+      "date": "2024-03-30",
+      "entry_summary": ""
+    },
+    {
+      "id": 99794,
+      "name": "Sesion 1",
+      "type": "",
+      "date": "0723-11-06",
+      "entry_summary": ""
+    },
+    {
+      "id": 100064,
+      "name": "Sesion 2",
+      "type": "",
+      "date": "0723-11-06",
+      "entry_summary": ""
+    },
+    {
+      "id": 100747,
+      "name": "Sesión 3",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 102206,
+      "name": "Sesion 4",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 103639,
+      "name": "Sesion 5",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 104579,
+      "name": "Sesion 6",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 104581,
+      "name": "Sesion 7",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 108307,
+      "name": "Sesion 8",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 109512,
+      "name": "Sesion 9",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    }
+  ],
+  "events_index": [
+    {
+      "id": 127931,
+      "name": "Festival de Herne",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 136492,
+      "name": "Fin de mes",
+      "type": "",
+      "date": "",
+      "entry_summary": ""
+    },
+    {
+      "id": 137686,
+      "name": "Gran Caravana de Invierno",
+      "type": "",
+      "date": "723-12-21",
+      "entry_summary": ""
+    },
+    {
+      "id": 137689,
+      "name": "Gran Caravana de Otoño",
+      "type": "",
+      "date": "724-9-21",
+      "entry_summary": ""
+    },
+    {
+      "id": 137687,
+      "name": "Gran Caravana de Primavera",
+      "type": "",
+      "date": "724-3-21",
+      "entry_summary": ""
+    },
+    {
+      "id": 137688,
+      "name": "Gran Caravana de Verano",
+      "type": "",
+      "date": "724-6-21",
+      "entry_summary": ""
+    },
+    {
+      "id": 147223,
+      "name": "Luna Llena",
+      "type": "",
+      "date": "724-3-1",
+      "entry_summary": ""
+    },
+    {
+      "id": 147224,
+      "name": "Luna Nueva",
+      "type": "",
+      "date": "724-3-1",
+      "entry_summary": ""
+    }
+  ],
+  "quests_index": [
+    {
+      "id": 104155,
+      "name": "La otra llave",
+      "type": "",
+      "is_completed": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 104154,
+      "name": "Maten a la perra!",
+      "type": "",
+      "is_completed": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 104160,
+      "name": "Se buscan cobradores de impuestos",
+      "type": "",
+      "is_completed": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 104159,
+      "name": "Temporada de Cosecha Seda de Araña",
+      "type": "",
+      "is_completed": false,
+      "entry_summary": ""
+    },
+    {
+      "id": 104153,
+      "name": "Terminacion: Ferwig",
+      "type": "",
+      "is_completed": false,
+      "entry_summary": ""
+    }
+  ],
+  "maps_index": [
+    {
+      "id": 75764,
+      "name": "Adwenn",
+      "type": "",
+      "image_path": ""
+    },
+    {
+      "id": 79378,
+      "name": "Barrowmaze 1.5m",
+      "type": "",
+      "image_path": ""
+    },
+    {
+      "id": 75781,
+      "name": "Ducado de Adwenn",
+      "type": "",
+      "image_path": ""
+    },
+    {
+      "id": 71814,
+      "name": "El continente de Aurëpos",
+      "type": "",
+      "image_path": ""
+    },
+    {
+      "id": 67830,
+      "name": "Helix Map",
+      "type": "",
+      "image_path": ""
+    },
+    {
+      "id": 72518,
+      "name": "Mapa actualizado",
+      "type": "",
+      "image_path": ""
+    },
+    {
+      "id": 73554,
+      "name": "Mapa de los tumulos",
+      "type": "",
+      "image_path": ""
+    },
+    {
+      "id": 76871,
+      "name": "Mapa de sccion 3/2/24",
+      "type": "",
+      "image_path": ""
+    },
+    {
+      "id": 73040,
+      "name": "Principado de Westmerc",
+      "type": "",
+      "image_path": ""
+    },
+    {
+      "id": 75763,
+      "name": "Reino de Rorn",
+      "type": "",
+      "image_path": ""
+    },
+    {
+      "id": 67590,
+      "name": "Viejo Mapa del Condado",
+      "type": "",
+      "image_path": ""
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "dungeon_turn",
+  "description": "Loop de exploración de dungeon. Un turn = ~10 minutos de juego. Ya implementado parcialmente en V5b.",
+  "abstract": {
+    "name": "Dungeon Turn",
+    "duration_minutes": 10,
+    "phases": [
+      { "id": "action", "name": "PC actions", "description": "Mover (60-120'), buscar (1 turn), escuchar (1 round), forzar puerta (1 turn), descansar (1 turn)" },
+      { "id": "wandering_check", "name": "Wandering monster check", "description": "Cada N turns, tirar para wandering monster" },
+      { "id": "light", "name": "Light/resource consumption", "description": "Tickear antorchas, aceite de linterna, conjuros activos" },
+      { "id": "rest_check", "name": "Rest requirement", "description": "Cada X turns activos, rest forzado o fatiga" },
+      { "id": "log", "name": "Log turn", "description": "Anotar lo que pasó este turn" }
+    ]
+  },
+  "implementations": {
+    "a5e": {
+      "duration_minutes": 10,
+      "wandering_cadence": "GM-adjudicated (5e DMG default es \"often\")",
+      "light_torch_turns": 60,
+      "light_lantern_turns": 360,
+      "rest_after_turns": "GM-adjudicated",
+      "_doc": "5e/A5e no formaliza dungeon turn loop tan rígido como ACKS. GM tracks exploración informalmente."
+    },
+    "acks": {
+      "duration_minutes": 10,
+      "wandering_cadence": "1 check cada 2 turns (1d6, 1=encounter)",
+      "light_torch_turns": 6,
+      "light_lantern_turns": 24,
+      "rest_after_turns": "5 turns activos = 1 turn rest forzado, sino fatigue",
+      "movement_per_turn": {
+        "exploration": "120 ft/turn (encumbered varies)",
+        "running": "120 ft/round (combat scale)"
+      },
+      "actions_per_turn": ["search 10x10 area", "listen at door (1 round)", "force door (1 turn)", "pick lock (1 turn)", "rest (1 turn)"],
+      "source": "ACKS Imperial Imprint Judges Journal Ch.2 Section A"
+    },
+    "clan": {
+      "duration_minutes": "—",
+      "wandering_cadence": "narrativo",
+      "light_torch_turns": "narrativo",
+      "rest_after_turns": "narrativo",
+      "_doc": "CLAN no formaliza dungeon crawling. Sigue el flujo de escenas."
+    }
+  },
+  "cockpitImplementation": {
+    "v5b_current": "Implementado parcialmente: dungeon modal con room graph, contador de turns, botón advance turn, wandering monster check (1d6=1 hit). Falta: light tracking, rest check, conjuros activos.",
+    "v5c_target": [
+      "Light tracker (torch countdown desde momento de encender)",
+      "Active spells tracker con duración",
+      "Rest reminder cada 5 turns (ACKS)",
+      "Action menu por turn (search, listen, force door, etc.) en vez de solo move",
+      "Auto-aplicar consecuencias (rest fail = fatigue level)"
+    ]
+  }
+}

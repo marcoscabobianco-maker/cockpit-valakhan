@@ -1,0 +1,80 @@
+{
+  "id": "turn_loop",
+  "description": "Loop genérico de exploración para hexcrawl. Aplica a wilderness y migra a dungeon_turn cuando se entra a escala local.",
+  "abstract": {
+    "name": "Spatial Turn Loop",
+    "spatialUnit": {
+      "_doc": "Cada sistema tiene su unidad espacial mínima.",
+      "options": ["region", "hex", "scene"]
+    },
+    "temporalUnit": {
+      "_doc": "Cada sistema tiene su unidad temporal mínima.",
+      "options": ["day", "watch", "round"]
+    },
+    "phases": [
+      { "id": "enter", "name": "Enter spatial unit", "description": "Establecer condiciones: weather del día, terrain, traits, tier" },
+      { "id": "activities", "name": "PC activities", "description": "Cada PC elige su rol/actividad para esta unidad espacial. Roll si aplica." },
+      { "id": "encounter_check", "name": "Encounter check", "description": "Tirar dado contra umbral. Si éxito → tabla de encuentros del (terrain, tier)" },
+      { "id": "resolve", "name": "Resolve encounter / challenge", "description": "Resolver combate, social, ambiental, narrativo" },
+      { "id": "resources", "name": "Resource consumption", "description": "Decrementar comida/agua/Supply, light si aplica, tickear conjuros" },
+      { "id": "log", "name": "Log to event history", "description": "Escribir lo que pasó al log, persistir estado" }
+    ]
+  },
+  "implementations": {
+    "a5e": {
+      "spatialUnit": "region",
+      "temporalUnit": "day",
+      "encounterCadence": "1 check al entrar a region (modificado por pace)",
+      "activitiesCadence": "1 activity por region por PC",
+      "phases": {
+        "enter": "Tirar weather. Identificar tier de region. Establecer DCs base.",
+        "activities": "Cada PC elige 1 de las 14 journey activities. Skill check al final.",
+        "encounter_check": "1d20 contra DC del tier. Pace fast +2, slow -2.",
+        "resolve": "Encounter / exploration challenge / social / scenery (4 tipos).",
+        "resources": "Supply -1 por PC por día. Cook reduce. Hunt and Gather suma.",
+        "log": "Narrator narra organicamente, no por turno."
+      },
+      "source": "Trials & Treasures, Journey Checklist"
+    },
+    "acks": {
+      "spatialUnit": "hex",
+      "temporalUnit": "watch (4-8h, 3 watches/day)",
+      "encounterCadence": "1 check por watch (RAW). Algunos GM 1 cada 2 watches.",
+      "activitiesCadence": "Roles continuos (Navigator, Scout, Lookout) — no se eligen por hex.",
+      "phases": {
+        "enter": "Weather 2d6 al inicio del día (1 vez). Navigation throw del Navigator. Terrain define velocidad.",
+        "activities": "Roles fijos: Navigator (lead), Scout (avanzado), Tracker, Lookout (vigilancia camp). No hay 'pick one'.",
+        "encounter_check": "1d6 por watch. Common: 4 in 6 (civilized), 1 in 6 (wilderness). Mod por terrain/civilization.",
+        "resolve": "Surprise + reaction roll → encounter. Distance roll. Combate o evasión.",
+        "resources": "1 ration + 1 waterskin/PC/día. Caballos: 3 stones food, 6 stones water/día. Mounts encumbrance.",
+        "log": "Judge anota cada watch consumido + eventos."
+      },
+      "source": "ACKS Imperial Imprint Judges Journal Ch.2 Section B"
+    },
+    "clan": {
+      "spatialUnit": "scene",
+      "temporalUnit": "scene-based (sin temporalidad mecánica formal)",
+      "encounterCadence": "GM-adjudicated, no hay regla mecánica fija",
+      "activitiesCadence": "libre",
+      "phases": {
+        "enter": "GM describe escena.",
+        "activities": "Players actúan libremente.",
+        "encounter_check": "GM decide. Si lo hay, traer del bestiario por categoría.",
+        "resolve": "Tirada de Aptitud (Fuerte/Ágil/Sagaz) vs DC o Determinación. PV/PC tracking.",
+        "resources": "Implícito, narrativo.",
+        "log": "Bitácora del GM, no formalizada."
+      },
+      "source": "El Kraken Tuerto (manual base CLAN)"
+    }
+  },
+  "cockpitImplementation": {
+    "_doc": "Lo que el cockpit V5 hace HOY (V5b) y lo que debe hacer en V5C según sistema activo.",
+    "v5b_current": "phases enter+log implementados parcialmente. encounter_check funcional con 1d6. Sin activities, sin resources tracking detallado, sin weather.",
+    "v5c_target": [
+      "Detectar sistema activo desde campaign.system",
+      "Cargar el cadence correspondiente (a5e=por region, acks=por watch, clan=manual)",
+      "UI de activities/roles según sistema",
+      "Resource tracker (Supply para A5e, raciones para ACKS, narrativo para CLAN)"
+    ]
+  }
+}
