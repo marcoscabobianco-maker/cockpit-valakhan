@@ -671,7 +671,8 @@
       "row": 2,
       "terrain": "pueblo",
       "name": "Gosterwick",
-      "isCity": true
+      "isCity": true,
+      "marketClass": "V"
     },
     {
       "col": 5,
@@ -1218,7 +1219,8 @@
       "terrain": "castillo",
       "name": "Castleton",
       "isCity": true,
-      "_doc": "Castillo de Caladán."
+      "_doc": "Castillo de Caladán.",
+      "marketClass": "IV"
     },
     {
       "col": 4,

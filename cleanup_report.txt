@@ -1,0 +1,481 @@
+Reporte de limpieza del bestiario
+============================================================
+
+Total monstruos en bestiario: 370
+Monstruos modificados: 49
+Total cambios aplicados: 94
+
+
+[Giant Ant Queen]
+  atk:
+    ANTES: '1 (bite 6+) Attacks: 1 (bite 5+)'
+    DESPUÉS: '1 (bite 6+)'
+    [removed OCR label suffix]
+  dmg:
+    ANTES: '3d6 Damage: 3d8'
+    DESPUÉS: '3d6'
+    [removed OCR label suffix]
+  spd:
+    ANTES: '60’ / 180’ Speed (land): 40’ /'
+    DESPUÉS: '60’ / 180’'
+    [removed OCR label suffix]
+  size:
+    ANTES: 'Man-sized (25 st) Size: Large '
+    DESPUÉS: 'Man-sized (25 st)'
+    [removed OCR label suffix]
+  dunEnc:
+    ANTES: 'Special Dungeon Enc: Special'
+    DESPUÉS: 'Special'
+    [removed OCR label suffix]
+  wildEnc:
+    ANTES: 'Special Wilderness Enc: Special'
+    DESPUÉS: 'Special'
+    [removed OCR label suffix]
+  tt:
+    ANTES: 'None Treasure Type: '
+    DESPUÉS: 'None'
+    [removed OCR label suffix]
+
+[Queen Bee]
+  atk:
+    ANTES: '1 (sting 10+) Attacks: 1 (sting 9+)'
+    DESPUÉS: '1 (sting 10+)'
+    [removed OCR label suffix]
+  dmg:
+    ANTES: '1d4 + special Damage: 1d6 + special'
+    DESPUÉS: '1d4 + special'
+    [removed OCR label suffix]
+  spd:
+    ANTES: "5’ / 15' Speed (land): 5’ / 15"
+    DESPUÉS: "5’ / 15'"
+    [removed OCR label suffix]
+  size:
+    ANTES: 'Small (2/6 st.) Size: Small (1'
+    DESPUÉS: 'Small (2/6 st.)'
+    [removed OCR label suffix]
+  dunEnc:
+    ANTES: 'Special Dungeon Enc: Special'
+    DESPUÉS: 'Special'
+    [removed OCR label suffix]
+  wildEnc:
+    ANTES: 'Special Wilderness Enc: Special'
+    DESPUÉS: 'Special'
+    [removed OCR label suffix]
+  tt:
+    ANTES: 'None Treasure Type: '
+    DESPUÉS: 'None'
+    [removed OCR label suffix]
+
+[Giant Boar]
+  dunEnc:
+    ANTES: 'sounder (1d4) / den (1d4+1) 1 (stubby tu'
+    DESPUÉS: 'sounder (1d4) / den (1d4+1) 1'
+    [removed unclosed-paren tail]
+
+[Khepri Hierarch]
+  atk:
+    ANTES: '2 (fists 3+) or 1 (kiss 3+) Attacks: 2 (fists 0+) or 1 (kiss'
+    DESPUÉS: '2 (fists 3+) or 1 (kiss 3+)'
+    [removed OCR label suffix]
+  dmg:
+    ANTES: '1d12 or special Damage: 1d12 or special'
+    DESPUÉS: '1d12 or special'
+    [removed OCR label suffix]
+  spd:
+    ANTES: '40’ / 120’ Speed (land): 40’ /'
+    DESPUÉS: '40’ / 120’'
+    [removed OCR label suffix]
+  size:
+    ANTES: 'Man-sized (24 st.) Size: Man-s'
+    DESPUÉS: 'Man-sized (24 st.)'
+    [removed OCR label suffix]
+  dunEnc:
+    ANTES: 'Solitary (1) Dungeon Enc: Solitary (1)'
+    DESPUÉS: 'Solitary (1)'
+    [removed OCR label suffix]
+  wildEnc:
+    ANTES: 'Solitary (1)/Vault (2d3) Wilderness Enc:'
+    DESPUÉS: 'Solitary (1)/Vault (2d3)'
+    [removed OCR label suffix]
+
+[Cattle]
+  atk:
+    ANTES: '1 (kick or butt 9+) Attacks: 1 (kick or butt 8+)'
+    DESPUÉS: '1 (kick or butt 9+)'
+    [removed OCR label suffix]
+  dmg:
+    ANTES: '1d3 or 1d6 Damage: 1d4 or 1d8'
+    DESPUÉS: '1d3 or 1d6'
+    [removed OCR label suffix]
+  spd:
+    ANTES: '80’ / 240’ Speed (land): 60’ /'
+    DESPUÉS: '80’ / 240’'
+    [removed OCR label suffix]
+  size:
+    ANTES: 'Large (35 st.) Size: Large (80'
+    DESPUÉS: 'Large (35 st.)'
+    [removed OCR label suffix]
+  dunEnc:
+    ANTES: 'None Dungeon Enc: None'
+    DESPUÉS: 'None'
+    [removed OCR label suffix]
+  wildEnc:
+    ANTES: 'Herd (5d10) Wilderness Enc: Herd (5d10)'
+    DESPUÉS: 'Herd (5d10)'
+    [removed OCR label suffix]
+  tt:
+    ANTES: 'None Treasure Type: '
+    DESPUÉS: 'None'
+    [removed OCR label suffix]
+
+[Baleygr Lord]
+  atk:
+    ANTES: '1 (weapon or whip -1+) Attacks: 1 (weapon or whip -1+)'
+    DESPUÉS: '1 (weapon or whip -1+)'
+    [removed OCR label suffix]
+  dmg:
+    ANTES: '4d6 /2d6, drag Damage: 5d6/3d6, drag'
+    DESPUÉS: '4d6 /2d6, drag'
+    [removed OCR label suffix]
+  spd:
+    ANTES: '40’ / 120’ Speed (land): 40’ /'
+    DESPUÉS: '40’ / 120’'
+    [removed OCR label suffix]
+  size:
+    ANTES: 'Huge (700 st.) Size: Huge (700'
+    DESPUÉS: 'Huge (700 st.)'
+    [removed OCR label suffix]
+  dunEnc:
+    ANTES: 'Solitary (1) / Fist (1d4) Dungeon Enc: S'
+    DESPUÉS: 'Solitary (1) / Fist (1d4)'
+    [removed OCR label suffix]
+
+[Ant, Giant]
+  atk:
+    ANTES: '1 (bite 6+) Attacks: 1 (bite 5+)'
+    DESPUÉS: '1 (bite 6+)'
+    [removed OCR label suffix]
+  dmg:
+    ANTES: '3d6 Damage: 3d8'
+    DESPUÉS: '3d6'
+    [removed OCR label suffix]
+  spd:
+    ANTES: '60’ / 180’ Speed (land): 40’ /'
+    DESPUÉS: '60’ / 180’'
+    [removed OCR label suffix]
+  size:
+    ANTES: 'Man-sized (25 st) Size: Large '
+    DESPUÉS: 'Man-sized (25 st)'
+    [removed OCR label suffix]
+  dunEnc:
+    ANTES: 'Special Dungeon Enc: Special'
+    DESPUÉS: 'Special'
+    [removed OCR label suffix]
+  wildEnc:
+    ANTES: 'Special Wilderness Enc: Special'
+    DESPUÉS: 'Special'
+    [removed OCR label suffix]
+  tt:
+    ANTES: 'None Treasure Type: '
+    DESPUÉS: 'None'
+    [removed OCR label suffix]
+
+[Zombie]
+  spd:
+    ANTES: "(land): 40’ / 120'"
+    DESPUÉS: "40’ / 120'"
+    [removed '(land):' prefix]
+
+[Blood Hound]
+  spd:
+    ANTES: '(land): 50’ / 150’'
+    DESPUÉS: '50’ / 150’'
+    [removed '(land):' prefix]
+
+[Lesser Barghest]
+  spd:
+    ANTES: '(land): 60’ / 180’'
+    DESPUÉS: '60’ / 180’'
+    [removed '(land):' prefix]
+
+[Giant vampire Bat]
+  spd:
+    ANTES: '(land): 10’ / 30’'
+    DESPUÉS: '10’ / 30’'
+    [removed '(land):' prefix]
+  wildEnc:
+    ANTES: 'Flock (1d4) / nest (2d'
+    DESPUÉS: 'Flock (1d4) / nest'
+    [removed unclosed-paren tail]
+
+[Luminous Beetle]
+  spd:
+    ANTES: "(land): 40’ / 120'"
+    DESPUÉS: "40’ / 120'"
+    [removed '(land):' prefix]
+
+[Beetle]
+  atk:
+    ANTES: '1 (bite 7+) \x8d chitinous spurs (1 st, 65gp, armor +2, weapon '
+    DESPUÉS: '1 (bite 7+) chitinous spurs'
+    [removed unclosed-paren tail, removed \x8d garbage byte]
+  spd:
+    ANTES: "(land): 50’ / 150'"
+    DESPUÉS: "50’ / 150'"
+    [removed '(land):' prefix]
+  wildEnc:
+    ANTES: 'scourge (2'
+    DESPUÉS: 'scourge'
+    [removed unclosed-paren tail]
+
+[Giant centipede]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[Giant crocodile]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[Large crocodile]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[Greater dakhanavar]
+  spd:
+    ANTES: '(land): 10’ / 30’ or 40’ / 120'
+    DESPUÉS: '10’ / 30’ or 40’ / 120'
+    [removed '(land):' prefix]
+
+[Lesser dakhanavar]
+  spd:
+    ANTES: '(land): 10’ / 30’'
+    DESPUÉS: '10’ / 30’'
+    [removed '(land):' prefix]
+
+[Giant devil ray]
+  spd:
+    ANTES: '(land): - Ecology'
+    DESPUÉS: '- Ecology'
+    [removed '(land):' prefix]
+
+[Medium Horse]
+  spd:
+    ANTES: '(land): 60’ / 180’ for Monster'
+    DESPUÉS: '60’ / 180’ for Monster'
+    [removed '(land):' prefix]
+
+[Galdrtré]
+  spd:
+    ANTES: '(land): 5’ / 15’'
+    DESPUÉS: '5’ / 15’'
+    [removed '(land):' prefix]
+
+[Jann]
+  spd:
+    ANTES: "(land): 30’ / 90'"
+    DESPUÉS: "30’ / 90'"
+    [removed '(land):' prefix]
+
+[Halfling]
+  spd:
+    ANTES: '(land): 30’ / 90’'
+    DESPUÉS: '30’ / 90’'
+    [removed '(land):' prefix]
+
+[Large Herd Animal]
+  atk:
+    ANTES: '1 (kick or butt 9+) Attacks: 1 (kick or butt 8+)'
+    DESPUÉS: '1 (kick or butt 9+)'
+    [removed OCR label suffix]
+  dmg:
+    ANTES: '1d3 \ue902 or 1d6 \ue902 Damage: 1d4 \ue902 or 1d8 \ue902'
+    DESPUÉS: '1d3 \ue902 or 1d6 \ue902'
+    [removed OCR label suffix]
+  spd:
+    ANTES: '(land): 80’ / 240’ Speed (land'
+    DESPUÉS: '80’ / 240’ Speed'
+    [removed '(land):' prefix, removed unclosed-paren tail]
+  wildEnc:
+    ANTES: 'Herd (5d10) Wilderness Enc: Herd (5d10)'
+    DESPUÉS: 'Herd (5d10)'
+    [removed OCR label suffix]
+  dunEnc:
+    ANTES: 'none Dungeon Enc: none'
+    DESPUÉS: 'none'
+    [removed OCR label suffix]
+  tt:
+    ANTES: 'none Treasure Type: '
+    DESPUÉS: 'none'
+    [removed OCR label suffix]
+
+[Huge Herd Animal]
+  atk:
+    ANTES: '1 (kick or butt 7+) Attacks: 1 (kick or butt 6+)'
+    DESPUÉS: '1 (kick or butt 7+)'
+    [removed OCR label suffix]
+  dmg:
+    ANTES: '1d6 \ue902 or 1d10 \ue902 Damage: 1d8 \ue902 or 1d12 \ue902'
+    DESPUÉS: '1d6 \ue902 or 1d10 \ue902'
+    [removed OCR label suffix]
+  spd:
+    ANTES: '(land): 60’ / 180’ Speed (land'
+    DESPUÉS: '60’ / 180’ Speed'
+    [removed '(land):' prefix, removed unclosed-paren tail]
+
+[Hippopotamus]
+  spd:
+    ANTES: '(land): 30’ / 90’'
+    DESPUÉS: '30’ / 90’'
+    [removed '(land):' prefix]
+
+[Hobgholl]
+  spd:
+    ANTES: '(land): 40’ / 120’'
+    DESPUÉS: '40’ / 120’'
+    [removed '(land):' prefix]
+
+[Leyak]
+  spd:
+    ANTES: '(land): 40’ / 120’ (body)'
+    DESPUÉS: '40’ / 120’ (body)'
+    [removed '(land):' prefix]
+
+[Living Ancestor]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[Mammoth]
+  spd:
+    ANTES: "(land): 40’ / 120'"
+    DESPUÉS: "40’ / 120'"
+    [removed '(land):' prefix]
+
+[Berserker]
+  spd:
+    ANTES: '(land): 40’ / 120’'
+    DESPUÉS: '40’ / 120’'
+    [removed '(land):' prefix]
+  dunEnc:
+    ANTES: 'Gang (1d6) / outpost (1 warb'
+    DESPUÉS: 'Gang (1d6) / outpost'
+    [removed unclosed-paren tail]
+
+[Gelatinous Mass]
+  spd:
+    ANTES: "(land): 20’ / 60'"
+    DESPUÉS: "20’ / 60'"
+    [removed '(land):' prefix]
+
+[Giant raptor]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[Medium raptor]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[Flame salamander]
+  spd:
+    ANTES: '(land): 40’ / 120’'
+    DESPUÉS: '40’ / 120’'
+    [removed '(land):' prefix]
+
+[Great white shark]
+  spd:
+    ANTES: '(land): -'
+    DESPUÉS: '-'
+    [removed '(land):' prefix]
+
+[Giant slug]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[King cobra]
+  spd:
+    ANTES: '(land): 40’ / 120’'
+    DESPUÉS: '40’ / 120’'
+    [removed '(land):' prefix]
+
+[Python snake]
+  spd:
+    ANTES: '(land): 30’ / 90’'
+    DESPUÉS: '30’ / 90’'
+    [removed '(land):' prefix]
+
+[Giant Black widow]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[Giant crab spider]
+  spd:
+    ANTES: '(land): 40’ / 120’'
+    DESPUÉS: '40’ / 120’'
+    [removed '(land):' prefix]
+
+[Bronze Animated statue]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[Animated Iron statue]
+  spd:
+    ANTES: '(land): 10’ / 30’'
+    DESPUÉS: '10’ / 30’'
+    [removed '(land):' prefix]
+
+[Animated stone statue]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[Lesser titan]
+  spd:
+    ANTES: '(land): 40’ / 120’'
+    DESPUÉS: '40’ / 120’'
+    [removed '(land):' prefix]
+
+[Giant shrew]
+  spd:
+    ANTES: "(land): 60’ / 180' \x8d paws (1/6"
+    DESPUÉS: "60’ / 180' paws"
+    [removed '(land):' prefix, removed unclosed-paren tail, removed \x8d garbage byte]
+
+[Giant Black worm]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]
+
+[Men, Berserkers]
+  spd:
+    ANTES: '(land): 40’ / 120’'
+    DESPUÉS: '40’ / 120’'
+    [removed '(land):' prefix]
+  dunEnc:
+    ANTES: 'Gang (1d6) / outpost (1 warb'
+    DESPUÉS: 'Gang (1d6) / outpost'
+    [removed unclosed-paren tail]
+
+[Raptor, Giant]
+  spd:
+    ANTES: '(land): 20’ / 60’'
+    DESPUÉS: '20’ / 60’'
+    [removed '(land):' prefix]

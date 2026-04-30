@@ -1,0 +1,7349 @@
+{
+  "monsters": {
+    "Giant Ant Queen": {
+      "ac": 7,
+      "hd": "5",
+      "atk": "1 (bite 6+)",
+      "dmg": "3d6",
+      "save": "F2",
+      "morale": 1,
+      "spd": "60’ / 180’",
+      "size": "Man-sized (25 st)",
+      "dunEnc": "Special",
+      "wildEnc": "Special",
+      "tt": "None",
+      "align": "Neutral"
+    },
+    "Arane": {
+      "ac": 3,
+      "hd": "6***",
+      "atk": "1 (bite or web 5+)",
+      "dmg": "1d8 piercing + poison",
+      "save": "F6",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Large (57 st.)"
+    },
+    "Demonic Attercop": {
+      "ac": 10,
+      "hd": "10****",
+      "atk": "1 (bite or web 1+) or 2 (horns 1+)",
+      "dmg": "4d10 + poison, web, or 2d10",
+      "save": "F10",
+      "spd": "20’ / 60’",
+      "size": "Huge (230 st.)"
+    },
+    "Rock Baboon": {
+      "ac": 3,
+      "hd": "2",
+      "atk": "2 (bite, club 9+)",
+      "dmg": "1d3/1d6",
+      "save": "F2",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (23 st.)"
+    },
+    "Greater Barghest": {
+      "ac": 6,
+      "hd": "10***",
+      "atk": "1 (bite 1+)",
+      "dmg": "4d6",
+      "save": "F10",
+      "morale": 4,
+      "spd": "60’ / 180’",
+      "size": "Huge (290 st.)"
+    },
+    "Petrifying Basilisk": {
+      "ac": 5,
+      "hd": "6",
+      "atk": "1 (bite 4+ or gaze)",
+      "dmg": "1d10 + petrify or petrify",
+      "save": "F6",
+      "morale": 1,
+      "spd": "20’ / 60’",
+      "size": "Man-sized (30 st.)"
+    },
+    "Polar Bear": {
+      "ac": 4,
+      "hd": "7",
+      "atk": "3 (2 claws, bite 4+)",
+      "dmg": "1d8/1d8/2d6",
+      "save": "F3",
+      "morale": 1,
+      "spd": "40’ / 120'",
+      "size": "Large (140 st.)",
+      "dunEnc": "Solitary (1) / Den (1d2)",
+      "wildEnc": "Sloth (1d2) / Den (1d2)",
+      "tt": "None",
+      "align": "Neutral"
+    },
+    "Worker Bee": {
+      "ac": 2,
+      "hd": "1",
+      "atk": "1 (sting 12+)",
+      "dmg": "1d3 + special",
+      "save": "F1",
+      "morale": 1,
+      "spd": "5’ / 15'",
+      "size": "Small (1/6 st.)"
+    },
+    "Queen Bee": {
+      "ac": 4,
+      "hd": "1*",
+      "atk": "1 (sting 10+)",
+      "dmg": "1d4 + special",
+      "save": "F1",
+      "morale": 1,
+      "spd": "5’ / 15'",
+      "size": "Small (2/6 st.)",
+      "dunEnc": "Special",
+      "wildEnc": "Special",
+      "tt": "None",
+      "align": "Neutral"
+    },
+    "Bombardier Beetle": {
+      "ac": 5,
+      "hd": "2",
+      "atk": "1 (bite or spray 9+)",
+      "dmg": "1d6 or special",
+      "save": "F1",
+      "morale": 0,
+      "spd": "40’ / 120'",
+      "size": "Man-sized (13 st.)"
+    },
+    "Terrestrial Tiger Beetle": {
+      "ac": 6,
+      "hd": "3+1",
+      "atk": "1 (bite 7+)",
+      "dmg": "2d6",
+      "save": "F1",
+      "morale": 1,
+      "spd": "50’ / 150'",
+      "size": "Man-sized (60 st.)",
+      "dunEnc": "Cluster (1d8) / Nest (2d6)",
+      "wildEnc": "Scourge"
+    },
+    "Black Blob": {
+      "ac": 5,
+      "hd": "10**",
+      "atk": "1 (pseudopod 1+)",
+      "dmg": "3d8",
+      "save": "F5",
+      "spd": "20’ / 60'",
+      "size": "Gigantic (5,000 st.)"
+    },
+    "Ordinary Boar": {
+      "ac": 2,
+      "hd": "3",
+      "atk": "1 (tusk 8+)",
+      "dmg": "2d4",
+      "save": "F2",
+      "morale": 2,
+      "spd": "50’ / 150’",
+      "size": "Man-Sized (38 st.)",
+      "dunEnc": "Sounder (1d4) / Den (1d4)",
+      "wildEnc": "Sounder (1d6) / Den (1d6)",
+      "tt": "None",
+      "align": "Neutral",
+      "_alias_of": "Boar, Ordinary"
+    },
+    "Giant Boar": {
+      "ac": 3,
+      "hd": "5",
+      "atk": "1 (tusk 6+)",
+      "dmg": "3d4",
+      "save": "F5",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Large (93 st.)",
+      "dunEnc": "sounder (1d4) / den (1d4+1) 1",
+      "_alias_of": "Boar, Giant"
+    },
+    "Bronze Bull": {
+      "ac": 7,
+      "hd": "10**",
+      "atk": "1 (horns 1+ or breath)",
+      "dmg": "5d6 or 10d6",
+      "save": "F14",
+      "spd": "40’ / 120’",
+      "size": "Huge (1000 st.)",
+      "wildEnc": "Yoke (1d2)",
+      "dunEnc": "Yoke (1d2)",
+      "tt": "M",
+      "align": "neutral"
+    },
+    "Camel": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "2 (bite, hoof 9+)",
+      "dmg": "1/1d4",
+      "save": "F1",
+      "morale": -1,
+      "spd": "50’ / 150’",
+      "size": "Large (100 st.)"
+    },
+    "Carrion Horror": {
+      "ac": 2,
+      "hd": "3+1***",
+      "atk": "8 (stingers 7+)",
+      "dmg": "1 + paralysis",
+      "save": "F2",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Large (20 st.)"
+    },
+    "Panther": {
+      "ac": 5,
+      "hd": "4*",
+      "atk": "3 (2 claws,1 bite 7+)",
+      "dmg": "1d4/1d4/1d8",
+      "save": "F2",
+      "morale": 0,
+      "spd": "70’ / 210’",
+      "size": "Man-sized (30 st.)",
+      "_alias_of": "Cat, Panther"
+    },
+    "Saber-tooth Tiger": {
+      "ac": 3,
+      "hd": "8*",
+      "atk": "3 (2 claws, 1 bite 3+)",
+      "dmg": "1d8/1d8/2d8",
+      "save": "F4",
+      "morale": 2,
+      "spd": "50’ / 150’",
+      "size": "Large (80 st.)"
+    },
+    "Catoblepas": {
+      "ac": 7,
+      "hd": "8***",
+      "atk": "1 (bite 3+ or gaze)",
+      "dmg": "2d6 or death",
+      "save": "F8",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Huge (400 st.)"
+    },
+    "Centaur": {
+      "ac": 4,
+      "hd": "4",
+      "atk": "3 (2 hooves, weapon 7+)",
+      "dmg": "1d6/1d6, weapon",
+      "save": "F4",
+      "morale": 0,
+      "spd": "60’ / 180’",
+      "size": "Large (210 st.)"
+    },
+    "Giant Centipede": {
+      "ac": 0,
+      "hd": "1",
+      "atk": "1 (bite 10+)",
+      "dmg": "1 + Poison",
+      "morale": -1,
+      "spd": "20’ / 60’",
+      "size": "Small"
+    },
+    "Chaos Hulk": {
+      "ac": 5,
+      "hd": "10****",
+      "atk": "1d6 random appendages",
+      "dmg": "1d12 + chaos infection",
+      "save": "F10",
+      "spd": "1d4 x 10’ / 1d12 x 10’",
+      "size": "Large (63 st.)"
+    },
+    "Chimera": {
+      "ac": 5,
+      "hd": "9*",
+      "atk": "5 (2 claws, 3 heads 3+), see below",
+      "dmg": "1d3/1d3/2d4/2d4/3d4, see below",
+      "save": "F9",
+      "morale": 1,
+      "spd": "40’ / 120’",
+      "size": "Huge (400 st.)"
+    },
+    "Greater Dakhanavar": {
+      "ac": 7,
+      "hd": "8+2*****",
+      "atk": "3 (2 claws, bite 2+) or 1 (weapon 2+)",
+      "dmg": "1d8/1d8/2d6 or weapon x2",
+      "save": "E8",
+      "spd": "10’ / 30’ or 40’ / 120’",
+      "size": "Huge (50 st.)"
+    },
+    "Lesser Dakhanavar": {
+      "ac": 6,
+      "hd": "6*",
+      "atk": "3 (2 claws, bite 5+)",
+      "dmg": "1d6/1d6/2d4",
+      "save": "E6",
+      "morale": 0,
+      "spd": "10’ / 30’",
+      "size": "Large (35 st.)"
+    },
+    "Hunting Dog": {
+      "ac": 2,
+      "hd": "1+1",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": 0,
+      "spd": "60’ / 180' or 80’/240",
+      "size": "Man-sized (6 st)"
+    },
+    "Doppelganger": {
+      "ac": 4,
+      "hd": "4*",
+      "atk": "1 (claw 7+)",
+      "dmg": "1d12",
+      "save": "F10",
+      "morale": 4,
+      "xp": "190",
+      "wildEnc": "1d6",
+      "tt": "H"
+    },
+    "Giant Dragonfly": {
+      "ac": 5,
+      "hd": "2*",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": 0,
+      "spd": "20’/60’",
+      "size": "Small (2/6 st)",
+      "_alias_of": "Dragonfly, Giant"
+    },
+    "Elephant": {
+      "ac": 4,
+      "hd": "9",
+      "atk": "2 or 1 (2 tusks or trample 3+)",
+      "dmg": "2d4/2d4 or 4d8",
+      "save": "F5",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Gigantic (900 st.)"
+    },
+    "Heavy Horse": {
+      "ac": 2,
+      "hd": "3+3",
+      "atk": "1 or 2 (hooves)",
+      "dmg": "1d8/1d8",
+      "save": "F2",
+      "morale": -2,
+      "spd": "50’/ 150’",
+      "size": "Large (200 st.)",
+      "wildEnc": "Herd (1d10×10)",
+      "dunEnc": "none gray, or red roan.",
+      "_alias_of": "Equine, Heavy Horse"
+    },
+    "Light Horse": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 or 2 (hooves)",
+      "dmg": "1d4/1d4",
+      "save": "F1",
+      "morale": -2,
+      "spd": "80’ / 240’",
+      "size": "Large (100 st.)",
+      "_alias_of": "Equine, Light Horse"
+    },
+    "Mule": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 (hoof or bite)",
+      "dmg": "1d4 or 1d3",
+      "save": "F1",
+      "morale": 0,
+      "spd": "50’ / 150’",
+      "size": "Large (100 st.)",
+      "_alias_of": "Equine, Mule"
+    },
+    "Steppe Horse": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 or 2 (hooves)",
+      "dmg": "1d4/1d4",
+      "save": "F1",
+      "morale": -1,
+      "spd": "70’ / 210’",
+      "size": "Large (60 st.)",
+      "_alias_of": "Equine, Steppe Horse"
+    },
+    "Piskie": {
+      "ac": 5,
+      "hd": "1*",
+      "atk": "1 (tiny bow, lance, or sword 10+)",
+      "dmg": "1d4",
+      "save": "E1",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Small (1 ½ st.)",
+      "_alias_of": "Faerie, Piskie"
+    },
+    "Pixie": {
+      "ac": 6,
+      "hd": "1*",
+      "atk": "1 (tiny bow or sword 10+)",
+      "dmg": "1d4",
+      "save": "E1",
+      "morale": -1,
+      "spd": "30’ / 90’",
+      "size": "Small (1 ½ st.)",
+      "_alias_of": "Faerie, Pixie"
+    },
+    "Giant Catfish": {
+      "ac": 5,
+      "hd": "8",
+      "atk": "5 (bite, 4 feelers 3+)",
+      "dmg": "2d8/1d4 (each feeler)",
+      "save": "F4",
+      "morale": 0,
+      "spd": "-",
+      "size": "Large (270 st.)",
+      "_alias_of": "Fish, Giant Catfish"
+    },
+    "Aquatic Giant Piranha": {
+      "ac": 3,
+      "hd": "3+3",
+      "atk": "1 (bite 7+)",
+      "dmg": "1d8",
+      "save": "F2",
+      "morale": -1,
+      "spd": "-",
+      "size": "Man-Sized (75 st.)"
+    },
+    "Sturgeon": {
+      "ac": 9,
+      "hd": "10*",
+      "atk": "1 (bite 1+)",
+      "dmg": "2d10",
+      "save": "F5",
+      "morale": -1,
+      "spd": "-",
+      "size": "Gigantic (2,050 st.)"
+    },
+    "Flay Fiend": {
+      "ac": 2,
+      "hd": "1***",
+      "atk": "1 (constrict and suffocate)",
+      "dmg": "1d4 + suffocation",
+      "save": "F1",
+      "spd": "20’ / 60’",
+      "size": "Man-sized (1 st.)"
+    },
+    "Giant Fly": {
+      "ac": 3,
+      "hd": "2*",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": 0,
+      "spd": "30’ / 90’",
+      "size": "Small (2/6 st.)"
+    },
+    "Giant Frog": {
+      "ac": 3,
+      "hd": "2*",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -2,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (20 st)"
+    },
+    "Shrieking Fungus": {
+      "ac": 2,
+      "hd": "3",
+      "atk": "See below",
+      "dmg": "See below",
+      "save": "F1",
+      "spd": "None",
+      "size": "Man-sized (33 st.)"
+    },
+    "Gargoyle": {
+      "ac": 4,
+      "hd": "4**",
+      "atk": "4 (2 claws, bite, horn 7+)",
+      "dmg": "1d3/1d3/1d6/1d4",
+      "save": "F8",
+      "morale": 3,
+      "spd": "30’ / 90’",
+      "size": "Large (150 st.)",
+      "wildEnc": "wing (2d4) / Lair (2d4)",
+      "dunEnc": "Flight (1d6) / Lair (2d4)"
+    },
+    "Marsh Ghoul": {
+      "ac": 5,
+      "hd": "3**",
+      "atk": "2 (claws 8+)",
+      "dmg": "1d6/1d6",
+      "save": "F3",
+      "morale": 1,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (15 st.)"
+    },
+    "Fire Giant": {
+      "ac": 5,
+      "hd": "11",
+      "atk": "1 (smash 2+ or throw 2+)",
+      "dmg": "5d6",
+      "save": "F8",
+      "morale": 1,
+      "spd": "40’ / 120’",
+      "size": "Huge (320 st.)"
+    },
+    "Frost Giant": {
+      "ac": 5,
+      "hd": "10",
+      "atk": "1 (smash 2+ or throw 2+)",
+      "dmg": "4d6",
+      "save": "F10",
+      "morale": 1,
+      "spd": "40’ / 120’",
+      "size": "Huge (280 st.)"
+    },
+    "Hill Giant": {
+      "ac": 5,
+      "hd": "8",
+      "atk": "1 (smash 3+ or throw 3+)",
+      "dmg": "2d8",
+      "save": "F8",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Huge (110 st.)"
+    },
+    "Iron Golem": {
+      "ac": 6,
+      "hd": "16****",
+      "atk": "1 (smash -5+) plus breath",
+      "dmg": "3d10 plus poison",
+      "save": "F8",
+      "spd": "20’ / 60’",
+      "size": "Huge (930 st.)",
+      "wildEnc": "solitary (1) / Lair (1)",
+      "dunEnc": "solitary (1) / Lair (1)",
+      "align": "neutral"
+    },
+    "Stone Golem": {
+      "ac": 5,
+      "hd": "12***",
+      "atk": "1 (smash -1+) plus breath",
+      "dmg": "3d8 plus queasiness",
+      "save": "F6",
+      "spd": "20’ / 60’",
+      "size": "Large (175 st.)"
+    },
+    "Grey Goo": {
+      "ac": 2,
+      "hd": "3***",
+      "atk": "1 (slam 8+)",
+      "dmg": "2d8",
+      "save": "F2",
+      "spd": "5’ / 15’",
+      "size": "Huge (310 st.)"
+    },
+    "Gorgon": {
+      "ac": 8,
+      "hd": "12***",
+      "atk": "3 or 1 (2 claws, 1 bite -1, or gaze)",
+      "dmg": "2d6/2d6/4d6+poison or petrification",
+      "save": "F12",
+      "spd": "40’ / 120’",
+      "size": "Man-sized (20 st.)"
+    },
+    "Cave Gorilla": {
+      "ac": 3,
+      "hd": "4",
+      "atk": "2 (claws 7+) or 1 (rock 7+)",
+      "dmg": "1d4/1d4 or 1d6",
+      "save": "F2",
+      "morale": -1,
+      "spd": "40’ / 120'",
+      "size": "Man-sized (36 st.)",
+      "_alias_of": "Gorilla, Cave"
+    },
+    "Grimlock": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 (weapon)",
+      "dmg": "By weapon +1",
+      "save": "F2",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (22 st.)"
+    },
+    "Hag": {
+      "ac": 6,
+      "hd": "9***",
+      "atk": "2 (claws)",
+      "dmg": "1d4+4/1d4+4",
+      "save": "C9",
+      "morale": 2,
+      "spd": "30’ / 90’",
+      "size": "Man-Sized (18 st.)"
+    },
+    "Haugbui": {
+      "ac": 4,
+      "hd": "3*",
+      "atk": "2 (claws 8+) or 1 (weapon 8+)",
+      "dmg": "1d8 each or weapon +2",
+      "save": "F3",
+      "spd": "30’ / 90’",
+      "size": "Man-sized (15 st.)",
+      "dunEnc": "Barrow (1d6)",
+      "wildEnc": "Barrow (1d6)",
+      "tt": "None",
+      "align": "Chaotic"
+    },
+    "Haunt": {
+      "ac": 2,
+      "hd": "1*",
+      "atk": "1 (haunting embrace 10+)",
+      "dmg": "Special",
+      "save": "F1",
+      "spd": "50’ / 150’",
+      "size": "Man-sized (incorporeal)"
+    },
+    "Hellhawk": {
+      "ac": 6,
+      "hd": "7**",
+      "atk": "3 (2 talons, bite 4+)",
+      "dmg": "1d6/1d6/2d6",
+      "save": "F4",
+      "morale": 1,
+      "xp": "800",
+      "wildEnc": "1d4"
+    },
+    "Hippogriff": {
+      "ac": 4,
+      "hd": "3+1*",
+      "atk": "3 (2 talons, bite 7+)",
+      "dmg": "1d6/1d6/1d10",
+      "save": "F2",
+      "morale": 0,
+      "spd": "60’ / 180'",
+      "size": "Large (100 st)"
+    },
+    "Common Hyena": {
+      "ac": 2,
+      "hd": "2+1",
+      "atk": "1 (bite)",
+      "dmg": "1d8 + bone-crush",
+      "save": "F1",
+      "morale": -1,
+      "spd": "50’ / 150’",
+      "size": "Man-sized (12 st.)",
+      "_alias_of": "Hyena, Ordinary"
+    },
+    "Invisible Stalker": {
+      "ac": 6,
+      "hd": "8*",
+      "atk": "1 (strike 3+)",
+      "dmg": "4d4",
+      "save": "F8",
+      "morale": 4,
+      "xp": "1100",
+      "wildEnc": "1"
+    },
+    "Khepri Hierarch": {
+      "ac": 4,
+      "hd": "8***",
+      "atk": "2 (fists 3+) or 1 (kiss 3+)",
+      "dmg": "1d12 or special",
+      "save": "C8",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (24 st.)",
+      "dunEnc": "Solitary (1)",
+      "wildEnc": "Solitary (1)/Vault (2d3)",
+      "align": "Chaotic"
+    },
+    "Lamia": {
+      "ac": 7,
+      "hd": "9***",
+      "atk": "1 (hoof/weapon 2+)",
+      "dmg": "1d4 + drain",
+      "save": "F9",
+      "morale": 1,
+      "xp": "2300",
+      "wildEnc": "1d2",
+      "tt": "L"
+    },
+    "Giant Leech": {
+      "ac": 2,
+      "hd": "6*",
+      "atk": "1 (proboscis 5+)",
+      "dmg": "3d6",
+      "save": "F3",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (21 st.)",
+      "_alias_of": "Leech, Giant"
+    },
+    "Lizardman": {
+      "ac": 4,
+      "hd": "2",
+      "atk": "1 (weapon 8+) or 3 (2 claws, bite 8+)",
+      "dmg": "Weapon + 1 or 1d3/1d3/1d8",
+      "save": "F2",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Man-sized",
+      "_alias_of": "Beastman, Lizardman"
+    },
+    "Cavern Locust": {
+      "ac": 5,
+      "hd": "2*",
+      "atk": "2 (slam + bite or spit 9+)",
+      "dmg": "1d4/1d2/see below",
+      "save": "F2",
+      "morale": -3,
+      "spd": "20’ / 60’",
+      "size": "Small (1.5 st)"
+    },
+    "Werebear": {
+      "ac": 7,
+      "hd": "6*",
+      "atk": "3 (2 claws, bite 5+) or 1 (weapon 5+)",
+      "dmg": "2d4/2d4/2d8 or weapon +3",
+      "save": "F6",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Large (110 st.)",
+      "xp": "570",
+      "wildEnc": "1d4",
+      "tt": "D",
+      "_alias_of": "Lycan, Werebear"
+    },
+    "Wereboar": {
+      "ac": 5,
+      "hd": "4+1*",
+      "atk": "1 (tusk/weapon 6+)",
+      "dmg": "2d6",
+      "save": "F4",
+      "morale": 1,
+      "xp": "215",
+      "wildEnc": "1d4",
+      "tt": "D",
+      "_alias_of": "Lycan, Wereboar"
+    },
+    "Manticore": {
+      "ac": 5,
+      "hd": "6+1*",
+      "atk": "3 (2 claws, bite 4+) or 6 spikes",
+      "dmg": "1d4/1d4/2d4 or 1d6 each",
+      "save": "F6",
+      "morale": 1,
+      "xp": "680",
+      "wildEnc": "1d2",
+      "tt": "F"
+    },
+    "Medusa": {
+      "ac": 1,
+      "hd": "4***",
+      "atk": "1 (snake bite 7+ or gaze)",
+      "dmg": "1d6, poison or petrification",
+      "save": "F7",
+      "morale": 0,
+      "spd": "30’ / 90’",
+      "size": "Man-sized",
+      "xp": "245",
+      "wildEnc": "1d3",
+      "tt": "I"
+    },
+    "Bandit": {
+      "ac": 2,
+      "hd": "1",
+      "atk": "1 (weapon 11+)",
+      "dmg": "By weapon",
+      "save": "T1",
+      "morale": -1,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (15 st.)",
+      "xp": "10",
+      "wildEnc": "2d6",
+      "tt": "E"
+    },
+    "Brigand": {
+      "ac": 3,
+      "hd": "1",
+      "atk": "1 (weapon 10+)",
+      "dmg": "By weapon +1",
+      "save": "F1",
+      "morale": 1,
+      "spd": "40’ / 120’ (bowmen)",
+      "size": "Man-sized (15 st.)",
+      "xp": "10",
+      "wildEnc": "3d10",
+      "tt": "G",
+      "_alias_of": "Men, Brigands"
+    },
+    "Merchant": {
+      "ac": 5,
+      "hd": "1",
+      "atk": "1 (weapon 11+)",
+      "dmg": "By weapon",
+      "save": "V1",
+      "morale": 0,
+      "spd": "By mount or vehicle",
+      "size": "Man-sized",
+      "xp": "10",
+      "wildEnc": "1d4",
+      "_alias_of": "Men, Merchants"
+    },
+    "Merchant Mariner": {
+      "ac": 0,
+      "hd": "1",
+      "atk": "1 (weapon 11+)",
+      "dmg": "By weapon",
+      "save": "F0",
+      "morale": -1,
+      "spd": "40’ / 120’",
+      "size": "Man-sized",
+      "xp": "5",
+      "dunEnc": "None",
+      "wildEnc": "Vessel / Fleet (by vessel type)",
+      "tt": "Special",
+      "align": "Neutral"
+    },
+    "Pilgrim": {
+      "ac": 0,
+      "hd": "1",
+      "atk": "1 (weapon 12+)",
+      "dmg": "By weapon",
+      "save": "F0",
+      "morale": -2,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (15 st.)",
+      "xp": "10",
+      "wildEnc": "2d6"
+    },
+    "Pirate": {
+      "ac": 3,
+      "hd": "1",
+      "atk": "1 (dual weapon 9+ or weapon 10+)",
+      "dmg": "By weapon type",
+      "save": "F1",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Man-sized",
+      "dunEnc": "None",
+      "wildEnc": "1 flotilla / 1 fleet",
+      "tt": "J (per galley) + Spe",
+      "align": "Chaotic",
+      "xp": "10",
+      "_alias_of": "Men, Pirates"
+    },
+    "Minotaur": {
+      "ac": 3,
+      "hd": "6",
+      "atk": "2 (gore, bite 5+) or 1 (weapon 5+) or",
+      "dmg": "1d8/1d8 or weapon +3",
+      "save": "F6",
+      "morale": 4,
+      "spd": "40’ / 120’",
+      "size": "Large (70 st.)"
+    },
+    "Morlocks": {
+      "ac": 1,
+      "hd": "1",
+      "atk": "1 (weapon 10+)",
+      "dmg": "By weapon",
+      "save": "F1",
+      "morale": 1,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (15 st.)",
+      "_alias_of": "Beastman, Morlock"
+    },
+    "Rakshasa": {
+      "ac": 7,
+      "hd": "10***",
+      "atk": "2 (claws)",
+      "dmg": "1d12, poison/1d12, poison",
+      "save": "F10",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Large (63 st.)"
+    },
+    "Large Raptor": {
+      "ac": 3,
+      "hd": "1+1*",
+      "atk": "2 (talons 11+)",
+      "dmg": "1d3/1d3",
+      "morale": -1,
+      "spd": "20’ / 60’",
+      "size": "Man-sized (3 st.)",
+      "dunEnc": "None",
+      "wildEnc": "Flock (1d6) / Aerie (1d6)",
+      "tt": "None",
+      "align": "Neutral"
+    },
+    "Small Raptor": {
+      "ac": 3,
+      "hd": "1",
+      "atk": "2 (talons 12+)",
+      "dmg": "1/1",
+      "morale": -2,
+      "spd": "20’ / 60’",
+      "size": "Small (1/6 st.)",
+      "dunEnc": "None",
+      "wildEnc": "Flock (1d6) / Aerie (1d6)",
+      "tt": "None",
+      "align": "Neutral"
+    },
+    "Giant Roc": {
+      "ac": 9,
+      "hd": "36*",
+      "atk": "3 (2 talons, bite -4+)",
+      "dmg": "3d6/3d6/8d6",
+      "save": "F9",
+      "morale": 2,
+      "spd": "20’ / 60’",
+      "size": "Colossal (1,500 st.)"
+    },
+    "Small Roc": {
+      "ac": 5,
+      "hd": "6*",
+      "atk": "3 (2 talons, bite 5+)",
+      "dmg": "1d6/1d6/2d6",
+      "save": "F3",
+      "morale": 0,
+      "spd": "20’ / 60’",
+      "size": "Huge (80 st.)"
+    },
+    "Flame Salamander": {
+      "ac": 7,
+      "hd": "8*",
+      "atk": "3 (2 claws, bite 3+)",
+      "dmg": "1d4/1d4/1d8",
+      "save": "F8",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Huge (130 st)"
+    },
+    "Giant Scorpion": {
+      "ac": 7,
+      "hd": "4*",
+      "atk": "3 (2 pincers, stinger 7+)",
+      "dmg": "1d10/1d10/1d4, poison",
+      "save": "F2",
+      "morale": 3,
+      "spd": "50’ / 150'",
+      "size": "Large (23 st.)",
+      "_alias_of": "Scorpion, Giant"
+    },
+    "Shadow": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 (enervating touch 8+)",
+      "dmg": "1d4, enervation",
+      "save": "F2",
+      "morale": 4,
+      "spd": "30’ / 90'",
+      "size": "Man-sized"
+    },
+    "Bull Shark": {
+      "ac": 5,
+      "hd": "2",
+      "atk": "1 (bite 9+)",
+      "dmg": "2d4",
+      "save": "F1",
+      "morale": -1,
+      "spd": "-",
+      "size": "Man-sized (29 st.)",
+      "dunEnc": "None",
+      "wildEnc": "Shiver (3d6)",
+      "tt": "None",
+      "align": "Neutral"
+    },
+    "Mako Shark": {
+      "ac": 5,
+      "hd": "4*",
+      "atk": "1 (bite 7+)",
+      "dmg": "2d6",
+      "save": "F2",
+      "morale": -1,
+      "spd": "-",
+      "size": "Large (105 st.)",
+      "dunEnc": "None",
+      "wildEnc": "Shiver (2d6)",
+      "tt": "None",
+      "align": "Neutral"
+    },
+    "Skeletal Slayer": {
+      "ac": 8,
+      "hd": "5**",
+      "atk": "4 (swords 6+)",
+      "dmg": "1d8/1d8/1d8/1d8",
+      "save": "F5",
+      "morale": 4,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (30 st.)"
+    },
+    "Skittering Maw": {
+      "ac": 5,
+      "hd": "8**",
+      "atk": "1 (bite 3+)",
+      "dmg": "2d10 + Poison",
+      "save": "F4",
+      "morale": 4,
+      "spd": "20’ / 60’",
+      "size": "Huge (400 st.)"
+    },
+    "Giant Slug": {
+      "ac": 1,
+      "hd": "12",
+      "atk": "1 (bite or spit acid 1+)",
+      "dmg": "1d12 or 5d8",
+      "save": "F12",
+      "morale": 2,
+      "spd": "20’ / 60’",
+      "size": "Gigantic (720 st.)",
+      "_alias_of": "Slug, Giant"
+    },
+    "Spell Tyrant": {
+      "ac": 8,
+      "hd": "12****",
+      "atk": "1d4 (bites)",
+      "dmg": "2d8",
+      "save": "F12",
+      "morale": 4,
+      "xp": "5200",
+      "wildEnc": "1",
+      "tt": "N"
+    },
+    "Giant Black Widow": {
+      "ac": 3,
+      "hd": "3*",
+      "atk": "1 (bite 8+)",
+      "dmg": "2d6, poison",
+      "save": "F2",
+      "morale": 0,
+      "spd": "20’ / 60’",
+      "size": "Large (24 st.)",
+      "_alias_of": "Spider, Giant Black Widow"
+    },
+    "Giant Tarantula": {
+      "ac": 4,
+      "hd": "4**",
+      "atk": "1 (bite or barbs 7+)",
+      "dmg": "1d8, poison or see below",
+      "save": "F2",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Large (50 st.)",
+      "_alias_of": "Spider, Giant Tarantula"
+    },
+    "Chryselephantine Statue": {
+      "ac": 4,
+      "hd": "8**",
+      "atk": "1 (lightning bolt 3+) or threat",
+      "dmg": "3d10 or special",
+      "save": "F8",
+      "spd": "20’ / 60’",
+      "size": "Large (90 st.)"
+    },
+    "Thrassian": {
+      "ac": 6,
+      "hd": "4+1",
+      "atk": "3 (2 claws, bite 6+)",
+      "dmg": "1d6/1d6/1d8",
+      "save": "F4",
+      "morale": 2,
+      "xp": "140",
+      "wildEnc": "2d6",
+      "tt": "G"
+    },
+    "Lesser Titan": {
+      "ac": 5,
+      "hd": "12",
+      "atk": "1 (smash -1+)",
+      "dmg": "6d6",
+      "save": "F12",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Huge (700 st.)"
+    },
+    "Giant Ferret": {
+      "ac": 4,
+      "hd": "1+1",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": 0,
+      "spd": "Animal",
+      "size": "Man-sized (14 st.)",
+      "dunEnc": "Pack (1d8) / Den (1d12)",
+      "wildEnc": "Fesnying (1d8) / Den (1d12)",
+      "tt": "A",
+      "align": "Neutral",
+      "xp": "15",
+      "_alias_of": "Ferret, Giant"
+    },
+    "Giant Rat": {
+      "ac": 2,
+      "hd": "1",
+      "atk": "1 (bite 11+)",
+      "dmg": "1d3, disease",
+      "save": "F1",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Small (3 st.)",
+      "dunEnc": "Pack (3d6)",
+      "_alias_of": "Varmint, Giant Rat"
+    },
+    "Giant Shrew": {
+      "ac": 5,
+      "hd": "1",
+      "atk": "2 (bite 10+)",
+      "dmg": "1d6/1d6",
+      "save": "F1",
+      "morale": 2,
+      "spd": "60’ / 180'",
+      "size": "Man-sized (21 st.)",
+      "dunEnc": "Pack (1d4) / Nest (1d8)",
+      "wildEnc": "Drove (1d8) / Nest (1d8)",
+      "tt": "A",
+      "align": "Neutral",
+      "_alias_of": "Varmint, Giant Shrew"
+    },
+    "Narwhal Whale": {
+      "ac": 2,
+      "hd": "12",
+      "atk": "2 (bite, horn 1+)",
+      "dmg": "2d6/1d8",
+      "save": "F12",
+      "morale": 0,
+      "spd": "60’ / 180’",
+      "size": "Huge (350 st.)",
+      "dunEnc": "N"
+    },
+    "Wight": {
+      "ac": 4,
+      "hd": "3**",
+      "atk": "1 (claw 8+)",
+      "dmg": "Energy drain",
+      "save": "F3",
+      "morale": 4,
+      "xp": "80",
+      "wildEnc": "2d6",
+      "tt": "D"
+    },
+    "Wraith": {
+      "ac": 6,
+      "hd": "4**",
+      "atk": "1 (necrotizing touch or weapon 7+)",
+      "dmg": "1d8 or by weapon +2, enervation",
+      "save": "F4",
+      "morale": 4,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (weight by apparel)",
+      "xp": "190",
+      "wildEnc": "2d4",
+      "tt": "H"
+    },
+    "Cattle": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 (kick or butt 9+)",
+      "dmg": "1d3 or 1d6",
+      "save": "F1",
+      "morale": -2,
+      "spd": "80’ / 240’",
+      "size": "Large (35 st.)",
+      "dunEnc": "None",
+      "wildEnc": "Herd (5d10)",
+      "tt": "None",
+      "align": "Neutral",
+      "_alias_of": "Herd Animal, Cattle"
+    },
+    "Elk": {
+      "ac": 2,
+      "hd": "4",
+      "atk": "1 (kick or butt 7+)",
+      "dmg": "1d6 or 1d10",
+      "save": "F2",
+      "morale": 0,
+      "spd": "60’ / 180’",
+      "size": "Large (140 st.)",
+      "xp": "80",
+      "dunEnc": "None",
+      "wildEnc": "Herd (5d10)",
+      "tt": "None",
+      "align": "Neutral",
+      "_alias_of": "Herd Animal, Elk"
+    },
+    "Baleygr Lord": {
+      "ac": 10,
+      "hd": "12*****",
+      "atk": "1 (weapon or whip -1+)",
+      "dmg": "4d6 /2d6, drag",
+      "save": "F12",
+      "morale": 4,
+      "spd": "40’ / 120’",
+      "size": "Huge (700 st.)",
+      "dunEnc": "Solitary (1) / Fist (1d4)",
+      "wildEnc": "Fist (1d4) / Legion (2d4 Fists) Wilderne",
+      "tt": "Q (per báleygr) Trea",
+      "align": "Chaotic"
+    },
+    "Tick, Giant": {
+      "ac": 6,
+      "hd": "2*",
+      "atk": "1 (hypostome 7+ to 9+)",
+      "dmg": "1d4 + blood drain",
+      "save": "F1",
+      "morale": 0,
+      "spd": "10’ / 30’",
+      "size": "Man-Sized (12 st.)",
+      "xp": "29",
+      "wildEnc": "1d4"
+    },
+    "Faerie, Pixie": {
+      "ac": 6,
+      "hd": "1*",
+      "atk": "1 (tiny bow or sword 10+)",
+      "dmg": "1d4",
+      "save": "E1",
+      "morale": -1,
+      "spd": "30’ / 90’",
+      "size": "Small (1 ½ st.)"
+    },
+    "Spider, Giant Tarantula": {
+      "ac": 4,
+      "hd": "4**",
+      "atk": "1 (bite or barbs 7+)",
+      "dmg": "1d8, poison or see below",
+      "save": "F2",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Large (50 st.)",
+      "xp": "190",
+      "wildEnc": "1d3"
+    },
+    "Snake, Spitting Cobra": {
+      "ac": 2,
+      "hd": "1*",
+      "atk": "1 (bite/spit 10+)",
+      "dmg": "1d3 + poison",
+      "save": "F1",
+      "morale": -1,
+      "xp": "13",
+      "wildEnc": "1d6"
+    },
+    "Ghoul, Marsh": {
+      "ac": 5,
+      "hd": "3**",
+      "atk": "2 (claws 8+)",
+      "dmg": "1d6/1d6",
+      "save": "F3",
+      "morale": 1,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (15 st.)",
+      "xp": "80",
+      "wildEnc": "2d6",
+      "tt": "D"
+    },
+    "Barghest, Greater": {
+      "ac": 6,
+      "hd": "10***",
+      "atk": "1 (bite 1+)",
+      "dmg": "3d6",
+      "save": "F10",
+      "morale": 4,
+      "xp": "2950",
+      "wildEnc": "1d2",
+      "tt": "H"
+    },
+    "Men, Pirates": {
+      "ac": 3,
+      "hd": "1",
+      "atk": "1 (dual weapon 9+ or weapon 10+)",
+      "dmg": "By weapon type",
+      "save": "F1",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Man-sized",
+      "dunEnc": "None",
+      "wildEnc": "1 flotilla / 1 fleet",
+      "tt": "J (per galley) + Spe",
+      "align": "Chaotic"
+    },
+    "Raptor, Small": {
+      "ac": 3,
+      "hd": "1",
+      "atk": "2 (talons 12+)",
+      "dmg": "1d2/1d2",
+      "save": "F1",
+      "morale": -2,
+      "xp": "10",
+      "wildEnc": "1d6"
+    },
+    "Spider, Giant Black Widow": {
+      "ac": 3,
+      "hd": "3*",
+      "atk": "1 (bite 8+)",
+      "dmg": "2d6, poison",
+      "save": "F2",
+      "morale": 0,
+      "spd": "20’ / 60’",
+      "size": "Large (24 st.)",
+      "xp": "65",
+      "wildEnc": "1d3"
+    },
+    "Men, Merchants": {
+      "ac": 5,
+      "hd": "1",
+      "atk": "1 (weapon 11+)",
+      "dmg": "By weapon",
+      "save": "V1",
+      "morale": 0,
+      "spd": "By mount or vehicle",
+      "size": "Man-sized"
+    },
+    "Varmint, Giant Rat": {
+      "ac": 2,
+      "hd": "1",
+      "atk": "1 (bite 11+)",
+      "dmg": "1d3, disease",
+      "save": "F1",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Small (3 st.)",
+      "dunEnc": "Pack (3d6)"
+    },
+    "Centipede, Giant": {
+      "ac": 0,
+      "hd": "1hp",
+      "atk": "1 (bite)",
+      "dmg": "Poison",
+      "save": "F0",
+      "morale": -1,
+      "xp": "6",
+      "wildEnc": "2d4"
+    },
+    "Lycan, Werebear": {
+      "ac": 7,
+      "hd": "6*",
+      "atk": "3 (2 claws, bite 5+) or 1 (weapon 5+)",
+      "dmg": "2d4/2d4/2d8 or weapon +3",
+      "save": "F6",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Large (110 st.)"
+    },
+    "Titan, Lesser": {
+      "ac": 5,
+      "hd": "12",
+      "atk": "1 (smash -1+)",
+      "dmg": "6d6",
+      "save": "F12",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Huge (700 st.)"
+    },
+    "Giant, Fire": {
+      "ac": 5,
+      "hd": "11",
+      "atk": "1 (smash 2+ or throw 2+)",
+      "dmg": "5d6",
+      "save": "F8",
+      "morale": 1,
+      "spd": "40’ / 120’",
+      "size": "Huge (320 st.)"
+    },
+    "Dakhanavar, Greater": {
+      "ac": 7,
+      "hd": "8+2*****",
+      "atk": "3 (2 claws, bite 2+) or 1 (weapon 2+)",
+      "dmg": "1d8/1d8/2d6 or weapon x2",
+      "save": "E8",
+      "spd": "10’ / 30’ or 40’ / 120’",
+      "size": "Huge (50 st.)"
+    },
+    "Gorilla, Cave": {
+      "ac": 3,
+      "hd": "4",
+      "atk": "2 (claws 7+) or 1 (rock 7+)",
+      "dmg": "1d4/1d4 or 1d6",
+      "save": "F2",
+      "morale": -1,
+      "spd": "40’ / 120'",
+      "size": "Man-sized (36 st.)"
+    },
+    "Salamander, Flame": {
+      "ac": 7,
+      "hd": "8*",
+      "atk": "3 (2 claws, bite 3+)",
+      "dmg": "1d4/1d4/1d8",
+      "save": "F8",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Huge (130 st)"
+    },
+    "Snake, Giant Rattlesnake": {
+      "ac": 4,
+      "hd": "4**",
+      "atk": "2 (bite 7+)",
+      "dmg": "1d4 + poison",
+      "save": "F2",
+      "morale": -1,
+      "xp": "190",
+      "wildEnc": "1d4"
+    },
+    "Roc, Giant": {
+      "ac": 9,
+      "hd": "36*",
+      "atk": "3 (2 talons, bite -4+)",
+      "dmg": "3d6/3d6/8d6",
+      "save": "F9",
+      "morale": 2,
+      "spd": "20’ / 60’",
+      "size": "Colossal (1,500 st.)"
+    },
+    "Fish, Giant Catfish": {
+      "ac": 5,
+      "hd": "8",
+      "atk": "5 (bite, 4 feelers 3+)",
+      "dmg": "2d8/1d4 (each feeler)",
+      "save": "F4",
+      "morale": 0,
+      "spd": "-",
+      "size": "Large (270 st.)",
+      "xp": "600",
+      "wildEnc": "1d2"
+    },
+    "Cat, Panther": {
+      "ac": 5,
+      "hd": "4*",
+      "atk": "3 (2 claws,1 bite 7+)",
+      "dmg": "1d4/1d4/1d8",
+      "save": "F2",
+      "morale": 0,
+      "spd": "70’ / 210’",
+      "size": "Man-sized (30 st.)",
+      "xp": "125",
+      "wildEnc": "1d2"
+    },
+    "Giant, Hill": {
+      "ac": 5,
+      "hd": "8",
+      "atk": "1 (smash 3+ or throw 3+)",
+      "dmg": "2d8",
+      "save": "F8",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Huge (110 st.)"
+    },
+    "Dragonfly, Giant": {
+      "ac": 5,
+      "hd": "2*",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": 0,
+      "spd": "20’/60’",
+      "size": "Small (2/6 st)"
+    },
+    "Giant, Frost": {
+      "ac": 5,
+      "hd": "10",
+      "atk": "1 (smash 2+ or throw 2+)",
+      "dmg": "4d6",
+      "save": "F10",
+      "morale": 1,
+      "spd": "40’ / 120’",
+      "size": "Huge (280 st.)"
+    },
+    "Bear, Polar": {
+      "ac": 4,
+      "hd": "7",
+      "atk": "3 (2 claws, bite 4+)",
+      "dmg": "1d8/1d8/2d6",
+      "save": "F3",
+      "morale": 1,
+      "spd": "40’ / 120'",
+      "size": "Large (140 st.)",
+      "dunEnc": "Solitary (1) / Den (1d2)",
+      "wildEnc": "Sloth (1d2) / Den (1d2)",
+      "tt": "None",
+      "align": "Neutral",
+      "xp": "490"
+    },
+    "Ant, Giant": {
+      "ac": 7,
+      "hd": "5",
+      "atk": "1 (bite 6+)",
+      "dmg": "3d6",
+      "save": "F2",
+      "morale": 1,
+      "spd": "60’ / 180’",
+      "size": "Man-sized (25 st)",
+      "dunEnc": "Special",
+      "wildEnc": "Special",
+      "tt": "None",
+      "align": "Neutral"
+    },
+    "Boar, Giant": {
+      "ac": 3,
+      "hd": "5",
+      "atk": "1 (tusk 6+)",
+      "dmg": "3d4",
+      "save": "F5",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Large (93 st.)"
+    },
+    "Equine, Light Horse": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 or 2 (hooves)",
+      "dmg": "1d4/1d4",
+      "save": "F1",
+      "morale": -2,
+      "spd": "80’ / 240’",
+      "size": "Large (100 st.)"
+    },
+    "Frog, Giant": {
+      "ac": 3,
+      "hd": "2*",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -2,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (20 st)"
+    },
+    "Basilisk, Petrifying": {
+      "ac": 5,
+      "hd": "6",
+      "atk": "1 (bite 4+ or gaze)",
+      "dmg": "1d10 + petrify or petrify",
+      "save": "F6",
+      "morale": 1,
+      "spd": "20’ / 60’",
+      "size": "Man-sized (30 st.)",
+      "xp": "320",
+      "wildEnc": "1d2",
+      "tt": "I"
+    },
+    "Baboon, Rock": {
+      "ac": 3,
+      "hd": "2",
+      "atk": "2 (bite, club 9+)",
+      "dmg": "1d3/1d6",
+      "save": "F2",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (23 st.)"
+    },
+    "Scorpion, Giant": {
+      "ac": 7,
+      "hd": "4*",
+      "atk": "3 (2 pincers, stinger 7+)",
+      "dmg": "1d10/1d10/1d4, poison",
+      "save": "F2",
+      "morale": 3,
+      "spd": "50’ / 150'",
+      "size": "Large (23 st.)",
+      "xp": "190",
+      "wildEnc": "1d6"
+    },
+    "Slug, Giant": {
+      "ac": 1,
+      "hd": "12",
+      "atk": "1 (bite or spit acid 1+)",
+      "dmg": "1d12 or 5d8",
+      "save": "F12",
+      "morale": 2,
+      "spd": "20’ / 60’",
+      "size": "Gigantic (720 st.)"
+    },
+    "Attercop, Demonic": {
+      "ac": 10,
+      "hd": "10****",
+      "atk": "1 (bite or web 1+) or 2 (horns 1+)",
+      "dmg": "4d10 + poison, web, or 2d10",
+      "save": "F10",
+      "spd": "20’ / 60’",
+      "size": "Huge (230 st.)",
+      "morale": 3,
+      "xp": "3100",
+      "wildEnc": "1",
+      "tt": "N"
+    },
+    "Men, Brigands": {
+      "ac": 3,
+      "hd": "1",
+      "atk": "1 (weapon 10+)",
+      "dmg": "By weapon +1",
+      "save": "F1",
+      "morale": 1,
+      "spd": "40’ / 120’ (bowmen)",
+      "size": "Man-sized (15 st.)"
+    },
+    "Dakhanavar, Lesser": {
+      "ac": 6,
+      "hd": "6*",
+      "atk": "3 (2 claws, bite 5+)",
+      "dmg": "1d6/1d6/2d4",
+      "save": "E6",
+      "morale": 0,
+      "spd": "10’ / 30’",
+      "size": "Large (35 st.)"
+    },
+    "Boar, Ordinary": {
+      "ac": 2,
+      "hd": "3",
+      "atk": "1 (tusk 8+)",
+      "dmg": "2d4",
+      "save": "F2",
+      "morale": 2,
+      "spd": "50’ / 150’",
+      "size": "Man-Sized (38 st.)",
+      "dunEnc": "Sounder (1d4) / Den (1d4)",
+      "wildEnc": "Sounder (1d6) / Den (1d6)",
+      "tt": "None",
+      "align": "Neutral"
+    },
+    "Roc, Small": {
+      "ac": 5,
+      "hd": "6*",
+      "atk": "3 (2 talons, bite 5+)",
+      "dmg": "1d6/1d6/2d6",
+      "save": "F3",
+      "morale": 0,
+      "spd": "20’ / 60’",
+      "size": "Huge (80 st.)"
+    },
+    "Lycan, Wereboar": {
+      "ac": 5,
+      "hd": "4+1*",
+      "atk": "1 (tusk 6+ or weapon 6+)",
+      "dmg": "2d6 or by weapon +2",
+      "save": "F4",
+      "morale": 1,
+      "spd": "50’ / 150’",
+      "size": "Large (68 st.)"
+    },
+    "Beetle, Giant Bombardier": {
+      "ac": 5,
+      "hd": "2",
+      "atk": "1 (bite or spray 9+)",
+      "dmg": "1d6 or special",
+      "save": "F1",
+      "morale": 0,
+      "spd": "40’ / 120'",
+      "size": "Man-sized (13 st.)"
+    },
+    "Equine, Mule": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 (hoof or bite)",
+      "dmg": "1d4 or 1d3",
+      "save": "F1",
+      "morale": 0,
+      "spd": "50’ / 150’",
+      "size": "Large (100 st.)"
+    },
+    "Varmint, Giant Shrew": {
+      "ac": 5,
+      "hd": "1",
+      "atk": "2 (bite 10+)",
+      "dmg": "1d6/1d6",
+      "save": "F1",
+      "morale": 2,
+      "spd": "60’ / 180'",
+      "size": "Man-sized (21 st.)",
+      "dunEnc": "Pack (1d4) / Nest (1d8)",
+      "wildEnc": "Drove (1d8) / Nest (1d8)",
+      "tt": "A",
+      "align": "Neutral"
+    },
+    "Dog, Hunting": {
+      "ac": 2,
+      "hd": "1+1",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": 0,
+      "spd": "60’ / 180' or 80’/240",
+      "size": "Man-sized (6 st)",
+      "xp": "15",
+      "wildEnc": "2d6"
+    },
+    "Faerie, Piskie": {
+      "ac": 5,
+      "hd": "1*",
+      "atk": "1 (tiny bow, lance, or sword 10+)",
+      "dmg": "1d4",
+      "save": "E1",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "size": "Small (1 ½ st.)"
+    },
+    "Faerie, Pixiee": {
+      "ac": 6,
+      "hd": "1*",
+      "atk": "1 (tiny bow or sword 10+)",
+      "dmg": "1d4",
+      "save": "E1",
+      "morale": -1,
+      "spd": "30’ / 90’",
+      "size": "Small (1 ½ st.)"
+    },
+    "Horse, Steppe": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 or 2 (hooves)",
+      "dmg": "1d4/1d4",
+      "save": "F1",
+      "morale": -1,
+      "spd": "70’ / 210’",
+      "size": "Large (60 st.)"
+    },
+    "Leech, Giant": {
+      "ac": 2,
+      "hd": "6*",
+      "atk": "1 (proboscis 5+)",
+      "dmg": "3d6",
+      "save": "F3",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "size": "Man-sized (21 st.)"
+    },
+    "Equine, Steppe Horse": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 or 2 (hooves)",
+      "dmg": "1d4/1d4",
+      "save": "F1",
+      "morale": -1,
+      "spd": "70’ / 210’",
+      "size": "Large (60 st.)"
+    },
+    "Beastman, Goblin": {
+      "ac": 3,
+      "hd": "1-1",
+      "atk": "1 (weapon 11+)",
+      "dmg": "1d6",
+      "save": "F0",
+      "morale": -1,
+      "xp": "5",
+      "wildEnc": "4d4",
+      "tt": "E"
+    },
+    "Beastman, Orc": {
+      "ac": 3,
+      "hd": "1",
+      "atk": "1 (weapon 10+)",
+      "dmg": "1d6+1",
+      "save": "F1",
+      "morale": 0,
+      "xp": "10",
+      "wildEnc": "2d6",
+      "tt": "G"
+    },
+    "Beastman, Hobgoblin": {
+      "ac": 4,
+      "hd": "1+1",
+      "atk": "1 (weapon 9+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": 1,
+      "xp": "15",
+      "wildEnc": "2d6",
+      "tt": "G"
+    },
+    "Beastman, Gnoll": {
+      "ac": 4,
+      "hd": "2",
+      "atk": "1 (weapon 9+)",
+      "dmg": "2d4",
+      "save": "F2",
+      "morale": 1,
+      "xp": "20",
+      "wildEnc": "2d6",
+      "tt": "G"
+    },
+    "Beastman, Bugbear": {
+      "ac": 4,
+      "hd": "3+1",
+      "atk": "1 (weapon 7+)",
+      "dmg": "2d4",
+      "save": "F3",
+      "morale": 2,
+      "xp": "50",
+      "wildEnc": "2d4",
+      "tt": "G"
+    },
+    "Beastman, Kobold": {
+      "ac": 2,
+      "hd": "1-1",
+      "atk": "1 (weapon 11+)",
+      "dmg": "1d4",
+      "save": "F0",
+      "morale": -2,
+      "xp": "5",
+      "wildEnc": "6d10",
+      "tt": "C"
+    },
+    "Bat, Ordinary": {
+      "ac": 3,
+      "hd": "1hp",
+      "atk": "Swarm",
+      "dmg": "Confusion",
+      "save": "F0",
+      "morale": -2,
+      "xp": "6",
+      "wildEnc": "3d10"
+    },
+    "Bat, Giant": {
+      "ac": 3,
+      "hd": "2",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": 0,
+      "xp": "20",
+      "wildEnc": "3d6"
+    },
+    "Bat, Giant Vampire": {
+      "ac": 3,
+      "hd": "4+1",
+      "atk": "1 (bite 6+)",
+      "dmg": "1d4 + drain",
+      "save": "F2",
+      "morale": 0,
+      "xp": "135",
+      "wildEnc": "2d4"
+    },
+    "Bear, Black": {
+      "ac": 3,
+      "hd": "4",
+      "atk": "3 (2 claws, bite 7+)",
+      "dmg": "1d4/1d4/1d6",
+      "save": "F2",
+      "morale": -1,
+      "xp": "80",
+      "wildEnc": "1d4",
+      "tt": "None"
+    },
+    "Bear, Grizzy": {
+      "ac": 3,
+      "hd": "5",
+      "atk": "3 (2 claws, bite 6+)",
+      "dmg": "1d4/1d4/1d8",
+      "save": "F2",
+      "morale": 0,
+      "xp": "200",
+      "wildEnc": "1",
+      "tt": "None"
+    },
+    "Bear, Cave": {
+      "ac": 4,
+      "hd": "7",
+      "atk": "3 (2 claws, bite 4+)",
+      "dmg": "1d8/1d8/2d6",
+      "save": "F3",
+      "morale": 1,
+      "xp": "490",
+      "wildEnc": "1d2",
+      "tt": "None"
+    },
+    "Bee, Giant Killer": {
+      "ac": 2,
+      "hd": "1",
+      "atk": "1 (sting 10+)",
+      "dmg": "1d4 + poison",
+      "save": "F1",
+      "morale": 1,
+      "xp": "13",
+      "wildEnc": "5d6"
+    },
+    "Beetle, Giant Tiger": {
+      "ac": 6,
+      "hd": "3+1",
+      "atk": "1 (bite 7+)",
+      "dmg": "2d6",
+      "save": "F1",
+      "morale": 1,
+      "xp": "50",
+      "wildEnc": "1d6"
+    },
+    "Cat, Cheetah": {
+      "ac": 5,
+      "hd": "2+2",
+      "atk": "3 (2 claws, bite 7+)",
+      "dmg": "1d2/1d2/1d4",
+      "save": "F1",
+      "morale": 0,
+      "xp": "47",
+      "wildEnc": "1d2"
+    },
+    "Cat, Cougar": {
+      "ac": 3,
+      "hd": "3+2",
+      "atk": "3 (2 claws, bite 7+)",
+      "dmg": "1d3/1d3/1d6",
+      "save": "F2",
+      "morale": 0,
+      "xp": "65",
+      "wildEnc": "1d2"
+    },
+    "Cat, Lion": {
+      "ac": 3,
+      "hd": "5",
+      "atk": "3 (2 claws, bite 6+)",
+      "dmg": "1d4+1/1d4+1/1d10",
+      "save": "F3",
+      "morale": 1,
+      "xp": "200",
+      "wildEnc": "1d4",
+      "tt": "None"
+    },
+    "Cat, Saber-Tooth": {
+      "ac": 3,
+      "hd": "8",
+      "atk": "3 (2 claws, bite 3+)",
+      "dmg": "1d8/1d8/2d8",
+      "save": "F4",
+      "morale": 2,
+      "xp": "600",
+      "wildEnc": "1d4"
+    },
+    "Snake, Pit Viper": {
+      "ac": 3,
+      "hd": "2*",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d4 + poison",
+      "save": "F1",
+      "morale": -1,
+      "xp": "29",
+      "wildEnc": "1d8"
+    },
+    "Skeleton": {
+      "ac": 2,
+      "hd": "1",
+      "atk": "1 (weapon 10+)",
+      "dmg": "1d6",
+      "save": "F1",
+      "morale": 12,
+      "xp": "10",
+      "wildEnc": "3d6",
+      "tt": "None"
+    },
+    "Zombie": {
+      "ac": 1,
+      "hd": "2",
+      "atk": "1 (slam 9+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": 12,
+      "xp": "20",
+      "wildEnc": "2d6",
+      "tt": "None",
+      "spd": "40’ / 120'",
+      "dunEnc": "Throng (2d4) / Abattoir (4d6)"
+    },
+    "Ghoul": {
+      "ac": 3,
+      "hd": "2*",
+      "atk": "3 (2 claws, bite 9+)",
+      "dmg": "1d3/1d3/1d3 + paralysis",
+      "save": "F2",
+      "morale": 1,
+      "xp": "29",
+      "wildEnc": "2d8",
+      "tt": "C"
+    },
+    "Wolf, Ordinary": {
+      "ac": 2,
+      "hd": "2+2",
+      "atk": "1 (bite 8+)",
+      "dmg": "1d6",
+      "save": "F1",
+      "morale": 0,
+      "xp": "25",
+      "wildEnc": "3d6",
+      "tt": "None"
+    },
+    "Wolf, Dire": {
+      "ac": 3,
+      "hd": "4+1",
+      "atk": "1 (bite 6+)",
+      "dmg": "2d4",
+      "save": "F2",
+      "morale": 1,
+      "xp": "140",
+      "wildEnc": "2d4",
+      "tt": "None"
+    },
+    "Ogre": {
+      "ac": 4,
+      "hd": "4+1",
+      "atk": "1 (club 6+)",
+      "dmg": "1d10",
+      "save": "F4",
+      "morale": 2,
+      "xp": "140",
+      "wildEnc": "2d6",
+      "tt": "H"
+    },
+    "Troll": {
+      "ac": 5,
+      "hd": "6+3*",
+      "atk": "3 (2 claws, bite 4+)",
+      "dmg": "1d6/1d6/1d10",
+      "save": "F6",
+      "morale": 2,
+      "xp": "680",
+      "wildEnc": "2d4",
+      "tt": "H"
+    },
+    "Owlbear": {
+      "ac": 4,
+      "hd": "5*",
+      "atk": "3 (2 claws, bite 6+)",
+      "dmg": "1d8/1d8/1d8",
+      "save": "F3",
+      "morale": 1,
+      "xp": "350",
+      "wildEnc": "1d4",
+      "tt": "D"
+    },
+    "Harpy": {
+      "ac": 2,
+      "hd": "3*",
+      "atk": "3 (2 talons, weapon 8+)",
+      "dmg": "1d4/1d4/1d6",
+      "save": "F3",
+      "morale": -1,
+      "xp": "65",
+      "wildEnc": "2d4",
+      "tt": "D"
+    },
+    "Cockatrice": {
+      "ac": 3,
+      "hd": "5**",
+      "atk": "1 (beak 6+)",
+      "dmg": "1d6 + petrify",
+      "save": "F5",
+      "morale": -1,
+      "xp": "500",
+      "wildEnc": "1d4",
+      "tt": "F"
+    },
+    "Werewolf": {
+      "ac": 4,
+      "hd": "4*",
+      "atk": "1 (bite 7+)",
+      "dmg": "2d4",
+      "save": "F4",
+      "morale": 1,
+      "xp": "190",
+      "wildEnc": "2d6",
+      "tt": "D",
+      "_alias_of": "Lycan, Werewolf"
+    },
+    "Acanthaspis, Giant": {
+      "ac": 4,
+      "hd": "4",
+      "atk": "1 (bite 7+)",
+      "dmg": "2d6",
+      "save": "F2",
+      "morale": 0,
+      "xp": "80",
+      "wildEnc": "1d6"
+    },
+    "Amphisbaena": {
+      "ac": 4,
+      "hd": "6*",
+      "atk": "2 (2 bites 5+)",
+      "dmg": "1d8/1d8 + poison",
+      "save": "F3",
+      "morale": 0,
+      "xp": "570",
+      "wildEnc": "1d4"
+    },
+    "Blood Hound": {
+      "ac": 5,
+      "hd": "5*",
+      "atk": "1 (bite 6+)",
+      "dmg": "2d4",
+      "save": "F5",
+      "morale": 3,
+      "xp": "350",
+      "wildEnc": "2d4",
+      "spd": "50’ / 150’",
+      "dunEnc": "Pack (1d4)/Abattoir (2d6)"
+    },
+    "Hydra, 5-headed": {
+      "ac": 4,
+      "hd": "5",
+      "atk": "5 (bite 6+)",
+      "dmg": "1d10 each",
+      "save": "F5",
+      "morale": 2,
+      "xp": "200",
+      "wildEnc": "1",
+      "tt": "D"
+    },
+    "Wyvern": {
+      "ac": 6,
+      "hd": "7**",
+      "atk": "2 (bite, sting 4+)",
+      "dmg": "2d8/1d6 + poison",
+      "save": "F4",
+      "morale": 1,
+      "xp": "800",
+      "wildEnc": "1d2",
+      "tt": "H"
+    },
+    "Griffon": {
+      "ac": 4,
+      "hd": "7",
+      "atk": "3 (2 claws, bite 4+)",
+      "dmg": "1d4/1d4/2d8",
+      "save": "F4",
+      "morale": 1,
+      "xp": "490",
+      "wildEnc": "1d6",
+      "tt": "H"
+    },
+    "Pegasus": {
+      "ac": 4,
+      "hd": "2+2",
+      "atk": "2 (hooves 8+)",
+      "dmg": "1d6/1d6",
+      "save": "F2",
+      "morale": 0,
+      "xp": "25",
+      "wildEnc": "1d12"
+    },
+    "Unicorn": {
+      "ac": 7,
+      "hd": "4*",
+      "atk": "2 (hooves, horn 7+)",
+      "dmg": "1d8/1d8",
+      "save": "F8",
+      "morale": -1,
+      "xp": "190",
+      "wildEnc": "1d4"
+    },
+    "Crocodile, Large": {
+      "ac": 5,
+      "hd": "6",
+      "atk": "1 (bite 5+)",
+      "dmg": "2d8",
+      "save": "F3",
+      "morale": -1,
+      "xp": "320",
+      "wildEnc": "1d4"
+    },
+    "Crocodile, Giant": {
+      "ac": 8,
+      "hd": "15",
+      "atk": "1 (bite 0+)",
+      "dmg": "3d8",
+      "save": "F8",
+      "morale": 1,
+      "xp": "1350",
+      "wildEnc": "1d3"
+    },
+    "Dragon, White": {
+      "ac": 6,
+      "hd": "7**",
+      "atk": "3 or breath",
+      "dmg": "1d4/1d4/2d8 or 7d6 cold",
+      "save": "F7",
+      "morale": 1,
+      "xp": "800",
+      "wildEnc": "1d4",
+      "tt": "N"
+    },
+    "Dragon, Black": {
+      "ac": 7,
+      "hd": "8**",
+      "atk": "3 or breath",
+      "dmg": "1d4+1/1d4+1/2d10 or 8d6 acid",
+      "save": "F8",
+      "morale": 1,
+      "xp": "1100",
+      "wildEnc": "1d4",
+      "tt": "N"
+    },
+    "Dragon, Green": {
+      "ac": 8,
+      "hd": "9**",
+      "atk": "3 or breath",
+      "dmg": "1d6/1d6/3d8 or 9d6 gas",
+      "save": "F9",
+      "morale": 1,
+      "xp": "1700",
+      "wildEnc": "1d4",
+      "tt": "N"
+    },
+    "Dragon, Red": {
+      "ac": 10,
+      "hd": "11**",
+      "atk": "3 or breath",
+      "dmg": "1d8/1d8/4d8 or 11d6 fire",
+      "save": "F11",
+      "morale": 2,
+      "xp": "2700",
+      "wildEnc": "1d4",
+      "tt": "Q"
+    },
+    "Beetle, Giant Luminous": {
+      "ac": 5,
+      "hd": "1+2",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -1,
+      "xp": "15",
+      "wildEnc": "1d8"
+    },
+    "Beetle, Giant Lumi0us": {
+      "ac": 5,
+      "hd": "1+2",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -1,
+      "xp": "15",
+      "wildEnc": "1d8"
+    },
+    "Rat, Giant": {
+      "ac": 2,
+      "hd": "1",
+      "atk": "1 (bite 11+)",
+      "dmg": "1d3 + disease",
+      "save": "F1",
+      "morale": 0,
+      "xp": "10",
+      "wildEnc": "3d10",
+      "tt": "C",
+      "_alias_of": "Varmint, Giant Rat"
+    },
+    "Ferret, Giant": {
+      "ac": 4,
+      "hd": "1+1",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": 0,
+      "xp": "15",
+      "wildEnc": "1d8"
+    },
+    "Fly, Giant": {
+      "ac": 3,
+      "hd": "2*",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": 0,
+      "xp": "29",
+      "wildEnc": "1d6",
+      "_alias_of": "Frog, Giant"
+    },
+    "Locust, Cavern": {
+      "ac": 5,
+      "hd": "2*",
+      "atk": "2 (slam + bite 9+)",
+      "dmg": "1d4/1d4",
+      "save": "F2",
+      "morale": -3,
+      "xp": "29",
+      "wildEnc": "2d10"
+    },
+    "Shrew, Giant": {
+      "ac": 5,
+      "hd": "1",
+      "atk": "2 (bite 10+)",
+      "dmg": "1d6/1d6",
+      "save": "F1",
+      "morale": 2,
+      "xp": "10",
+      "wildEnc": "1d4",
+      "_alias_of": "Varmint, Giant Shrew"
+    },
+    "Barghest, Lesser": {
+      "ac": 4,
+      "hd": "5+2*",
+      "atk": "1 (bite 6+)",
+      "dmg": "2d6",
+      "save": "F5",
+      "morale": 2,
+      "xp": "350",
+      "wildEnc": "1d4",
+      "tt": "D"
+    },
+    "Hyena, Common": {
+      "ac": 2,
+      "hd": "2+1",
+      "atk": "1 (bite)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": -1,
+      "xp": "25",
+      "wildEnc": "3d6",
+      "_alias_of": "Hyena, Ordinary"
+    },
+    "Hyena, Giant": {
+      "ac": 4,
+      "hd": "4",
+      "atk": "1 (bite 7+)",
+      "dmg": "2d6",
+      "save": "F2",
+      "morale": 0,
+      "xp": "80",
+      "wildEnc": "1d4"
+    },
+    "Attercop, Foul": {
+      "ac": 2,
+      "hd": "2**",
+      "atk": "1 (bite/web 9+)",
+      "dmg": "1d6 + poison",
+      "save": "F1",
+      "morale": -1,
+      "xp": "38",
+      "wildEnc": "1d6"
+    },
+    "Attercop, Hideous": {
+      "ac": 3,
+      "hd": "3**",
+      "atk": "1 (bite/web 8+)",
+      "dmg": "1d8 + poison",
+      "save": "F2",
+      "morale": 0,
+      "xp": "80",
+      "wildEnc": "1d4"
+    },
+    "Attercop, Monstrous": {
+      "ac": 4,
+      "hd": "4**",
+      "atk": "1 (bite/web 7+)",
+      "dmg": "1d10 + poison",
+      "save": "F2",
+      "morale": 1,
+      "xp": "190",
+      "wildEnc": "1d3"
+    },
+    "Basilisk, Noxious": {
+      "ac": 5,
+      "hd": "8*",
+      "atk": "1 (bite 3+)",
+      "dmg": "1d10 + poison gas",
+      "save": "F8",
+      "morale": 1,
+      "xp": "1100",
+      "wildEnc": "1d2",
+      "tt": "I"
+    },
+    "Balegyr": {
+      "ac": 8,
+      "hd": "10*****",
+      "atk": "1 (weapon/whip)",
+      "dmg": "3d6/2d6",
+      "save": "F10",
+      "morale": 3,
+      "xp": "4000",
+      "wildEnc": "1",
+      "tt": "N"
+    },
+    "Faerie, Oread": {
+      "ac": 4,
+      "hd": "2*",
+      "atk": "1 (spear/bow 9+)",
+      "dmg": "1d6",
+      "save": "F2",
+      "morale": 0,
+      "xp": "29",
+      "wildEnc": "2d4",
+      "_alias_of": "Nymph, Oread"
+    },
+    "Faerie, Dryad": {
+      "ac": 4,
+      "hd": "2*",
+      "atk": "Bewitchment",
+      "dmg": "Charm",
+      "save": "F4",
+      "morale": -2,
+      "xp": "29",
+      "wildEnc": "1d4",
+      "_alias_of": "Nymph, Dryad"
+    },
+    "Dragon Turtle": {
+      "ac": 12,
+      "hd": "36*",
+      "atk": "3 or breath",
+      "dmg": "1d8/1d8/10d6 or steam",
+      "save": "F15",
+      "morale": 2,
+      "xp": "17500",
+      "wildEnc": "1",
+      "tt": "Q"
+    },
+    "Herd Animal, Cattle": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 (kick/butt 9+)",
+      "dmg": "1d6",
+      "save": "F1",
+      "morale": -2,
+      "xp": "20",
+      "wildEnc": "3d10"
+    },
+    "Herd Animal, Gazelle": {
+      "ac": 2,
+      "hd": "1",
+      "atk": "1 (kick 10+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -3,
+      "xp": "10",
+      "wildEnc": "3d10"
+    },
+    "Herd Animal, Elk": {
+      "ac": 2,
+      "hd": "4",
+      "atk": "1 (kick/butt 7+)",
+      "dmg": "1d8",
+      "save": "F2",
+      "morale": 0,
+      "xp": "80",
+      "wildEnc": "2d6"
+    },
+    "Raptor, Large": {
+      "ac": 3,
+      "hd": "1+1*",
+      "atk": "2 (talons 11+)",
+      "dmg": "1d4/1d4",
+      "save": "F1",
+      "morale": -1,
+      "xp": "21",
+      "wildEnc": "1d4"
+    },
+    "Faerie, Redcap": {
+      "ac": 3,
+      "hd": "3+1*",
+      "atk": "1 (pike/scythe 7+)",
+      "dmg": "1d8+1",
+      "save": "F3",
+      "morale": 2,
+      "xp": "100",
+      "wildEnc": "2d4"
+    },
+    "Faerie, Galdrtri": {
+      "ac": 4,
+      "hd": "6***",
+      "atk": "1 (staff 5+) + spells",
+      "dmg": "1d6",
+      "save": "F12",
+      "morale": 0,
+      "xp": "820",
+      "wildEnc": "1d4"
+    },
+    "Lesser Barghest": {
+      "ac": 5,
+      "hd": "8+2*",
+      "atk": "1 (bite 2+)",
+      "dmg": "3d6 ",
+      "save": "F8",
+      "morale": 3,
+      "spd": "60’ / 180’",
+      "dunEnc": "solitary (1) /"
+    },
+    "Giant vampire Bat": {
+      "ac": 5,
+      "hd": "4*",
+      "atk": "1 (bite 7+) have AC 0, HD 1+1, and 1 bite (1 ). Neither can",
+      "dmg": "2d4  + blood drain",
+      "save": "F4",
+      "morale": 2,
+      "spd": "10’ / 30’",
+      "wildEnc": "Flock (1d4) / nest",
+      "dunEnc": "Flock (1d4) / nest (2d4)"
+    },
+    "Brown Bear": {
+      "ac": 3,
+      "hd": "5",
+      "atk": "3 (2 claws, bite 6+)",
+      "dmg": "1d4  / 1d4  / 1d8  Spoils",
+      "save": "F2",
+      "morale": 0,
+      "spd": "40’ / 120' AC 1, Spd 90’, HD 2"
+    },
+    "Bugbear": {
+      "ac": 4,
+      "hd": "3+1",
+      "atk": "1 (weapon 7+)",
+      "dmg": "By weapon +1  When bugbears are encountered in a village, c",
+      "save": "F3",
+      "morale": 2,
+      "spd": "30’ / 90’",
+      "_alias_of": "Beastman, Bugbear"
+    },
+    "Gnoll": {
+      "ac": 4,
+      "hd": "2",
+      "atk": "1 (weapon 9+)",
+      "dmg": "By weapon +1 ",
+      "save": "F2",
+      "morale": 0,
+      "spd": "30’ / 90’",
+      "_alias_of": "Beastman, Gnoll"
+    },
+    "Hobgoblin": {
+      "ac": 3,
+      "hd": "1+1",
+      "atk": "1 (weapon 9+)",
+      "dmg": "By weapon +1 ",
+      "save": "F1",
+      "morale": 0,
+      "spd": "30’ / 90’"
+    },
+    "Kobold": {
+      "ac": 2,
+      "hd": "1/2",
+      "atk": "1 (weapon 12+) Kobold lairs and villages will have drudges a",
+      "dmg": "By weapon -1  100% and 100% of the number of warriors, resp",
+      "save": "F0",
+      "morale": -2,
+      "spd": "20’ / 60’"
+    },
+    "Luminous Beetle": {
+      "ac": 5,
+      "hd": "1+2",
+      "atk": "1 (bite 9+)",
+      "dmg": "2d4 ",
+      "save": "F1",
+      "morale": -1,
+      "spd": "40’ / 120'",
+      "dunEnc": "clu"
+    },
+    "Beetle": {
+      "ac": 6,
+      "hd": "3+1",
+      "atk": "1 (bite 7+) chitinous spurs",
+      "dmg": "2d6 ",
+      "save": "F1",
+      "morale": 1,
+      "spd": "50’ / 150'",
+      "wildEnc": "scourge",
+      "dunEnc": "cluster (1d8) / nest (2d6)"
+    },
+    "Giant centipede": {
+      "ac": 0,
+      "hd": "1/2*",
+      "atk": "1 (bite 12+) A slain giant centipede can be harvested with A",
+      "dmg": "1  + Poison for the following components useful in magic re",
+      "save": "F0",
+      "morale": -1,
+      "spd": "20’ / 60’"
+    },
+    "Giant crocodile": {
+      "ac": 8,
+      "hd": "15",
+      "atk": "1 (bite -4+) and I disembarked to assess arbitrage opportuni",
+      "dmg": "3d8 ",
+      "save": "F8",
+      "morale": 1,
+      "spd": "20’ / 60’",
+      "wildEnc": "Bask (1d3) interested in purchasing the",
+      "dunEnc": "Bask (1d3) a meeting for tomorrow with a",
+      "tt": "none 13th Juselen 38",
+      "align": "neutral"
+    },
+    "Large crocodile": {
+      "ac": 6,
+      "hd": "6",
+      "atk": "1 (bite 5+)",
+      "dmg": "2d8 ",
+      "save": "F3",
+      "morale": -1,
+      "spd": "20’ / 60’",
+      "wildEnc": "Bask (1d4)",
+      "dunEnc": "Bask (1d4)",
+      "tt": "none",
+      "align": "neutral"
+    },
+    "Greater dakhanavar": {
+      "ac": 7,
+      "hd": "8+2*****",
+      "atk": "3 (2 claws, bite 2+) or 1 (weapon 2+)",
+      "dmg": "1d8  /1d8  /2d6  or by weapon ×2 ",
+      "save": "e8",
+      "morale": 2,
+      "spd": "10’ / 30’ or 40’ / 120"
+    },
+    "Lesser dakhanavar": {
+      "ac": 6,
+      "hd": "6*",
+      "atk": "3 (2 claws, bite 5+) lesser, the offspring will be a lesser",
+      "dmg": "1d6  /1d6  / 2d4  the offspring will be a giant vampire b",
+      "save": "e6",
+      "morale": 0,
+      "spd": "10’ / 30’"
+    },
+    "Giant devil ray": {
+      "ac": 3,
+      "hd": "6*",
+      "atk": "1 (sting 5+) Spoils",
+      "dmg": "1d6  + poison A slain giant devil ray can be harvested with",
+      "save": "F3",
+      "morale": -1,
+      "spd": "- Ecology",
+      "wildEnc": "solitary (1) / Fever (5d10)",
+      "dunEnc": "none a whale; of proud tritons who drive"
+    },
+    "Medium Horse": {
+      "ac": 2,
+      "hd": "3",
+      "atk": "1 or 2 (hooves 8+)",
+      "dmg": "1d6  /1d6  speed adjusted by the lower of DEX or CON bonus",
+      "save": "F2",
+      "morale": -1,
+      "spd": "60’ / 180’ for Monster",
+      "dunEnc": "none dapple grey, sorrel, or white, but",
+      "_alias_of": "Equine, Medium Horse"
+    },
+    "Galdrtré": {
+      "ac": 7,
+      "hd": "8**",
+      "atk": "3 (2 roots, 1 branch 3+) round until it escapes or the galdr",
+      "dmg": "2d6  /2d6  / 3d6 ",
+      "save": "F8",
+      "morale": -2,
+      "spd": "5’ / 15’"
+    },
+    "Jann": {
+      "ac": 4,
+      "hd": "7",
+      "atk": "1 (slam 3+) If the save succeeds, the creature takes half th",
+      "dmg": "2d6  forced back. If the whirlwind moves into contact with",
+      "save": "F14",
+      "morale": 4,
+      "spd": "30’ / 90'"
+    },
+    "Halfling": {
+      "ac": 3,
+      "hd": "1-1",
+      "atk": "1 (weapon 11+) The shire will also be protected by a militia",
+      "dmg": "By weapon +1  to 200% of the number of halfling bounders. H",
+      "save": "e1",
+      "morale": 0,
+      "spd": "30’ / 90’",
+      "xp": "5",
+      "wildEnc": "3d6",
+      "tt": "E"
+    },
+    "Large Herd Animal": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 (kick or butt 9+)",
+      "dmg": "1d3  or 1d6 ",
+      "save": "F1",
+      "morale": -2,
+      "spd": "80’ / 240’ Speed",
+      "wildEnc": "Herd (5d10)",
+      "dunEnc": "none",
+      "tt": "none",
+      "align": "neutral",
+      "_alias_of": "Herd Animal"
+    },
+    "Huge Herd Animal": {
+      "ac": 2,
+      "hd": "4",
+      "atk": "1 (kick or butt 7+)",
+      "dmg": "1d6  or 1d10 ",
+      "save": "F2",
+      "morale": 0,
+      "spd": "60’ / 180’ Speed",
+      "wildEnc": "Herd (5d10)",
+      "dunEnc": "none",
+      "tt": "none",
+      "align": "neutral"
+    },
+    "Hippopotamus": {
+      "ac": 3,
+      "hd": "8+2*",
+      "atk": "1 (bite or trample 3+) forced aside. A hippo can cleave afte",
+      "dmg": "3d6  or 4d4  that forces aside a creature.",
+      "save": "F4",
+      "morale": 2,
+      "spd": "30’ / 90’"
+    },
+    "Hobgholl": {
+      "ac": 3,
+      "hd": "3**",
+      "atk": "2 or 1 (2 claws or weapon 8+) Spoils",
+      "dmg": "1d3  /1d3  or by weapon +1  A slain hobgholl can be harve",
+      "save": "F3",
+      "morale": 2,
+      "spd": "40’ / 120’"
+    },
+    "Leyak": {
+      "ac": 2,
+      "hd": "6***",
+      "atk": "1 (tongue 5+) throw. The save suffers a -1 penalty per addit",
+      "dmg": "1d4  + blood drain first. If the save fails, the creature i",
+      "save": "M6",
+      "morale": 0,
+      "spd": "40’ / 120’ (body)"
+    },
+    "Living Ancestor": {
+      "ac": 8,
+      "hd": "10*****",
+      "atk": "1 (smash or weapon 1+)",
+      "dmg": "3d8  or by weapon × 2  Living ancestors are immune to ench",
+      "save": "dv10",
+      "morale": 4,
+      "spd": "20’ / 60’"
+    },
+    "Mammoth": {
+      "ac": 6,
+      "hd": "15*",
+      "atk": "2 (tusks -4+) or 1 (trample -4+) force aside small and man-s",
+      "dmg": "2d6  / 2d6  or 4d8  respectively. Baby mammoths are large",
+      "save": "F8",
+      "morale": 0,
+      "spd": "40’ / 120'",
+      "dunEnc": "none Night. Among these paintings can be"
+    },
+    "Berserker": {
+      "ac": 4,
+      "hd": "1",
+      "atk": "1 (weapon 10+) ended until combat ends.",
+      "dmg": "By weapon +1 ",
+      "save": "F1",
+      "morale": 4,
+      "spd": "40’ / 120’",
+      "dunEnc": "Gang (1d6) / outpost",
+      "xp": "21",
+      "wildEnc": "2d4",
+      "tt": "G",
+      "_alias_of": "Men, Berserkers"
+    },
+    "Gelatinous Mass": {
+      "ac": 1,
+      "hd": "4***",
+      "atk": "1 (ingurgitation 7+) than 10 small, 5 man-sized, or 2 large",
+      "dmg": "2d4  + ingurgitation If new creatures are ingurgitated, one",
+      "save": "F2",
+      "spd": "20’ / 60'"
+    },
+    "Giant raptor": {
+      "ac": 3,
+      "hd": "3+3*",
+      "atk": "2 (talons 7+)",
+      "dmg": "1d4  /1d4  A giant raptor’s 6d10 flight feathers each fetc",
+      "save": "F2",
+      "morale": 0,
+      "spd": "20’ / 60’",
+      "wildEnc": "Flock (1d3) / Aerie (1d3)",
+      "dunEnc": "none",
+      "tt": "none",
+      "align": "neutral"
+    },
+    "Medium raptor": {
+      "ac": 3,
+      "hd": "1/2*",
+      "atk": "2 (talons 12+) When medium raptors are encountered in their",
+      "dmg": "1d2  /1d2  chance each raptor is guarding eggs or juvenile",
+      "save": "F0",
+      "morale": -1,
+      "spd": "20’ / 60’",
+      "dunEnc": "non"
+    },
+    "Flame salamander": {
+      "ac": 7,
+      "hd": "8*",
+      "atk": "3 (2 claws, bite 3+)",
+      "dmg": "1d4  /1d4  / 1d8   Spoils",
+      "save": "F8",
+      "morale": 0,
+      "spd": "40’ / 120’",
+      "_alias_of": "Flame Salamander"
+    },
+    "Great white shark": {
+      "ac": 5,
+      "hd": "8*",
+      "atk": "1 (bite 3+) A slain great white shark with exceptional attri",
+      "dmg": "2d10  harvested with Animal Husbandry, Labor (Butchery), or",
+      "save": "F4",
+      "morale": -1,
+      "spd": "-"
+    },
+    "Giant slug": {
+      "ac": 1,
+      "hd": "12",
+      "atk": "1 (bite or spit acid -1+)",
+      "dmg": "1d12  or 5d8 ",
+      "save": "F12",
+      "morale": 2,
+      "spd": "20’ / 60’",
+      "_alias_of": "Slug, Giant"
+    },
+    "King cobra": {
+      "ac": 4,
+      "hd": "4**",
+      "atk": "2 (bite 7+)",
+      "dmg": "1d4  + poison",
+      "save": "F2",
+      "morale": -1,
+      "spd": "40’ / 120’",
+      "dunEnc": "solitary (1) / nest (1d4)",
+      "_alias_of": "Snake, King Cobra"
+    },
+    "Python snake": {
+      "ac": 3,
+      "hd": "5*",
+      "atk": "2 (bite, constrict 6+) after they emerge from their eggs.",
+      "dmg": "1d4  /2d8 ",
+      "save": "F3",
+      "morale": -1,
+      "spd": "30’ / 90’",
+      "wildEnc": "solitary (1) / den (1d4) mankind. Travel",
+      "dunEnc": "solitary (1) / den (1d4) no means are th"
+    },
+    "Giant Black widow": {
+      "ac": 3,
+      "hd": "3*",
+      "atk": "1 (bite 8+)",
+      "dmg": "2d6  + poison",
+      "save": "F2",
+      "morale": 0,
+      "spd": "20’ / 60’",
+      "dunEnc": "clutter (1d3) / de",
+      "_alias_of": "Spider, Giant Black Widow"
+    },
+    "Giant crab spider": {
+      "ac": 2,
+      "hd": "2*",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d8  + poison If not used for magic research, a giant crab",
+      "save": "F1",
+      "morale": -1,
+      "spd": "40’ / 120’"
+    },
+    "Bronze Animated statue": {
+      "ac": 6,
+      "hd": "5*",
+      "atk": "1 (slam 6+)",
+      "dmg": "5d4 ",
+      "save": "F5",
+      "spd": "20’ / 60’",
+      "wildEnc": "Parade (1d4) / Gallery (1d4)",
+      "dunEnc": "Parade (1d4) / Gallery (1d4)",
+      "align": "neutral"
+    },
+    "Animated Iron statue": {
+      "ac": 5,
+      "hd": "4*",
+      "atk": "2 (fists 7+) found guarding ancient treasures, dwarven vault",
+      "dmg": "1d8  / 1d8  serving powerful spellcasters.",
+      "save": "F4",
+      "spd": "10’ / 30’",
+      "dunEnc": "Parade (1d3) / Gallery (1d4) Animated ir"
+    },
+    "Animated stone statue": {
+      "ac": 5,
+      "hd": "5*",
+      "atk": "2 (lava blast 6+)",
+      "dmg": "2d6  / 2d6 ",
+      "save": "F5",
+      "spd": "20’ / 60’"
+    },
+    "Lesser titan": {
+      "ac": 5,
+      "hd": "12",
+      "atk": "1 (smash -1+ or throw -1+) When hurling a boulder, a titan f",
+      "dmg": "6d6  or 4d6  using the rules for Missile Attacks with Arti",
+      "save": "F12",
+      "morale": 2,
+      "spd": "40’ / 120’",
+      "dunEnc": "Band (1d2) / Lair (1d3) Lesser titan mag",
+      "_alias_of": "Lesser Titan"
+    },
+    "Giant shrew": {
+      "ac": 5,
+      "hd": "1",
+      "atk": "2 (bite 10+)",
+      "dmg": "1d6  / 1d6  Being both blind and territorially hostile, gi",
+      "save": "F1",
+      "morale": 2,
+      "spd": "60’ / 180' paws",
+      "wildEnc": "drove (1d8) / nest (1d8)",
+      "dunEnc": "Pack (1d4) / nest (1d8)",
+      "_alias_of": "Varmint, Giant Shrew"
+    },
+    "Giant Black worm": {
+      "ac": 3,
+      "hd": "15*",
+      "atk": "2 (bite, cirri -4+) is a 25% chance per worm that it will ha",
+      "dmg": "6d6  / 2d6  nearby. The eggs have 3 hp and weigh 12 st. Wo",
+      "save": "F8",
+      "morale": 2,
+      "spd": "20’ / 60’",
+      "dunEnc": "clew (1d2) / n"
+    },
+    "Beastman, Lizardman": {
+      "ac": 4,
+      "hd": "2",
+      "atk": "1 (weapon 8+) or 3 (2 claws, bite)",
+      "dmg": "1d8 or 1d4/1d4/1d6",
+      "save": "F2",
+      "morale": 2,
+      "xp": "20",
+      "wildEnc": "2d6",
+      "tt": "G"
+    },
+    "Beastman, Morlock": {
+      "ac": 1,
+      "hd": "1",
+      "atk": "1 (weapon 10+)",
+      "dmg": "1d6",
+      "save": "F1",
+      "morale": 1,
+      "xp": "10",
+      "wildEnc": "4d4",
+      "tt": "E"
+    },
+    "Beastman, Thrassian": {
+      "ac": 6,
+      "hd": "4+1",
+      "atk": "3 (2 claws, bite 6+)",
+      "dmg": "1d6/1d6/1d8",
+      "save": "F4",
+      "morale": 2,
+      "xp": "140",
+      "wildEnc": "2d4",
+      "tt": "G",
+      "_alias_of": "Thrassian"
+    },
+    "Bear, Grizzly": {
+      "ac": 3,
+      "hd": "5",
+      "atk": "3 (2 claws, bite 6+)",
+      "dmg": "1d4/1d4/1d8",
+      "save": "F2",
+      "morale": 0,
+      "xp": "200",
+      "wildEnc": "1"
+    },
+    "Cat, Leopard": {
+      "ac": 3,
+      "hd": "4*",
+      "atk": "3 (2 claws, bite 7+)",
+      "dmg": "1d4/1d4/1d8",
+      "save": "F2",
+      "morale": 0,
+      "xp": "125",
+      "wildEnc": "1d2"
+    },
+    "Cat, Tiger": {
+      "ac": 3,
+      "hd": "6*",
+      "atk": "3 (2 claws, bite 5+)",
+      "dmg": "1d6/1d6/2d6",
+      "save": "F3",
+      "morale": 1,
+      "xp": "500",
+      "wildEnc": "1"
+    },
+    "Snake, Python": {
+      "ac": 3,
+      "hd": "5*",
+      "atk": "2 (bite, constrict 6+)",
+      "dmg": "1d4/2d4",
+      "save": "F3",
+      "morale": -1,
+      "xp": "300",
+      "wildEnc": "1d3",
+      "_alias_of": "Snake, Giant Python"
+    },
+    "Snake, King Cobra": {
+      "ac": 4,
+      "hd": "4**",
+      "atk": "2 (bite 7+)",
+      "dmg": "1d6 + poison",
+      "save": "F2",
+      "morale": -1,
+      "xp": "190",
+      "wildEnc": "1d4"
+    },
+    "Ghoul, Desert": {
+      "ac": 4,
+      "hd": "4**",
+      "atk": "3 (2 claws, bite 7+)",
+      "dmg": "1d4/1d4/1d6 + paralysis",
+      "save": "F4",
+      "morale": 2,
+      "xp": "190",
+      "wildEnc": "2d4",
+      "tt": "D"
+    },
+    "Ghoul, Grave": {
+      "ac": 5,
+      "hd": "6***",
+      "atk": "3 (2 claws, bite 5+)",
+      "dmg": "1d6/1d6/1d8 + paralysis",
+      "save": "F6",
+      "morale": 3,
+      "xp": "820",
+      "wildEnc": "1d6",
+      "tt": "H"
+    },
+    "Mummy": {
+      "ac": 6,
+      "hd": "5+1**",
+      "atk": "1 (fist 5+)",
+      "dmg": "1d12 + rot",
+      "save": "F5",
+      "morale": 4,
+      "xp": "500",
+      "wildEnc": "1d6",
+      "tt": "H"
+    },
+    "Spectre": {
+      "ac": 7,
+      "hd": "6**",
+      "atk": "1 (touch 5+)",
+      "dmg": "Energy drain x2",
+      "save": "F6",
+      "morale": 4,
+      "xp": "820",
+      "wildEnc": "1d4",
+      "tt": "N"
+    },
+    "Vampire": {
+      "ac": 7,
+      "hd": "7-9**",
+      "atk": "1 (bite or weapon)",
+      "dmg": "1d10 + drain",
+      "save": "F7",
+      "morale": 4,
+      "xp": "1140",
+      "wildEnc": "1d4",
+      "tt": "N"
+    },
+    "Death Charger": {
+      "ac": 5,
+      "hd": "4**",
+      "atk": "2 (hooves 7+)",
+      "dmg": "1d8/1d8",
+      "save": "F4",
+      "morale": 4,
+      "xp": "190",
+      "wildEnc": "1d4"
+    },
+    "Draugr": {
+      "ac": 7,
+      "hd": "7-9****",
+      "atk": "2 (claws) or 1 (weapon)",
+      "dmg": "1d8/1d8",
+      "save": "F7",
+      "morale": 3,
+      "xp": "1490",
+      "wildEnc": "1d4",
+      "tt": "N"
+    },
+    "Cyclops": {
+      "ac": 4,
+      "hd": "13",
+      "atk": "1 (club -2+)",
+      "dmg": "3d10",
+      "save": "F13",
+      "morale": 1,
+      "xp": "1350",
+      "wildEnc": "1",
+      "tt": "N"
+    },
+    "Weretiger": {
+      "ac": 6,
+      "hd": "5*",
+      "atk": "3 (2 claws, bite 6+)",
+      "dmg": "1d6/1d6/2d6",
+      "save": "F5",
+      "morale": 1,
+      "xp": "350",
+      "wildEnc": "1d4",
+      "tt": "D",
+      "_alias_of": "Lycan, Weretiger"
+    },
+    "Wererat": {
+      "ac": 2,
+      "hd": "3*",
+      "atk": "1 (bite/weapon 8+)",
+      "dmg": "1d4/1d6",
+      "save": "F3",
+      "morale": 0,
+      "xp": "65",
+      "wildEnc": "2d8",
+      "tt": "D",
+      "_alias_of": "Lycan, Wererat"
+    },
+    "Fly, Giant Carnivorous": {
+      "ac": 3,
+      "hd": "2*",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": 0,
+      "xp": "29",
+      "wildEnc": "1d6"
+    },
+    "Crab, Giant": {
+      "ac": 7,
+      "hd": "3",
+      "atk": "2 (pincers 8+)",
+      "dmg": "2d6/2d6",
+      "save": "F2",
+      "morale": -1,
+      "xp": "50",
+      "wildEnc": "1d4"
+    },
+    "Spider, Giant Crab": {
+      "ac": 2,
+      "hd": "2*",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d8 + poison",
+      "save": "F1",
+      "morale": -1,
+      "xp": "29",
+      "wildEnc": "1d4"
+    },
+    "Crocodile, Ordinary": {
+      "ac": 4,
+      "hd": "2",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": -1,
+      "xp": "20",
+      "wildEnc": "2d4"
+    },
+    "Dragon": {
+      "ac": 8,
+      "hd": "9**",
+      "atk": "3 or breath",
+      "dmg": "varies by type",
+      "save": "F9",
+      "morale": 1,
+      "xp": "1700",
+      "wildEnc": "1d4",
+      "tt": "N"
+    },
+    "Dragon, Blue": {
+      "ac": 9,
+      "hd": "10**",
+      "atk": "3 or breath",
+      "dmg": "1d6+1/1d6+1/3d10 or 10d6 lightning",
+      "save": "F10",
+      "morale": 1,
+      "xp": "2300",
+      "wildEnc": "1d4",
+      "tt": "N"
+    },
+    "Dragon, Gold": {
+      "ac": 11,
+      "hd": "12**",
+      "atk": "3 or breath",
+      "dmg": "1d8+1/1d8+1/4d10 or 12d6 fire/gas",
+      "save": "F12",
+      "morale": 2,
+      "xp": "3600",
+      "wildEnc": "1d4",
+      "tt": "Q"
+    },
+    "Faerie, Brownie": {
+      "ac": 3,
+      "hd": "1*",
+      "atk": "1 (tiny weapon 10+)",
+      "dmg": "1d3",
+      "save": "F1",
+      "morale": -2,
+      "xp": "13",
+      "wildEnc": "3d6"
+    },
+    "Faerie, Nixie": {
+      "ac": 2,
+      "hd": "1*",
+      "atk": "1 (weapon 10+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -1,
+      "xp": "13",
+      "wildEnc": "2d6"
+    },
+    "Faerie, Sprite": {
+      "ac": 4,
+      "hd": "1*",
+      "atk": "1 (tiny bow/sword 10+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -1,
+      "xp": "13",
+      "wildEnc": "3d6"
+    },
+    "Faerie, Srpite": {
+      "ac": 4,
+      "hd": "1*",
+      "atk": "1 (tiny bow/sword 10+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -1,
+      "xp": "13",
+      "wildEnc": "3d6"
+    },
+    "Faerie, Spriggan": {
+      "ac": 4,
+      "hd": "4**",
+      "atk": "1 (weapon 7+)",
+      "dmg": "2d6",
+      "save": "F4",
+      "morale": 2,
+      "xp": "190",
+      "wildEnc": "2d4",
+      "tt": "G"
+    },
+    "Faerie, K0cker": {
+      "ac": 3,
+      "hd": "1*",
+      "atk": "1 (mine pick 10+)",
+      "dmg": "1d4+1",
+      "save": "F1",
+      "morale": 1,
+      "xp": "13",
+      "wildEnc": "2d4"
+    },
+    "Dwarf": {
+      "ac": 4,
+      "hd": "1",
+      "atk": "1 (weapon 10+)",
+      "dmg": "1d8",
+      "save": "D1",
+      "morale": 1,
+      "xp": "10",
+      "wildEnc": "2d6",
+      "tt": "G"
+    },
+    "Elf": {
+      "ac": 4,
+      "hd": "1+1",
+      "atk": "1 (weapon 9+)",
+      "dmg": "1d8",
+      "save": "E1",
+      "morale": 1,
+      "xp": "15",
+      "wildEnc": "2d4",
+      "tt": "G"
+    },
+    "Tribal Warrior": {
+      "ac": 1,
+      "hd": "1-1",
+      "atk": "1 (weapon 11+)",
+      "dmg": "1d6",
+      "save": "F0",
+      "morale": 0,
+      "xp": "5",
+      "wildEnc": "3d10",
+      "tt": "E"
+    },
+    "Devil Boar": {
+      "ac": 5,
+      "hd": "9**",
+      "atk": "1 (tusk 2+)",
+      "dmg": "2d8",
+      "save": "F9",
+      "morale": 3,
+      "xp": "1700",
+      "wildEnc": "1d2",
+      "tt": "F"
+    },
+    "Child of Nasga": {
+      "ac": 6,
+      "hd": "8****",
+      "atk": "8 (tentacles 3+)",
+      "dmg": "1d6 each + constrict",
+      "save": "F8",
+      "morale": 3,
+      "xp": "2600",
+      "wildEnc": "1",
+      "tt": "N"
+    },
+    "Fish, Giant Piranha": {
+      "ac": 3,
+      "hd": "3+3",
+      "atk": "1 (bite 7+)",
+      "dmg": "1d8",
+      "save": "F2",
+      "morale": -1,
+      "xp": "50",
+      "wildEnc": "2d4"
+    },
+    "Fish, Giant Surgeon": {
+      "ac": 9,
+      "hd": "10*",
+      "atk": "1 (bite 1+)",
+      "dmg": "2d10",
+      "save": "F5",
+      "morale": -1,
+      "xp": "1600",
+      "wildEnc": "1d2"
+    },
+    "Equine, Donkey": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 (kick 9+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -2,
+      "xp": "20",
+      "wildEnc": "2d6"
+    },
+    "Equine, Medium Horse": {
+      "ac": 2,
+      "hd": "3",
+      "atk": "1 or 2 (hooves 8+)",
+      "dmg": "1d6",
+      "save": "F2",
+      "morale": -1,
+      "xp": "50",
+      "wildEnc": "2d6"
+    },
+    "Equine, Heavy Horse": {
+      "ac": 2,
+      "hd": "3+3",
+      "atk": "1 or 2 (hooves 7+)",
+      "dmg": "1d6",
+      "save": "F2",
+      "morale": -2,
+      "xp": "50",
+      "wildEnc": "2d6"
+    },
+    "Dog, Hunting (wild dog)": {
+      "ac": 2,
+      "hd": "1+1",
+      "atk": "1 (bite 9+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": 0,
+      "xp": "15",
+      "wildEnc": "2d6"
+    },
+    "Dog, War": {
+      "ac": 3,
+      "hd": "2+2",
+      "atk": "1 (bite 8+)",
+      "dmg": "1d6+1",
+      "save": "F1",
+      "morale": 1,
+      "xp": "25",
+      "wildEnc": "1d4"
+    },
+    "Faravahar": {
+      "ac": 7,
+      "hd": "10***",
+      "atk": "2 (smash 1+)",
+      "dmg": "2d6/2d6",
+      "save": "F10",
+      "morale": 4,
+      "xp": "2950",
+      "wildEnc": "1"
+    },
+    "Galdrtre": {
+      "ac": 7,
+      "hd": "8**",
+      "atk": "3 (2 roots, branch 3+)",
+      "dmg": "1d6/1d6/2d6",
+      "save": "F8",
+      "morale": -2,
+      "xp": "1100",
+      "wildEnc": "1d3"
+    },
+    "Lycan, Wererat": {
+      "ac": 2,
+      "hd": "3*",
+      "atk": "1 (bite/weapon 8+)",
+      "dmg": "1d4/1d6",
+      "save": "F3",
+      "morale": 0,
+      "xp": "65",
+      "wildEnc": "2d8",
+      "tt": "D"
+    },
+    "Lycan, Weretiger": {
+      "ac": 6,
+      "hd": "5*",
+      "atk": "3 (2 claws, bite 6+)",
+      "dmg": "1d6/1d6/2d6",
+      "save": "F5",
+      "morale": 1,
+      "xp": "350",
+      "wildEnc": "1d4",
+      "tt": "D"
+    },
+    "Lycan, Werewolf": {
+      "ac": 4,
+      "hd": "4*",
+      "atk": "1 (bite 7+)",
+      "dmg": "2d4",
+      "save": "F4",
+      "morale": 1,
+      "xp": "190",
+      "wildEnc": "2d6",
+      "tt": "D"
+    },
+    "Men, Berserkers": {
+      "ac": 4,
+      "hd": "1",
+      "atk": "1 (weapon 10+) ended until combat ends.",
+      "dmg": "By weapon +1 ",
+      "save": "F1",
+      "morale": 4,
+      "spd": "40’ / 120’",
+      "dunEnc": "Gang (1d6) / outpost",
+      "xp": "21",
+      "wildEnc": "2d4",
+      "tt": "G"
+    },
+    "Men, Nomads": {
+      "ac": 1,
+      "hd": "1-1",
+      "atk": "1 (weapon 11+)",
+      "dmg": "1d6",
+      "save": "F0",
+      "morale": 0,
+      "xp": "5",
+      "wildEnc": "3d10",
+      "tt": "E"
+    },
+    "Nymph, Dryad": {
+      "ac": 4,
+      "hd": "2*",
+      "atk": "Bewitchment",
+      "dmg": "Charm",
+      "save": "F4",
+      "morale": -2,
+      "xp": "29",
+      "wildEnc": "1d4"
+    },
+    "Nymph, Oread": {
+      "ac": 4,
+      "hd": "2*",
+      "atk": "1 (spear/bow 9+)",
+      "dmg": "1d6",
+      "save": "F2",
+      "morale": 0,
+      "xp": "29",
+      "wildEnc": "2d4"
+    },
+    "Nymph, Naiad": {
+      "ac": 2,
+      "hd": "1*",
+      "atk": "1 (weapon 10+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -1,
+      "xp": "13",
+      "wildEnc": "2d6"
+    },
+    "Owlbeast": {
+      "ac": 4,
+      "hd": "5*",
+      "atk": "3 (2 claws, bite 6+)",
+      "dmg": "1d8/1d8/1d8",
+      "save": "F3",
+      "morale": 1,
+      "xp": "350",
+      "wildEnc": "1d4",
+      "tt": "D"
+    },
+    "Lizardmen": {
+      "ac": 4,
+      "hd": "2",
+      "atk": "1 (weapon 8+) or 3 (2 claws, bite)",
+      "dmg": "1d8 or 1d4/1d4/1d6",
+      "save": "F2",
+      "morale": 2,
+      "xp": "20",
+      "wildEnc": "2d6",
+      "tt": "G"
+    },
+    "Raptor, Ordinary": {
+      "ac": 3,
+      "hd": "1",
+      "atk": "2 (talons 12+)",
+      "dmg": "1d2/1d2",
+      "save": "F1",
+      "morale": -2,
+      "xp": "10",
+      "wildEnc": "1d6"
+    },
+    "Raptor, Giant": {
+      "ac": 3,
+      "hd": "3+3*",
+      "atk": "2 (talons 7+)",
+      "dmg": "1d4  /1d4  A giant raptor’s 6d10 flight feathers each fetc",
+      "save": "F2",
+      "morale": 0,
+      "spd": "20’ / 60’",
+      "wildEnc": "Flock (1d3) / Aerie (1d3)",
+      "dunEnc": "none",
+      "tt": "none",
+      "align": "neutral"
+    },
+    "Specter": {
+      "ac": 7,
+      "hd": "6**",
+      "atk": "1 (touch 5+)",
+      "dmg": "Energy drain x2",
+      "save": "F6",
+      "morale": 4,
+      "xp": "820",
+      "wildEnc": "1d4",
+      "tt": "N"
+    },
+    "Hell Hawk": {
+      "ac": 6,
+      "hd": "7**",
+      "atk": "3 (2 talons, bite 4+)",
+      "dmg": "1d6/1d6/2d6",
+      "save": "F4",
+      "morale": 1,
+      "xp": "800",
+      "wildEnc": "1d4"
+    },
+    "Swarm, Bat": {
+      "ac": 3,
+      "hd": "1hp",
+      "atk": "Swarm",
+      "dmg": "Confusion",
+      "save": "F0",
+      "morale": -2,
+      "xp": "6",
+      "wildEnc": "3d10"
+    },
+    "Swarm, Rat": {
+      "ac": 2,
+      "hd": "1",
+      "atk": "1 (bite 11+)",
+      "dmg": "1d3 + disease",
+      "save": "F1",
+      "morale": 0,
+      "xp": "10",
+      "wildEnc": "3d10",
+      "tt": "C",
+      "_alias_of": "Varmint, Giant Rat"
+    },
+    "Giant, Stone": {
+      "ac": 5,
+      "hd": "9",
+      "atk": "1 (smash/throw 2+)",
+      "dmg": "3d6",
+      "save": "F9",
+      "morale": 1,
+      "xp": "900",
+      "wildEnc": "1d2",
+      "tt": "N"
+    },
+    "Gnome": {
+      "ac": 4,
+      "hd": "1",
+      "atk": "1 (weapon 10+)",
+      "dmg": "1d6",
+      "save": "D1",
+      "morale": 0,
+      "xp": "10",
+      "wildEnc": "2d4",
+      "tt": "E"
+    },
+    "Hell Hound": {
+      "ac": 5,
+      "hd": "5*",
+      "atk": "1 (bite 6+) or breath",
+      "dmg": "1d6 or 5d6 fire",
+      "save": "F5",
+      "morale": 1,
+      "xp": "350",
+      "wildEnc": "2d4",
+      "tt": "D"
+    },
+    "Jackal": {
+      "ac": 2,
+      "hd": "1/2",
+      "atk": "1 (bite 12+)",
+      "dmg": "1d2",
+      "save": "F0",
+      "morale": -3,
+      "xp": "5",
+      "wildEnc": "2d6"
+    },
+    "Hyena, Ordinary": {
+      "ac": 2,
+      "hd": "2+1",
+      "atk": "1 (bite 8+)",
+      "dmg": "1d8",
+      "save": "F1",
+      "morale": -1,
+      "xp": "25",
+      "wildEnc": "3d6"
+    },
+    "Neanderthal": {
+      "ac": 1,
+      "hd": "2",
+      "atk": "1 (weapon 9+)",
+      "dmg": "2d4",
+      "save": "F2",
+      "morale": -1,
+      "xp": "20",
+      "wildEnc": "3d6",
+      "tt": "E"
+    },
+    "Rhino, Ordinary": {
+      "ac": 4,
+      "hd": "6",
+      "atk": "1 (horn/trample 5+)",
+      "dmg": "2d6 or 2d8",
+      "save": "F3",
+      "morale": 0,
+      "xp": "320",
+      "wildEnc": "1d4"
+    },
+    "Rhino, Wooly": {
+      "ac": 5,
+      "hd": "8",
+      "atk": "1 (horn 3+)",
+      "dmg": "2d8",
+      "save": "F4",
+      "morale": 0,
+      "xp": "600",
+      "wildEnc": "1d4"
+    },
+    "Roc, Large": {
+      "ac": 7,
+      "hd": "12*",
+      "atk": "3 (2 talons, bite 1+)",
+      "dmg": "1d8/1d8/2d10",
+      "save": "F6",
+      "morale": 1,
+      "xp": "1900",
+      "wildEnc": "1d2"
+    },
+    "Toad, Giant": {
+      "ac": 2,
+      "hd": "2+2*",
+      "atk": "1 (bite 8+)",
+      "dmg": "1d4+1",
+      "save": "F1",
+      "morale": -2,
+      "xp": "47",
+      "wildEnc": "1d4"
+    },
+    "Troglodyte": {
+      "ac": 4,
+      "hd": "2*",
+      "atk": "3 (2 claws, bite 9+)",
+      "dmg": "1d4/1d4/1d4 + stench",
+      "save": "F2",
+      "morale": 1,
+      "xp": "29",
+      "wildEnc": "2d6",
+      "tt": "G"
+    },
+    "Terror Bird": {
+      "ac": 3,
+      "hd": "5",
+      "atk": "1 (beak 6+)",
+      "dmg": "1d8",
+      "save": "F3",
+      "morale": 0,
+      "xp": "200",
+      "wildEnc": "1d6"
+    },
+    "Strix": {
+      "ac": 3,
+      "hd": "1*",
+      "atk": "1 (proboscis 10+)",
+      "dmg": "1d4 + drain",
+      "save": "F1",
+      "morale": 0,
+      "xp": "13",
+      "wildEnc": "3d6"
+    },
+    "Strige": {
+      "ac": 3,
+      "hd": "1*",
+      "atk": "1 (proboscis 10+)",
+      "dmg": "1d4 + drain",
+      "save": "F1",
+      "morale": 0,
+      "xp": "13",
+      "wildEnc": "3d6"
+    },
+    "Stymph": {
+      "ac": 3,
+      "hd": "2*",
+      "atk": "1 (beak 9+)",
+      "dmg": "1d6",
+      "save": "F1",
+      "morale": 0,
+      "xp": "29",
+      "wildEnc": "2d6"
+    },
+    "Wasp, Giant": {
+      "ac": 4,
+      "hd": "4*",
+      "atk": "1 (sting 7+)",
+      "dmg": "1d4 + poison",
+      "save": "F2",
+      "morale": 0,
+      "xp": "125",
+      "wildEnc": "1d6"
+    },
+    "Wolf, Warg": {
+      "ac": 3,
+      "hd": "4+1",
+      "atk": "1 (bite 6+)",
+      "dmg": "2d4",
+      "save": "F2",
+      "morale": 1,
+      "xp": "140",
+      "wildEnc": "2d4",
+      "_alias_of": "Wolf, Dire"
+    },
+    "Worm, Giant Black": {
+      "ac": 3,
+      "hd": "15*",
+      "atk": "2 (bite, cirri -4+)",
+      "dmg": "3d6/1d8+poison",
+      "save": "F8",
+      "morale": 2,
+      "xp": "2100",
+      "wildEnc": "1",
+      "tt": "N"
+    },
+    "Worm, Giant White": {
+      "ac": 3,
+      "hd": "12*",
+      "atk": "2 (bite, sting 1+)",
+      "dmg": "2d8/1d8+poison",
+      "save": "F6",
+      "morale": 2,
+      "xp": "1900",
+      "wildEnc": "1",
+      "tt": "N"
+    },
+    "Worm, Great Ice": {
+      "ac": 3,
+      "hd": "20*",
+      "atk": "2 (bite, horn -8+)",
+      "dmg": "4d8/2d8+cold",
+      "save": "F10",
+      "morale": 2,
+      "xp": "4000",
+      "wildEnc": "1",
+      "tt": "Q"
+    },
+    "Sphinx": {
+      "ac": 8,
+      "hd": "12***",
+      "atk": "2 (claws -1+) or 1 (roar)",
+      "dmg": "2d6/2d6",
+      "save": "F12",
+      "morale": 2,
+      "xp": "3600",
+      "wildEnc": "1",
+      "tt": "N"
+    },
+    "Triton": {
+      "ac": 4,
+      "hd": "2",
+      "atk": "1 (trident/net 9+)",
+      "dmg": "1d6",
+      "save": "F2",
+      "morale": 1,
+      "xp": "20",
+      "wildEnc": "2d6",
+      "tt": "G"
+    },
+    "Khepri": {
+      "ac": 4,
+      "hd": "1",
+      "atk": "1 (weapon 10+)",
+      "dmg": "1d6",
+      "save": "F1",
+      "morale": 1,
+      "xp": "10",
+      "wildEnc": "2d6",
+      "tt": "G"
+    },
+    "Lammasu": {
+      "ac": 7,
+      "hd": "7+7**",
+      "atk": "2 (claws 3+)",
+      "dmg": "1d6+1/1d6+1",
+      "save": "F7",
+      "morale": 2,
+      "xp": "1140",
+      "wildEnc": "1d4"
+    },
+    "Salamander, Frost": {
+      "ac": 6,
+      "hd": "12*",
+      "atk": "4 (3 claws, tail 1+)",
+      "dmg": "1d6x3/2d6 + cold",
+      "save": "F12",
+      "morale": 1,
+      "xp": "1900",
+      "wildEnc": "1d3"
+    },
+    "Lizard, Giant Chameleon": {
+      "ac": 7,
+      "hd": "5*",
+      "atk": "1 (bite/tongue 6+)",
+      "dmg": "2d4",
+      "save": "F3",
+      "morale": -1,
+      "xp": "350",
+      "wildEnc": "1d3"
+    },
+    "Lizard, Giant Draco": {
+      "ac": 4,
+      "hd": "4+2",
+      "atk": "1 (bite 6+)",
+      "dmg": "1d10",
+      "save": "F3",
+      "morale": -1,
+      "xp": "140",
+      "wildEnc": "1d4"
+    },
+    "Lizard, Giant Gecko": {
+      "ac": 4,
+      "hd": "3+1",
+      "atk": "1 (bite 7+)",
+      "dmg": "1d8",
+      "save": "F2",
+      "morale": -1,
+      "xp": "50",
+      "wildEnc": "1d6"
+    },
+    "Lizard, Giant Tuatara": {
+      "ac": 5,
+      "hd": "6",
+      "atk": "2 (bite, tail 5+)",
+      "dmg": "1d8/1d8",
+      "save": "F4",
+      "morale": -1,
+      "xp": "320",
+      "wildEnc": "1d2"
+    },
+    "Varmint, Giant Weasel": {
+      "ac": 2,
+      "hd": "4+4",
+      "atk": "1 (bite 6+)",
+      "dmg": "2d4 + drain",
+      "save": "F3",
+      "morale": 1,
+      "xp": "140",
+      "wildEnc": "1d4"
+    },
+    "Titan, Greater": {
+      "ac": 7,
+      "hd": "20****",
+      "atk": "1 (smash -8+)",
+      "dmg": "8d6",
+      "save": "F20",
+      "morale": 3,
+      "xp": "10000",
+      "wildEnc": "1",
+      "tt": "R"
+    },
+    "Treeherder": {
+      "ac": 7,
+      "hd": "10*",
+      "atk": "2 (branches 1+)",
+      "dmg": "2d6/2d6",
+      "save": "F10",
+      "morale": 1,
+      "xp": "1600",
+      "wildEnc": "1d4"
+    },
+    "Mummy Lord": {
+      "ac": 8,
+      "hd": "9***",
+      "atk": "1 (fist 2+)",
+      "dmg": "2d6 + rot",
+      "save": "F9",
+      "morale": 4,
+      "xp": "2300",
+      "wildEnc": "1",
+      "tt": "N"
+    },
+    "Yali": {
+      "ac": 6,
+      "hd": "8**",
+      "atk": "3 (2 claws, bite 3+)",
+      "dmg": "1d6/1d6/2d8",
+      "save": "F8",
+      "morale": 1,
+      "xp": "1100",
+      "wildEnc": "1d2",
+      "tt": "H"
+    },
+    "Hoarflesh": {
+      "ac": 4,
+      "hd": "4**",
+      "atk": "1 (slam 7+)",
+      "dmg": "1d8 + cold",
+      "save": "F4",
+      "morale": 12,
+      "xp": "190",
+      "wildEnc": "2d4"
+    },
+    "Herd Animal": {
+      "ac": 2,
+      "hd": "2",
+      "atk": "1 (kick/butt 9+)",
+      "dmg": "1d6",
+      "save": "F1",
+      "morale": -2,
+      "xp": "20",
+      "wildEnc": "3d10"
+    },
+    "Herd Animal (wild goat)": {
+      "ac": 2,
+      "hd": "1+1",
+      "atk": "1 (butt 9+)",
+      "dmg": "1d4",
+      "save": "F1",
+      "morale": -2,
+      "xp": "15",
+      "wildEnc": "3d10"
+    },
+    "Hydra": {
+      "ac": 4,
+      "hd": "8",
+      "atk": "8 (bite 3+)",
+      "dmg": "1d10 each",
+      "save": "F8",
+      "morale": 2,
+      "xp": "600",
+      "wildEnc": "1",
+      "tt": "D"
+    },
+    "Snake, Giant Constricting Viper": {
+      "ac": 3,
+      "hd": "3*",
+      "atk": "1 (bite+constrict 8+)",
+      "dmg": "1d4+constrict",
+      "save": "F2",
+      "morale": -1,
+      "xp": "65",
+      "wildEnc": "1d4"
+    },
+    "Snake, Giant Python": {
+      "ac": 3,
+      "hd": "5*",
+      "atk": "2 (bite, constrict 6+)",
+      "dmg": "1d4/2d4",
+      "save": "F3",
+      "morale": -1,
+      "xp": "300",
+      "wildEnc": "1d3"
+    },
+    "Swarm, Insect": {
+      "ac": 2,
+      "hd": "2*",
+      "atk": "Swarm",
+      "dmg": "2 per round in swarm",
+      "save": "F0",
+      "morale": 4,
+      "xp": "29",
+      "wildEnc": "1d3"
+    },
+    "Báleygr": {
+      "ac": 8,
+      "hd": "10*****",
+      "atk": "1 (weapon/whip)",
+      "dmg": "3d6/2d6",
+      "save": "F10",
+      "morale": 3,
+      "xp": "4000",
+      "wildEnc": "1",
+      "tt": "N"
+    },
+    "Rust Beast": {
+      "ac": 7,
+      "hd": "5*",
+      "atk": "1 (feeler 6+)",
+      "dmg": "0 (rust)",
+      "save": "F3",
+      "morale": -1,
+      "xp": "350",
+      "wildEnc": "1d4"
+    }
+  },
+  "treasure_types": {
+    "A": {
+      "label": "Incidental\n275gp",
+      "copper": null,
+      "silver": {
+        "chance": "30%",
+        "dice": "1d4"
+      },
+      "electrum": null,
+      "gold": null,
+      "platinum": null,
+      "gems": {
+        "chance": "30%",
+        "dice": "1d4 ornamentals"
+      },
+      "jewelry": {
+        "chance": "30%",
+        "dice": "1d4 trinkets"
+      },
+      "magic": {
+        "chance": "1% any 1",
+        "dice": ""
+      }
+    },
+    "B": {
+      "label": "Hoarder\n500gp",
+      "copper": null,
+      "silver": {
+        "chance": "80%",
+        "dice": "1d6"
+      },
+      "electrum": null,
+      "gold": null,
+      "platinum": null,
+      "gems": {
+        "chance": "70%",
+        "dice": "1d4 ornamentals"
+      },
+      "jewelry": {
+        "chance": "30%",
+        "dice": "1d4 trinkets"
+      },
+      "magic": {
+        "chance": "5% any 2",
+        "dice": ""
+      }
+    },
+    "C": {
+      "label": "Incidental\n700gp",
+      "copper": null,
+      "silver": null,
+      "electrum": {
+        "chance": "15%",
+        "dice": "1d4"
+      },
+      "gold": null,
+      "platinum": null,
+      "gems": {
+        "chance": "40%",
+        "dice": "1d6 gems"
+      },
+      "jewelry": {
+        "chance": "30%",
+        "dice": "1d6 trinkets"
+      },
+      "magic": {
+        "chance": "5% any 1",
+        "dice": ""
+      }
+    },
+    "D": {
+      "label": "Hoarder\n1,000gp",
+      "copper": null,
+      "silver": {
+        "chance": "80%",
+        "dice": "1d6"
+      },
+      "electrum": {
+        "chance": "20%",
+        "dice": "1d4"
+      },
+      "gold": null,
+      "platinum": null,
+      "gems": {
+        "chance": "80%",
+        "dice": "1d6 ornamentals"
+      },
+      "jewelry": {
+        "chance": "70%",
+        "dice": "1d4 trinkets"
+      },
+      "magic": {
+        "chance": "15% any 2",
+        "dice": ""
+      }
+    },
+    "E": {
+      "label": "Raider\n1,250gp",
+      "copper": {
+        "chance": "80%",
+        "dice": "2d20"
+      },
+      "silver": {
+        "chance": "7%",
+        "dice": "3d6"
+      },
+      "electrum": null,
+      "gold": null,
+      "platinum": null,
+      "gems": {
+        "chance": "60%",
+        "dice": "1d4 ornamentals"
+      },
+      "jewelry": {
+        "chance": "40%",
+        "dice": "1d4 trinkets"
+      },
+      "magic": {
+        "chance": "15% 1 sword, weapon or armor",
+        "dice": "15% 1 potion; 5% any 1"
+      }
+    },
+    "F": {
+      "label": "Incidental\n1,500gp",
+      "copper": null,
+      "silver": {
+        "chance": "30%",
+        "dice": "1d4"
+      },
+      "electrum": null,
+      "gold": {
+        "chance": "15% 1d4",
+        "dice": ""
+      },
+      "platinum": null,
+      "gems": {
+        "chance": "40%",
+        "dice": "1d6 gems"
+      },
+      "jewelry": {
+        "chance": "30%",
+        "dice": "1d4 jewelry"
+      },
+      "magic": {
+        "chance": "7% any 1",
+        "dice": ""
+      }
+    },
+    "G": {
+      "label": "Raider\n2,000gp",
+      "copper": {
+        "chance": "70%",
+        "dice": "2d20"
+      },
+      "silver": {
+        "chance": "70%",
+        "dice": "3d6"
+      },
+      "electrum": {
+        "chance": "50%",
+        "dice": "1d4"
+      },
+      "gold": null,
+      "platinum": null,
+      "gems": {
+        "chance": "50%",
+        "dice": "1d6 ornamentals"
+      },
+      "jewelry": {
+        "chance": "50%",
+        "dice": "1d6 trinkets"
+      },
+      "magic": {
+        "chance": "25% 1 sword, weapon or armor",
+        "dice": "25% 1 potion; 10% any 1"
+      }
+    },
+    "H": {
+      "label": "Hoarder\n2,500gp",
+      "copper": null,
+      "silver": {
+        "chance": "25%",
+        "dice": "1d6"
+      },
+      "electrum": {
+        "chance": "70%",
+        "dice": "1d6"
+      },
+      "gold": null,
+      "platinum": null,
+      "gems": {
+        "chance": "80%",
+        "dice": "1d6 gems"
+      },
+      "jewelry": {
+        "chance": "80%",
+        "dice": "1d6 trinkets"
+      },
+      "magic": {
+        "chance": "25% any 3 + 1 potion + 1 scroll",
+        "dice": ""
+      }
+    },
+    "I": {
+      "label": "Incidental\n3,250gp",
+      "copper": null,
+      "silver": {
+        "chance": "25%",
+        "dice": "1d4"
+      },
+      "electrum": null,
+      "gold": {
+        "chance": "25%",
+        "dice": "1d6"
+      },
+      "platinum": null,
+      "gems": {
+        "chance": "50%",
+        "dice": "2d4  gems"
+      },
+      "jewelry": {
+        "chance": "40%",
+        "dice": "1d8 jewelry"
+      },
+      "magic": {
+        "chance": "20% any 1",
+        "dice": ""
+      }
+    },
+    "J": {
+      "label": "Raider\n4,000gp",
+      "copper": {
+        "chance": "50%",
+        "dice": "3d6"
+      },
+      "silver": {
+        "chance": "70%",
+        "dice": "2d20"
+      },
+      "electrum": {
+        "chance": "70%",
+        "dice": "1d8"
+      },
+      "gold": null,
+      "platinum": null,
+      "gems": {
+        "chance": "50%",
+        "dice": "1d6 gems"
+      },
+      "jewelry": {
+        "chance": "50%",
+        "dice": "1d8 trinkets"
+      },
+      "magic": {
+        "chance": "50% 1 sword, weapon or armor",
+        "dice": "45% 1 potion; 20% any 1"
+      }
+    },
+    "K": {
+      "label": "Incidental\n5,000gp",
+      "copper": null,
+      "silver": null,
+      "electrum": {
+        "chance": "30%",
+        "dice": "1d4"
+      },
+      "gold": {
+        "chance": "25%",
+        "dice": "1d6"
+      },
+      "platinum": null,
+      "gems": {
+        "chance": "25%",
+        "dice": "1d4 brilliants"
+      },
+      "jewelry": {
+        "chance": "50%",
+        "dice": "1d4 jewelry"
+      },
+      "magic": {
+        "chance": "40% any 1",
+        "dice": ""
+      }
+    },
+    "L": {
+      "label": "Raider\n6,000gp",
+      "copper": {
+        "chance": "40%",
+        "dice": "3d6"
+      },
+      "silver": {
+        "chance": "60%",
+        "dice": "2d10"
+      },
+      "electrum": {
+        "chance": "75%",
+        "dice": "3d6"
+      },
+      "gold": null,
+      "platinum": null,
+      "gems": {
+        "chance": "60%",
+        "dice": "1d6 gems"
+      },
+      "jewelry": {
+        "chance": "40%",
+        "dice": "1d4 jewelry"
+      },
+      "magic": {
+        "chance": "75% 1 sword, weapon or armor",
+        "dice": "75% 1 potion; 30% any 1"
+      }
+    },
+    "M": {
+      "label": "Incidental\n8,000gp",
+      "copper": null,
+      "silver": null,
+      "electrum": {
+        "chance": "25%",
+        "dice": "1d4"
+      },
+      "gold": null,
+      "platinum": {
+        "chance": "15%",
+        "dice": "1d4"
+      },
+      "gems": {
+        "chance": "30%",
+        "dice": "1d6 brilliants"
+      },
+      "jewelry": {
+        "chance": "50%",
+        "dice": "1d6 jewelry"
+      },
+      "magic": {
+        "chance": "30% any 2",
+        "dice": ""
+      }
+    },
+    "N": {
+      "label": "Hoarder\n9,000gp",
+      "copper": null,
+      "silver": {
+        "chance": "60%",
+        "dice": "1d8"
+      },
+      "electrum": {
+        "chance": "60%",
+        "dice": "2d4"
+      },
+      "gold": {
+        "chance": "80%",
+        "dice": "1d6"
+      },
+      "platinum": null,
+      "gems": {
+        "chance": "80%",
+        "dice": "1d8  gems"
+      },
+      "jewelry": {
+        "chance": "80%",
+        "dice": "1d8 jewelry"
+      },
+      "magic": {
+        "chance": "50% any 4 +1 potion + 1 scroll",
+        "dice": ""
+      }
+    },
+    "O": {
+      "label": "Raider\n12,000gp",
+      "copper": {
+        "chance": "30%",
+        "dice": "3d6"
+      },
+      "silver": {
+        "chance": "50%",
+        "dice": "3d6"
+      },
+      "electrum": {
+        "chance": "60%",
+        "dice": "3d6"
+      },
+      "gold": {
+        "chance": "60%",
+        "dice": "2d6"
+      },
+      "platinum": null,
+      "gems": {
+        "chance": "30%",
+        "dice": "1d4  brilliants"
+      },
+      "jewelry": {
+        "chance": "60%",
+        "dice": "1d4 jewelry"
+      },
+      "magic": {
+        "chance": "75% 1 sword, weapon or armor",
+        "dice": "75% 2 potions; 50% any 2"
+      }
+    },
+    "P": {
+      "label": "Incidental\n17,000gp",
+      "copper": null,
+      "silver": null,
+      "electrum": null,
+      "gold": {
+        "chance": "30%",
+        "dice": "1d4"
+      },
+      "platinum": {
+        "chance": "30%",
+        "dice": "1d4"
+      },
+      "gems": {
+        "chance": "40%",
+        "dice": "1d4  brilliants"
+      },
+      "jewelry": {
+        "chance": "30%",
+        "dice": "1d4 regalia"
+      },
+      "magic": {
+        "chance": "40% any 3",
+        "dice": ""
+      }
+    },
+    "Q": {
+      "label": "Hoarder\n22,000gp",
+      "copper": null,
+      "silver": null,
+      "electrum": {
+        "chance": "50%",
+        "dice": "1d8"
+      },
+      "gold": {
+        "chance": "80%",
+        "dice": "2d6"
+      },
+      "platinum": {
+        "chance": "40%",
+        "dice": "1d4"
+      },
+      "gems": {
+        "chance": "60%",
+        "dice": "1d6 brilliants"
+      },
+      "jewelry": {
+        "chance": "80%",
+        "dice": "1d4 jewelry"
+      },
+      "magic": {
+        "chance": "1d4 potions; 1d4 scrolls;",
+        "dice": "50% any 6"
+      }
+    },
+    "R": {
+      "label": "Hoarder\n45,000gp",
+      "copper": null,
+      "silver": null,
+      "electrum": {
+        "chance": "50%",
+        "dice": "1d6"
+      },
+      "gold": {
+        "chance": "60%",
+        "dice": "1d6"
+      },
+      "platinum": {
+        "chance": "80%",
+        "dice": "1d8"
+      },
+      "gems": {
+        "chance": "70%",
+        "dice": "1d4 brilliants"
+      },
+      "jewelry": {
+        "chance": "60%",
+        "dice": "1d4 regalia"
+      },
+      "magic": {
+        "chance": "2d4 potions; 2d4 scrolls",
+        "dice": "75% 1d3 of each category (swords, armor, miscellaneous weapon, wand/ staff/rod, miscellaneous item, ring)"
+      }
+    }
+  },
+  "encounters_terrain": {
+    "monstersByTerrain": {
+      "Barrens (sandy)": [
+        [
+          "Baboon, Rock",
+          "Acanthaspis, Giant",
+          "Barghest, Lesser",
+          "Amphisbaena"
+        ],
+        [
+          "Bear, Cave",
+          "Ant, Giant",
+          "Blood Hound",
+          "Báleygr"
+        ],
+        [
+          "Beastman, Goblin",
+          "Beastman, Bugbear",
+          "Dakhanavar, Lesser",
+          "Barghest, Greater"
+        ],
+        [
+          "Beastman, Orc",
+          "Beastman, Gnoll",
+          "Death Charger",
+          "Basilisk, Petrifying"
+        ],
+        [
+          "Cat, Cougar",
+          "Beastman, Hobgoblin",
+          "Dragon",
+          "Bronze Bull"
+        ],
+        [
+          "Dog, Hunting (wild dog)",
+          "Centipede, Giant",
+          "Gargoyle",
+          "Child of Nasga"
+        ],
+        [
+          "Herd Animal (wild goat)",
+          "Ghoul, Desert",
+          "Griffon",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Horse, Steppe",
+          "Giant, Hill",
+          "Harpy",
+          "Doppelganger"
+        ],
+        [
+          "Hyena, Ordinary",
+          "Hyena, Giant",
+          "Hippogriff",
+          "Hell Hound"
+        ],
+        [
+          "Jackal",
+          "Lycan, Werewolf",
+          "Mummy",
+          "Khepri"
+        ],
+        [
+          "Men, Brigands",
+          "Ogre",
+          "Pegasus",
+          "Lammasu"
+        ],
+        [
+          "Raptor, Ordinary",
+          "Raptor, Giant",
+          "Rust Beast",
+          "Manticore"
+        ],
+        [
+          "Raptor, Small",
+          "Roc, Small",
+          "Shadow",
+          "Medusa"
+        ],
+        [
+          "Skeleton",
+          "Scorpion, Giant",
+          "Skeletal Slayer",
+          "Mummy Lord"
+        ],
+        [
+          "Snake, Pit Viper",
+          "Snake, Giant Rattlesnake",
+          "Specter",
+          "Rakshasa"
+        ],
+        [
+          "Zombie",
+          "Spider, Giant Crab",
+          "Vampire",
+          "Salamander, Flame"
+        ],
+        [
+          "",
+          "Spider, Giant Tarantula",
+          "Wolf, Warg",
+          "Spell Tyrant"
+        ],
+        [
+          "",
+          "Strige",
+          "Worm, Giant White",
+          "Worm, Giant Black"
+        ],
+        [
+          "",
+          "Troll",
+          "Wyvern",
+          ""
+        ],
+        [
+          "",
+          "Wolf, Dire",
+          "",
+          ""
+        ]
+      ],
+      "Barrens (tundra)": [
+        [
+          "Bear, Polar",
+          "Ant, Giant",
+          "Barghest, Lesser",
+          "Barghest, Greater"
+        ],
+        [
+          "Cat, Cougar",
+          "Beastman, Orc",
+          "Blood Hound",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Cat, Panther",
+          "Beastman, Bugbear",
+          "Cat, Saber-Tooth",
+          "Salamander, Frost"
+        ],
+        [
+          "Cat, Tiger",
+          "Beastman, Gnoll",
+          "Dakhanavar, Lesser",
+          "Spell Tyrant"
+        ],
+        [
+          "Dog, Hunting",
+          "Beastman, Hobgoblin",
+          "Death Charger",
+          "Worm, Giant Black"
+        ],
+        [
+          "Dog, War",
+          "Hoarflesh",
+          "Dragon",
+          "Worm, Great Ice"
+        ],
+        [
+          "Herd Animal",
+          "Lycan, Werewolf",
+          "Gargoyle",
+          ""
+        ],
+        [
+          "Men, Brigands",
+          "Mammoth",
+          "Giant, Frost",
+          ""
+        ],
+        [
+          "Raptor, Ordinary",
+          "Ogre",
+          "Griffon",
+          ""
+        ],
+        [
+          "Raptor, Small",
+          "Raptor, Giant",
+          "Lycan, Werebear",
+          ""
+        ],
+        [
+          "Skeleton",
+          "Rhino, Wooly",
+          "Shadow",
+          ""
+        ],
+        [
+          "Wolf, Ordinary",
+          "Strix",
+          "Skeletal Slayer",
+          ""
+        ],
+        [
+          "",
+          "Troll",
+          "Specter",
+          ""
+        ],
+        [
+          "",
+          "Wolf, Dire",
+          "Wolf, Warg",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Worm, Giant White",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Wyvern",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Hobgholl",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "Desert (all)": [
+        [
+          "Beastman, Orc",
+          "Acanthaspis, Giant",
+          "Barghest, Lesser",
+          "Amphisbaena"
+        ],
+        [
+          "Camel",
+          "Ant, Giant",
+          "Blood Hound",
+          "Balegyr"
+        ],
+        [
+          "Cat, Cheetah",
+          "Beastman, Bugbear",
+          "Dakhanavar, Lesser",
+          "Barghest, Greater"
+        ],
+        [
+          "Cat, Lion",
+          "Beastman, Gnoll",
+          "Death Charger",
+          "Basilisk, Petrifying"
+        ],
+        [
+          "Dog, Hunting",
+          "Beastman, Hobgoblin",
+          "Dragon",
+          "Bronze Bull"
+        ],
+        [
+          "Dog, War",
+          "Centipede, Giant",
+          "Gargoyle",
+          "Child of Nasga"
+        ],
+        [
+          "Herd Animal",
+          "Ghoul, Desert",
+          "Giant, Fire",
+          "Chimera"
+        ],
+        [
+          "Hyena, Ordinary",
+          "Hyena, Giant",
+          "Griffon",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Jackal",
+          "Lizard, Giant Gecko",
+          "Lycan, Weretiger",
+          "Doppelganger"
+        ],
+        [
+          "Men, Merchants",
+          "Lizard, Giant Tuatara",
+          "Minotaur",
+          "Hell Hound"
+        ],
+        [
+          "Men, Nomads",
+          "Ogre",
+          "Mummy",
+          "Khepri"
+        ],
+        [
+          "Raptor, Ordinary",
+          "Raptor, Giant",
+          "Rust Beast",
+          "Lammasu"
+        ],
+        [
+          "Raptor, Small",
+          "Roc, Small",
+          "Shadow",
+          "Manticore"
+        ],
+        [
+          "Skeleton",
+          "Scorpion, Giant",
+          "Skeletal Slayer",
+          "Medusa"
+        ],
+        [
+          "Snake, Pit Viper",
+          "Snake, Giant Rattlesnake",
+          "Specter",
+          "Mummy Lord"
+        ],
+        [
+          "Wolf, Ordinary",
+          "Spider, Giant Crab",
+          "Vampire",
+          "Rakshasa"
+        ],
+        [
+          "Zombie",
+          "Spider, Giant Tarantula",
+          "Wolf, Warg",
+          "Salamander, Flame"
+        ],
+        [
+          "",
+          "Troll",
+          "Worm, Giant White",
+          "Spell Tyrant"
+        ],
+        [
+          "",
+          "Wolf, Dire",
+          "Wyvern",
+          "Sphinx"
+        ],
+        [
+          "",
+          "",
+          "",
+          "Thrassian"
+        ],
+        [
+          "",
+          "",
+          "",
+          "Worm, Giant Black"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "Grassland (farmland)": [
+        [
+          "Bear, Black",
+          "Ant, Giant",
+          "Blood Hound",
+          "N/A"
+        ],
+        [
+          "Beastman, Goblin",
+          "Beastman, Bugbear",
+          "Devil Boar",
+          "N/A"
+        ],
+        [
+          "Beastman, Kobold",
+          "Beastman, Gnoll",
+          "Draugr",
+          "N/A"
+        ],
+        [
+          "Beastman, Orc",
+          "Beastman, Hobgoblin",
+          "Faerie, Brownie",
+          "N/A"
+        ],
+        [
+          "Boar, Ordinary",
+          "Bee, Giant Killer",
+          "Faerie, Pixiee",
+          "N/A"
+        ],
+        [
+          "Dog, Hunting",
+          "Beetle, Giant Bombardier",
+          "Faerie, Spriggan",
+          "N/A"
+        ],
+        [
+          "Dog, War",
+          "Beetle, Giant Lumi0us",
+          "Gargoyle",
+          "N/A"
+        ],
+        [
+          "Equine, Donkey",
+          "Beetle, Giant Tiger",
+          "Griffon",
+          "N/A"
+        ],
+        [
+          "Equine, Light Horse",
+          "Boar, Giant",
+          "Lycan, Werebear",
+          "N/A"
+        ],
+        [
+          "Equine, Medium Horse",
+          "Centipede, Giant",
+          "Rust Beast",
+          "N/A"
+        ],
+        [
+          "Herd Animal",
+          "Dragonfly, Giant",
+          "Shadow",
+          "N/A"
+        ],
+        [
+          "Men, Brigands",
+          "Fly, Giant Carnivorous",
+          "Specter",
+          "N/A"
+        ],
+        [
+          "Men, Merchants",
+          "Ghoul, Grave",
+          "Doppelganger",
+          "N/A"
+        ],
+        [
+          "Raptor, Small",
+          "Halfling",
+          "Hobgholl",
+          "N/A"
+        ],
+        [
+          "Rhino, Ordinary",
+          "Lizard, Giant Tuatara",
+          "Faerie, Srpite",
+          "N/A"
+        ],
+        [
+          "Skeleton",
+          "Lycan, Wereboar",
+          "",
+          "N/A"
+        ],
+        [
+          "Snake, Pit Viper",
+          "Lycan, Wererat",
+          "",
+          "N/A"
+        ],
+        [
+          "Swarm, Rat",
+          "Lycan, Werewolf",
+          "",
+          "N/A"
+        ],
+        [
+          "Zombie",
+          "Ogre",
+          "",
+          "N/A"
+        ],
+        [
+          "Bear, Black",
+          "Raptor, Giant",
+          "",
+          "N/A"
+        ],
+        [
+          "",
+          "Roc, Small",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Snake, Giant Rattlesnake",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Strix",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Troll",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Varmint, Giant Weasel",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "Grassland (prairie)": [
+        [
+          "Beastman, Goblin",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Beastman, Kobold",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Bronze Bull"
+        ],
+        [
+          "Beastman, Orc",
+          "Beastman, Bugbear",
+          "Attercop, Hideous",
+          "Doppelganger"
+        ],
+        [
+          "Boar, Ordinary",
+          "Beastman, Gnoll",
+          "Attercop, Monstrous",
+          "Equine, Mule"
+        ],
+        [
+          "Cat, Cheetah",
+          "Beastman, Hobgoblin",
+          "Blood Hound",
+          "Gorgon"
+        ],
+        [
+          "Cat, Lion",
+          "Bee, Giant Killer",
+          "Death Charger",
+          "Slug, Giant"
+        ],
+        [
+          "Cat, Panther",
+          "Beetle, Giant Bombardier",
+          "Devil Boar",
+          "Spell Tyrant"
+        ],
+        [
+          "Dog, Hunting",
+          "Beetle, Giant Lumi0us",
+          "Dragon",
+          ""
+        ],
+        [
+          "Dog, War",
+          "Beetle, Giant Tiger",
+          "Draugr",
+          ""
+        ],
+        [
+          "Elf",
+          "Boar, Giant",
+          "Faerie, Pixie",
+          ""
+        ],
+        [
+          "Equine, Donkey",
+          "Centipede, Giant",
+          "Faerie, Spriggan",
+          ""
+        ],
+        [
+          "Equine, Light Horse",
+          "Dragonfly, Giant",
+          "Gargoyle",
+          ""
+        ],
+        [
+          "Equine, Medium Horse",
+          "Elephant",
+          "Griffon",
+          ""
+        ],
+        [
+          "Equine, Steppe Horse",
+          "Fly, Giant Carnivorous",
+          "Hippogriff",
+          ""
+        ],
+        [
+          "Herd Animal",
+          "Ghoul, Grave",
+          "Lycan, Werebear",
+          ""
+        ],
+        [
+          "Hyena, Ordinary",
+          "Halfling",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "Men, Berserkers",
+          "Hoarflesh",
+          "Shadow",
+          ""
+        ],
+        [
+          "Men, Brigands",
+          "Hyena, Giant",
+          "Specter",
+          ""
+        ],
+        [
+          "Men, Merchants",
+          "Lizard, Giant Tuatara",
+          "Vampire",
+          ""
+        ],
+        [
+          "Men, Nomads",
+          "Lycan, Wereboar",
+          "Hobgholl",
+          ""
+        ],
+        [
+          "Raptor, Small",
+          "Lycan, Wererat",
+          "Faerie, Sprite",
+          ""
+        ],
+        [
+          "Rhino, Ordinary",
+          "Lycan, Werewolf",
+          "",
+          ""
+        ],
+        [
+          "Skeleton",
+          "Ogre",
+          "",
+          ""
+        ],
+        [
+          "Snake, Pit Viper",
+          "Raptor, Giant",
+          "",
+          ""
+        ],
+        [
+          "Swarm, Rat",
+          "Roc, Small",
+          "",
+          ""
+        ],
+        [
+          "Zombie",
+          "Snake, Giant Rattlesnake",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Strix",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Troll",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Varmint, Giant Weasel",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Wasp, Giant",
+          "",
+          ""
+        ]
+      ],
+      "Grassland (savanna)": [
+        [
+          "Beastman, Goblin",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Beastman, Kobold",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Bronze Bull"
+        ],
+        [
+          "Beastman, Orc",
+          "Beastman, Bugbear",
+          "Attercop, Hideous",
+          "Doppelganger"
+        ],
+        [
+          "Boar, Ordinary",
+          "Beastman, Gnoll",
+          "Attercop, Monstrous",
+          "Equine, Mule"
+        ],
+        [
+          "Cat, Cheetah",
+          "Beastman, Hobgoblin",
+          "Blood Hound",
+          "Gorgon"
+        ],
+        [
+          "Cat, Lion",
+          "Bee, Giant Killer",
+          "Death Charger",
+          "Slug, Giant"
+        ],
+        [
+          "Cat, Panther",
+          "Beetle, Giant Bombardier",
+          "Devil Boar",
+          "Spell Tyrant"
+        ],
+        [
+          "Dog, Hunting",
+          "Beetle, Giant Lumi0us",
+          "Dragon",
+          ""
+        ],
+        [
+          "Dog, War",
+          "Beetle, Giant Tiger",
+          "Draugr",
+          ""
+        ],
+        [
+          "Elf",
+          "Boar, Giant",
+          "Faerie, Pixie",
+          ""
+        ],
+        [
+          "Equine, Donkey",
+          "Centipede, Giant",
+          "Faerie, Spriggan",
+          ""
+        ],
+        [
+          "Equine, Light Horse",
+          "Dragonfly, Giant",
+          "Gargoyle",
+          ""
+        ],
+        [
+          "Equine, Medium Horse",
+          "Elephant",
+          "Griffon",
+          ""
+        ],
+        [
+          "Equine, Steppe Horse",
+          "Fly, Giant Carnivorous",
+          "Hippogriff",
+          ""
+        ],
+        [
+          "Herd Animal",
+          "Ghoul, Grave",
+          "Lycan, Weretiger",
+          ""
+        ],
+        [
+          "Hyena, Ordinary",
+          "Halfling",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "Men, Berserkers",
+          "Hoarflesh",
+          "Shadow",
+          ""
+        ],
+        [
+          "Men, Brigands",
+          "Hyena, Giant",
+          "Specter",
+          ""
+        ],
+        [
+          "Men, Merchants",
+          "Lizard, Giant Tuatara",
+          "Vampire",
+          ""
+        ],
+        [
+          "Men, Nomads",
+          "Ogre",
+          "Faerie, Sprite",
+          ""
+        ],
+        [
+          "Raptor, Small",
+          "Raptor, Giant",
+          "Hobgholl",
+          ""
+        ],
+        [
+          "Rhino, Ordinary",
+          "Roc, Small",
+          "Faerie, Sprite",
+          ""
+        ],
+        [
+          "Skeleton",
+          "Snake, Giant Rattlesnake",
+          "",
+          ""
+        ],
+        [
+          "Snake, Pit Viper",
+          "Strix",
+          "",
+          ""
+        ],
+        [
+          "Swarm, Rat",
+          "Troll",
+          "",
+          ""
+        ],
+        [
+          "Zombie",
+          "Varmint, Giant Weasel",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Wasp, Giant",
+          "",
+          ""
+        ]
+      ],
+      "Grassland (steppe)": [
+        [
+          "Beastman, Goblin",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Beastman, Kobold",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Bronze Bull"
+        ],
+        [
+          "Beastman, Orc",
+          "Beastman, Bugbear",
+          "Attercop, Hideous",
+          "Doppelganger"
+        ],
+        [
+          "Boar, Ordinary",
+          "Beastman, Gnoll",
+          "Attercop, Monstrous",
+          "Equine, Mule"
+        ],
+        [
+          "Cat, Cheetah",
+          "Beastman, Hobgoblin",
+          "Blood Hound",
+          "Gorgon"
+        ],
+        [
+          "Cat, Lion",
+          "Bee, Giant Killer",
+          "Death Charger",
+          "Slug, Giant"
+        ],
+        [
+          "Cat, Panther",
+          "Beetle, Giant Bombardier",
+          "Devil Boar",
+          "Spell Tyrant"
+        ],
+        [
+          "Dog, Hunting",
+          "Beetle, Giant Lumi0us",
+          "Dragon",
+          ""
+        ],
+        [
+          "Dog, War",
+          "Beetle, Giant Tiger",
+          "Draugr",
+          ""
+        ],
+        [
+          "Elf",
+          "Boar, Giant",
+          "Faerie, Pixiee",
+          ""
+        ],
+        [
+          "Equine, Donkey",
+          "Centipede, Giant",
+          "Faerie, Spriggan",
+          ""
+        ],
+        [
+          "Equine, Light Horse",
+          "Dragonfly, Giant",
+          "Faerie, Sprite",
+          ""
+        ],
+        [
+          "Equine, Medium Horse",
+          "Elephant",
+          "Gargoyle",
+          ""
+        ],
+        [
+          "Equine, Steppe Horse",
+          "Fly, Giant Carnivorous",
+          "Griffon",
+          ""
+        ],
+        [
+          "Herd Animal",
+          "Ghoul, Grave",
+          "Hippogriff",
+          ""
+        ],
+        [
+          "Hyena, Ordinary",
+          "Halfling",
+          "Hobgholl",
+          ""
+        ],
+        [
+          "Men, Berserkers",
+          "Hoarflesh",
+          "Lycan, Weretiger",
+          ""
+        ],
+        [
+          "Men, Brigands",
+          "Hyena, Giant",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "Men, Merchants",
+          "Lizard, Giant Tuatara",
+          "Shadow",
+          ""
+        ],
+        [
+          "Men, Nomads",
+          "Lycan, Werewolf",
+          "Specter",
+          ""
+        ],
+        [
+          "Raptor, Small",
+          "Ogre",
+          "Vampire",
+          ""
+        ],
+        [
+          "Rhino, Ordinary",
+          "Raptor, Giant",
+          "",
+          ""
+        ],
+        [
+          "Skeleton",
+          "Roc, Small",
+          "",
+          ""
+        ],
+        [
+          "Snake, Pit Viper",
+          "Snake, Giant Rattlesnake",
+          "",
+          ""
+        ],
+        [
+          "Swarm, Rat",
+          "Strix",
+          "",
+          ""
+        ],
+        [
+          "Zombie",
+          "Troll",
+          "",
+          ""
+        ],
+        [
+          "Beastman, Goblin",
+          "Varmint, Giant Weasel",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Wasp, Giant",
+          "",
+          ""
+        ]
+      ],
+      "Forest (deciduous)": [
+        [
+          "Bat, Ordinary",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Barghest, Greater"
+        ],
+        [
+          "Bear, Grizzy",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Bronze Bull"
+        ],
+        [
+          "Beastman, Goblin",
+          "Bat, Giant",
+          "Attercop, Hideous",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Beastman, Orc",
+          "Beastman, Bugbear",
+          "Attercop, Monstrous",
+          "Doppelganger"
+        ],
+        [
+          "Boar, Ordinary",
+          "Beastman, Gnoll",
+          "Barghest, Lesser",
+          "Faerie, Redcap"
+        ],
+        [
+          "Cat, Panther",
+          "Beastman, Hobgoblin",
+          "Bat, Giant Vampire",
+          "Galdrtré"
+        ],
+        [
+          "Dog, Hunting",
+          "Beetle, Giant Bombardier",
+          "Blood Hound",
+          "Hell Hawk"
+        ],
+        [
+          "Dog, War",
+          "Beetle, Giant Luminous",
+          "Centaur",
+          "Hydra"
+        ],
+        [
+          "Elf",
+          "Beetle, Giant Tiger",
+          "Cyclops",
+          "Medusa"
+        ],
+        [
+          "Herd Animal",
+          "Boar, Giant",
+          "Dakhanavar, Lesser",
+          "Salamander, Frost"
+        ],
+        [
+          "Hyena, Ordinary",
+          "Centipede, Giant",
+          "Devil Boar",
+          "Slug, Giant"
+        ],
+        [
+          "Men, Brigands",
+          "Dragonfly, Giant",
+          "Dragon",
+          "Spell Tyrant"
+        ],
+        [
+          "Men, Merchants",
+          "Frog, Giant",
+          "Draugr",
+          "Unicorn"
+        ],
+        [
+          "Raptor, Ordinary",
+          "Ghoul, Grave",
+          "Faerie, Piskie",
+          "Barghest, Greater"
+        ],
+        [
+          "Raptor, Small",
+          "Ghoul, Marsh",
+          "Faerie, Pixiee",
+          "Bronze Bull"
+        ],
+        [
+          "Skeleton",
+          "Giant, Hill",
+          "Faerie, Spriggan",
+          ""
+        ],
+        [
+          "Snake, Pit Viper",
+          "Hoarflesh",
+          "Faerie, Sprite",
+          ""
+        ],
+        [
+          "Swarm, Bat",
+          "Hyena, Giant",
+          "Gargoyle",
+          ""
+        ],
+        [
+          "Swarm, Rat",
+          "Lycan, Wereboar",
+          "Griffon",
+          ""
+        ],
+        [
+          "Wolf, Ordinary",
+          "Lycan, Wererat",
+          "Hag",
+          ""
+        ],
+        [
+          "Zombie",
+          "Lycan, Werewolf",
+          "Hippogriff",
+          ""
+        ],
+        [
+          "",
+          "Ogre",
+          "Lycan, Werebear",
+          ""
+        ],
+        [
+          "",
+          "Owlbeast",
+          "Lycan, Weretiger",
+          ""
+        ],
+        [
+          "",
+          "Raptor, Giant",
+          "Nymph, Dryad",
+          ""
+        ],
+        [
+          "",
+          "Roc, Small",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "",
+          "Scorpion, Giant",
+          "Shadow",
+          ""
+        ],
+        [
+          "",
+          "Spider, Giant Black Widow",
+          "Skeletal Slayer",
+          ""
+        ],
+        [
+          "",
+          "Spider, Giant Tarantula",
+          "Snake, Giant Constricting Viper",
+          ""
+        ],
+        [
+          "",
+          "Strix",
+          "Specter",
+          ""
+        ],
+        [
+          "",
+          "Stymph",
+          "Treeherder",
+          ""
+        ],
+        [
+          "",
+          "Tick, Giant",
+          "Vampire",
+          ""
+        ],
+        [
+          "",
+          "Troll",
+          "Wolf, Warg",
+          ""
+        ],
+        [
+          "",
+          "Wasp, Giant",
+          "Yali",
+          ""
+        ],
+        [
+          "",
+          "Wolf, Dire",
+          "",
+          ""
+        ]
+      ],
+      "Forest (taiga)": [
+        [
+          "Bat, Ordinary",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Bear, Grizzy",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Barghest, Greater"
+        ],
+        [
+          "Bear, Polar",
+          "Bat, Giant",
+          "Attercop, Hideous",
+          "Bronze Bull"
+        ],
+        [
+          "Beastman, Goblin",
+          "Beastman, Bugbear",
+          "Attercop, Monstrous",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Beastman, Orc",
+          "Beastman, Gnoll",
+          "Barghest, Lesser",
+          "Doppelganger"
+        ],
+        [
+          "Boar, Ordinary",
+          "Beastman, Hobgoblin",
+          "Bat, Giant Vampire",
+          "Faerie, Redcap"
+        ],
+        [
+          "Cat, Cougar",
+          "Beetle, Giant Bombardier",
+          "Blood Hound",
+          "Galdrtre"
+        ],
+        [
+          "Cat, Panther",
+          "Beetle, Giant Lumi0us",
+          "Cat, Saber-Tooth",
+          "Hell Hawk"
+        ],
+        [
+          "Cat, Tiger",
+          "Beetle, Giant Tiger",
+          "Centaur",
+          "Hydra"
+        ],
+        [
+          "Dog, Hunting",
+          "Boar, Giant",
+          "Cyclops",
+          "Medusa"
+        ],
+        [
+          "Dog, War",
+          "Centipede, Giant",
+          "Dakhanavar, Lesser",
+          "Salamander, Frost"
+        ],
+        [
+          "Elf",
+          "Dragonfly, Giant",
+          "Devil Boar",
+          "Slug, Giant"
+        ],
+        [
+          "Herd Animal",
+          "Frog, Giant",
+          "Dragon",
+          "Spell Tyrant"
+        ],
+        [
+          "Men, Brigands",
+          "Ghoul, Grave",
+          "Draugr",
+          "Unicorn"
+        ],
+        [
+          "Men, Merchants",
+          "Ghoul, Marsh",
+          "Faerie, Piskie",
+          "Worm, Great Ice"
+        ],
+        [
+          "Raptor, Ordinary",
+          "Giant, Hill",
+          "Faerie, Pixie",
+          ""
+        ],
+        [
+          "Raptor, Small",
+          "Hoarflesh",
+          "Faerie, Spriggan",
+          ""
+        ],
+        [
+          "Skeleton",
+          "Lycan, Wereboar",
+          "Faerie, Sprite",
+          ""
+        ],
+        [
+          "Snake, Pit Viper",
+          "Lycan, Wererat",
+          "Gargoyle",
+          ""
+        ],
+        [
+          "Swarm, Bat",
+          "Lycan, Werewolf",
+          "Giant, Frost",
+          ""
+        ],
+        [
+          "Swarm, Rat",
+          "Mammoth",
+          "Griffon",
+          ""
+        ],
+        [
+          "Wolf, Ordinary",
+          "Ogre",
+          "Hag",
+          ""
+        ],
+        [
+          "Zombie",
+          "Owlbeast",
+          "Hippogriff",
+          ""
+        ],
+        [
+          "",
+          "Raptor, Giant",
+          "Lycan, Werebear",
+          ""
+        ],
+        [
+          "",
+          "Rhino, Wooly",
+          "Lycan, Weretiger",
+          ""
+        ],
+        [
+          "",
+          "Roc, Small",
+          "Nymph, Dryad",
+          ""
+        ],
+        [
+          "",
+          "Scorpion, Giant",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "",
+          "Spider, Giant Black Widow",
+          "Shadow",
+          ""
+        ],
+        [
+          "",
+          "Spider, Giant Tarantula",
+          "Skeletal Slayer",
+          ""
+        ],
+        [
+          "",
+          "Strix",
+          "Specter",
+          ""
+        ],
+        [
+          "",
+          "Stymph",
+          "Treeherder",
+          ""
+        ],
+        [
+          "",
+          "Tick, Giant",
+          "Vampire",
+          ""
+        ],
+        [
+          "",
+          "Troll",
+          "Wolf, Warg",
+          ""
+        ],
+        [
+          "",
+          "Wasp, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Wolf, Dire",
+          "",
+          ""
+        ]
+      ],
+      "Hills (any)": [
+        [
+          "Bear, Grizzy",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Beastman, Goblin",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Barghest, Greater"
+        ],
+        [
+          "Beastman, Kobold",
+          "Bee, Giant Killer",
+          "Attercop, Hideous",
+          "Basilisk, Noxious"
+        ],
+        [
+          "Beastman, Orc",
+          "Beetle, Giant Bombardier",
+          "Attercop, Monstrous",
+          "Basilisk, Petrifying"
+        ],
+        [
+          "Boar, Ordinary",
+          "Beetle, Giant Lumi0us",
+          "Barghest, Lesser",
+          "Bronze Bull"
+        ],
+        [
+          "Cat, Cougar",
+          "Beetle, Giant Tiger",
+          "Blood Hound",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Dog, Hunting",
+          "Boar, Giant",
+          "Centaur",
+          "Equine, Mule"
+        ],
+        [
+          "Dog, War",
+          "Centipede, Giant",
+          "Dakhanavar, Lesser",
+          "Faerie, Redcap"
+        ],
+        [
+          "Dwarf",
+          "Dragonfly, Giant",
+          "Dragon",
+          "Gorgon"
+        ],
+        [
+          "Equine, Donkey",
+          "Ghoul, Grave",
+          "Draugr",
+          "Rakshasa"
+        ],
+        [
+          "Equine, Light Horse",
+          "Giant, Hill",
+          "Faerie, Piskie",
+          "Salamander, Flame"
+        ],
+        [
+          "Equine, Medium Horse",
+          "Hoarflesh",
+          "Faerie, Pixie",
+          "Salamander, Frost"
+        ],
+        [
+          "Equine, Steppe Horse",
+          "Hyena, Giant",
+          "Faerie, Spriggan",
+          "Spell Tyrant"
+        ],
+        [
+          "Herd Animal",
+          "Lycan, Wereboar",
+          "Faerie, Sprite",
+          "Titan, Greater"
+        ],
+        [
+          "Hyena, Ordinary",
+          "Lycan, Wererat",
+          "Gargoyle",
+          "Titan, Lesser"
+        ],
+        [
+          "Men, Brigands",
+          "Lycan, Werewolf",
+          "Giant, Frost",
+          ""
+        ],
+        [
+          "Raptor, Ordinary",
+          "Ogre",
+          "Giant, Stone",
+          ""
+        ],
+        [
+          "Raptor, Small",
+          "Owlbeast",
+          "Gnome",
+          ""
+        ],
+        [
+          "Skeleton",
+          "Raptor, Giant",
+          "Griffon",
+          ""
+        ],
+        [
+          "Snake, Pit Viper",
+          "Roc, Small",
+          "Hippogriff",
+          ""
+        ],
+        [
+          "Wolf, Ordinary",
+          "Spider, Giant Black Widow",
+          "Lycan, Werebear",
+          ""
+        ],
+        [
+          "Zombie",
+          "Spider, Giant Tarantula",
+          "Lycan, Weretiger",
+          ""
+        ],
+        [
+          "",
+          "Strix",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "",
+          "Stymph",
+          "Shadow",
+          ""
+        ],
+        [
+          "",
+          "Troll",
+          "Specter",
+          ""
+        ],
+        [
+          "",
+          "Wasp, Giant",
+          "Troglodyte",
+          ""
+        ],
+        [
+          "",
+          "Wolf, Dire",
+          "Wolf, Warg",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Yali",
+          ""
+        ]
+      ],
+      "Jungle (any)": [
+        [
+          "Beastman, Goblin",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Beastman, Orc",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Basilisk, Noxious"
+        ],
+        [
+          "Boar, Ordinary",
+          "Beastman, Bugbear",
+          "Attercop, Hideous",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Cat, Cheetah",
+          "Beastman, Gnoll",
+          "Attercop, Monstrous",
+          "Hydra"
+        ],
+        [
+          "Cat, Panther",
+          "Bee, Giant Killer",
+          "Blood Hound",
+          "Medusa"
+        ],
+        [
+          "Cat, Tiger",
+          "Beetle, Giant Bombardier",
+          "Cyclops",
+          "Rakshasa"
+        ],
+        [
+          "Elf",
+          "Beetle, Giant Lumi0us",
+          "Dakhanavar, Lesser",
+          "Salamander, Flame"
+        ],
+        [
+          "Gorilla, Cave",
+          "Beetle, Giant Tiger",
+          "Dragon",
+          "Slug, Giant"
+        ],
+        [
+          "Herd Animal",
+          "Boar, Giant",
+          "Gargoyle",
+          "Spell Tyrant"
+        ],
+        [
+          "Hippopotamus",
+          "Centipede, Giant",
+          "Giant, Fire",
+          "Thrassian"
+        ],
+        [
+          "Men, Berserkers",
+          "Dragonfly, Giant",
+          "Griffon",
+          "Attercop, Demonic"
+        ],
+        [
+          "Men, Brigands",
+          "Fly, Giant Carnivorous",
+          "Hippogriff",
+          "Basilisk, Noxious"
+        ],
+        [
+          "Skeleton",
+          "Frog, Giant",
+          "Lycan, Weretiger",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Snake, Pit Viper",
+          "Ghoul, Marsh",
+          "Neanderthal",
+          "Hydra"
+        ],
+        [
+          "Snake, Spitting Cobra",
+          "Giant, Hill",
+          "Rust Beast",
+          "Medusa"
+        ],
+        [
+          "Zombie",
+          "Lizard, Giant Chameleon",
+          "Shadow",
+          "Rakshasa"
+        ],
+        [
+          "",
+          "Lizard, Giant Draco",
+          "Snake, Giant Constricting Viper",
+          "Salamander, Flame"
+        ],
+        [
+          "",
+          "Lizard, Giant Gecko",
+          "Specter",
+          "Slug, Giant"
+        ],
+        [
+          "",
+          "Lizardmen",
+          "Terror Bird",
+          "Spell Tyrant"
+        ],
+        [
+          "",
+          "Lycan, Wereboar",
+          "Treeherder",
+          "Thrassian"
+        ],
+        [
+          "",
+          "Lycan, Wererat",
+          "Troglodyte",
+          ""
+        ],
+        [
+          "",
+          "Raptor, Giant",
+          "Vampire",
+          ""
+        ],
+        [
+          "",
+          "Roc, Small",
+          "Yali",
+          ""
+        ],
+        [
+          "",
+          "Scorpion, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Snake, Giant Python",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Spider, Giant Black Widow",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Spider, Giant Crab",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Strix",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Stymph",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Tick, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Troll",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Wasp, Giant",
+          "",
+          ""
+        ]
+      ],
+      "Mountains (forested/rocky)": [
+        [
+          "Baboon, Rock",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Bear, Cave",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Balegyr"
+        ],
+        [
+          "Beastman, Goblin",
+          "Beetle, Giant Bombardier",
+          "Attercop, Hideous",
+          "Barghest, Greater"
+        ],
+        [
+          "Beastman, Kobold",
+          "Beetle, Giant Lumi0us",
+          "Attercop, Monstrous",
+          "Basilisk, Noxious"
+        ],
+        [
+          "Beastman, Orc",
+          "Beetle, Giant Tiger",
+          "Barghest, Lesser",
+          "Basilisk, Petrifying"
+        ],
+        [
+          "Camel",
+          "Centipede, Giant",
+          "Blood Hound",
+          "Bronze Bull"
+        ],
+        [
+          "Cat, Cougar",
+          "Ghoul, Grave",
+          "Dakhanavar, Lesser",
+          "Chimera"
+        ],
+        [
+          "Cat, Tiger",
+          "Giant, Hill",
+          "Dragon",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Dwarf",
+          "Lycan, Wereboar",
+          "Draugr",
+          "Equine, Mule"
+        ],
+        [
+          "Equine, Donkey",
+          "Lycan, Wererat",
+          "Faerie, K0cker",
+          "Faravahar"
+        ],
+        [
+          "Equine, Light Horse",
+          "Lycan, Werewolf",
+          "Gargoyle",
+          "Hell Hawk"
+        ],
+        [
+          "Equine, Medium Horse",
+          "Ogre",
+          "Giant, Fire",
+          "Hydra"
+        ],
+        [
+          "Equine, Steppe Horse",
+          "Owlbeast",
+          "Giant, Stone",
+          "Khepri"
+        ],
+        [
+          "Herd Animal",
+          "Raptor, Giant",
+          "Gnome",
+          "Manticore"
+        ],
+        [
+          "Men, Brigands",
+          "Roc, Small",
+          "Griffon",
+          "Medusa"
+        ],
+        [
+          "Raptor, Ordinary",
+          "Scorpion, Giant",
+          "Grimlock",
+          "Rakshasa"
+        ],
+        [
+          "Raptor, Small",
+          "Snake, Giant Rattlesnake",
+          "Hag",
+          "Roc, Giant"
+        ],
+        [
+          "Skeleton",
+          "Spider, Giant Black Widow",
+          "Harpy",
+          "Salamander, Flame"
+        ],
+        [
+          "Snake, Pit Viper",
+          "Spider, Giant Tarantula",
+          "Hippogriff",
+          "Spell Tyrant"
+        ],
+        [
+          "Swarm, Bat",
+          "Stymph",
+          "Lycan, Werebear",
+          "Titan, Greater"
+        ],
+        [
+          "Wolf, Ordinary",
+          "Troll",
+          "Lycan, Weretiger",
+          "Titan, Lesser"
+        ],
+        [
+          "Zombie",
+          "Wolf, Dire",
+          "Neanderthal",
+          "Worm, Giant Black"
+        ],
+        [
+          "",
+          "",
+          "Pegasus",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Roc, Large",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Shadow",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Skeletal Slayer",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Specter",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Troglodyte",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Vampire",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Wolf, Warg",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Worm, Giant White",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Wyvern",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Yali",
+          ""
+        ]
+      ],
+      "Mountains (snowy)": [
+        [
+          "Bear, Cave",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Bear, Polar",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Balegyr"
+        ],
+        [
+          "Beastman, Goblin",
+          "Beetle, Giant Bombardier",
+          "Attercop, Hideous",
+          "Barghest, Greater"
+        ],
+        [
+          "Beastman, Kobold",
+          "Beetle, Giant Lumi0us",
+          "Attercop, Monstrous",
+          "Basilisk, Noxious"
+        ],
+        [
+          "Beastman, Orc",
+          "Beetle, Giant Tiger",
+          "Barghest, Lesser",
+          "Basilisk, Petrifying"
+        ],
+        [
+          "Cat, Cougar",
+          "Centipede, Giant",
+          "Blood Hound",
+          "Bronze Bull"
+        ],
+        [
+          "Cat, Tiger",
+          "Ghoul, Grave",
+          "Cat, Saber-Tooth",
+          "Chimera"
+        ],
+        [
+          "Dwarf",
+          "Giant, Hill",
+          "Dakhanavar, Lesser",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Equine, Donkey",
+          "Hoarflesh",
+          "Dragon",
+          "Equine, Mule"
+        ],
+        [
+          "Equine, Light Horse",
+          "Lycan, Werewolf",
+          "Draugr",
+          "Faravahar"
+        ],
+        [
+          "Equine, Medium Horse",
+          "Mammoth",
+          "Faerie, K0cker",
+          "Hell Hawk"
+        ],
+        [
+          "Equine, Steppe Horse",
+          "Ogre",
+          "Gargoyle",
+          "Hydra"
+        ],
+        [
+          "Herd Animal",
+          "Owlbeast",
+          "Giant, Frost",
+          "Khepri"
+        ],
+        [
+          "Men, Brigands",
+          "Raptor, Giant",
+          "Giant, Stone",
+          "Manticore"
+        ],
+        [
+          "Raptor, Ordinary",
+          "Roc, Small",
+          "Gnome",
+          "Medusa"
+        ],
+        [
+          "Raptor, Small",
+          "Scorpion, Giant",
+          "Griffon",
+          "Rakshasa"
+        ],
+        [
+          "Skeleton",
+          "Snake, Giant Rattlesnake",
+          "Grimlock",
+          "Roc, Giant"
+        ],
+        [
+          "Snake, Pit Viper",
+          "Spider, Giant Black Widow",
+          "Hag",
+          "Salamander, Frost"
+        ],
+        [
+          "Swarm, Bat",
+          "Spider, Giant Tarantula",
+          "Harpy",
+          "Spell Tyrant"
+        ],
+        [
+          "Wolf, Ordinary",
+          "Stymph",
+          "Hippogriff",
+          "Titan, Greater"
+        ],
+        [
+          "",
+          "",
+          "Lycan, Werebear",
+          "Titan, Lesser"
+        ],
+        [
+          "",
+          "",
+          "Neanderthal",
+          "Worm, Giant Black"
+        ],
+        [
+          "",
+          "",
+          "Pegasus",
+          "Worm, Great Ice"
+        ],
+        [
+          "",
+          "",
+          "Roc, Large",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Shadow",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Skeletal Slayer",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Specter",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Troglodyte",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Vampire",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Wolf, Warg",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Worm, Giant White",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Wyvern",
+          ""
+        ],
+        [
+          "",
+          "",
+          "Yali",
+          ""
+        ]
+      ],
+      "River (non-desert/jungle)": [
+        [
+          "Bear, Black",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Beastman, Orc",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Doppelganger"
+        ],
+        [
+          "Boar, Ordinary",
+          "Beastman, Bugbear",
+          "Attercop, Hideous",
+          "Rakshasa"
+        ],
+        [
+          "Cat, Panther",
+          "Beastman, Gnoll",
+          "Attercop, Monstrous",
+          "Salamander, Frost"
+        ],
+        [
+          "Crocodile, Ordinary",
+          "Beastman, Hobgoblin",
+          "Blood Hound",
+          "Skittering Maw"
+        ],
+        [
+          "Dog, Hunting",
+          "Bee, Giant Killer",
+          "Crocodile, Giant",
+          "Slug, Giant"
+        ],
+        [
+          "Dog, War",
+          "Beetle, Giant Bombardier",
+          "Devil Boar",
+          "Spell Tyrant"
+        ],
+        [
+          "Elf",
+          "Beetle, Giant Lumi0us",
+          "Dragon",
+          ""
+        ],
+        [
+          "Herd Animal",
+          "Beetle, Giant Tiger",
+          "Faerie, Nixie",
+          ""
+        ],
+        [
+          "Men, Brigands",
+          "Boar, Giant",
+          "Faerie, Pixie",
+          ""
+        ],
+        [
+          "Men, Merchants",
+          "Centipede, Giant",
+          "Faerie, Spriggan",
+          ""
+        ],
+        [
+          "Men, Pirates",
+          "Crab, Giant",
+          "Faerie, Sprite",
+          ""
+        ],
+        [
+          "Raptor, Ordinary",
+          "Crocodile, Large",
+          "Gargoyle",
+          ""
+        ],
+        [
+          "Skeleton",
+          "Dragonfly, Giant",
+          "Griffon",
+          ""
+        ],
+        [
+          "Swarm, Rat",
+          "Fish, Giant Catfish",
+          "Hag",
+          ""
+        ],
+        [
+          "Varmint, Giant Rat",
+          "Fish, Giant Piranha",
+          "Hippogriff",
+          ""
+        ],
+        [
+          "Zombie",
+          "Fish, Giant Surgeon",
+          "Lycan, Werebear",
+          ""
+        ],
+        [
+          "",
+          "Fly, Giant Carnivorous",
+          "Lycan, Weretiger",
+          ""
+        ],
+        [
+          "",
+          "Frog, Giant",
+          "Nymph, Naiad",
+          ""
+        ],
+        [
+          "",
+          "Ghoul, Marsh",
+          "Nymph, Oread",
+          ""
+        ],
+        [
+          "",
+          "Leech, Giant",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "",
+          "Lizardmen",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Lycan, Wereboar",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Lycan, Wererat",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Lycan, Werewolf",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Ogre",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Raptor, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Roc, Small",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Strix",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Tick, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Toad, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Triton",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Troll",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Varmint, Giant Shrew",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Wasp, Giant",
+          "",
+          ""
+        ]
+      ],
+      "River (desert/jungle)": [
+        [
+          "Bear, Black",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Beastman, Orc",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Doppelganger"
+        ],
+        [
+          "Boar, Ordinary",
+          "Beastman, Bugbear",
+          "Attercop, Hideous",
+          "Rakshasa"
+        ],
+        [
+          "Camel",
+          "Beastman, Gnoll",
+          "Attercop, Monstrous",
+          "Salamander, Flame"
+        ],
+        [
+          "Cat, Cheetah",
+          "Beastman, Hobgoblin",
+          "Blood Hound",
+          "Skittering Maw"
+        ],
+        [
+          "Cat, Lion",
+          "Bee, Giant Killer",
+          "Crocodile, Giant",
+          "Slug, Giant"
+        ],
+        [
+          "Cat, Panther",
+          "Beetle, Giant Bombardier",
+          "Devil Boar",
+          "Spell Tyrant"
+        ],
+        [
+          "Cat, Tiger",
+          "Beetle, Giant Lumi0us",
+          "Dragon",
+          ""
+        ],
+        [
+          "Crocodile, Ordinary",
+          "Beetle, Giant Tiger",
+          "Faerie, Nixie",
+          ""
+        ],
+        [
+          "Dog, Hunting",
+          "Boar, Giant",
+          "Faerie, Pixie",
+          ""
+        ],
+        [
+          "Dog, War",
+          "Centipede, Giant",
+          "Faerie, Spriggan",
+          ""
+        ],
+        [
+          "Elf",
+          "Crab, Giant",
+          "Faerie, Sprite",
+          ""
+        ],
+        [
+          "Herd Animal",
+          "Crocodile, Large",
+          "Gargoyle",
+          ""
+        ],
+        [
+          "Hippopotamus",
+          "Dragonfly, Giant",
+          "Giant, Fire",
+          ""
+        ],
+        [
+          "Hyena, Ordinary",
+          "Fish, Giant Catfish",
+          "Griffon",
+          ""
+        ],
+        [
+          "Jackal",
+          "Fish, Giant Piranha",
+          "Hag",
+          ""
+        ],
+        [
+          "Men, Brigands",
+          "Fish, Giant Surgeon",
+          "Hippogriff",
+          ""
+        ],
+        [
+          "Men, Merchants",
+          "Fly, Giant Carnivorous",
+          "Lycan, Weretiger",
+          ""
+        ],
+        [
+          "Men, Pirates",
+          "Frog, Giant",
+          "Nymph, Naiad",
+          ""
+        ],
+        [
+          "Raptor, Ordinary",
+          "Ghoul, Marsh",
+          "Nymph, Oread",
+          ""
+        ],
+        [
+          "Skeleton",
+          "Hyena, Giant",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "Swarm, Rat",
+          "Leech, Giant",
+          "Shadow",
+          ""
+        ],
+        [
+          "Varmint, Giant Rat",
+          "Lizardmen",
+          "Specter",
+          ""
+        ],
+        [
+          "Zombie",
+          "Lycan, Wererat",
+          "Vampire",
+          ""
+        ],
+        [
+          "Skeleton",
+          "Ogre",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Raptor, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Roc, Small",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Strix",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Tick, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Toad, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Triton",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Troll",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Varmint, Giant Shrew",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Wasp, Giant",
+          "",
+          ""
+        ]
+      ],
+      "Swamp (any)": [
+        [
+          "Beastman, Goblin",
+          "Acanthaspis, Giant",
+          "Arane",
+          "Attercop, Demonic"
+        ],
+        [
+          "Beastman, Orc",
+          "Ant, Giant",
+          "Attercop, Foul",
+          "Basilisk, Noxious"
+        ],
+        [
+          "Crocodile, Ordinary",
+          "Beastman, Gnoll",
+          "Attercop, Hideous",
+          "Catoblepas"
+        ],
+        [
+          "Men, Brigands",
+          "Beastman, Hobgoblin",
+          "Attercop, Monstrous",
+          "Dakhanavar, Greater"
+        ],
+        [
+          "Skeleton",
+          "Bee, Giant Killer",
+          "Blood Hound",
+          "Hell Hawk"
+        ],
+        [
+          "Swarm, Insect",
+          "Beetle, Giant Bombardier",
+          "Crocodile, Giant",
+          "Hydra"
+        ],
+        [
+          "Swarm, Rat",
+          "Beetle, Giant Lumi0us",
+          "Dakhanavar, Lesser",
+          "Medusa"
+        ],
+        [
+          "Zombie",
+          "Beetle, Giant Tiger",
+          "Dragon",
+          "Rakshasa"
+        ],
+        [
+          "Beastman, Goblin",
+          "Carrion Horror",
+          "Faerie, Pixie",
+          "Salamander, Frost"
+        ],
+        [
+          "Beastman, Orc",
+          "Centipede, Giant",
+          "Faerie, Spriggan",
+          "Skittering Maw"
+        ],
+        [
+          "Crocodile, Ordinary",
+          "Crab, Giant",
+          "Faerie, Sprite",
+          "Slug, Giant"
+        ],
+        [
+          "Men, Brigands",
+          "Crocodile, Large",
+          "Gargoyle",
+          "Spell Tyrant"
+        ],
+        [
+          "Skeleton",
+          "Dragonfly, Giant",
+          "Griffon",
+          "Thrassian"
+        ],
+        [
+          "Swarm, Insect",
+          "Fish, Giant Catfish",
+          "Hag",
+          ""
+        ],
+        [
+          "Swarm, Rat",
+          "Fly, Giant Carnivorous",
+          "Hippogriff",
+          ""
+        ],
+        [
+          "Zombie",
+          "Frog, Giant",
+          "Nymph, Naiad",
+          ""
+        ],
+        [
+          "",
+          "Ghoul, Marsh",
+          "Rust Beast",
+          ""
+        ],
+        [
+          "",
+          "Leech, Giant",
+          "Shadow",
+          ""
+        ],
+        [
+          "",
+          "Lizardmen",
+          "Skeletal Slayer",
+          ""
+        ],
+        [
+          "",
+          "Lycan, Wereboar",
+          "Specter",
+          ""
+        ],
+        [
+          "",
+          "Lycan, Wererat",
+          "Troglodyte",
+          ""
+        ],
+        [
+          "",
+          "Lycan, Werewolf",
+          "Vampire",
+          ""
+        ],
+        [
+          "",
+          "Ogre",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Raptor, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Roc, Small",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Scorpion, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Spider, Giant Crab",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Spider, Giant Tarantula",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Strix",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Stymph",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Tick, Giant",
+          "",
+          ""
+        ],
+        [
+          "",
+          "Troll",
+          "",
+          ""
+        ]
+      ]
+    }
+  }
+}

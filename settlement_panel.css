@@ -1,0 +1,152 @@
+/* settlement_panel.css — estilos para el panel de Market Class
+ * Diseñado para acoplarse al theme del cockpit V5n (uses var(--bg-2), --ink, --accent, etc.)
+ * Si esos vars no existen en el cockpit, los valores fallback hacen que el panel
+ * siga siendo legible en dark mode.
+ */
+
+.settlement-panel {
+  margin: 8px 0;
+  padding: 10px;
+  background: var(--bg-2, #1a1a1f);
+  border: 1px solid var(--border, #2a2a32);
+  border-radius: 6px;
+  border-left: 3px solid var(--accent, #c9a85a);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.settlement-panel .sp-header {
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border, #2a2a32);
+}
+
+.settlement-panel .sp-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent, #c9a85a);
+  margin-bottom: 2px;
+}
+
+.settlement-panel .sp-subtitle {
+  font-size: 11px;
+  color: var(--ink-dim, #888);
+}
+
+.settlement-panel .sp-hostile {
+  margin-top: 4px;
+  padding: 2px 6px;
+  background: rgba(180, 60, 60, 0.15);
+  color: #d96;
+  font-size: 11px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.settlement-panel .sp-section {
+  margin: 10px 0;
+  padding-top: 8px;
+  border-top: 1px dashed var(--border, #2a2a32);
+}
+
+.settlement-panel .sp-section:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.settlement-panel .sp-section-compact {
+  padding-top: 6px;
+  font-size: 11px;
+  color: var(--ink-dim, #888);
+}
+
+.settlement-panel .sp-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-2, #6a9bd1);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.settlement-panel .sp-row {
+  margin: 3px 0;
+}
+
+.settlement-panel .sp-key {
+  color: var(--ink-dim, #888);
+  font-size: 11px;
+}
+
+.settlement-panel .sp-doc {
+  font-size: 11px;
+  color: var(--ink-dim, #888);
+  font-style: italic;
+}
+
+.settlement-panel .sp-warn {
+  padding: 8px;
+  background: rgba(180, 140, 60, 0.15);
+  color: #c9a85a;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.settlement-panel .sp-btn {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 8px 10px;
+  background: var(--bg-3, #25252b);
+  color: var(--ink, #ddd);
+  border: 1px solid var(--border, #2a2a32);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  min-height: 34px;
+}
+
+.settlement-panel .sp-btn:hover,
+.settlement-panel .sp-btn:active {
+  background: var(--bg-4, #30303a);
+  border-color: var(--accent, #c9a85a);
+}
+
+.settlement-panel .sp-select {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  margin: 4px 0;
+  background: var(--bg-3, #25252b);
+  color: var(--ink, #ddd);
+  border: 1px solid var(--border, #2a2a32);
+  border-radius: 4px;
+  font-size: 12px;
+  min-height: 32px;
+}
+
+.settlement-panel .sp-result {
+  margin-top: 8px;
+  padding: 6px 8px;
+  background: var(--bg-3, #25252b);
+  border-radius: 4px;
+  font-size: 12px;
+  min-height: 0;
+}
+
+.settlement-panel .sp-result:empty {
+  display: none;
+}
+
+.settlement-panel .sp-merc-result {
+  font-size: 12px;
+}
+
+.settlement-panel .sp-merc-verdict {
+  margin-top: 4px;
+  padding: 4px 6px;
+  background: rgba(106, 155, 209, 0.12);
+  color: var(--accent-2, #6a9bd1);
+  border-radius: 3px;
+  font-weight: 600;
+}
