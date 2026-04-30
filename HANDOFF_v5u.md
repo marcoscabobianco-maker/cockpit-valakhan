@@ -100,3 +100,24 @@ Sigue desde v5u. Nueva prioridad #1: marcadores PC individuales sobre el grid
 - localStorage del cockpit persiste en cliente
 
 **El proyecto continúa intacto cuando se corte la sesión. Próxima Claude empieza limpio leyendo este handoff.**
+
+---
+
+## Update final 2026-04-30: Dungeon Atlas en mc-prism
+
+**5 páginas Barrowmaze extraídas a PNG** (pp 233-237) en `mc-prism/public/dungeons/barrowmaze/page_*.png`. Página 234 = donde está la party (Sala 74A Mongrelmen).
+
+**mc-prism nueva arquitectura**:
+- `lib/dungeon-map-parser.ts` — lee JSONs de `sources/dungeons/*.json`
+- `components/dungeon/fog-map-viewer.tsx` — SVG fog overlay sobre imagen, radio 3 manhattan
+- `sources/dungeons/barrowmaze.json` — 5 secciones con conexiones page→page
+- `app/dungeon/page.tsx` — biblioteca de módulos (reemplaza al DungeonCrawler simple)
+- `app/dungeon/[module]/page.tsx` — ruta dinámica por módulo
+
+**Pendiente próxima sesión**:
+- Marcos pidió hacer lo mismo con **Arden Vul** (PDF en `G:/Mi unidad/02_ROL_Y_MEGACAMPAÑA/Biblioteca_Absoluta/The Halls of Arden Vul (1e,OSRIC) (1).pdf`). Es más grande que Barrowmaze (1161 pp, atlas más complejo). Marcos puede pasar el parser específico que tenga.
+- Ajustar `width/height/gridSize` del JSON barrowmaze según escala real del PDF (actual 40x55 60px es aproximado).
+- Calibrar `startCell` por sección a la posición exacta de la sala de inicio en cada página.
+- Markers PC individuales sobre el FogMapViewer (sigue siendo prioridad 1).
+
+**Commits finales**: cockpit `a1cc6f8` (handoff). mc-prism: el push de este commit incluye todo dungeon atlas + parser + viewer.
