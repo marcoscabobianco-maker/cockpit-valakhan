@@ -1,0 +1,407 @@
+[
+  {
+    "page": 1135,
+    "id": "L1",
+    "name": "Level 1 — The Basement",
+    "rect": [
+      0.0,
+      0.0,
+      1502.6400146484375,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1136,
+    "id": "L2",
+    "name": "Level 2 — The Howling Caves & Well of Light",
+    "rect": [
+      0.0,
+      0.0,
+      1920.0,
+      1173.1199951171875
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1137,
+    "id": "L3",
+    "name": "Level 3 — The Halls of Thoth",
+    "rect": [
+      0.0,
+      0.0,
+      1573.6800537109375,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1138,
+    "id": "L4",
+    "name": "Level 4 — The Forum of Set",
+    "rect": [
+      0.0,
+      0.0,
+      1286.4000244140625,
+      2400.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1139,
+    "id": "L5",
+    "name": "Level 5 — The Obsidian Gates",
+    "rect": [
+      0.0,
+      0.0,
+      1920.0,
+      1653.5999755859375
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1140,
+    "id": "L6",
+    "name": "Level 6 — The Troll Lifts & Arena",
+    "rect": [
+      0.0,
+      0.0,
+      1854.47998046875,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1141,
+    "id": "L7",
+    "name": "Level 7 — Court of the Troll Thegn",
+    "rect": [
+      0.0,
+      0.0,
+      1920.0,
+      1742.4000244140625
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1142,
+    "id": "L8",
+    "name": "Level 8 — The Nether Reaches",
+    "rect": [
+      0.0,
+      0.0,
+      1919.760009765625,
+      1211.0400390625
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1143,
+    "id": "L9",
+    "name": "Level 9 — Chasm Floor",
+    "rect": [
+      0.0,
+      0.0,
+      1919.760009765625,
+      1508.6400146484375
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1144,
+    "id": "L10",
+    "name": "Level 10 — Ziggurat of Kauket",
+    "rect": [
+      0.0,
+      0.0,
+      1919.760009765625,
+      1211.0400390625
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1145,
+    "id": "SL1",
+    "name": "Sub-Level 1 — Tombs of Light",
+    "rect": [
+      0.0,
+      0.0,
+      1440.239990234375,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1146,
+    "id": "SL2",
+    "name": "Sub-Level 2 — Hall of Shrines",
+    "rect": [
+      0.0,
+      0.0,
+      1746.0,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1147,
+    "id": "SL3",
+    "name": "Sub-Level 3 — Lesser Baboon Caves",
+    "rect": [
+      0.0,
+      0.0,
+      1075.43994140625,
+      1871.52001953125
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1148,
+    "id": "SL4",
+    "name": "Sub-Level 4 — Goblin Halls",
+    "rect": [
+      0.0,
+      0.0,
+      1920.0,
+      1694.8800048828125
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1149,
+    "id": "SL5",
+    "name": "Sub-Level 5 — Lizardmen Caves",
+    "rect": [
+      0.0,
+      0.0,
+      1920.0,
+      1584.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1150,
+    "id": "SL6a",
+    "name": "Sub-Level 6 — Drowned Canyon",
+    "rect": [
+      0.0,
+      0.0,
+      1728.0,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1151,
+    "id": "SL6b",
+    "name": "Sub-Level 6 — Drowned Canyon, Tomb Level",
+    "rect": [
+      0.0,
+      0.0,
+      1269.3599853515625,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1152,
+    "id": "SL7",
+    "name": "Sub-Level 7 — Flooded Vaults",
+    "rect": [
+      0.0,
+      0.0,
+      1920.0,
+      1584.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1153,
+    "id": "SL8",
+    "name": "Sub-Level 8 — Caves Behind the Falls",
+    "rect": [
+      0.0,
+      0.0,
+      1357.43994140625,
+      1757.0400390625
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1154,
+    "id": "SL9",
+    "name": "Sub-Level 9 — Kaliyani Pits",
+    "rect": [
+      0.0,
+      0.0,
+      1920.0,
+      1793.280029296875
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1155,
+    "id": "SL10A",
+    "name": "Sub-Level 10A — Hold of Sun-Scarred Knights",
+    "rect": [
+      0.0,
+      0.0,
+      982.7999877929688,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1156,
+    "id": "SL10B",
+    "name": "Sub-Level 10B — Citadel of Sun-Scarred Knights",
+    "rect": [
+      0.0,
+      0.0,
+      1920.0,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1157,
+    "id": "SL11",
+    "name": "Sub-Level 11 — Tomb of Isadora",
+    "rect": [
+      0.0,
+      0.0,
+      1493.52001953125,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1158,
+    "id": "SL12",
+    "name": "Sub-Level 12 — Workshops of Kerbog Khan",
+    "rect": [
+      0.0,
+      0.0,
+      1920.0,
+      1466.8800048828125
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1159,
+    "id": "SL13",
+    "name": "Sub-Level 13 — Lost Chambers of Arden",
+    "rect": [
+      0.0,
+      0.0,
+      1446.9599609375,
+      1920.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1160,
+    "id": "SL14",
+    "name": "Sub-Level 14 — Chamber of the Beacon",
+    "rect": [
+      0.0,
+      0.0,
+      1920.0,
+      1656.0
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  },
+  {
+    "page": 1161,
+    "id": "SL15",
+    "name": "Sub-Level 15 — Druid's Retreat",
+    "rect": [
+      0.0,
+      0.0,
+      960.0,
+      735.719970703125
+    ],
+    "drawings": 0,
+    "images": 1,
+    "nums_count": 0,
+    "all_spans": 0
+  }
+]

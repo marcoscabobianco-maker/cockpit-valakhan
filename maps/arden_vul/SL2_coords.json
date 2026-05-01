@@ -1,0 +1,31 @@
+{
+  "level_id": "SL2",
+  "level_name": "Sub-Level 2 — Hall of Shrines",
+  "bg_url": "maps/arden_vul/SL2_bg.webp",
+  "bg_w": 1600,
+  "bg_h": 1759,
+  "room_coords": {
+    "2B": {
+      "x": 879.9,
+      "y": 667.9
+    },
+    "2": {
+      "x": 746.2,
+      "y": 907.9
+    },
+    "5": {
+      "x": 1226.1,
+      "y": 748.2
+    },
+    "4": {
+      "x": 404.9,
+      "y": 1329.7
+    },
+    "0": {
+      "x": 1383.8,
+      "y": 375.9
+    }
+  },
+  "_unique_rooms": 5,
+  "_ocr_time_s": 10.4
+}
