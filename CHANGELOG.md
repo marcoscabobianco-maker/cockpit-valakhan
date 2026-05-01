@@ -3,6 +3,20 @@
 URL en vivo: https://mc-prism.pages.dev/cockpit
 Repo: https://github.com/marcoscabobianco-maker/cockpit-valakhan
 
+## v6k — Illustrations del módulo (27) + Bestiario Barrowmaze (120 creatures) (2026-05-01)
+- **27 illustrations extraídas** del módulo PDF (264p, appendix pages 212-264, ~9 MB).
+- **17 rooms keyed** con illustration linkeada (referenciadas por `#N` en el desc).
+- Modal de room ahora muestra **imagen embebida + click para tamaño completo** si hay illustration linkeada.
+- **Bestiario Barrowmaze** (`maps/barrowmaze_bestiary.json`): 120 criaturas únicas extraídas de los stats blocks de los rooms (Skeletons, Zombies, Gaxx, Ghouls, Wights, Crypt Knights, Mummies, Gargoyles, Ravenous Dead, Wraiths, Zuul, etc).
+- **Botón "🜍 Bestiario Barrowmaze (120 criaturas)"** en Quick Refs card. Modal con búsqueda por nombre + lista de salas donde aparece cada criatura.
+- Loaders async: `dgLoadBarrowmazeExtras`, `dgGetIllustrationsForRoom`, `dgShowBestiaryModal`.
+
+## v6j — Rooms re-extracted clean + wandering auto-combat + traps DM-strict (2026-05-01)
+- **Rooms re-extracted** desde el PDF completo (264p) con parsing column-aware + split de stats. Nuevo schema: `title / summary / narrative / stats / treasure / page`. 373 rooms procesadas (vs 244 anteriores, ~50% más cobertura).
+- Modal de room rediseñado: título limpio, resumen, treasure destacado, **stats block separado en monospace** (no más bleed mid-sentence), narrativa completa expandible.
+- **Wandering check positivo → auto-switch a combat panel** después de 1.8s. Antes: solo banner. Ahora: banner + auto carga combat + switch mode.
+- **Trampas DM-strict**: en vista jugador SOLO se muestran las `triggered`. Las `detected` (encontradas pero no gatilladas) son visibles solo en DM mode — el DM decide cuándo revelar a los jugadores.
+
 ## v6i — CRITICAL FIX: Wallmap v2 (90% reachable) + ACKS RAW + DM tools (2026-05-01)
 **Motivo**: Marcos reportó que la party no podía moverse por el dungeon. Diagnóstico flood-fill desde Sala 74A reveló que solo el **1.2% del wallmap era alcanzable** (425 regiones desconectadas). El sampling 1×1 con threshold 180 cortaba todos los pasillos.
 
