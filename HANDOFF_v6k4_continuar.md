@@ -1,10 +1,20 @@
-# HANDOFF v6k3 · Cockpit Valakhan · Continuar iteración
+# HANDOFF v6k4 · Cockpit Valakhan · Continuar iteración
 
 **Fecha cierre**: 2026-05-01
 **Live URL**: https://mc-prism.pages.dev/cockpit
-**Última versión**: V6k3
-**Última commit**: 82311de
-**Última deploy CF**: 3e0e927c
+**Última versión**: V6k4
+**Última commit**: e6090d2
+**Última deploy CF**: 5fa4c0f2
+
+## ⚠️ Pendientes urgentes para próxima sesión
+
+1. **Título dinámico de la pestaña**: actualmente queda fijo en "Cockpit V6kX — descripción larga". Marcos quiere que aparezca a la izquierda de "Valakhan ATEM Farol Club" (nombre del proyecto) y se reemplace automáticamente por la última versión. Patch: agregar variable `_VERSION = 'v6k5'` en JS, setear `document.title` desde JS al cargar.
+
+2. **Marcos reporta no ver markers en Desktop V6K3**: ya deployé V6k4 con fix HIPER-visible (radio 22 mobile, 8 desktop, doble border negro+blanco+dorado, sin shadowBlur). **Si sigue sin ver markers después de hard refresh**, hay bug más profundo. Diagnóstico V6k4 muestra overlay top-left del canvas: `🛠 V6k4 · Mobile=YES/no · 🜍 Markers visibles: N (DM/player)`. Si N=0, no se cargó `_roomCoordsCache` (verificar fetch de `maps/barrowmaze_room_coords.json`).
+
+3. **Image limit en sesiones de Claude**: cada vez que se procesan muchos PNGs grandes del PDF, se llega al límite ~2000px y la sesión bloquea futuras imágenes. Workaround: en futuras extracciones del PDF, downscale agresivo (max 1500px) ANTES de leer.
+
+4. **Persistente bug Sala 151** y otras con bleed leve de columna: el extractor v6j (50/50 column split) deja text bleed en algunas rooms. Smart-column extractor v6k3 falló (53 vs 373 rooms). Pendiente: extractor híbrido.
 
 ---
 
