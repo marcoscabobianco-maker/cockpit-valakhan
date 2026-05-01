@@ -3,6 +3,23 @@
 URL en vivo: https://mc-prism.pages.dev/cockpit
 Repo: https://github.com/marcoscabobianco-maker/cockpit-valakhan
 
+## v6h — Search & Listen integrados con tirada por clase ACKS (2026-04-30)
+- **🔍 Search room (1 turno)**: tira 1d6 vs threshold del PC vanguardia. Thief/Assassin/Explorer/Ranger/Elf/Dwarf/Halfling = 1-2; humano = 1. Consume 1 turn (dispara `dgAdvance`).
+- **👂 Listen at door (1 round)**: tira 1d6 vs threshold. Thief/Assassin = 1-3; demi-human = 1-2; humano = 1. NO consume turno.
+- Resultado: log + alert con la tirada y resultado claro ("ENCUENTRA algo / Nada visible / ESCUCHA algo / Silencio").
+- Botones nuevos en el tracker card del grid: 🔍 Search room (1t) · 👂 Listen door (1r).
+- Helpers: `_bestPcAtPosition`, `_searchThreshold`, `_listenThreshold`, `dgSearchRoom`, `dgListenAtDoor`.
+
+## v6g — Saves automatizados ACKS + Mortal Wounds inline (2026-04-30)
+- **Tabla saves L1 por clase**: Fighter / Mage / Cleric / Thief / Dwarf / Elf / Halfling con 5 categorías (P/P, B, P/D, R/R/W, S/S/S). Level adjustment: -2 cada 4 levels.
+- `_classifyPC(class)` infiere categoría base ACKS desde el campo `class` del PC.
+- `dgRollSave(pcId, saveType)`: 1d20 ≥ target del PC. Log + return result.
+- `dgRollSaveAll(saveType, position)`: tira para todos los PCs (o filtrados por posición). Modal con resultados.
+- **Mortal Wounds simplified**: tabla 1d20 + level + ConMod con 7 outcomes (☠ muerto / ⚠ wounded grave / etc).
+- `dgRollMortalWound(pcId)`: auto-trigger cuando HP llega a 0. Modal coloreado por severidad. Marca PC con `condition.mortal_wound`.
+- Banner trap-triggered: nuevo botón "Saves vanguardia" para auto-tirar.
+- Quick refs card: nuevo botón "🎲 Tirar saves automáticos".
+
 ## v6f — Arden Vul multi-level viewer (27 levels, 1293 rooms OCR) (2026-04-30)
 - **Soporte multi-level**: detecta `dungeon.type === 'multi-level'` (Ardis Vala / Arden Vul) y dispatchea a viewer dedicado.
 - **27 levels** (10 main + 17 sublevels) con bg.webp 1600 wide + coords OCR.
