@@ -3,6 +3,25 @@
 URL en vivo: https://mc-prism.pages.dev/cockpit
 Repo: https://github.com/marcoscabobianco-maker/cockpit-valakhan
 
+## v6i — CRITICAL FIX: Wallmap v2 (90% reachable) + ACKS RAW + DM tools (2026-05-01)
+**Motivo**: Marcos reportó que la party no podía moverse por el dungeon. Diagnóstico flood-fill desde Sala 74A reveló que solo el **1.2% del wallmap era alcanzable** (425 regiones desconectadas). El sampling 1×1 con threshold 180 cortaba todos los pasillos.
+
+**Fix wallmap**: estrategia `any5x5_white` con threshold 200 → **90.8% reachability** desde Sala 74A. Test simulado a 17 salas distribuidas en el dungeon: 16/17 alcanzables (94%).
+
+Otros cambios:
+- **Click rooms unificado**: TODOS los markers dorados (375 cells) abren modal con info disponible. Si la sala no está en `rooms_full` (244 keyed), modal informa "sin info detallada en módulo" + coords. Antes, sólo 244 abrían modal → inconsistencia.
+- **DM open-cell tool**: en vista DM, **ctrl+click** sobre una cell toggle (default → walkable forzado → wall forzado → default). Overrides persistidos en `g.wallOverrides[`x,y`]`. Permite a Marcos abrir/cerrar cells problemáticos del wallmap auto.
+- **Quick Refs ACKS RAW corregido**:
+  - **NO hay infravisión racial** (eliminado el bug "Infravision 60ft (racial)" que era D&D 5e).
+  - Detect Hidden añadido (sólo Thief/Assassin tiran trampas reales en ACKS).
+  - Hear Noise reformulado (1d6=1 base, 1-2 demi-human, 1-3 thief/assassin).
+  - Saves L1 separados por clase (Fighter / Mage / Cleric / Thief / Dwarf).
+  - Long rest = noche entera (8h, +1d3 HP/PC) clarificado vs short rest 1 turn.
+- **Dedup Quick Refs**: card aparecía 2x en `renderGridReal` por bug en V6e patch. Limpiado.
+- **DM tools card** muestra contador de overrides + botón limpiar.
+
+Helpers nuevos: `dgToggleCellOverride`, `dgClearCellOverrides`, `dgCountCellOverrides`.
+
 ## v6h — Search & Listen integrados con tirada por clase ACKS (2026-04-30)
 - **🔍 Search room (1 turno)**: tira 1d6 vs threshold del PC vanguardia. Thief/Assassin/Explorer/Ranger/Elf/Dwarf/Halfling = 1-2; humano = 1. Consume 1 turn (dispara `dgAdvance`).
 - **👂 Listen at door (1 round)**: tira 1d6 vs threshold. Thief/Assassin = 1-3; demi-human = 1-2; humano = 1. NO consume turno.
