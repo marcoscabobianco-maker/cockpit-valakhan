@@ -3,6 +3,17 @@
 URL en vivo: https://mc-prism.pages.dev/cockpit
 Repo: https://github.com/marcoscabobianco-maker/cockpit-valakhan
 
+## v6f — Arden Vul multi-level viewer (27 levels, 1293 rooms OCR) (2026-04-30)
+- **Soporte multi-level**: detecta `dungeon.type === 'multi-level'` (Ardis Vala / Arden Vul) y dispatchea a viewer dedicado.
+- **27 levels** (10 main + 17 sublevels) con bg.webp 1600 wide + coords OCR.
+- **Selector de level** dropdown con los 27 levels + barra de navegación rápida (botones por ID).
+- **Canvas-based viewer simple**: bg image + markers dorados sobre rooms detectadas (1293 total, ~80% coverage OCR).
+- Click marker → alert con room ID + level name (info detallada `rooms_full` pendiente de extraer).
+- **Barrowmaze (single-level) intacto** con grid táctico real V6e — comportamiento dispatch by `dgData.type`.
+- Limitaciones: sin walls vectorizadas / LoS / fog of war / party rect / tracker para Arden Vul (pendiente: replicar pipeline sample-based por level).
+- Helpers: `dgArdenLoadLevel`, `dgArdenSwitchLevel`, `renderArdenVulViewer`.
+- Assets: `maps/arden_vul/` (4.7 MB, 27 bg + 27 coords + manifest, sin `_full.webp`).
+
 ## v6e — Wildcard polish · Quick refs ACKS + ACKS Assistant link + atajos (2026-04-30)
 - **Quick refs ACKS card** en panel derecho: movement, light, search, listen, wandering, surprise, reaction, saves L1, distance.
 - **Botón "🛠 Abrir ACKS Assistant"** que lanza `/tools/` en nueva pestaña.

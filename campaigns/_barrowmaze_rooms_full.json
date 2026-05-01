@@ -1,0 +1,2859 @@
+{
+  "_doc": "Barrowmaze rooms keyed extracted from PDF (Greg Gillespie 2022, 4ed Complete)",
+  "_source_pdf": "G:/Mi unidad/02_ROL_Y_MEGACAMPAÑA/Biblioteca_Absoluta/Barrowmaze 10th Ebook OSR 2022.pdf",
+  "_extraction_date": "2026-04-30",
+  "areas_summary": {
+    "one": "Forbidden Antechamber",
+    "two": "Haunted Tombs",
+    "three": "Deserted Dormitory",
+    "four": "Death Vault of the Chosen",
+    "five": "Secret Shrine of Set",
+    "six": "Forgotten Crypts",
+    "seven": "Chaos Sepulcher of the Elements",
+    "eight": "Temple of Orcus",
+    "nine": "Secret Vault of the Unholy Relic",
+    "ten": "Lair of Ossithrax Pejorative"
+  },
+  "rooms": {
+    "12": {
+      "id": "12",
+      "name": "The Great Mound (Plundered): An overgrown pathway,              AC: N/A, HD: 2, ",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Great Mound (Plundered): An overgrown pathway,              AC: N/A, HD: 2, HP: 5, #AT: 1, DMG: Special. The cup. lined with small stone cairns, leads toward this large central is made of gold and worth 345gp. An alcove on the mound. Show the players Barrowmaze illustration #1. western wall holds skeletal remains.",
+      "treasure_coins": [
+        "345 gp"
+      ]
+    },
+    "13": {
+      "id": "13",
+      "name": "Collapsed Mound: This mound has collapsed with the              of a shieldmaide",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "Collapsed Mound: This mound has collapsed with the              of a shieldmaiden, contains a Winged Helm +1.. weight of the centuries. If 18 turns are spent excavating, the party will be able to recover a Silver Goblet worth Barrow Mound 14 1,800gp, an Electrum Plate worth 2,000gp, and a Dagger +1 from the ruins of the mound.",
+      "treasure_coins": [
+        "1,800 gp",
+        "2,000 gp"
+      ],
+      "items": [
+        "Helm +1",
+        "Dagger +1"
+      ]
+    },
+    "14": {
+      "id": "14",
+      "name": "The Bathing Crypt (Covered): The entrance to this                  4  3",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Bathing Crypt (Covered): The entrance to this                  4  3. ancient mound will need to be excavated. The crypt is dry and the doors are made of wood."
+    },
+    "15": {
+      "id": "15",
+      "name": "The Mound of Rusty Gates (Sealed): This mound is           1 point of magical da",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Mound of Rusty Gates (Sealed): This mound is           1 point of magical damage). These warriors will rise as. sealed with a stone door. The crypt is flooded knee deep Skeletons (6) AL: C, AC: 4, HD: 1, HP: 8, 8, 8, 7, 5, 4, with dark water. #AT: 1, DMG: 1d6, if the sword is disturbed, but will wait until the PCs enter the mound and are surrounded. One Entrance: A ten f2oot staircase1 descend",
+      "monsters": [
+        {
+          "name": "Skeletons",
+          "count": 6,
+          "hd": "1"
+        }
+      ]
+    },
+    "16": {
+      "id": "16",
+      "name": "The Sword-Mound of the Ancients (Sealed): Show the         18. The Broken Tomb o",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Sword-Mound of the Ancients (Sealed): Show the         18. The Broken Tomb of Toads (Plundered): This mound. players Barrowmaze illustration #3 when they enter this was plundered long ago and is filled to the waist crypt. The interior is lined with six, six-foot high vertical with dark peat-colored water. Giant Toads (2) AL: alcoves that contain the remains of six skeletal warriors. N, AC: 7, ",
+      "items": [
+        "Sword"
+      ]
+    },
+    "19": {
+      "id": "19",
+      "name": "The Statue Mound (Sealed): This mound is sealed          20. The Mound of Secret",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Statue Mound (Sealed): This mound is sealed          20. The Mound of Secret Stairs (Plundered): This mound is. with a stone door. The crypt is flooded knee-deep with empty. There is a broken sarcophagus decorated in bas dark water and the doors are made of wood reinforced relief with skeletons dancing in the Underworld. If one of with iron. the skeletons is pulled out, turned counter-clockwis"
+    },
+    "25": {
+      "id": "25",
+      "name": "The Mound of the Cursed Jewel (Sealed): Crypt is supported by four columns carve",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Mound of the Cursed Jewel (Sealed): Crypt is supported by four columns carved with screaming faces.. dry and the doors are made of bronze and covered with A large brazier can be found in the center of the room."
+    },
+    "29": {
+      "id": "29",
+      "name": "The Flagstone Mound (Covered): The interior of this             Chamber 4: An2 o",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Flagstone Mound (Covered): The interior of this             Chamber 4: An2 ornate sarcoph1agus stands in the center. of this room. There are funerary baskets and urns along crypt is dry and the doors are made of wood reinforced the outside of the chamber but most are rotting or broken. Three Amphorae worth 600gp each might be salvaged with iron. but they are brittle. If the PCs engage in comba",
+      "treasure_coins": [
+        "600 gp"
+      ]
+    },
+    "30": {
+      "id": "30",
+      "name": "The Mound of Rot (Sealed): This mound is sealed with            31. Collapsed Mo",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Mound of Rot (Sealed): This mound is sealed with            31. Collapsed Mound: Excavation at the side of this. a stone door. A short stone staircase descends into a mound has led to its collapse. It appears tomb-robbers, dry crypt. unable to break the coverstone, attempted to dig through"
+    },
+    "32": {
+      "id": "32",
+      "name": "The Caryatid C2rypt (Sealed1): This mound is sealed         robbers left a Gold ",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Caryatid C2rypt (Sealed1): This mound is sealed         robbers left a Gold Ring on the floor near the mummy. with a stone door. The doors are made of steel and locked. worth 530gp.",
+      "treasure_coins": [
+        "530 gp"
+      ],
+      "items": [
+        "Ring"
+      ]
+    },
+    "33": {
+      "id": "33",
+      "name": "Plundered Mound: It appears the coverstone of this          Chamber 3: The room ",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "Plundered Mound: It appears the coverstone of this          Chamber 3: The room is ankle-deep in water. Shelves on. mound was pulled off using ropes and horses. The ropes the walls hold scroll tubes, old moldy tomes, and papers. are still attached to the coverstone which rests 20 feet The personal papers of those laid to rest in the crypt have value as historical documents (750gp).",
+      "treasure_coins": [
+        "750 gp"
+      ]
+    },
+    "35": {
+      "id": "35",
+      "name": "The Necromancer's Barrow (Plundered Mound): The              37. The Forgotten O",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Necromancer's Barrow (Plundered Mound): The              37. The Forgotten Ossuary of the Abomination (Sealed):. coverstone to this crypt lies broken in the tall grass. A This mound is sealed with a stone door. The skull symbol short 10-foot staircase descends into a round 50x50 of Nergal is engraved on the door. A 10 foot stone foot burial mound. A well worn path in the floor leads staircase "
+    },
+    "36": {
+      "id": "36",
+      "name": "The Mound of Mirrors (Covered): The entry chamber            If the warrior is d",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Mound of Mirrors (Covered): The entry chamber            If the warrior is disturbed a Barrow Abomination (1) AL:. to this crypt appears like many others. The room is covered C, HD: 8, HP: 60, #AT: 1�6 or 1*, DMG: 1d6*, will burst in mold, the air smells damp, and there have been partial forth from the ground surrounded by a ghostly green collapses on two walls. There is a sarcophagus in the r"
+    },
+    "38": {
+      "id": "38",
+      "name": "The Mound of Traps (Sealed): A short staircase                 victim can (poten",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Mound of Traps (Sealed): A short staircase                 victim can (potentially) take damage in this manner three. descends into a crypt 10 feet wide and 40 feet long. The times before they have backed out of the flames. This floor is made of steel plates shaped as flagstones. At the trap can only be passed by flying, levitating, or running end of this crypt is a dais2 with a Gold Urn (500g",
+      "treasure_coins": [
+        "500 gp"
+      ]
+    },
+    "41": {
+      "id": "41",
+      "name": "The Mimic Mound (Sealed): This mound is sealed with             Subsequently, th",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Mimic Mound (Sealed): This mound is sealed with             Subsequently, this entrance has been clawed and. a stone door. A short stone staircase descends into a dry widened by the trolls to allow them into the dungeon. crypt. The doors are made of bronze. Troll guards are always posted at #337F at the bottom of the rough-hewn staircase. This is intended to provide Entrance: Ten foot stairs l"
+    },
+    "46": {
+      "id": "46",
+      "name": "The Vault of Severed Heads (Covered): This crypt                               T",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Vault of Severed Heads (Covered): This crypt                               The Vault of Severed Heads. contains the bizarre experiments of a strange wizard who converted severed hea1ds into magical items. In a Severed Head Spell Effect/Serves As (brief) fit of regret he gathered them all together and buried them here. 1. Magic-User Detect Magic (5 Uses)"
+    },
+    "47": {
+      "id": "47",
+      "name": "The Mound-Pit of the Barrow Harpies (Collapsed):             then scream in bloo",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Mound-Pit of the Barrow Harpies (Collapsed):             then scream in blood-curdling fashion and shake his. Instead of a burial mound, a large roughly cylindrical hands above his head in frustration. He has not seen hole (40' wide and 40' deep) extends into the earth. another human being in centuries. A phantasmal eye Recently a large vaulted chamber collapsed, and the lingers in his right e"
+    },
+    "48": {
+      "id": "48",
+      "name": "The Forgotten Mound of Dhekeon the Disgraced                 the very undead abo",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Forgotten Mound of Dhekeon the Disgraced                 the very undead abominations I swore to destroy.. (Covered): This small mound is 30x30 feet wide. A skeleton wearing ancient rusted platemail is chained to Dhekeon is unique among skeletal warriors. There is no the back wall. He is kneeling on the floor, head down, circlet that contains his soul. Rather, he must regain favour and motionl"
+    },
+    "49": {
+      "id": "49",
+      "name": "The White Marble Mausoleum (Sealed): Two columns                Otherwise, the 3",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The White Marble Mausoleum (Sealed): Two columns                Otherwise, the 3PCs will find2him here in1the darkness. of six white marble pillars, some standing, and some in near his sarcophagus. There is nothing of value inside ruins, line the entrance to a white stone mausoleum. In except the name \"Bareus\" etched on the inside of the lid. addition, six beautiful stone statues of exquisite deta"
+    },
+    "52": {
+      "id": "52",
+      "name": "The Barrow of the Pool (Sealed): The crypt is dry and                       Work",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Barrow of the Pool (Sealed): The crypt is dry and                       Workers (30) AL: N, AC: 4, HD: 2, #AT: 1, DMG: 1d6,. the doors are made of bronze. Soldiers (19) AL: N, AC: 2, HD: 3, #AT: 2 DMG: 2d6 Entrance: The entrance to this crypt has partially plus sting for 2d4, and a Queen (1) AL: N, AC: 3, HD: collapsed along the eastern wall. 10, HP: 60, #AT: N/A, DMG: N/A.",
+      "monsters": [
+        {
+          "name": "Workers",
+          "count": 30,
+          "hd": "2"
+        },
+        {
+          "name": "Soldiers",
+          "count": 19,
+          "hd": "3"
+        }
+      ]
+    },
+    "54": {
+      "id": "54",
+      "name": "The Scholar's Mound (Covered): This crypt has",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Scholar's Mound (Covered): This crypt has. flooded (waist deep) and the doors are made of wood 55. The Secret Mound of Zur (Sealed): This mound"
+    },
+    "56": {
+      "id": "56",
+      "name": "Plundered Mound: This 50x50 foot mound was                   HD: 7, HP4: 43, #AT",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "Plundered Mound: This 50x50 foot mound was                   HD: 7, HP4: 43, #AT: 2, DMG: 1d8/1d8*, whose wraps. plundered long ago and is filled to the waist with dark peat-colored water. have been colored black-green by the peat-colored"
+    },
+    "57": {
+      "id": "57",
+      "name": "The Mound of the Green Mummy (Sealed): This crypt            water. He wears a M",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Mound of the Green Mummy (Sealed): This crypt            water. He wears a Mithril Death Mask (4,200gp) in. is flooded (knee deep) with dark peat-colored water. The doors are made of wood reinforced with steel. the shape of a skull that provides +4 to AC and 20%",
+      "treasure_coins": [
+        "4,200 gp"
+      ]
+    },
+    "60": {
+      "id": "60",
+      "name": "The Shaded Crypt (Plundered): This crypt has been                 additional 2d6",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Shaded Crypt (Plundered): This crypt has been                 additional 2d6 from the strange toxin on the arrows. On. opened recently. The coverstone, broken in two, lies in a pedestal in the center of the room is a large bowl the dead grass nearby. A foul stench comes from in-side of coins (1,800ep). Frescos depict an evil snake god the mound, and the air is strangely cold. The crypt is dry.",
+      "treasure_coins": [
+        "1,800 ep"
+      ]
+    },
+    "61": {
+      "id": "61",
+      "name": "The Mound of the Snake-Guardian (Sealed): This                     Sssythos has ",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Mound of the Snake-Guardian (Sealed): This                     Sssythos has longed to be free but is bound to carry out. crypt is dry and the doors are made of wood. his task. He will speak with the PCs and must know their purpose, but he can be lied to and is somewhat na�ve. Entrance: Three woven funerary baskets with rotted grain Sssythos will become excited at the prospect of freedom sit on"
+    },
+    "62": {
+      "id": "62",
+      "name": "The Portal of Bones (Covered): Once the earth is               6. You are comman",
+      "area": "unknown",
+      "chunk": "mounds",
+      "desc": "The Portal of Bones (Covered): Once the earth is               6. You are commanded to the Underworld but possess. removed, the PCs will notice that the coverstone and the will and strength of spirit to thumb your nose at archway to this mound is covered with black runes. The death!!! Your hair turns white and you age 15 years. runes, written in Ancient Lizardman, issue warnings Having looked into"
+    },
+    "66": {
+      "id": "66",
+      "name": "The Vault of the Dark Legion (Covered Mound): Over",
+      "area": "unknown",
+      "chunk": "a1_a3",
+      "desc": "The Vault of the Dark Legion (Covered Mound): Over. the centuries the entrance to this ancient mound has been covered over with earth and will require excavation to access the entrance."
+    },
+    "67": {
+      "id": "67",
+      "name": "The Tomb of the Sacred Blade (Covered): Once the",
+      "area": "unknown",
+      "chunk": "a1_a3",
+      "desc": "The Tomb of the Sacred Blade (Covered): Once the. excavation is complete the party will discover strange glyphs on the coverstone of this burial mound. The glyphs depict the following shapes: Sword, Sun, Star, Moon, and Skull. Show the players Barrowmaze illustration #7.",
+      "items": [
+        "Sword",
+        "Skull"
+      ]
+    },
+    "68": {
+      "id": "68",
+      "name": "Collapsed Mound: This mound collapsed long ago.",
+      "area": "unknown",
+      "chunk": "a1_a3",
+      "desc": "Collapsed Mound: This mound collapsed long ago.. There is nothing of import here."
+    },
+    "20": {
+      "id": "20",
+      "name": "Empty.                                                       23. A skeleton rest",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "Empty.                                                       23. A skeleton rests face down in the middle of this room.. A Poltergeist (1) AL: C, AC: 9, HD: 1hp, HP: 1, #AT: N/A, Defiled Crypt 1: This defiled crypt contains four Zombies DMG: N/A, hovers near its lifeless remains. The spirit (4) AL: C, AC: 8, HD: 2, HP: 14, 11, 9, 8, #AT: 1, DMG: will screech and throw small clay burial urns at the",
+      "monsters": [
+        {
+          "name": "Poltergeist",
+          "count": 1,
+          "hd": "1"
+        }
+      ],
+      "treasure_coins": [
+        "56 gp",
+        "164 cp"
+      ]
+    },
+    "21": {
+      "id": "21",
+      "name": "This hallway contains entrances to three burial crypts.      survival and avoidi",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "This hallway contains entrances to three burial crypts.      survival and avoiding the Necromancers of Set. Their. Graffiti (see Table 5: Random Graffiti). abominable appearance belies their intelligence. If the PCs can somehow speak with them, they may impart Quiet Crypt 1: The door is locked and the room is empty. information about the dungeon for their freedom. A faint runic script written in c",
+      "treasure_coins": [
+        "52 gp"
+      ]
+    },
+    "22": {
+      "id": "22",
+      "name": "As the party exits this room they will hear the sound        release Shadows (6)",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "As the party exits this room they will hear the sound        release Shadows (6) AL: C, AC: 7, HD: 2+2, HP: 16, 13,. of breaking pottery from #23. If they have already been 11, 10, 9, 7, #AT: 1, DMG: 1d4*, that will attack the PC(s) to #23, roll for an alternative from Table 3: Random who used the pool. Dungeon Dressing.",
+      "monsters": [
+        {
+          "name": "Shadows",
+          "count": 6,
+          "hd": "2"
+        }
+      ]
+    },
+    "24": {
+      "id": "24",
+      "name": "This room contains 25 empty alcoves, except one              ground. There are a",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "This room contains 25 empty alcoves, except one              ground. There are also four shriveled corpses: a human. with a Gray Ooze AL: N, AC: 8, HD: 3, HP: 7, #AT: 1, male, human female, male dwarf, and female elf. A DMG: 2d8. Between the alcoves are decorative patterns white marble statue of a robed woman warrior stands plated with silver. The silver can be removed, but it is on a plinth again"
+    },
+    "26": {
+      "id": "26",
+      "name": "A strange and sudden draft of wind will extinguish",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "A strange and sudden draft of wind will extinguish. torches as the PCs enter this room. Lanterns are Lorilen (Elf Thief): \"No. We'll never make it. The demon unaffected. A number of semi-precious stones, arranged bats will kill us first.\" as stars, are set into the low ceiling of this room. Some have been stolen but a few remain. The party can either Brak: \"Theena. Rukag. There are too many and it",
+      "treasure_coins": [
+        "30 gp",
+        "300 gp"
+      ]
+    },
+    "28": {
+      "id": "28",
+      "name": "A stone statue of a great winged gargoyle sits                 a pile of bones o",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "A stone statue of a great winged gargoyle sits                 a pile of bones on the floor.. crouched on top of a dais. Show the players Barrowmaze illustration #9. The posture of the statue suggests it is Quiet Crypt 6: Three Gold Rings (68gp each) are under looking into its left hand. However, the statue is missing a stone in the floor. its left arm near the elbow. The missing left arm is locat",
+      "treasure_coins": [
+        "68 gp"
+      ]
+    },
+    "34": {
+      "id": "34",
+      "name": "This corridor is empty with the exception of four             two skeletons, the",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "This corridor is empty with the exception of four             two skeletons, there are two tarnished Platinum Bracelets. crypt doors. worth 20gp each. Ill-tempered Normal Rats (13) AL: N, AC: 9, HD: 1hp, HP: 1 hp per, #AT: 1 per group, DMG: Quiet Crypt 1: This door hangs in pieces from the frame. 1d6*, scurry along the walls of this room. The room is decorated in bas relief depicting a setting sun",
+      "monsters": [
+        {
+          "name": "Normal Rats",
+          "count": 13,
+          "hd": "1"
+        }
+      ],
+      "treasure_coins": [
+        "20 gp"
+      ]
+    },
+    "37": {
+      "id": "37",
+      "name": "Beyond the bricked-up wall, this hallway contains 6                             ",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "Beyond the bricked-up wall, this hallway contains 6                                            DMG: 1d6, lying on the floor will rise and attack. Two. crypt doors. Silver Rings can be found on the floor (32gp each). Wall frescos depict a long forgotten war. Quiet Crypt 1: The door to this crypt is locked. The crypt contains skeletal remains and ancient silver coins (186sp) Defiled Crypt 5: The doo",
+      "monsters": [
+        {
+          "name": "Ghouls",
+          "count": 3,
+          "hd": "2"
+        }
+      ],
+      "treasure_coins": [
+        "32 gp",
+        "186 sp"
+      ]
+    },
+    "39": {
+      "id": "39",
+      "name": "The pit trap in the hallway leading to this room is              Burial Alcoves:",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "The pit trap in the hallway leading to this room is              Burial Alcoves: (71) Square, preserved corpses.. concealed and teleports anyone who falls to #74G. Contents: 149gp, Potion of ESP, Ruby (800gp).",
+      "treasure_coins": [
+        "149 gp",
+        "800 gp"
+      ],
+      "items": [
+        "Potion"
+      ]
+    },
+    "43": {
+      "id": "43",
+      "name": "Show the players Barrowmaze illustration #10. A               Burial Alcoves: (3",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "Show the players Barrowmaze illustration #10. A               Burial Alcoves: (300 total) Circular, with bones.. massive stone obelisk rests in the center of this chamber. Contents: Each passage holds 6d20cp, 4d20sp, and The obelisk outlines the dark rituals of Nergal's faith 1d20pp in various pouches, bags, and bowls. Four written in Black Tongue, Elvish, Dwarven, and Ancient passages contain rar",
+      "treasure_coins": [
+        "20 cp",
+        "20 sp",
+        "20 pp",
+        "1,000 gp"
+      ]
+    },
+    "53": {
+      "id": "53",
+      "name": "A former group of low level clerics of Nergal have",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "A former group of low level clerics of Nergal have. risen as Huecuva (6) AL: C, AC: 3, HD: 2, HP: 9, 7, 6, 5, Burial Alcoves: (10) Octagonal with skulls. 4, 4, #AT: 1, DMG: 1d6*, and will pull themselves out of Contents: 88ep. One alcove (determine randomly) is their burial alcoves when the party enters. Give the PCs a infested with Rot Grubs (6) AL: N, AC: 9, HD: 1hp, HP: partial move before init",
+      "monsters": [
+        {
+          "name": "Huecuva",
+          "count": 6,
+          "hd": "2"
+        },
+        {
+          "name": "Rot Grubs",
+          "count": 6,
+          "hd": "1"
+        }
+      ],
+      "treasure_coins": [
+        "88 ep",
+        "10 gp",
+        "1,000 gp",
+        "1,200 gp"
+      ]
+    },
+    "55": {
+      "id": "55",
+      "name": "Eight yellowed human teeth are arranged in an               portion (from a part",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "Eight yellowed human teeth are arranged in an               portion (from a partially collapsed ceiling) shows the. arrow pointing west. glint of 85cp. The snake takes advantage of this natural bait. In its nest there are bones of humans and various Burial Alcoves: (54) Square, mummified remains. other creatures as well as a pouch with six assorted Contents: 41pp. gemstones: 10gp, 25gp, 50gp, 100g",
+      "treasure_coins": [
+        "85 cp",
+        "41 pp",
+        "10 gp",
+        "25 gp",
+        "50 gp",
+        "100 gp"
+      ]
+    },
+    "71": {
+      "id": "71",
+      "name": "The door to this room is locked and made of rusted          a great temple.",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is locked and made of rusted          a great temple.. steel. See area #72 regarding instructions to open this door. This room is empty. However, opening the door to Quiet Crypt 3: The entrance to this crypt is closed. A total A will set off a deadfall trap that will cause 2d6 damage of 48sp sits in a short squat bowl on a low table beside to anyone in the doorway. A Dexterit",
+      "treasure_coins": [
+        "48 sp"
+      ]
+    },
+    "72": {
+      "id": "72",
+      "name": "Show the players Barrowmaze illustration #14. There         Defiled Crypt 5: Thi",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "Show the players Barrowmaze illustration #14. There         Defiled Crypt 5: This door is partially open. Shadows. are two rusty steel doors in this room: west and south. from torch/lantern light flicker and dance wildly in this Both doors are locked. room. Three Shadows (3) AL: C, AC: 7, HD: 2+2, HP: 11, 10, 9, #AT: 1, DMG: 1d4*, will use the low flickering On the west wall of this room is a meta",
+      "monsters": [
+        {
+          "name": "Three Shadows",
+          "count": 3,
+          "hd": "2"
+        }
+      ]
+    },
+    "74": {
+      "id": "74",
+      "name": "A number of small mausoleums line this hallway.                                 ",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "A number of small mausoleums line this hallway.                                               Simultaneously, a second secret door will open and. Graffiti (check Table 5: Random Graffiti). release a Shadow (1) AL: C, AC: 7, HD: 2+2, HP: 11, #AT: 1, DMG: 1d4*, who will attack. The portcullis can A. The door to this mausoleum is ajar. A nest of Spitting be raised by a lever located at the back of on",
+      "monsters": [
+        {
+          "name": "Shadow",
+          "count": 1,
+          "hd": "2"
+        },
+        {
+          "name": "Cobras",
+          "count": 6,
+          "hd": "1"
+        }
+      ]
+    },
+    "75": {
+      "id": "75",
+      "name": "A small altar dried with blood sits against the north",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "A small altar dried with blood sits against the north. wall. Fresco above the altar faded away long ago."
+    },
+    "78": {
+      "id": "78",
+      "name": "As the party stands in this corridor they hear the            a poison needle, s",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "As the party stands in this corridor they hear the            a poison needle, save or die) or opened magically.. scraping of stone on stone, then silence. Perched on the northern wall near the door is a fearsome gargoyle statue with its clawed hands outstretched. A Defiled Crypt 1: This room is locked and empty. A bowl sealed sarcophagus against the southern wall contains a at the head of a robed",
+      "monsters": [
+        {
+          "name": "Mummy",
+          "count": 1,
+          "hd": "5"
+        }
+      ],
+      "treasure_coins": [
+        "150 pp",
+        "600 gp"
+      ]
+    },
+    "81": {
+      "id": "81",
+      "name": "Water trickling down the walls of this room has                 My players took ",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "Water trickling down the walls of this room has                 My players took one look at the Pools of Misfortune,. fossilized a number of skeletons that animate and attack got an eery vibe, and never came back. intruders. Fossil Skeletons (7) AL: C, AC: 6, HD: 2, HP: 14, 13, 11, 9, 8, 7, 5, #AT: 1, DMG: 1d8.",
+      "monsters": [
+        {
+          "name": "Fossil Skeletons",
+          "count": 7,
+          "hd": "2"
+        }
+      ]
+    },
+    "82": {
+      "id": "82",
+      "name": "A soft red glow filters out of this room. There are Fire        86. This room is",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "A soft red glow filters out of this room. There are Fire        86. This room is empty. A large, heavy, rusted portcullis. Beetles (5) AL: N, AC: 4, HD: 1+2, HP: 10, 9, 7, 7, 4, #AT: blocks progress to the south.",
+      "monsters": [
+        {
+          "name": "Beetles",
+          "count": 5,
+          "hd": "1"
+        }
+      ]
+    },
+    "87": {
+      "id": "87",
+      "name": "A portcullis blocks the entrance to this area of the",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "A portcullis blocks the entrance to this area of the. maze. Unless other methods are used, it will require the combined strength of 5 characters to lift and hold. The noise of raising the rusty portcullis will likely draw the attention of random monsters."
+    },
+    "88": {
+      "id": "88",
+      "name": "Giant Scorpions (3) AL: N, AC: 5, HD: 2+2, HP: 16,",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "Giant Scorpions (3) AL: N, AC: 5, HD: 2+2, HP: 16,. 11, 7, #AT: 3, DMG: 1d6/1d6/1d3*, rush and attack from the darkness! Three tomb-robbers lay dead. They managed a pretty good haul of treasure and grave goods before meeting their end. Between them there are sacks of 5,309sp, 3,980gp; as well as two white pearls: 10gp, 25gp. They also carry Potions of Undead Control (Ghast), Extra-Healing, and Gro",
+      "monsters": [
+        {
+          "name": "Giant Scorpions",
+          "count": 3,
+          "hd": "2"
+        }
+      ],
+      "treasure_coins": [
+        "5,309 sp",
+        "3,980 gp",
+        "10 gp",
+        "25 gp"
+      ]
+    },
+    "10": {
+      "id": "10",
+      "name": "Acolytes of Orcus (1d6)                                            broken wood, ",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "Acolytes of Orcus (1d6)                                            broken wood, and two wooden rafters. The door on. "
+    },
+    "11": {
+      "id": "11",
+      "name": "Dungeon Dressing*                                                  the north and",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "Dungeon Dressing*                                                  the north and eastern portion of this room has been. bashed down."
+    },
+    "89": {
+      "id": "89",
+      "name": "The door is closed and the room appears empty. The                 and invisibil",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door is closed and the room appears empty. The                 and invisibility will only be broken if: 1) a PC bumps into. first person to step into the middle of the room will depress the monster, or 2) if the bricked-up wall is broken. a stone and set off an isolation trap. An iron cage will fall from the ceiling and trap select adventurers (Referee's B. The walls of the interior crypt are "
+    },
+    "90": {
+      "id": "90",
+      "name": "The door to this room was bashed in long ago when                  is broken dow",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door to this room was bashed in long ago when                  is broken down, he will cast off the coverstone of his. this crypt was first plundered. Only destroyed funerary sarcophagus, draw his sword, and attack. Vermingetrix baskets and three broken stone sarcophagi remain. Dust is was an evil warrior of repute in the days before the thick throughout the room. If the party searches the sid"
+    },
+    "93": {
+      "id": "93",
+      "name": "This room is empty. A broken runic tablet (now",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "This room is empty. A broken runic tablet (now. useless) rests on the floor."
+    },
+    "94": {
+      "id": "94",
+      "name": "There are Giant Scorpions (6) AL: N, AC: 5, HD: 2+2,         Quiet Crypt 1: The ",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "There are Giant Scorpions (6) AL: N, AC: 5, HD: 2+2,         Quiet Crypt 1: The door to this crypt is locked. There is a. HP: 16, 11, 10, 9, 8, 7, #AT: 3, DMG: 1d6/1d6/1d3*, in bag (372ep) on a small dais in the corner. this room. They attack and defend their lair. Quiet Crypt 2: The door is closed and the crypt is empty. Burial Alcoves: (197) Octagonal, wicker effigies. Contents: 183gp, Jade Idol",
+      "monsters": [
+        {
+          "name": "Giant Scorpions",
+          "count": 6,
+          "hd": "2"
+        }
+      ],
+      "treasure_coins": [
+        "372 ep",
+        "183 gp",
+        "300 gp",
+        "55 gp",
+        "25 gp"
+      ]
+    },
+    "95": {
+      "id": "95",
+      "name": "This room is empty with the exception of a black             small runic tablet ",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "This room is empty with the exception of a black             small runic tablet inside.. altar with dried blood. The altar is decorated with Black Onyx Gemstones. Quiet Crypt 4: This door hangs off the hinges. Empty."
+    },
+    "96": {
+      "id": "96",
+      "name": "Empty.                                                       shield is a magnifi",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "Empty.                                                       shield is a magnificent metal Shield +2 that depicts a. golden hawk on a purple field.",
+      "items": [
+        "Shield +2"
+      ]
+    },
+    "97": {
+      "id": "97",
+      "name": "The door to this room is locked. This room is filled with  Inside the crypt is a",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is locked. This room is filled with  Inside the crypt is a stone slab with the dried remains. alcoves on the western and eastern walls of this room. of a dwarf prince in ornate platemail. Across his chest A large patch of Yellow Mold (1) AL: N, AC: Always is a Warhammer +2 Dwarven Thrower. In a steel coffer hit, HD: 2, HP: 10, #AT: Spores, DMG: 1d6*, covers the there is a Pot",
+      "items": [
+        "Potion of Super",
+        "Ring of Fire"
+      ]
+    },
+    "98": {
+      "id": "98",
+      "name": "The door to this room is ajar. Two Giant Carnivorous           This unique room ",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is ajar. Two Giant Carnivorous           This unique room marked the end of \"Killer\" Kelg. Flies (2) AL: N, AC: 6, HD: 2, HP: 12, 5, #AT: 1, DMG: Barrelgut, a 5th Level Dwarven Fighter. Kelg, given 1d8, have found their way into this room. the nickname \"Killer\" for killing cowardly hirelings, entered the vault after the lock combination had",
+      "monsters": [
+        {
+          "name": "Flies",
+          "count": 2,
+          "hd": "2"
+        }
+      ]
+    },
+    "99": {
+      "id": "99",
+      "name": "The door to this room has been burned out. On the              been solved by Zi",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door to this room has been burned out. On the              been solved by Ziggy, the party magic-user. Kelg. south wall is an entrance to a crypt. The door is sealed and Uthred the Unshaven were volunteered to and made of stone. It cannot be spiked open. Show the enter and explore the crypt. In short, the trap was players Barrowmaze illustration #16. On the door is a triggered, the vault door "
+    },
+    "101": {
+      "id": "101",
+      "name": "This room is empty with the exception of burial               C. This door is cl",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "This room is empty with the exception of burial               C. This door is closed. There are three Ravenous Dead (3). alcoves along the walls. AL: C, AC: 8, HD: 3, HP: 15, 10, 13, #AT: 1, DMG: 1d6."
+    },
+    "102": {
+      "id": "102",
+      "name": "This hallway is empty except for burnt ashes and              20 arrows +1 and t",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "This hallway is empty except for burnt ashes and              20 arrows +1 and the other carries a rusty scimitar and. scraps of moldy paper. One Fossil Skeleton (7) AL: C, wears Sandals of Spider Climbing. Initially, PCs may AC: 6, HD: 2, HP: 16, 13, 11, 8, 7, 5, 5, #AT: 1, DMG: mistake them as Ravenous Dead. 1d8, can be found in each of the seven secret crypts. If the party passes beyond the mid"
+    },
+    "103": {
+      "id": "103",
+      "name": "A Runic Golem (1) AL: N, AC: 5, HD: 7, HP: 38,                1d6.",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "A Runic Golem (1) AL: N, AC: 5, HD: 7, HP: 38,                1d6.. #AT: 1, DMG: 1d10*, appears as a large pile of runic tablets in the northwest corner of the room. It will flicker 105. The door is closed. The crypt is empty. to life with magical energy when the PCs proceed into the crypt. The walls of this room are decorated with solid gold scarabs about the size of a hand. These can be removed ",
+      "monsters": [
+        {
+          "name": "Runic Golem",
+          "count": 1,
+          "hd": "7"
+        }
+      ],
+      "treasure_coins": [
+        "100 gp"
+      ]
+    },
+    "106": {
+      "id": "106",
+      "name": "The door to this room is closed, and the floor just           the floor. The cry",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is closed, and the floor just           the floor. The crypt has been sacked and only a few. inside of the room is trapped with a tripwire. As soon as bones remain. the first individual (or rank) steps into the room a stone slab will drop and seal the room. A Flagstone Golem (1 109. Dark peat-colored water drips from the ceiling with 3HD) AL: N, AC: 6, HD: 3, HP: 19, #AT: 2, "
+    },
+    "107": {
+      "id": "107",
+      "name": "The floor just on the other side of the secret door is        Burial Alcoves: (2",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The floor just on the other side of the secret door is        Burial Alcoves: (285) Trapezoidal, bronzed skulls.. dotted with 3 inch holes. Unless otherwise looking, give Contents: 265gp, Electrum Necklace (50gp), Diamond the first person to pass through the secret door a 1 in 6 (90gp), and a Silver Goblet (300gp). chance to notice the holes. Stepping onto the floor in the first 10 feet of this ro",
+      "treasure_coins": [
+        "265 gp",
+        "50 gp",
+        "90 gp",
+        "300 gp"
+      ]
+    },
+    "108": {
+      "id": "108",
+      "name": "This hallway is empty. There are four crypts along            will appear to PCs",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "This hallway is empty. There are four crypts along            will appear to PCs as a translucent older knight in ornate. the eastern wall. Several appear broken into. armor. Show the players Barrowmaze illustration #17. He will retell the story of the Pit, his task, and his demise. If Quiet Crypt 1: The door to this crypt is open. Two disturbed the PCs have the orb, he will tell them to prepare f"
+    },
+    "117": {
+      "id": "117",
+      "name": "The bricked-up wall has begun to crumble and a             123. The door to this",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The bricked-up wall has begun to crumble and a             123. The door to this room is ajar. Guano (cockatrice). draft can be felt periodically. The draft comes from a of some type litters the floor. There are numerous small air shaft located in the top north-eastern corner of statues, many old and broken or overgrown with moss this room. and lichens. There are statues of female Valkyrie-style w"
+    },
+    "118": {
+      "id": "118",
+      "name": "This door is broken and the room is empty.                 Skeletons (6) AL: C, ",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "This door is broken and the room is empty.                 Skeletons (6) AL: C, AC: 6, HD: 2, HP: 12, 11, 9, 7, 5, 2,. #AT: 1, DMG: 1d6.",
+      "monsters": [
+        {
+          "name": "Skeletons",
+          "count": 6,
+          "hd": "2"
+        }
+      ]
+    },
+    "119": {
+      "id": "119",
+      "name": "The door is locked and, with the exception of burial",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door is locked and, with the exception of burial. alcoves, the room is empty. 125. A Coffer Corpse (1) AL: C, AC: 7, HD: 2, HP: 10, #AT: 1, DMG: 1d6*, lies here draped in a dark yellow burial shroud. A runic tablet and a sealed amphora are beside the body. The amphora contains two doses of a Potion of Healing.",
+      "monsters": [
+        {
+          "name": "Coffer Corpse",
+          "count": 1,
+          "hd": "2"
+        }
+      ],
+      "items": [
+        "Potion of Healing"
+      ]
+    },
+    "127": {
+      "id": "127",
+      "name": "The door to this room is closed and the room is            the room from the sou",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is closed and the room is            the room from the southern wall (save (Paralysis) for no effect). Roll. empty. A partial map on burned parchment (showing the for random monsters. location of room #125) can be found on the floor if the 2. A small Green Slime (1) AL: N, AC: N/A, HD: 2, HP: 4, #AT: 1, room is searched. DMG: Special, sits at the bottom of this hole (save ver"
+    },
+    "128": {
+      "id": "128",
+      "name": "A bricked-up wall encloses this room. A funerary bone      3. A dirty unholy sym",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "A bricked-up wall encloses this room. A funerary bone      3. A dirty unholy symbol to Nergal.. box with disintegrated remains sits on an altar to Nergal. 4. A recently severed hand."
+    },
+    "129": {
+      "id": "129",
+      "name": "The door on the western wall of this room is closed.",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door on the western wall of this room is closed.. Four Giant Carnivorous Flies (4) AL: N, AC: 6, HD: 2, HP: 5. A lever that raises the portcullis to the west. 14, 11, 7, 4, #AT: 1, DMG: 1d8, have somehow made it into this room and are hanging from the ceiling. 6. A ring set with a Cat's Eye gem worth 1,100gp.",
+      "monsters": [
+        {
+          "name": "Four Giant Carnivorous Flies",
+          "count": 4,
+          "hd": "2"
+        }
+      ],
+      "treasure_coins": [
+        "1,100 gp"
+      ]
+    },
+    "130": {
+      "id": "130",
+      "name": "The east door is closed. This room is covered in           7. Empty.",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The east door is closed. This room is covered in           7. Empty.. webs (not flammable) and the husks of giant flies abound. Two Blood-Thirsty Spiders (2) AL: N, AC: 6, HD: 2, HP: 8. Empty. 11, 8, #AT: 1, DMG: 1d6, hang from the webs. 9. Scrap of Paper: First up, then down (hint to #72).",
+      "monsters": [
+        {
+          "name": "Thirsty Spiders",
+          "count": 2,
+          "hd": "2"
+        }
+      ]
+    },
+    "131": {
+      "id": "131",
+      "name": "The north door is ajar. The west door is closed. This",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The north door is ajar. The west door is closed. This. room is empty. 10. Wand of Detecting Secret Doors (15 charges)",
+      "items": [
+        "Wand of Detecting Secret Doors"
+      ]
+    },
+    "132": {
+      "id": "132",
+      "name": "The portcullis is down and the door is closed. With        After pulling the rec",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The portcullis is down and the door is closed. With        After pulling the recently severed arm from one of the. the exception of a number of burial alcoves this room holes, my players decided to stick the hand on the is empty. end of their ten foot pole. They used this invention with great success while searching floors, alcoves, Burial Alcoves: (121) Circular with bronzed skulls. and other spa",
+      "treasure_coins": [
+        "243 gp",
+        "550 gp"
+      ]
+    },
+    "133": {
+      "id": "133",
+      "name": "Both doors are closed. This room contains the              136. A rusted cauldro",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "Both doors are closed. This room contains the              136. A rusted cauldron with yellowed teeth can be found. paupers' burial alcoves. in this room."
+    },
+    "134": {
+      "id": "134",
+      "name": "This room is sealed by a bricked-up wall. In the           Three 2nd Level Spell",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "This room is sealed by a bricked-up wall. In the           Three 2nd Level Spells (Referee's discretion).. center of the room is an ornate water fountain. Written in Ancient Common on the side of the fountain are the 137. There is a small hole constructed above the door to words, \"Pay your due\". If the PCs toss one gold piece this room (the door is locked). When opened a cloud of each (or the equi"
+    },
+    "135": {
+      "id": "135",
+      "name": "The north doors are closed. This room is dotted with",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The north doors are closed. This room is dotted with. 10 small holes in the floor (3' deep)."
+    },
+    "138": {
+      "id": "138",
+      "name": "The door to this room is ajar, and noise can be",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is ajar, and noise can be. heard within. There are two Ravenous Dead (2) AL: C, AC: 8, HD: 3, HP: 11, 7, #AT: 1, DMG: 1d6, in this room feasting on the bodies of two fresh adventurers. The adventurers possess standard dungeoneering equipment (Referee's choice). A Heavy Crossbow +1 can be found near one of the bodies.",
+      "monsters": [
+        {
+          "name": "Ravenous Dead",
+          "count": 2,
+          "hd": "3"
+        }
+      ]
+    },
+    "139": {
+      "id": "139",
+      "name": "The door to this room is swollen shut with moisture.",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is swollen shut with moisture.. An open doors roll will be required to open it, or the door must be bashed in. In either case a random monster roll should be made."
+    },
+    "140": {
+      "id": "140",
+      "name": "The door to this room is locked. At the back of this",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is locked. At the back of this. room is a stone slab with four urns and the walls are lined with burial niches. In the center of this room is a Rust Monster (1) AL: N, AC: 2, HD: 5, HP: 19, #AT: 1, DMG: Special, in a magical stasis. Opening the door to this room breaks the stasis and allows the monster (which is famished) to attack.",
+      "monsters": [
+        {
+          "name": "Rust Monster",
+          "count": 1,
+          "hd": "5"
+        }
+      ]
+    },
+    "141": {
+      "id": "141",
+      "name": "The door to this room is ajar. A runic tablet can be         save is failed, per",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is ajar. A runic tablet can be         save is failed, percentage dice must also be rolled with a. found on the floor. 10% chance that the PC will have burn scars and loose 1 point of Charisma permanently. A successful save results Burial Alcoves: (211) Rectangular with rotted, tiny in 1d6 damage only. The coffer functions as a Bag of wooden boxes. Holding (5,000gp limit). Co",
+      "treasure_coins": [
+        "5,000 gp",
+        "271 gp",
+        "65 gp"
+      ]
+    },
+    "143": {
+      "id": "143",
+      "name": "This vast tomb appears to be a re-created throne",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "This vast tomb appears to be a re-created throne. room. A large, full-size Norse galley dominates the 149. The door to this room is locked and is etched with a center of the room. The ship is loaded with silver and Glyph of Warding (Fire Blast, 12 points of damage, save gold burial treasure and the (apparent) withered body for half). Three Huecuva (3) AL: C, AC: 3, HD: 2, HP: 9, of a king--Osric t",
+      "monsters": [
+        {
+          "name": "Three Huecuva",
+          "count": 3,
+          "hd": "2"
+        }
+      ]
+    },
+    "144": {
+      "id": "144",
+      "name": "The remains of King Osric, his Queen Breena, and                                ",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The remains of King Osric, his Queen Breena, and                                             Tablets are placed into the recessions. If this is done, the. their royal treasures, can be found in this crypt. The two door will slide open to the north (the three tablets are sarcophagi are magically locked by a 10th level wizard. not retrievable) and reveal the crypt beyond. Five Runic The king and que"
+    },
+    "145": {
+      "id": "145",
+      "name": "This crypt is empty. Ghouls (3) AL: C, AC: 6, HD: 2,",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "This crypt is empty. Ghouls (3) AL: C, AC: 6, HD: 2,. HP: 13, 9, 5, #AT: 3, DMG: 1d3/1d3/1d3*, hide behind the secret door (A).",
+      "monsters": [
+        {
+          "name": "Ghouls",
+          "count": 3,
+          "hd": "2"
+        }
+      ]
+    },
+    "151": {
+      "id": "151",
+      "name": "The massive 15 foot double-doors to this large                 everyone on their",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "The massive 15 foot double-doors to this large                 everyone on their backs. All remaining monsters will flee. temple room are slightly ajar. A massive pit rests at the the area immediately. center of this room braced by two sets of large pillars decorated with faces of tortured souls. A terrible green The Pit of Chaos: A Brief History haze emerges from the pit that smells of rot. A hug"
+    },
+    "152": {
+      "id": "152",
+      "name": "Read this entire entry carefully. This room is empty.            half). A Battle",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "Read this entire entry carefully. This room is empty.            half). A Battle Axe +2 hangs on the northern wall.. Paupers' burial alcoves line the walls. There is an open pit in this room. Tell the PCs they smell something strange Quiet Crypt 1: The door to this crypt is locked. A sinking, emanating from the pit. oozy slime-trail can be found on the floor and leads under the door. The trail hea"
+    },
+    "153": {
+      "id": "153",
+      "name": "A Wight (1) AL: C, AC: 5, HD: 3, HP: 13, #AT: 1,             of the dungeon. The",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "A Wight (1) AL: C, AC: 5, HD: 3, HP: 13, #AT: 1,             of the dungeon. There is a 1 in 6 chance each turn while. DMG: Drain, skulks in the dark. the PCs are present that a cave in may occur causing 2d6 damage (save for half). Burial Alcoves: (105) Hexagonal with skeletons wearing black shrouds. Quiet Crypt 1: The door to this room is ajar. This appears Contents: 266gp, Silver Kilt Pin (100gp",
+      "monsters": [
+        {
+          "name": "Wight",
+          "count": 1,
+          "hd": "3"
+        }
+      ],
+      "treasure_coins": [
+        "266 gp",
+        "100 gp",
+        "175 gp"
+      ],
+      "items": [
+        "Bracers of Defense"
+      ]
+    },
+    "154": {
+      "id": "154",
+      "name": "This room is empty. A rubbish pile along the southern        (4) AL: C, AC: 6, H",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "This room is empty. A rubbish pile along the southern        (4) AL: C, AC: 6, HD: 2, HP: 12, 10, 9, 7, #AT: 1, DMG:. wall contains bones, rags, and some yellowed teeth. 1d6. Somehow a canopic jar filled with Glass Beads (40gp) has survived underneath the debris.",
+      "treasure_coins": [
+        "40 gp"
+      ]
+    },
+    "155": {
+      "id": "155",
+      "name": "The door to this room is ajar and the room is empty.",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is ajar and the room is empty.. A trail of slime leads south and enters a crack in the wall Defiled Crypt 2: The door to this room is stuck. Two after several feet. Wights (2) AL: C, AC: 5, HD: 3, HP: 13, 11, #AT: 1, DMG: Drain, hide in the dark. These are former adventurers",
+      "monsters": [
+        {
+          "name": "Wights",
+          "count": 2,
+          "hd": "3"
+        }
+      ]
+    },
+    "156": {
+      "id": "156",
+      "name": "The door to this crypt is closed and it is marked            who had their life ",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "The door to this crypt is closed and it is marked            who had their life force drained. One possesses a bag. with a Glyph of Warding (Electricity Blast, 12 points of with four Rubies (314gp each). The other wears Platemail damage, save for half). A runic tablet rests beside a +1 and has a sheathed Longsword +1 (Light 30 ft Radius black shrouded skeleton on a stone slab. on command) at her w",
+      "treasure_coins": [
+        "314 gp"
+      ]
+    },
+    "157": {
+      "id": "157",
+      "name": "A bricked-up wall blocks entrance into this crypt.           Quiet Crypt 3: The ",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "A bricked-up wall blocks entrance into this crypt.           Quiet Crypt 3: The door is closed. Empty.. Two 2x2 foot shafts are located on the north and south walls at the ceiling. Close inspection will reveal a trickle Quiet Crypt 4: The portcullis is down. The room is empty of water coming from both. A dais is in the center of this with the exception of a bone-pile. There is a thin Silver room. ",
+      "treasure_coins": [
+        "129 sp",
+        "750 gp"
+      ]
+    },
+    "158": {
+      "id": "158",
+      "name": "This room contains a 10x10 foot pool of slimy fetid          #AT: 1, DMG: 1d6--o",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "This room contains a 10x10 foot pool of slimy fetid          #AT: 1, DMG: 1d6--one on the floor in plain sight and. water. Four hungry Giant Leeches (4) AL: N, AC: 7, HD: two hiding on the ceiling. A skeleton wearing a Jeweled 2, HP: 12, 10, 7, 5 #AT: 1, DMG: 1d6, are in the pool Necklace (350gp) can be found against the east wall. and will seek to surprise their prey (4�6 on d6). The door on the ",
+      "treasure_coins": [
+        "350 gp"
+      ]
+    },
+    "161": {
+      "id": "161",
+      "name": "This secret hallway was once used by a group of            creatures that may ot",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "This secret hallway was once used by a group of            creatures that may otherwise not take damage from. adventurers as a rest and re-arm area. Sadly, they were normal weapons. The effect last for 8 rounds. The exact killed by the Water Weird in room #180. There are three ingredients of the potion are subject to the Referee but backpacks filled with standard dungeon exploration should include"
+    },
+    "162": {
+      "id": "162",
+      "name": "The door to this room is stuck closed with moisture        Protection from Good,",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is stuck closed with moisture        Protection from Good, Silence 15' Radius, Animate Dead. and yellowish mold (no effect). The room is empty with will uncoil itself from atop a plinth in the center of the the exception of an inordinate number of burial alcoves room. It has been tasked with the protection of this crypt that run from the floor to the ceiling. and its treasure"
+    },
+    "163": {
+      "id": "163",
+      "name": "The south and eastern doors in this room are ajar.",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "The south and eastern doors in this room are ajar.. The room is empty."
+    },
+    "164": {
+      "id": "164",
+      "name": "This door is closed and trapped with a Glyph of            A. A large rotting wo",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "This door is closed and trapped with a Glyph of            A. A large rotting wooden coffer in this alcove contains a. Warding (Electricity Blast, 14 points of damage, save horde of jewels and gemstones. They include: Very Small for half). The walls of this room were once beautifully Eye Agate (10gp), Very Small Malachite (10gp), Small decorated with murals, but are now faded with age. On Flawed T",
+      "treasure_coins": [
+        "10 gp",
+        "10 gp",
+        "10 gp",
+        "10 gp",
+        "25 gp"
+      ]
+    },
+    "defiled_crypt_1_a1_a3": {
+      "id": "defiled_crypt_1_a1_a3",
+      "name": "Defiled Crypt 1",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "This room is locked and empty. A bowl            sealed sarcophagus against the southern wall contains a.  at the head of a robed skeleton holds 150pp. A wall Mummy (1) AL: C, AC: 3, HD: 5+1, HP: 40, #AT: 1, DMG: fresco depicts worship to the dark gods. 1d12*. The mummy has a Gold Headband (600gp) and an ornate Gold Sceptre embedded with Black Opals Defiled Crypt 2: This room is empty and the door",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Mummy",
+          "count": 1,
+          "hd": "5"
+        }
+      ],
+      "treasure_coins": [
+        "150 pp",
+        "600 gp",
+        "600 gp"
+      ]
+    },
+    "quiet_crypt_2_a1_a3": {
+      "id": "quiet_crypt_2_a1_a3",
+      "name": "Quiet Crypt 2",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "This crypt is empty.                               159. This hallway is littered with rubble from several cave-.  ins. The ceiling appears less stable than the other parts 153. A Wight (1) AL: C, AC: 5, HD: 3, HP: 13, #AT: 1, of the dungeon. There is a 1 in 6 chance each turn while DMG: Drain, skulks in the dark. the PCs are present that a cave in may occur causing 2d6 damage (save for half). Buri",
+      "_subtype": "Quiet Crypt",
+      "monsters": [
+        {
+          "name": "Wight",
+          "count": 1,
+          "hd": "3"
+        }
+      ]
+    },
+    "quiet_crypt_1_a1_a3": {
+      "id": "quiet_crypt_1_a1_a3",
+      "name": "Quiet Crypt 1",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "The door to this crypt is trapped. A wire        Cut Bloodstone (75gp), Small Finely-Cut Rock Crystal.  near the floor connects to a mounted crossbow on the (75gp), Medium Jasper (75gp), Medium Jasper (75gp), wall that attacks at +2 and will score 1�8 points of Medium Bloodstone (100gp), Large Flawed Smoky damage if a successful hit is rolled. The crypt contains Quartz (100gp), Large Moonstone (10",
+      "_subtype": "Quiet Crypt",
+      "treasure_coins": [
+        "75 gp",
+        "75 gp",
+        "75 gp",
+        "75 gp",
+        "100 gp",
+        "100 gp"
+      ]
+    },
+    "defiled_crypt_2_a1_a3": {
+      "id": "defiled_crypt_2_a1_a3",
+      "name": "Defiled Crypt 2",
+      "area": "three",
+      "chunk": "a1_a3",
+      "desc": "Coffer Corpses (2) AL: C, AC: 7, HD: 2,        Finely-Cut Star Rose Quartz (250gp), Small Finely-Cut.  HP: 16, 13, #AT: 1, DMG: 1d6*, will shamble quickly Carnelian (250gp), Medium Bloodstone (250gp), Large out of the secret door the moment it is opened. They will Zircon (250gp), Large Star Rose Quartz (250gp), Large likely fall into the pit trap in the hallway and take the Finely-Cut Spinel (500g",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Coffer Corpses",
+          "count": 2,
+          "hd": "2"
+        }
+      ],
+      "treasure_coins": [
+        "250 gp",
+        "250 gp",
+        "250 gp",
+        "250 gp",
+        "250 gp",
+        "500 gp"
+      ]
+    },
+    "quiet_crypt_3_a1_a3": {
+      "id": "quiet_crypt_3_a1_a3",
+      "name": "Quiet Crypt 3",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "Two withered corpses. Two Copper Rings                                             HP: 30, #AT: 1, DMG: 1d8, with a heavy crossbow and.  (28gp each). Frescos of mountaineering. 10 bolts.",
+      "_subtype": "Quiet Crypt",
+      "treasure_coins": [
+        "28 gp"
+      ]
+    },
+    "defiled_crypt_3_a1_a3": {
+      "id": "defiled_crypt_3_a1_a3",
+      "name": "Defiled Crypt 3",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "There are numerous dead rats outside the          The Acolytes of Orcus wear black mail over dark.  open door to this crypt. There are eight mummified cats, or grey robes and simple sandals. The symbol of Orcus Neb'Enakhet (8) AL: C, AC: 7, HD: 1+1, HP: 9, 7, 7, 6, 5, 5 decorates their shields and they wear unholy symbols 4, 2, #AT: 3, DMG: 1d2/1d2/1d3*, protecting the remains around their neck. T",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Enakhet",
+          "count": 8,
+          "hd": "1"
+        }
+      ]
+    },
+    "quiet_crypt_4_a1_a3": {
+      "id": "quiet_crypt_4_a1_a3",
+      "name": "Quiet Crypt 4",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "This room contains skeletal remains.                                               Quiet Crypt 2: This room is empty.. ",
+      "_subtype": "Quiet Crypt"
+    },
+    "defiled_crypt_4_a1_a3": {
+      "id": "defiled_crypt_4_a1_a3",
+      "name": "Defiled Crypt 4",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "The door to this room is closed. Four.  open sarcophagi are filled to the rim with dark peat- Burial Vault 4: colored water. The water drips slowly from the ceiling and walls. The skeletons in the sarcophagi have calcified Burial Alcoves: (48) Octagonal with skulls. from the minerals. They attack when disturbed. Fossil Contents: 21sp, Jade Idol (300gp), Earrings (60gp), and Skeletons (4) AL: C, AC",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Skeletons",
+          "count": 4,
+          "hd": "2"
+        }
+      ],
+      "treasure_coins": [
+        "21 sp",
+        "300 gp",
+        "60 gp",
+        "15 gp"
+      ]
+    },
+    "defiled_crypt_5_a1_a3": {
+      "id": "defiled_crypt_5_a1_a3",
+      "name": "Defiled Crypt 5",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "Ghouls (3) AL: C, AC: 6, HD: 2*, HP:                                             147. This room is empty..  12, 8, 7, #AT: 3, DMG: 1d3/1d3/1d3*. A bowl of 320sp. Rotted tapestries of the sea. 148. The door is closed. Ear Seekers (2) AL: N, AC: 9, HD: 1hp, HP: 1hp each, #AT: Special, DMG: Special, Defiled Crypt 6: Shadows (4) AL: C, AC: 7, HD: 2+2, HP: infest the wood of the door. 11, 10, 10, 9, #A",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Ghouls",
+          "count": 3,
+          "hd": "2"
+        },
+        {
+          "name": "Ear Seekers",
+          "count": 2,
+          "hd": "1"
+        },
+        {
+          "name": "Shadows",
+          "count": 4,
+          "hd": "2"
+        }
+      ],
+      "treasure_coins": [
+        "320 sp"
+      ]
+    },
+    "quiet_crypt_6_a1_a3": {
+      "id": "quiet_crypt_6_a1_a3",
+      "name": "Quiet Crypt 6",
+      "area": "one",
+      "chunk": "a1_a3",
+      "desc": "The door to this crypt is ajar. A Phantom.  (1) AL: C, AC: N/A, HD: N/A, HP: N/A, #AT: 1, DMG: Fear, hovers in the corner of the tomb. Incomprehensible script is written in charcoal on the southern wall.",
+      "_subtype": "Quiet Crypt"
+    },
+    "defiled_crypt_6_a1_a3": {
+      "id": "defiled_crypt_6_a1_a3",
+      "name": "Defiled Crypt 6",
+      "area": "two",
+      "chunk": "a1_a3",
+      "desc": "Shadows (4) AL: C, AC: 7, HD: 2+2, HP:                                           infest the wood of the door..  11, 10, 10, 9, #AT: 1, DMG: 1d4*. Four bodies draped in burial shrouds. All four have Gold Circlets worth Burial Alcoves: (124) Octagonal, withered corpses. 80gp each. Contents: 217gp, Silver Statuette (350gp), and an Electrum Cup (300gp) 143. This vast tomb appears to be a re-created th",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Shadows",
+          "count": 4,
+          "hd": "2"
+        }
+      ],
+      "treasure_coins": [
+        "80 gp",
+        "217 gp",
+        "350 gp",
+        "300 gp"
+      ]
+    },
+    "165": {
+      "id": "165",
+      "name": "The door is ajar and the room is empty.                                         ",
+      "area": "three",
+      "chunk": "a4_a7",
+      "desc": "The door is ajar and the room is empty.                                                      Inside is a former warrior of Nergal who has risen as. a vengeful Crypt Knight (1) AL: C, AC: 2, HD: 7, HP:",
+      "monsters": [
+        {
+          "name": "Crypt Knight",
+          "count": 1,
+          "hd": "7"
+        }
+      ]
+    },
+    "166": {
+      "id": "166",
+      "name": "This hallway is caked with dust and cobwebs. There                              ",
+      "area": "three",
+      "chunk": "a4_a7",
+      "desc": "This hallway is caked with dust and cobwebs. There                                           39, #AT: 1, DMG: 1d10 wearing a Silver Death Mask. are strange footprints here. A human foot and a \"stump\" (Spider Climb) worth 550gp. Note that Death Masks run back and forth from the secret door to Defiled cannot be used by the living. Inside the sarcophagus Crypt 1. is an old sword and a pouch with two ",
+      "monsters": [
+        {
+          "name": "Wight",
+          "count": 1,
+          "hd": "3"
+        }
+      ],
+      "treasure_coins": [
+        "550 gp",
+        "120 gp"
+      ]
+    },
+    "167": {
+      "id": "167",
+      "name": "This room contains two black stone statues of               171. There are a num",
+      "area": "three",
+      "chunk": "a4_a7",
+      "desc": "This room contains two black stone statues of               171. There are a number of charred human bodies lying. gargoyles on either side of a chest. Show the players on the floor. There are also several large burn marks Barrowmaze illustration #19. They have open mouths and against the walls. Activity in this area will draw the large Cat's Eye gemstones set into their eyes. The gems attention o",
+      "treasure_coins": [
+        "500 gp"
+      ],
+      "items": [
+        "Funeral Pyre Zombies"
+      ]
+    },
+    "168": {
+      "id": "168",
+      "name": "This room is empty and there are circular paupers'          Spellbook with all f",
+      "area": "three",
+      "chunk": "a4_a7",
+      "desc": "This room is empty and there are circular paupers'          Spellbook with all first level magic-user spells.. burial alcoves throughout. The concealed pit is bottomless. 175. The door to this room has been smashed in. The Burial Alcoves: (261) Circular with bone piles. room is empty. Contents: 169ep and a Ruby (75gp). 176. The north door in this room is ajar.",
+      "treasure_coins": [
+        "169 ep",
+        "75 gp"
+      ]
+    },
+    "169": {
+      "id": "169",
+      "name": "Paupers' burial alcoves dot this room and extend",
+      "area": "three",
+      "chunk": "a4_a7",
+      "desc": "Paupers' burial alcoves dot this room and extend. into the northern hallway. Quiet Crypt 1: This crypt contains skeletal remains. Grave goods include two pieces of Silver Jewelry (120gp each) Burial Alcoves: (218) Circular, mummified remains. and a Fine Leather Belt (60gp). Contents: 238gp, Circlet (90gp), Silverware (80gp). Quiet Crypt 2: The door to this crypt is open. A group of",
+      "treasure_coins": [
+        "120 gp",
+        "60 gp",
+        "238 gp",
+        "90 gp",
+        "80 gp"
+      ]
+    },
+    "170": {
+      "id": "170",
+      "name": "The head of a statue, chipped beyond recognition,           Stirges (13) AL: N, ",
+      "area": "three",
+      "chunk": "a4_a7",
+      "desc": "The head of a statue, chipped beyond recognition,           Stirges (13) AL: N, AC: 7, HD: 1, HP: 8, 7, 6, 5, 5, 4, 4, 4,. rests on the floor. The chamber is covered in burial 3, 3, 3, 1, 1, #AT: 1, DMG: 1d3*, have made a nest in this alcoves. crypt. There is no treasure. However, a Woven Tapestry (120gp) can be scavenged but requires two people to carry. Burial Alcoves: (183) Square with funerary",
+      "monsters": [
+        {
+          "name": "Stirges",
+          "count": 13,
+          "hd": "1"
+        }
+      ],
+      "treasure_coins": [
+        "120 gp",
+        "123 ep"
+      ]
+    },
+    "177": {
+      "id": "177",
+      "name": "This room is empty. The west door is stuck and the           door in room # 166 ",
+      "area": "three",
+      "chunk": "a4_a7",
+      "desc": "This room is empty. The west door is stuck and the           door in room # 166 Q9, a Broadsword +2, Shield +1,. east door is closed. Platemail +1, and a Potion of Heroism.",
+      "items": [
+        "Shield +1",
+        "Potion of Heroism"
+      ]
+    },
+    "184": {
+      "id": "184",
+      "name": "This crypt contains the rank and file of The Chosen.          of Nergal. A sarco",
+      "area": "four",
+      "chunk": "a4_a7",
+      "desc": "This crypt contains the rank and file of The Chosen.          of Nergal. A sarcophagus in the center of the room is. As the party enters Skeletons (20) AL: C, AC: 7, HD: 1, dusty and sealed. The remains of a skeleton in high priest HP: 8, 8, 7, 7, 7, 6, 6, 6, 5, 5, 5, 4, 4, 4, 3, 3, 3, 2, 2, robes can be found within. There are four canopic jars, 1, #AT: 1, DMG: 1d6, will begin pulling themselves ",
+      "monsters": [
+        {
+          "name": "Skeletons",
+          "count": 20,
+          "hd": "1"
+        }
+      ],
+      "treasure_coins": [
+        "50 pp"
+      ]
+    },
+    "185": {
+      "id": "185",
+      "name": "This crypt contains the rank and file of The Chosen.          and, like E, is de",
+      "area": "four",
+      "chunk": "a4_a7",
+      "desc": "This crypt contains the rank and file of The Chosen.          and, like E, is designed to throw-off would be tomb-. As the party enters Funeral Pyre Zombies (20) AL: C, AC: robbers. There are two sarcophagi in this room and both 7, HD: 2, HP: 16, 16, 15, 15, 14, 14, 13, 13, 12, 12, 11, possess dark yellow clerical robes and are buried with 10, 9, 9, 8, 7, 5, 5, 4, 4, #AT: 1, DMG: 1d8, will begin s",
+      "treasure_coins": [
+        "20 pp"
+      ],
+      "items": [
+        "Funeral Pyre Zombies"
+      ]
+    },
+    "186": {
+      "id": "186",
+      "name": "This corridor is empty and caked with dust                    HP: 17, 16, #AT: 3",
+      "area": "four",
+      "chunk": "a4_a7",
+      "desc": "This corridor is empty and caked with dust                    HP: 17, 16, #AT: 3, DMG: 1d4/1d4/1d8*. They wear. and cobwebs. unholy symbols and cannot be turned. Unless disturbed in their sarcophagi, they will only rise to aid Serouc-- A. This is a small temple room with an altar and a small by attacking the party from behind. Their sarcophagi Onyx Statuette of Nergal (500gp). It is very heavy and",
+      "treasure_coins": [
+        "500 gp"
+      ],
+      "items": [
+        "Sword +1"
+      ]
+    },
+    "189": {
+      "id": "189",
+      "name": "The secret door in this room has been trapped by                  over 50 feet a",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "The secret door in this room has been trapped by                  over 50 feet away. Pinto's apprentices used their abilities. the Necromancers of Set. A Glyph of Warding (Blast, 24 to harness the Plane of Fire in the construction of his points of damage, save for half) has been inscribed on tomb. Show the players Barrowmaze illustration #23. the door. If the door explodes, the undead in #206 have"
+    },
+    "190": {
+      "id": "190",
+      "name": "With the exception of columns depicting female                    The majority o",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "With the exception of columns depicting female                    The majority of the crypt is covered by a pit of intense. warriors, this room appears empty. Two of the pillars, magical fire that periodically shoots geysers of flame into the one in front of the secret door and the one in the the air. The walls are completely smooth and cannot be northeastern corner of the room, are Caryatid Colum"
+    },
+    "191": {
+      "id": "191",
+      "name": "This room has not been opened in centuries. A thick               in armor will ",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "This room has not been opened in centuries. A thick               in armor will result in a �1 penalty to the check per disk.. layer of dust has settled across the floor. A small chest In addition, flame geysers are apt (70%) to shoot forth at rests in the center of the south wall. The dust on the floor the third and sixth disks requiring a save (Death) or the"
+    },
+    "194": {
+      "id": "194",
+      "name": "The door to this crypt is sealed and made of stone.",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "The door to this crypt is sealed and made of stone.. A large sarcophagus sits in the center of the round Quiet Crypt 1: The door to this crypt is locked. This portion of this room. A unique scarab with an imprint chamber seems to be an antechamber for the remaining of an oak leaf must be inserted and turned to open crypts. The room contains the overpowering smell of the sarcophagus (see #205). dea"
+    },
+    "197": {
+      "id": "197",
+      "name": "A Greater Crypt Shade (1) AL: C, AC: 4, HD: 6,",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "A Greater Crypt Shade (1) AL: C, AC: 4, HD: 6,. HP: 19, #AT: 1, DMG: 1d10, now haunts this tomb. It will",
+      "monsters": [
+        {
+          "name": "Greater Crypt Shade",
+          "count": 1,
+          "hd": "6"
+        }
+      ]
+    },
+    "202": {
+      "id": "202",
+      "name": "This room is covered in burial alcoves:                        room. She will be",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "This room is covered in burial alcoves:                        room. She will be in the shadows at the back of the. temple, close to the secret door. From there she will use Burial Alcoves: (66) Trapezoidal. Small black urns. her bow and snipe the PCs one by one, starting with Contents: 435gp and 321sp. light-bearers and spell-casters. To slow the PCs down she will use her innate Sticks to Snakes ",
+      "treasure_coins": [
+        "435 gp",
+        "321 sp"
+      ]
+    },
+    "203": {
+      "id": "203",
+      "name": "This natural cavern possesses a small lake at its              lying on the floo",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "This natural cavern possesses a small lake at its              lying on the floor near the entrance.. center. In the middle of the lake is an island with a white stone sarcophagus. Show the players Barrowmaze She will not move from the high ground (+1 to attack) illustration #24. unless she has no other choice. She bears a Shortbow of Quickness +2 (that allows one extra ranged attack per Relief on"
+    },
+    "206": {
+      "id": "206",
+      "name": "The Ravenous Dead (8) AL: C, AC: 8, HD: 3, HP: 19,          This crypt is haunte",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "The Ravenous Dead (8) AL: C, AC: 8, HD: 3, HP: 19,          This crypt is haunted by a terrible Groaning Spirit (1). 17, 14, 12, 12, 10, 7, 7, #AT: 1, DMG: 1d6, here have AL: C, AC: 0, HD: 7, HP: 38, #AT: 1, DMG: 1d8*. If been instructed by the Necromancers of Set to attack anyone approaches within 10 feet of the sarcophagus, if the secret door to #189 opens or explodes (Glyph the groaning spirit ",
+      "treasure_coins": [
+        "1,000 ep"
+      ],
+      "items": [
+        "Potion of Healing"
+      ]
+    },
+    "207": {
+      "id": "207",
+      "name": "This room is empty. Peat-colored water has dripped          Defiled Crypt 1: The",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "This room is empty. Peat-colored water has dripped          Defiled Crypt 1: The door to this crypt is locked. It. in from the ceiling and swollen several crypt doors. contains the remains of four warriors leaning in vertical alcoves covered in cobwebs. They have risen as Crypt Quiet Crypt 1: The door to this crypt is swollen shut. Knights (4) AL: C, AC: 2, HD: 7, HP: 39, 38, 31, 28, #AT: Skeletal",
+      "monsters": [
+        {
+          "name": "Knights",
+          "count": 4,
+          "hd": "7"
+        }
+      ]
+    },
+    "211": {
+      "id": "211",
+      "name": "This 25 foot high crypt is supported by four large             a lair here.",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "This 25 foot high crypt is supported by four large             a lair here.. pillars shaped like dwarves with raised hands supporting the ceiling. In the center of the room is a beautifully B. A bricked-up wall blocks the entrance to this crypt. carved stone sarcophagus that resembles an anvil. A skeleton can be found resting on a stone slab in Inside the sarcophagus is a Gold Burial Casket shaped",
+      "treasure_coins": [
+        "5,000 gp",
+        "1,200 gp"
+      ]
+    },
+    "213": {
+      "id": "213",
+      "name": "This room is a guard post. The post is manned by              the undead en mass",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "This room is a guard post. The post is manned by              the undead en masse to #189. He will hold that position. two young apprentice Necromancers of Set: Kohl, AL: so that all the Necromancers may escape. C, AC: 9, HD: MU1, HP: 4, #AT: 1, DMG: 1d4 (Dagger), Spells (1): Magic Missile, 10gp, and Sinnis, AL: C, AC: 9, B. The Necromancers of Set use this room to house a HD: MU1, HP: 3, #AT: 1, ",
+      "treasure_coins": [
+        "10 gp",
+        "7 gp"
+      ],
+      "items": [
+        "Dagger"
+      ]
+    },
+    "215": {
+      "id": "215",
+      "name": "Show the players Barrowmaze illustration #27. The              AC: 4, HD: MU10, ",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "Show the players Barrowmaze illustration #27. The              AC: 4, HD: MU10, HP: 28, #AT: 1, DMG: 1d6 (Staff +2),. Necromancers have devoted this room as a shrine to Spells (3/3/3/2/2): Magic Missile, Shield, Protection their jackal-god Set. The ceiling is 30-feet high. A statue from Good; Mirror Image, Stinking Cloud, Scare; of Set in the middle of the room is bracketed by two Blink, Lightning",
+      "items": [
+        "Staff +2",
+        "Shield"
+      ]
+    },
+    "216": {
+      "id": "216",
+      "name": "This chamber belongs to Thala-Kul AL: C, AC: 4                 35, 32, 31, 29, 2",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "This chamber belongs to Thala-Kul AL: C, AC: 4                 35, 32, 31, 29, 29, 26, #AT: 1, DMG: By Weapon. One. (Ring +2 and Dex), HD: MU5, HP: 17, #AT: 2, DMG: (35hp) possesses a Longsword +2 and collectively have 1d6 (Staff) and 1d6 (Kick), Spells (2/2/1): Magic Missile, 360cp among them. They are positioned immediately Shocking Grasp; Mirror Image, Stinking Cloud; Lightning outside his door",
+      "treasure_coins": [
+        "360 cp"
+      ],
+      "items": [
+        "Ring +2",
+        "Staff",
+        "Ring of Protection +2"
+      ]
+    },
+    "218": {
+      "id": "218",
+      "name": "Nathalas has given this room to Gbulg, the Bugbear         There is a massive Go",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "Nathalas has given this room to Gbulg, the Bugbear         There is a massive Gold Sarcophagus worth 12,500gp. Chief AL: C, AC: 2, HD: 4+1, HP: 26, #AT: 1, DMG: (and weighing 3,000lbs) in this room. Inside, the 2d4+2 Morningstar; Gblug has a Shield +2 and uses it Necromancers have piled four treasure chests with as a breastplate. His wife, Kakta, is the Bugbear Shaman ancient coins (4,409cp, 3,345",
+      "treasure_coins": [
+        "12,500 gp",
+        "4,409 cp",
+        "3,345 sp",
+        "2,234 ep",
+        "2,934 gp"
+      ],
+      "items": [
+        "Shield +2"
+      ]
+    },
+    "219": {
+      "id": "219",
+      "name": "This room serves as a barracks for apprentice",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "This room serves as a barracks for apprentice. Necromancers. They include Sarla AL: C, AC: 9, HD: MU1, HP: 3, #AT: 1, DMG: 1d4 (Dagger), Spell (1): Shield. 13gp; Applewood AL: C, AC: 9, HD: MU1, HP: 4, #AT: 1, DMG: 1d4 (Dagger), Spell (1): Shield, 17gp; and Barsnowik AL: C, AC: 9, HD: MU1, HP: 2, #AT: 1, DMG: 1d4 (Dagger), Spell (1): Magic Missile, 14gp. The quarters are spartan and include makesh",
+      "treasure_coins": [
+        "13 gp",
+        "17 gp",
+        "14 gp"
+      ],
+      "items": [
+        "Dagger",
+        "Shield"
+      ]
+    },
+    "220": {
+      "id": "220",
+      "name": "This room serves as a barracks for three apprentice",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "This room serves as a barracks for three apprentice. Necromancers: Bannock AL: C, AC: 9, HD: MU1, HP: 2, #AT: 1, DMG: 1d4 (Dagger), Spell (1): Magic Missile, 6gp; Diveen AL: C, AC: 9, HD: MU1, HP: 2, #AT: 1, DMG: 1d4 (Dagger), Spell (1): Shield, 13gp; and Jabbard AL: C, AC: 9, HD: MU1, HP: 3, #AT: 1, DMG: 1d4 (Dagger), Spell (1): Magic Missile, 14gp. They use this room as their living and study qu",
+      "treasure_coins": [
+        "6 gp",
+        "13 gp",
+        "14 gp"
+      ],
+      "items": [
+        "Dagger",
+        "Shield"
+      ]
+    },
+    "221": {
+      "id": "221",
+      "name": "This is the Necromancers' secret treasure trove.",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "This is the Necromancers' secret treasure trove.. Brass Jackals (2) AL: C, AC: 3, HD: 2, HP: 16, 10, #AT: 1, DMG: 1d8, guard the room.",
+      "monsters": [
+        {
+          "name": "Brass Jackals",
+          "count": 2,
+          "hd": "2"
+        }
+      ]
+    },
+    "223": {
+      "id": "223",
+      "name": "This complex once served as a series of crypts                           Defiled",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This complex once served as a series of crypts                           Defiled Crypt 6: The door to this crypt is swollen shut. Its. for priests and followers of Nergal. Now, it is a dark inhabitants have risen as Juju Zombies (4) AL: C, AC: chamber supported by crumbling pillars in the center of 6 (5 with shield), HD: 4+4, HP: 27, 26, 18, 18, #AT: the room. The pillars are shaped as shielded wa"
+    },
+    "225": {
+      "id": "225",
+      "name": "The door to this room is ajar. The body of a human           gas will fill #227 ",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "The door to this room is ajar. The body of a human           gas will fill #227 from small holes in the floor. Anyone in. thief in an advanced state of decay lies face down in the room must save or be Feebleminded (as per the spell). the doorway. He was killed by a massive wound from behind. The thief has risen as a vengeful Corpse Candle Inside the crypt is the body of a former aristocrat. The (1"
+    },
+    "226": {
+      "id": "226",
+      "name": "This appears to have been a secret treasure room             each) figures in th",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This appears to have been a secret treasure room             each) figures in this crypt.. at one point, but was later used as a rest and re-arm area by a group of tomb-robbers. There are two coils of 228. This hallway leads to several small crypts. strong rope (50 feet each), two sledgehammers, and two steel potion bottles (Extra-Healing). There is also a short A. This crypt has been plundered. T"
+    },
+    "227": {
+      "id": "227",
+      "name": "This hallways leads to several small crypts.                 skeleton lying on a",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This hallways leads to several small crypts.                 skeleton lying on a slab against the western wall clutches. a Valuable Scroll worth 950gp to a sage. A. The door is locked. A funerary box with remains sits beside a locked coffer. The coffer is trapped with poison C. The door is closed and the room is empty. gas (save or take 2d6 damage). It contains a Silver Necklace inlaid with Small ",
+      "treasure_coins": [
+        "950 gp",
+        "1,100 gp",
+        "700 gp"
+      ],
+      "items": [
+        "Scroll",
+        "Sword Harness"
+      ]
+    },
+    "230": {
+      "id": "230",
+      "name": "This room is empty. Small piles of rubble can be                 F. Crypt Knight",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This room is empty. Small piles of rubble can be                 F. Crypt Knights (2) AL: C, AC: 2, HD: 7, HP: 38, 32, #AT:. found here along the walls. If carefully searched using 1, DMG: 1d10. The crypt knights wear Gold Amulets with bright light (beyond a torch or lantern), PCs may notice the symbol of their order (the skull atop a rose). Similar footprints heading toward the secret door. The d",
+      "monsters": [
+        {
+          "name": "Crypt Knights",
+          "count": 2,
+          "hd": "7"
+        }
+      ],
+      "treasure_coins": [
+        "700 gp"
+      ]
+    },
+    "234": {
+      "id": "234",
+      "name": "This room is empty. Bones and rubble have been              a Mummy (1) AL: C, A",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This room is empty. Bones and rubble have been              a Mummy (1) AL: C, AC: 3, HD: 5+1, HP: 32, #AT: 1,. piled in the corners of this room. DMG: 1d12*, wearing a Gold Death Mask (+2 to hit, +2 damage) worth 1,000gp. A. A gargoyle statue, broken and crumbled into innumerable pieces, lies on the floor of this chamber. His four canopic jars (Terra Cotta, 100gp each) can be Several sword marks ",
+      "monsters": [
+        {
+          "name": "Mummy",
+          "count": 1,
+          "hd": "5"
+        }
+      ],
+      "treasure_coins": [
+        "1,000 gp",
+        "100 gp"
+      ]
+    },
+    "235": {
+      "id": "235",
+      "name": "This room is empty. Signs of battle and magical             Defiled Crypt 2: The",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This room is empty. Signs of battle and magical             Defiled Crypt 2: The door to this crypt is closed. Inside is. blast points mark the flagstone walls. a glass casket with a beautiful elf maiden."
+    },
+    "236": {
+      "id": "236",
+      "name": "The steel door to this crypt is magical and made of         Beside her are many ",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "The steel door to this crypt is magical and made of         Beside her are many items of power (see below). However,. stone and opens one-way only (into the crypt). the PCs cannot open or break the glass. It does appear that a scarab key, with a shape of an elvish tree, can The door cannot be held open by simple pieces of wood be inserted into a lock device to open the casket. This or metal. Magic"
+    },
+    "237": {
+      "id": "237",
+      "name": "This hallway is empty.                                      Large Fire Opal (1,0",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This hallway is empty.                                      Large Fire Opal (1,000gp), Large Finely Cut Aquamarine. (1,000gp), and a Small Black Jasper (50gp).",
+      "treasure_coins": [
+        "1,000 gp",
+        "1,000 gp",
+        "50 gp"
+      ]
+    },
+    "238": {
+      "id": "238",
+      "name": "A sarcophagus stands upwards against the southern",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "A sarcophagus stands upwards against the southern. wall of this room. Recently, a fourth level paladin, Sir Quiet Crypt 4: The door to this crypt is locked. A bowl Pelinore, was captured, bound, and put here by a of gems sits on a pedestal in the center of the room. A Necrolyte of Nergal. bronzed skeleton rests on a slab against the back wall. If the bowl is removed from the pedestal, five poisone"
+    },
+    "241": {
+      "id": "241",
+      "name": "This room is empty.                                           On the top of the ",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This room is empty.                                           On the top of the coverstone there are thirteen round. steel rods and twelve rod slots with the following"
+    },
+    "242": {
+      "id": "242",
+      "name": "There are five curtains in this room that hide alcoves.       numbers 108 (N+E),",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "There are five curtains in this room that hide alcoves.       numbers 108 (N+E), 99 (E+S), 68 (S+W), 77 (W+N). As. Moving clockwise the contents include: well as 185 (N+E+W+N) and 167 (E+S+S+W) and 352 (N+E+W+N+E+S+S+W). There are also the following false numbers 45, 69, 71, 155, 377."
+    },
+    "244": {
+      "id": "244",
+      "name": "A barrow mound on the surface has collapsed                 contain a great mons",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "A barrow mound on the surface has collapsed                 contain a great monster.. into this room creating a large cylindrical opening (40' wide and 40' deep) to the surface. During the day, light They will need to decide what they want to examine first. streams down from above. Rubble, earth, bones, and If the PCs begin to examine the mural the images will offal covers the ground here and worn"
+    },
+    "245": {
+      "id": "245",
+      "name": "A great set of double doors enters into this",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "A great set of double doors enters into this. crypt. The leader of the barrow harpies, a particularly despicable female named Vultrix, has made this crypt into her personal throne room. She prefers to lie in a semi-reclined position atop the sarcophagus in the eastern portion of the room."
+    },
+    "248": {
+      "id": "248",
+      "name": "Access to this crypt is blocked by a bricked-up wall.        Hiding among the in",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "Access to this crypt is blocked by a bricked-up wall.        Hiding among the inanimate statues are four gargoyles.. There are eight six-foot tall niches along the wall of this These include the brutish Xxaxik (Zax-ik), a Margoyle room. Inside each are the skeletal remains of ancient (1) AL: C, AC: 1, HD: 6+1, HP: 25, #AT: 4, DMG: warriors covered in dust. When the PCs enter this tomb, 1d6x2/1d6/1"
+    },
+    "249": {
+      "id": "249",
+      "name": "This crypt antechamber is guarded by a Necrolyte             many gargoyle faces",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This crypt antechamber is guarded by a Necrolyte             many gargoyle faces in the room, PCs will get an eerie. of Nergal (1) AL: C, AC: 3, HD: 7, HP: 30, #AT: 1, DMG: sensation of being watched. 1d8. He possesses the same spells as a 7th level magic- user (3/2/2/1): Magic Missile, Shield, Shocking Grasp; Xxaxik will try to lure the party into helping him kill Darkness Globe, Invisibility; Li",
+      "monsters": [
+        {
+          "name": "Nergal",
+          "count": 1,
+          "hd": "7"
+        }
+      ],
+      "items": [
+        "Shield"
+      ]
+    },
+    "250": {
+      "id": "250",
+      "name": "The door to this crypt is locked and trapped with            Quiet Crypt 2: This",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "The door to this crypt is locked and trapped with            Quiet Crypt 2: This tomb is sealed with a bricked-up wall.. a poison needle (save or die). A locked metal box, The interior is covered in small burial alcoves: wrapped in chains and padlocked, sits on a pedestal in the center of this room. The padlock is not trapped but Burial Alcoves: Hexagonal. Wicker effigies. the box possesses a pois",
+      "treasure_coins": [
+        "40 gp",
+        "300 gp",
+        "30 gp"
+      ]
+    },
+    "251": {
+      "id": "251",
+      "name": "The door to this crypt is locked and trapped with a          in the room. A smal",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "The door to this crypt is locked and trapped with a          in the room. A small funerary basket holds 434sp.. poison needle (save or die). Sitting on a pedestal in the center of the room is a white book edged in gold. This Quiet Crypt 4: This crypt is sealed with a stone door. It will is a Libram of Dark Magic (see New Magic Items). This take an iron spike and a sledgehammer to break the seal. b",
+      "treasure_coins": [
+        "434 sp"
+      ]
+    },
+    "252": {
+      "id": "252",
+      "name": "This room is supported by four large pillars in the          and covers the floo",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This room is supported by four large pillars in the          and covers the floor and skeletal remains lying on a slab.. center. The pillars are decorated with stone gargoyles of all shapes and sizes."
+    },
+    "253": {
+      "id": "253",
+      "name": "There are two inanimate stone gargoyles outside              think they are Grea",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "There are two inanimate stone gargoyles outside              think they are Greater Barrow Guardians). Between the. the door to this room. The gargoyle faction uses this as columns are rows of sarcophagi (66 total). a guard room. Inside are two Gargoyles (2) AL: C, AC: 5, HD: 4, HP: 21, 16, #AT: 4, DMG: 1d3x2/1d6/1d4, intent If the PCs decide to search the sarcophagi consult on a game of dice inst",
+      "monsters": [
+        {
+          "name": "Gargoyles",
+          "count": 2,
+          "hd": "4"
+        }
+      ]
+    },
+    "254": {
+      "id": "254",
+      "name": "This room is empty.                                          Nergal. The statue ",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This room is empty.                                          Nergal. The statue is actually a mighty Bronze Golem (1). AL: N, AC: 0, HD: 20, HP:101, #AT: 1, DMG: 3d10*. The Defiled Crypt 1: The door to this crypt is swollen shut. golem has been instructed to guard this room against The crypt contains six horizontal burial alcoves six feet tomb-robbers. As soon as a sarcophagus is opened, long. The"
+    },
+    "257": {
+      "id": "257",
+      "name": "Ten gargoyles, depicted in bas relief, decorate the           this room. They ar",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "Ten gargoyles, depicted in bas relief, decorate the           this room. They are using this crypt as a guard post. They. walls of this room. Four Gargoyles (4) AL: C, AC: 5, HD: are unaware of the secret door. There is nothing of value. 4, HP: 24, 23, 20, 16, #AT: 4, DMG: 1d3x2/1d6/1d4, are here using the stone ornamentation as camouflage. 262. This secret crypt was plundered long ago. A chest li"
+    },
+    "258": {
+      "id": "258",
+      "name": "This room is empty. A pile of giant rats appear to            pieces can be foun",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This room is empty. A pile of giant rats appear to            pieces can be found.. have been tortured and killed here. 263. The door to this crypt has been bashed in and its"
+    },
+    "259": {
+      "id": "259",
+      "name": "The room is empty.                                            contents plundered",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "The room is empty.                                            contents plundered long ago. The secret door in this. room has yet to be discovered."
+    },
+    "260": {
+      "id": "260",
+      "name": "This is the library crypt. The two \"librarians\" are",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This is the library crypt. The two \"librarians\" are. Necrolytes of Nergal (2) AL: C, AC: 3, HD: 7, HP: 30, 26, 264. A Wraith (1) AL: C, AC: 3, HD: 4, HP: 15, #AT: 1, #AT: 1, DMG: 1d8. Each possesses the same spell lists DMG: 1d6*, haunts this crypt. Across the remains of an as 7th level magic-users (3/2/2/1): Magic Missile, Shield, elf is a Longbow +2. Shocking Grasp; Darkness Globe, Invisibility;",
+      "monsters": [
+        {
+          "name": "Nergal",
+          "count": 2,
+          "hd": "7"
+        },
+        {
+          "name": "Wraith",
+          "count": 1,
+          "hd": "4"
+        },
+        {
+          "name": "Crypt Knights",
+          "count": 2,
+          "hd": "7"
+        }
+      ],
+      "items": [
+        "Shield"
+      ]
+    },
+    "261": {
+      "id": "261",
+      "name": "There are four Gargoyles (4) AL: C, AC: 5, HD: 4,             5). She has access",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "There are four Gargoyles (4) AL: C, AC: 5, HD: 4,             5). She has access to the following spells:. HP: 24, 23, 20, 16, #AT: 4, DMG: 1d3x2/1d6/1d4, in",
+      "monsters": [
+        {
+          "name": "Gargoyles",
+          "count": 4,
+          "hd": "4"
+        }
+      ]
+    },
+    "270": {
+      "id": "270",
+      "name": "The \"jailer\" and \"torturer\" Gargoyles (2) AL: C, AC:         HD and greater spel",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "The \"jailer\" and \"torturer\" Gargoyles (2) AL: C, AC:         HD and greater spell-casting ability (7th level: 3/2/2/1). 5, HD: 4, HP: 18, 15, #AT: 4, DMG: 1d3x2/1d6/1d4, than other maggogs. Vizix'Vol's spells include: Dancing can be found in this room. The jailor carries the key to Lights, Magic Missile, Shield; Darkness Globe, Invisibility; release the prisoners from their chains in #269. They ar",
+      "treasure_coins": [
+        "3,053 cp",
+        "1,120 ep"
+      ],
+      "items": [
+        "Shield"
+      ]
+    },
+    "271": {
+      "id": "271",
+      "name": "The door is made of steel and has a unique lock              to the east and kno",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "The door is made of steel and has a unique lock              to the east and knows the Acolytes and the Temple of. that requires a special two-pronged key. Zygstral, the Orcus can be found there. He may allow the PCs passage gargoyle chief, possesses it. The lock is too complex to if they destroy Vultrix and the barrow harpies for him. pick. However, a Knock spell will unlock it. The secret door l",
+      "treasure_coins": [
+        "7,324 cp",
+        "4,592 sp"
+      ]
+    },
+    "272": {
+      "id": "272",
+      "name": "This is the gargoyle throne room. On the south wall          the gargoyles lay b",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "This is the gargoyle throne room. On the south wall          the gargoyles lay beyond the second secret door (#273).. of this room is a large dais. On the dais is a large ornate throne, where Zygstral holds court over the gargoyles 273. When the PCs first enter this room they will see Silver and where he sits most of the time. Similar to #266, a Coffers, a Box, a Chest (Mimic), a Gem-Encrusted Cha"
+    },
+    "274": {
+      "id": "274",
+      "name": "Three Barrow Mummies (3) AL: C, AC: 2 (3), HD: 7,             (1,000gp), Small B",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "Three Barrow Mummies (3) AL: C, AC: 2 (3), HD: 7,             (1,000gp), Small Bloodstone (50gp), and a Large Finely. HP: 37, 33, 30, #AT: 2, DMG: 1d8/1d8*, lie in decaying Cut Deep Blue Spinel (1,000gp). wooden caskets in this room. These monsters wear Bone Death Masks inlaid with Gold that provide them with +1 279. There is an archway on either side of this hallway. to AC and +2 to hit and damag",
+      "treasure_coins": [
+        "1,000 gp",
+        "50 gp",
+        "1,000 gp",
+        "650 gp",
+        "1,300 gp",
+        "900 gp"
+      ]
+    },
+    "275": {
+      "id": "275",
+      "name": "Three Barrow Mummies (3) AL: C, AC: 3, HD: 7, HP:             damage, save for h",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "Three Barrow Mummies (3) AL: C, AC: 3, HD: 7, HP:             damage, save for half). There are four Copper Death. 38, 32, 23, #AT: 2, DMG: 1d8/1d8*, have broken free Masks (400gp each) hanging on a wall. of their wooden sarcophagi and will attack anyone who enters their crypt. The mummies still bear Silver Bracers C. There is nothing behind this rotting yellow curtain. (700gp), an Electrum Belt B",
+      "monsters": [
+        {
+          "name": "Three Barrow Mummies",
+          "count": 3,
+          "hd": "7"
+        },
+        {
+          "name": "Amber Golem",
+          "count": 1,
+          "hd": "10"
+        }
+      ],
+      "treasure_coins": [
+        "400 gp",
+        "700 gp",
+        "1,250 gp",
+        "850 gp"
+      ],
+      "items": [
+        "Bracers",
+        "Ring"
+      ]
+    },
+    "276": {
+      "id": "276",
+      "name": "When the party enters this room, they will see a              44, #AT: 3, DMG: 2",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "When the party enters this room, they will see a              44, #AT: 3, DMG: 2d6/2d6/2d10, will attack.. massive pile of gemstones sitting in a huge stone bowl (five feet across) in the center of the room. Opposite the E. Behind this rotting curtain are two partially decayed doorway, on the northeast wall, are the skeletal remains human bodies. One clutches a scroll with the second level of a je",
+      "monsters": [
+        {
+          "name": "An Ochre Jelly",
+          "count": 1,
+          "hd": "5"
+        }
+      ]
+    },
+    "280": {
+      "id": "280",
+      "name": "This room is empty.",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "This room is empty.. The Ironguards are part of the minor nobility in the region."
+    },
+    "281": {
+      "id": "281",
+      "name": "This room contains an altar in front of a large clay           The lid of Parnel",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "This room contains an altar in front of a large clay           The lid of Parnel, the son, has been opened. He has risen. statue of a man in a seated position with large red as a Ghoul (1) AL: C, AC: 6, HD: 2*, HP: 15, #AT: 3, ruby eyes.",
+      "monsters": [
+        {
+          "name": "Ghoul",
+          "count": 1,
+          "hd": "2"
+        }
+      ]
+    },
+    "284": {
+      "id": "284",
+      "name": "Worn frescos on the walls of this room depict the                  Small Black O",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "Worn frescos on the walls of this room depict the                  Small Black Opals (1,600gp), Silver Bracelet (600gp),. elemental planes of water, earth, fire, and air. and a Jade Ring (600gp).",
+      "treasure_coins": [
+        "1,600 gp",
+        "600 gp",
+        "600 gp"
+      ],
+      "items": [
+        "Ring"
+      ]
+    },
+    "285": {
+      "id": "285",
+      "name": "This crypt antechamber is decorated with a large                   Quiet Crypt 3",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "This crypt antechamber is decorated with a large                   Quiet Crypt 3: The door to this crypt is locked. A massive. worn square fresco on the western wall that depicts the Brown Mold (1) AL: N, AC: Always hit, HD: 2, HP: 10, four elements (one in each corner). A central demonic #AT: 1, DMG: 2d8, has covered the entire floor of the figure at its center appears to draw power from each of ",
+      "treasure_coins": [
+        "900 gp"
+      ]
+    },
+    "287": {
+      "id": "287",
+      "name": "The door to this crypt is made of steel and radiates          are two Gold Chali",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door to this crypt is made of steel and radiates          are two Gold Chalices worth 900gp and 400gp.. a faint aura of magic if detected. It is locked and a circular scarab locking mechanism with a lidless eye is D. This burial chamber appears empty. The floor of this in its center. The scarab found in 285B (or a Knock spell) chamber conceals a pit. will open the door. This room possesses an ",
+      "treasure_coins": [
+        "900 gp",
+        "400 gp"
+      ]
+    },
+    "290": {
+      "id": "290",
+      "name": "The door to this crypt is made of stone and sealed.            12. Scarab of Wei",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door to this crypt is made of stone and sealed.            12. Scarab of Weight. It will require an iron spike and sledge to open. Be sure to check for random monsters. Non-Magical Scarabs"
+    },
+    "291": {
+      "id": "291",
+      "name": "A moldy and tattered yellow tapestry hangs from              an image of Thar. T",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "A moldy and tattered yellow tapestry hangs from              an image of Thar. This is a false crypt intended to. the ceiling here. PCs can attempt to discern the picture dissuade would-be tomb-robbers from reaching the on the tapestry, but it will take time to make sense of the inner chambers. A great, ornate stone sarcophagus, image through the mold. It appears to depict a muscular decorated in "
+    },
+    "292": {
+      "id": "292",
+      "name": "A rusty steel door swings open into this chamber.              Rex (both sets of",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "A rusty steel door swings open into this chamber.              Rex (both sets of figures will detect as magical) in a. This is the first of Thar's inner crypts. To reach his final resting place the PCs must survive the Trial of the Hunt great jungle. Once the PCs have a chance to inspect outlined in each of the three inner crypts. the room, a Magic Mouth on the wall will appear and boom \"Let the F"
+    },
+    "293": {
+      "id": "293",
+      "name": "Frescos depicting Thar as a veteran hunter with               295. This secret p",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "Frescos depicting Thar as a veteran hunter with               295. This secret passage is known only to Thar and. a glowing spear adorn the walls of this crypt. In these his two wives. They may use it to flank or flee the PCs. images, he hunts hell hounds and owlbears (both sets of figures will detect as magical). 296. This is the final resting place of the great hunter Uthuk Amon Thar."
+    },
+    "297": {
+      "id": "297",
+      "name": "Walking into this entranceway PCs will notice a              with Gold lids in e",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "Walking into this entranceway PCs will notice a              with Gold lids in each sarcophagus. The jars (1,000gp. single stone door, at least 15-feet tall in front of them. each) are valuable but are also cursed. Removing them The door is sealed at the edges. In the center of the from the crypt will cause the looters' hands to blacken door are four skull-shaped depressions, each of them and smel",
+      "treasure_coins": [
+        "1,000 gp"
+      ]
+    },
+    "299": {
+      "id": "299",
+      "name": "The archway around the bricked-up entrance displays          Mummies (3) AL: C, ",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The archway around the bricked-up entrance displays          Mummies (3) AL: C, AC: 3, HD: 7, HP: 29, 24, 24, #AT:. a strange symbol (water) alternating with a skull. The 2, DMG: 1d8/1d8*, stand motionless in the dark until a bricked wall is intact, and the corridor beyond is empty. living being crosses the threshold of the crypt. A Silver Goblet (800gp) and a set of Ivory Bracers (600gp) rest A n",
+      "monsters": [
+        {
+          "name": "Mummies",
+          "count": 3,
+          "hd": "7"
+        }
+      ],
+      "treasure_coins": [
+        "800 gp",
+        "600 gp"
+      ],
+      "items": [
+        "Bracers"
+      ]
+    },
+    "defiled_crypt_1_a4_a7": {
+      "id": "defiled_crypt_1_a4_a7",
+      "name": "Defiled Crypt 1",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door to this crypt is made of stone          The stone-carving is actually a Greater Barrow Guardian.  and sealed. It will require an iron spike and sledge to (1) AL: N, AC: 1, HD: 6, HP: 48, #AT: 1, DMG: 1d8+2, with maximum hit points. The guardian will peel itself off the coverstone the moment the sarcophagus is touched.",
+      "_subtype": "Defiled Crypt"
+    },
+    "defiled_crypt_2_a4_a7": {
+      "id": "defiled_crypt_2_a4_a7",
+      "name": "Defiled Crypt 2",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door is locked. There are Barrow             (3) AL: C, AC: 3, HD: 4, HP: 30, 17, 14, #AT: 1, DMG:.  Mummies (4) AL: C, AC: 3, HD: 7, HP: 34, 34, 30, 26, 1d6*, haunt this crypt. Their skeletal remains rest on #AT: 2, DMG: 1d8/1d8*, standing motionless in this low stone slabs alongside the following treasures: a crypt. One of the mummies still wears a Scarab Signet Commemorative Celadon Vase wo",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Barrow",
+          "count": 3,
+          "hd": "4"
+        },
+        {
+          "name": "Mummies",
+          "count": 4,
+          "hd": "7"
+        }
+      ],
+      "treasure_coins": [
+        "4,000 gp"
+      ],
+      "items": [
+        "Ring"
+      ]
+    },
+    "defiled_crypt_3_a4_a7": {
+      "id": "defiled_crypt_3_a4_a7",
+      "name": "Defiled Crypt 3",
+      "area": "five",
+      "chunk": "a4_a7",
+      "desc": "The smell of dead flesh is overpowering,        \"Thieves!\" repeatedly. If this happens, it will trigger a.  even through the bricked-up wall. This chamber is filled, second Magic Mouth to appear and scream \"Tomb- shoulder-to-shoulder with undead. There is no room for Robbers!\" ten times (roll for random monsters twice). The the PCs to walk whatsoever. The ceiling is very low here, sarcophagi conta",
+      "_subtype": "Defiled Crypt"
+    },
+    "quiet_crypt_4_a4_a7": {
+      "id": "quiet_crypt_4_a4_a7",
+      "name": "Quiet Crypt 4",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door is closed. The floor is covered           Black Pearl worth 1,000gp..  in Yellow Mold (1) AL: N, AC: Always hit, HD: 2, HP: 9, #AT: Spores, DMG: 1d6*. There is nothing of value here. Quiet Crypt 3: The door is locked. A tripwire in the middle of the crypt will set off a partial ceiling collapse Quiet Crypt 5: The door to this crypt is closed. Other causing 3d6 damage (Dexterity check for ",
+      "_subtype": "Quiet Crypt",
+      "treasure_coins": [
+        "1,000 gp"
+      ]
+    },
+    "quiet_crypt_5_a4_a7": {
+      "id": "quiet_crypt_5_a4_a7",
+      "name": "Quiet Crypt 5",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door is stuck and locked. Two seven      draped in dark yellow funerary shrouds inhabit this crypt.  foot statues stand on either side of a simple sarcophagus. and long to feed on the living. Ten Clay Funerary Figures One of the two is a Stone Golem (1) AL: N, AC: 5, HD: can be found strewn across the floor. Five Gold Coffers 14, HP: 66, #AT: 1, DMG: 3d8, that will attack if the (900gp each) l",
+      "_subtype": "Quiet Crypt",
+      "treasure_coins": [
+        "900 gp"
+      ]
+    },
+    "quiet_crypt_6_a4_a7": {
+      "id": "quiet_crypt_6_a4_a7",
+      "name": "Quiet Crypt 6",
+      "area": "three",
+      "chunk": "a4_a7",
+      "desc": "This door is locked. The walls of this.  antechamber-crypt are decorated in frescoes that glow slightly in the darkness. They depict the great sacrifice of The Chosen as they willing gave their souls to Nergal. The first person to touch the frescoes will be cloaked in Faerie Fire for 2 turns.",
+      "_subtype": "Quiet Crypt"
+    },
+    "defiled_crypt_7_a4_a7": {
+      "id": "defiled_crypt_7_a4_a7",
+      "name": "Defiled Crypt 7",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door to this crypt is locked. If a PC         Items). There are three Decorative Silver Scarab Amulets.  listens at the door s/he will hear a soft moaning from beside the body. These are worth 700gp each. within. A large stone sarcophagus holds the remains of a woman who was slain by her lover for another woman. B. Two Runic Golems (2) AL: N, AC: 5, HD: 7, HP: 36, 28, She has returned as a ven",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Two Runic Golems",
+          "count": 2,
+          "hd": "7"
+        }
+      ],
+      "treasure_coins": [
+        "700 gp"
+      ]
+    },
+    "defiled_crypt_4_a4_a7": {
+      "id": "defiled_crypt_4_a4_a7",
+      "name": "Defiled Crypt 4",
+      "area": "three",
+      "chunk": "a4_a7",
+      "desc": "The narrow passage to this crypt is.  covered with Yellow Mold AL: N, AC: Always hit, HD: 2, HP: 10, #AT: Spores, DMG: 1d6*. The Sandlings (below) do not provoke the mold as they pass back and forth.",
+      "_subtype": "Defiled Crypt"
+    },
+    "defiled_crypt_5_a4_a7": {
+      "id": "defiled_crypt_5_a4_a7",
+      "name": "Defiled Crypt 5",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "This door is locked. This is a family crypt       burial chambers accessed through narrow archways..  and they have all risen as Ghouls (8) AL: C, AC: 2 (6), HD: 2*, HP: 19 (15), 14 (10), 14 (10), 13 (9), 13 (9), 12 A large statue of a Valkyrie with winged helmet, sword, (8), 10 (6), 9 (5), #AT: 3, DMG: 1d3/1d3/1d3*. These and shield stands in the center of the room. An epitaph ghouls wear Mithril",
+      "_subtype": "Defiled Crypt",
+      "items": [
+        "Shield"
+      ]
+    },
+    "defiled_crypt_6_a4_a7": {
+      "id": "defiled_crypt_6_a4_a7",
+      "name": "Defiled Crypt 6",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door is closed. A lawful cleric or           Quiet Crypt 4: The door to this crypt is locked. Moreover,.  holy fighter will have an overwhelming feeling of dread there are two padlocked bars across the outside of the outside this door. The room is abnormally dark and door. In the middle of the room is a round stone dais. On",
+      "_subtype": "Defiled Crypt"
+    },
+    "quiet_crypt_2_a4_a7": {
+      "id": "quiet_crypt_2_a4_a7",
+      "name": "Quiet Crypt 2",
+      "area": "six",
+      "chunk": "a4_a7",
+      "desc": "Similar to 254 D1, this crypt contains the             the pillars supporting the ceiling. If 4 of these are.  remains of six knights presented in the same fashion as destroyed the ceiling will partially cave in causing the preceding chamber. However, these remains have 8d6 points of damage (save for half) and destroy not yet heard the call of The Tablet. all but 3d4+2 of the sarcophagi.",
+      "_subtype": "Quiet Crypt"
+    },
+    "quiet_crypt_1_a4_a7": {
+      "id": "quiet_crypt_1_a4_a7",
+      "name": "Quiet Crypt 1",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door to this crypt is locked. There are        wall is intact and the corridor beyond is empty..  two mummies lying in alcoves. There is nothing of value. Defiled Crypt 1: The door is stuck. A group of Wraiths Defiled Crypt 2: The door is locked. There are Barrow (3) AL: C, AC: 3, HD: 4, HP: 30, 17, 14, #AT: 1, DMG: Mummies (4) AL: C, AC: 3, HD: 7, HP: 34, 34, 30, 26, 1d6*, haunt this crypt. T",
+      "_subtype": "Quiet Crypt",
+      "monsters": [
+        {
+          "name": "Barrow",
+          "count": 3,
+          "hd": "4"
+        },
+        {
+          "name": "Mummies",
+          "count": 4,
+          "hd": "7"
+        }
+      ]
+    },
+    "quiet_crypt_3_a4_a7": {
+      "id": "quiet_crypt_3_a4_a7",
+      "name": "Quiet Crypt 3",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door to this crypt is stuck. There are         are a Son and Daughter of Gaxx (2) AL: C, AC: 8, HD: 3,.  three funerary boxes here. Inside each are Platinum HP: 19, 14, #AT: 1, DMG: 2d4*. Once a married couple, Chalices (900gp, 1,000gp, and 1,300gp). they are now rotting and bloated with maggots and rot grubs. One still wears a Silver Belt inlaid with a Small Quiet Crypt 4: The door is closed.",
+      "_subtype": "Quiet Crypt",
+      "monsters": [
+        {
+          "name": "Gaxx",
+          "count": 2,
+          "hd": "3"
+        }
+      ],
+      "treasure_coins": [
+        "900 gp",
+        "1,000 gp",
+        "1,300 gp",
+        "1,000 gp"
+      ]
+    },
+    "quiet_crypt_8_a4_a7": {
+      "id": "quiet_crypt_8_a4_a7",
+      "name": "Quiet Crypt 8",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door is closed. The crypt is empty..  Defiled Crypt 7: The door is stuck. Three Barrow 299. The archway around the bricked-up entrance displays Mummies (3) AL: C, AC: 3, HD: 7, HP: 29, 24, 24, #AT: a strange symbol (water) alternating with a skull. The 2, DMG: 1d8/1d8*, stand motionless in the dark until a bricked wall is intact, and the corridor beyond is empty. living being crosses the thres",
+      "_subtype": "Quiet Crypt",
+      "monsters": [
+        {
+          "name": "Mummies",
+          "count": 3,
+          "hd": "7"
+        }
+      ],
+      "treasure_coins": [
+        "800 gp",
+        "600 gp"
+      ],
+      "items": [
+        "Bracers"
+      ]
+    },
+    "quiet_crypt_7_a4_a7": {
+      "id": "quiet_crypt_7_a4_a7",
+      "name": "Quiet Crypt 7",
+      "area": "seven",
+      "chunk": "a4_a7",
+      "desc": "The door to this crypt is closed and               is a bowl of gemstones covered in a layer of dust. The.  trapped. As soon as the door is opened it will break a bowl contains a Very Large Oriental Topaz (1,000gp), tripwire attached to a wooden bar-and-stake. The stake Large Violet Garnet (500gp), Small Flawed Moss Agate makes a melee attack at the same hit dice as its victim (10gp), Very Large F",
+      "_subtype": "Quiet Crypt",
+      "treasure_coins": [
+        "1,000 gp",
+        "500 gp",
+        "10 gp"
+      ]
+    },
+    "303": {
+      "id": "303",
+      "name": "This is the Chaos Sepulcher of Elemental Water.                305. This is the ",
+      "area": "seven",
+      "chunk": "a8_a10",
+      "desc": "This is the Chaos Sepulcher of Elemental Water.                305. This is the Chaos Sepulcher of Elemental Earth. This. A set of bronze double doors (affixed the elemental door will only open if the Key of Earth is used (#301 Q8). symbol) will only open if the Key of Water is used (#299 The flagstone of this large chamber is either broken or D6). The door is cool to the touch. covered over in pl",
+      "items": [
+        "Key of Earth",
+        "Key of Water",
+        "Skull of Earth"
+      ]
+    },
+    "304": {
+      "id": "304",
+      "name": "This is the Chaos Sepulcher of Elemental Fire. A",
+      "area": "seven",
+      "chunk": "a8_a10",
+      "desc": "This is the Chaos Sepulcher of Elemental Fire. A. set of bronze double doors (affixed with the elemental 306. This hallway leads to the Grand Sepulcher of the symbol) will only open if the Key of Fire is used (#300 Elements. This hallway can only be accessed once all D7). The door burns hot to the touch. four elemental skull keys have been placed into the large stone door located at #297. Inside i",
+      "items": [
+        "Key of Fire"
+      ]
+    },
+    "308": {
+      "id": "308",
+      "name": "There are two mausoleums with sealed stone doors                      A. This ch",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "There are two mausoleums with sealed stone doors                      A. This chamber contains bizarre laboratory equipment.. in this hallway. There are large sealed glass vats containing body parts, tables with bandages, and a central table covered in Defiled Crypt 1: Four Wights (4) AL: C, AC: 5, HD: 3, HP: age-old blood stains. A close inspection of the vats 22, 17, 13, 8, #AT: 1, DMG: Drain, s",
+      "monsters": [
+        {
+          "name": "Four Wights",
+          "count": 4,
+          "hd": "3"
+        }
+      ],
+      "treasure_coins": [
+        "400 gp",
+        "500 gp",
+        "700 gp"
+      ]
+    },
+    "317": {
+      "id": "317",
+      "name": "This door is made of stone and magically locked. It           the first person i",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "This door is made of stone and magically locked. It           the first person in the chest. The ball makes a melee attack. cannot be knocked down or otherwise opened without as an 8 hit die monster with a +2 bonus and does 3d6 solving the puzzle lock. The following words are written points of damage (Dexterity check for half). on the door vertically in Ancient Common: Bun, Shoe, Spree, Hive, Kick"
+    },
+    "318": {
+      "id": "318",
+      "name": "The smell of death permeates this hallway.                    319. A series of s",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "The smell of death permeates this hallway.                    319. A series of small crypts can be found in this corridor.. Some appear to have been searched. Defiled Crypt 1: The door to this crypt is locked. A Groaning Spirit (1) AL: C, AC: 0, HD: 7, HP: 46, #AT: A. The door to this crypt has been bashed in. A pile 1, DMG: 1d8*, sobs in the back corner of the room. of bones has been scattered ac",
+      "monsters": [
+        {
+          "name": "Groaning Spirit",
+          "count": 1,
+          "hd": "7"
+        }
+      ]
+    },
+    "321": {
+      "id": "321",
+      "name": "An archway here leads to a small room used as a              Note that if a batt",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "An archway here leads to a small room used as a              Note that if a battle breaks out here there is a 50%. sentry post by the Acolytes of Orcus. The priest Gethron likelihood that the trolls in #336 will hear the noise and is in charge AL: C, AC: 2 (Plate, Shield), HD: CL5, HP: 32, come to investigate. The trolls are well aware of the fire #AT: 1, DMG: 1d6 (Hammer +2). Equipment: Platemail",
+      "treasure_coins": [
+        "19 pp"
+      ],
+      "items": [
+        "Shield",
+        "Funeral Pyre Zombies",
+        "Potion of Human Control"
+      ]
+    },
+    "322": {
+      "id": "322",
+      "name": "Two priests, and undead reserves, are posted here            In the center of th",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "Two priests, and undead reserves, are posted here            In the center of the room is a large pool of mercury.. as a second line of defense. They include Gerg AL: C, AC: 3 (Chain, Shield +1), HD: CL3, HP: 21, #AT: 1, DMG: 1d6 If the alarm has not been raised throughout the complex, (Hammer). Equipment: Chainmail, Shield+1, Warhammer, the PCs will catch the Acolytes in the midst of a dark and a",
+      "treasure_coins": [
+        "12 pp"
+      ],
+      "items": [
+        "Shield +1",
+        "Shield+1",
+        "Shield"
+      ]
+    },
+    "323": {
+      "id": "323",
+      "name": "This is the temple antechamber. There is a 50%               before he will full",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "This is the temple antechamber. There is a 50%               before he will fully emerge from the gate. Regardless, he. likelihood that the priest Char, AC: 1 (Platemail +2), CL4, will be the first to notice the PCs and begin shouting orders HP: 25, #AT: 1, DMG: 1d8 (Warhammer +2). Equipment: to Emnuron and the others to attack the defilers. Platemail +2, Warhammer +2, Potion of Healing, and 29pp.",
+      "treasure_coins": [
+        "29 pp"
+      ],
+      "items": [
+        "Potion of Healing"
+      ]
+    },
+    "325": {
+      "id": "325",
+      "name": "This room serves as a guard post. The novice acolyte         330. This is the te",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "This room serves as a guard post. The novice acolyte         330. This is the temple cellblock. Gak, AL: C, AC: 6. Willock AL: C, AC: 6 (Studded and Shield), HD: CL1, (Studded and Shield), HD: CL1, HP: 7, #AT: 1, DMG: 1d6 HP: 6, #AT: 1, DMG: 1d6 (Mace). Equipment: Studded, (Mace). Equipment: Studded, Shield, Mace, 8gp. Spell Shield, Mace, 8gp. Spell (1): Cause Light Wounds, is (1): Darkness, 13gp,",
+      "treasure_coins": [
+        "8 gp",
+        "8 gp",
+        "13 gp"
+      ],
+      "items": [
+        "Shield",
+        "Mace"
+      ]
+    },
+    "326": {
+      "id": "326",
+      "name": "This is the living quarters of Gethron and Char. Their",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "This is the living quarters of Gethron and Char. Their. quarters are spartan with plain wooden beds and two 331. This is the living quarters of Baalbek, AC: 1 (Plate, small wooden lockers (locked). Each has a bag of 50gp Shield, Dex), CL4, HP: 24, #AT: 1, DMG: 1d6 (Mace and a Potion of Healing. +2). Equipment: Platemail, Shield, Mace +2, Potion of Extra-Healing, 24pp. Spells (3/2): Command, Cause ",
+      "treasure_coins": [
+        "50 gp",
+        "24 pp"
+      ],
+      "items": [
+        "Shield",
+        "Mace",
+        "Potion of Healing",
+        "Mace +2",
+        "Potion of Extra"
+      ]
+    },
+    "332": {
+      "id": "332",
+      "name": "This is the living quarters of Zur the Black. His",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "This is the living quarters of Zur the Black. His. chambers suggest that Zur enjoys his amenities. His bed is plush with rich furs (2,400gp). The room is lit with Everburning Candles (20), and there is a small shrine to Orcus for private prayer. There is a bookstack along the east wall in front of the secret door. If the book Goat Sacrifices and Their Meaning is pulled, the floor will rotate until",
+      "treasure_coins": [
+        "2,400 gp"
+      ]
+    },
+    "333": {
+      "id": "333",
+      "name": "This stairwell leads to barrow mound #55. It is              The treasure in the",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "This stairwell leads to barrow mound #55. It is              The treasure in the locked and trapped chest (poison. known only to Zur and Emnuron. needle save or die) includes 4,500gp, a Book of Infinite Spells (Magic-User), Gloves of Dexterity, a runic tablet,",
+      "treasure_coins": [
+        "4,500 gp"
+      ]
+    },
+    "334": {
+      "id": "334",
+      "name": "This crypt has a magical one-way door. The wizard            and an Ioun Stone (",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "This crypt has a magical one-way door. The wizard            and an Ioun Stone (Scarlet and Blue).. interred here long ago wanted to ensure his crypt would not be looted and so had enchantments cast to protect 335. This is a false tomb designed to dupe would-be his treasures. tomb-robbers into searching for the crypts beyond."
+    },
+    "336": {
+      "id": "336",
+      "name": "Ogbog and Wortbad, two Trolls (2) AC: 4, HD:                    hears battle in ",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "Ogbog and Wortbad, two Trolls (2) AC: 4, HD:                    hears battle in the catacombs, he will investigate.. 6+3, HP: 45, 30, #AT: 3, DMG: 1d6/1d6/1d10, are on guard here. Ogbog, the largest of the two, is particularly C. The skeleton of a woman can be found in an alcove tall, thin, and powerful for one of his kind. He receives a here. Folded beside her, at the back of the alcove, is a +2 ",
+      "items": [
+        "Cloak of Protection +2",
+        "Ring"
+      ]
+    },
+    "337": {
+      "id": "337",
+      "name": "This area is a rough-hewn burial catacomb. The                  staff has 28 cha",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "This area is a rough-hewn burial catacomb. The                  staff has 28 charges and cannot be recharged.. catacomb is ancient but has seen recent activity. The burial alcoves here are all horizontal rectangles about E. A filthy Rot Pudding (1) AL: N, AC: 6, HD: 8, HP: 37, 5 feet long cut roughly into the walls. PCs can search #AT: 1, DMG: 2d8, has secluded itself in this area. It has anywhere",
+      "monsters": [
+        {
+          "name": "Rot Pudding",
+          "count": 1,
+          "hd": "8"
+        }
+      ]
+    },
+    "340": {
+      "id": "340",
+      "name": "This hallway contains eight crypts.                            scroll with five ",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "This hallway contains eight crypts.                            scroll with five random magic-user spells.. Quiet Crypt 1: This door is ajar. Someone used a prybar Defiled Crypt 6: The door to this crypt is open, and the to open the door. The floor of this crypt is covered in burial alcoves here have been looted. There is nothing precious gemstones. Two dead Acolytes of Orcus are on of value. the f",
+      "monsters": [
+        {
+          "name": "Golem",
+          "count": 1,
+          "hd": "8"
+        }
+      ]
+    },
+    "345": {
+      "id": "345",
+      "name": "This is one of the three inner chambers of The Secret",
+      "area": "nine",
+      "chunk": "a8_a10",
+      "desc": "This is one of the three inner chambers of The Secret. Vault. This room is covered with dusty bookshelves and scrolls are laid out across various desks. One portion of the room is littered with lab equipment."
+    },
+    "346": {
+      "id": "346",
+      "name": "This is the inner sanctum of The Keeper of the Tablet.",
+      "area": "nine",
+      "chunk": "a8_a10",
+      "desc": "This is the inner sanctum of The Keeper of the Tablet.. When the PCs enter this room, they will see a dark 348. The inner sanctum of The Tablet appears exactly place lit by tall flaming braziers that cast shadows like the false sanctum at #344. The Tablet of Chaos throughout the room. The Keeper sits on a broad throne hovers magically several feet above a square dais. in the northernmost part of t"
+    },
+    "347": {
+      "id": "347",
+      "name": "This is the secret treasury of The Keeper. Two coffers         \"Life in Death\" o",
+      "area": "nine",
+      "chunk": "a8_a10",
+      "desc": "This is the secret treasury of The Keeper. Two coffers         \"Life in Death\" or \"Embrace Death.\" Once this is done, all. (2,984sp and 666pp), one chest (731gp), and funerary PCs will then be teleported into The Tablet Platform at baskets (empty), line the walls of this room. In the center #348E for the final battle with The Keeper. is a tall pedestal with a Crystal Ball. A teleport circle (A) ca",
+      "treasure_coins": [
+        "2,984 sp",
+        "666 pp",
+        "731 gp"
+      ]
+    },
+    "349": {
+      "id": "349",
+      "name": "A statue of a stoic man stands atop a dais in the             Cotta Funerary Fig",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "A statue of a stoic man stands atop a dais in the             Cotta Funerary Figures worth 80gp each.. southwest corner of this room. The 8 foot tall statue is made of stone, with large diamonds in the eye sockets 353. This crypt has a portcullis similar to the one located (2,000gp each). The statue stands erect and holds out an in #351. offering plate several feet long on which an inscription rea",
+      "treasure_coins": [
+        "80 gp",
+        "2,000 gp"
+      ]
+    },
+    "350": {
+      "id": "350",
+      "name": "This room is empty.                                           the door with a 10",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This room is empty.                                           the door with a 10 foot pole.. "
+    },
+    "351": {
+      "id": "351",
+      "name": "Entrance to this crypt is blocked by a large rusted",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "Entrance to this crypt is blocked by a large rusted. metal portcullis. It will require 8 PCs to lift. With the"
+    },
+    "354": {
+      "id": "354",
+      "name": "Numerous burial niches covered with rotting",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "Numerous burial niches covered with rotting. curtains can be found on the western wall. The ceiling is E. A stone slab with bas relief of the sun shining on a 10 feet high here. field of poppies rests against the western wall. If one of the poppies is pulled out and rotated clockwise, a secret A group of eight mummies will begin to emerge from drawer of grave goods will be revealed. The treasures ",
+      "treasure_coins": [
+        "600 gp",
+        "500 gp",
+        "500 gp"
+      ],
+      "items": [
+        "Cloak Clasp",
+        "Dagger"
+      ]
+    },
+    "355": {
+      "id": "355",
+      "name": "This long corridor contains dust and debris near             356. Strangely, the",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This long corridor contains dust and debris near             356. Strangely, the door to this room swings outward,. the walls. not inward. A pressure plate 15 feet inside this room will set off an isolation trap. Specifically, once the pressure Quiet Crypt 1: The door to this crypt is ajar. The contents plate is depressed, an audible click will be heard. A of the four 6-foot long horizontal alcove"
+    },
+    "360": {
+      "id": "360",
+      "name": "The door to this room is closed. Long ago, a mass             weapon that can be",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "The door to this room is closed. Long ago, a mass             weapon that can be used once every 10 rounds. All. self-sacrifice to Nergal took place here. The members those in a 10 foot square in front of the golem must save of the death cult have all risen as Ravenous Zombies (Death) or die a gasping, painful death. (25) AL: C, AC: 8, HD: 3, HP: 24, 21 19, 19, 18, 18, 18, 17, 17, 15, 15, 15, 14, "
+    },
+    "361": {
+      "id": "361",
+      "name": "This was a prayer room of the death cult of Nergal.          1d8/1d8/1d3*, held ",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This was a prayer room of the death cult of Nergal.          1d8/1d8/1d3*, held in stasis. It will attack as soon as. Atop a small altar along the east wall are a Gold the coverstone is removed from the sarcophagus. There Statuette of Nergal (100gp) and assorted bone-piles is nothing of value inside. (elves, humans, and dwarves). 366. This hallway is empty. Worn frescos to Nergal",
+      "treasure_coins": [
+        "100 gp"
+      ]
+    },
+    "362": {
+      "id": "362",
+      "name": "The door to this room is locked. This room was used           adorn the walls an",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "The door to this room is locked. This room was used           adorn the walls and grow in size and complexity toward. as a barracks by the death cult. The room is otherwise the doors of the Great Temple (#375). spartan. There is no treasure here. 367. This room is the antechamber of the Death Cult"
+    },
+    "363": {
+      "id": "363",
+      "name": "This room was once a barracks for the death cult of           of Nergal--a facti",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This room was once a barracks for the death cult of           of Nergal--a faction of his followers who devoted. Nergal. There is nothing of value here. themselves to protecting The Tablet of Chaos for all eternity. The frescos here depict self-sacrifice using long curved daggers thrust into the chest and skeletons walking away toward the door to the underworld."
+    },
+    "368": {
+      "id": "368",
+      "name": "This room is empty with the exception of a stone door",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This room is empty with the exception of a stone door. covered in runes to the north. The door cannot be opened, magically or otherwise, unless the lever in #359 is used."
+    },
+    "369": {
+      "id": "369",
+      "name": "The stone door to this room can only be opened by",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "The stone door to this room can only be opened by. the lever in #359. When opened Minos, a huge minotaur, held in stasis, will be released. Minos the Minotaur AL: C, AC: 2, HD: 10, HP: 80, #AT: 2, DMG: 1d12, XP: 2000, is different than his standard minotaur brethren. He is larger, stronger, and possesses a bronze chest plate and an over-sized Battle Axe +2 that scores 1d12 points of damage (may on"
+    },
+    "370": {
+      "id": "370",
+      "name": "This is the antechamber of the Great Temple of               Burial Alcoves (60)",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This is the antechamber of the Great Temple of               Burial Alcoves (60): Circular. Disintegrated bones.. Nergal. Massive steel double doors (each door almost Contents: Gold Nose Ring (60gp), Sealed metal box 8 feet across) covered in bas relief depict Nergal with with Satin Nightshirt (125gp), Warhammer +3 (head his arms outstretched and a large group of hooded only, 7,500gp to repair). f",
+      "treasure_coins": [
+        "60 gp",
+        "125 gp",
+        "7,500 gp"
+      ],
+      "items": [
+        "Ring"
+      ]
+    },
+    "371": {
+      "id": "371",
+      "name": "This room was formerly used to prepare bodies                improved armor clas",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This room was formerly used to prepare bodies                improved armor class (Chainmail +1) and damage.. for burial. Rotting shelves hold glass jars of all shapes The sarcophagus reads \"Broodina. Warrior-Maiden of and sizes. Nergal.\" Two funerary baskets contain 2,274sp and 1,720gp.",
+      "treasure_coins": [
+        "2,274 sp",
+        "1,720 gp"
+      ]
+    },
+    "372": {
+      "id": "372",
+      "name": "This room was used to wrap bodies for mummification.",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This room was used to wrap bodies for mummification.. Defiled Crypt 4: The door to this crypt is made of stone"
+    },
+    "373": {
+      "id": "373",
+      "name": "This long crypt corridor is empty.                           and sealed with rop",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This long crypt corridor is empty.                           and sealed with rope and a wax imprint. A group of. Mummies (4) AL: C, AC: 3, HD: 5+1, HP: 27, 26, 26, 21, Defiled Crypt 1: The door to this crypt is locked. Three #AT: 1, DMG: 1d12*, have risen from their sarcophagi sarcophagi hold Mummies (3) AL: C, AC: 3, HD: 5+1, and stand motionless until the seal is broken on their tomb. HP: 32, 25",
+      "monsters": [
+        {
+          "name": "Mummies",
+          "count": 4,
+          "hd": "5"
+        },
+        {
+          "name": "Mummies",
+          "count": 3,
+          "hd": "5"
+        }
+      ],
+      "treasure_coins": [
+        "500 gp"
+      ]
+    },
+    "374": {
+      "id": "374",
+      "name": "This is the resting place of Rorteb Meerab. Meerab,             to support the 5",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This is the resting place of Rorteb Meerab. Meerab,             to support the 50 foot ceiling. A huge broken statue of. in concert with Rendar Serouc, were key high priests Nergal, the largest ever created in his honor, can be in Nergal's faith. Like Serouc, Meerab has risen as a found at the back of the chamber."
+    },
+    "defiled_crypt_4_a8_a10": {
+      "id": "defiled_crypt_4_a8_a10",
+      "name": "Defiled Crypt 4",
+      "area": "seven",
+      "chunk": "a8_a10",
+      "desc": "The door to this crypt is locked. A group.  of fearsome Wraiths (4) AL: C, AC: 3, HD: 4, HP: 27, 25, 14, 13, #AT: 1, DMG: 1d6*, dwell within. Inside the crypts are four horizontal alcoves cut into the walls where they were interred. In these niches are a Tome of Understanding, a Dagger +1 Venom, and a Mithril Funerary Figure worth 6,000gp.",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Wraiths",
+          "count": 4,
+          "hd": "4"
+        }
+      ],
+      "treasure_coins": [
+        "6,000 gp"
+      ],
+      "items": [
+        "Tome of Understanding",
+        "Dagger +1"
+      ]
+    },
+    "quiet_crypt_5_a8_a10": {
+      "id": "quiet_crypt_5_a8_a10",
+      "name": "Quiet Crypt 5",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "This room is empty.                                   serve as both Bracers of Armor (AC2) and Gauntlets of.  Ogre Power. Defiled Crypt 6: The door to this crypt is open. The stench of rot is overpowering. The stench comes from Meerab was interred with his two wives, who have risen two Ghasts (2) AL: C, AC: 4, HD: 4, HP: 17, 16, #AT: 3, as enhanced Daughters of Gaxx (2) AL: C, AC: 3, HD: DMG: 1d4/",
+      "_subtype": "Quiet Crypt",
+      "monsters": [
+        {
+          "name": "Ghasts",
+          "count": 2,
+          "hd": "4"
+        }
+      ],
+      "items": [
+        "Bracers of Armor"
+      ]
+    },
+    "quiet_crypt_6_a8_a10": {
+      "id": "quiet_crypt_6_a8_a10",
+      "name": "Quiet Crypt 6",
+      "area": "seven",
+      "chunk": "a8_a10",
+      "desc": "The door of this crypt is closed and.  covered in Amber Mold (1) AL: N, AC: Always hit, HD: 1hp, HP: 1hp, #AT: 1, DMG: Special. Beside skeletal remains are eight Silver Chalices worth 300gp each.",
+      "_subtype": "Quiet Crypt",
+      "treasure_coins": [
+        "300 gp"
+      ]
+    },
+    "defiled_crypt_7_a8_a10": {
+      "id": "defiled_crypt_7_a8_a10",
+      "name": "Defiled Crypt 7",
+      "area": "seven",
+      "chunk": "a8_a10",
+      "desc": "This door is ajar. A group of Ghouls            302. This is the Chaos Sepulcher of Elemental Air. A.  (6) AL: C, AC: 6, HD: 2*, HP: 11, 10, 9, 7, 8, 4, #AT: 3, set of bronze double doors (affixed with the elemental DMG: 1d3/1d3/1d3*, led by two nasty Ghasts (2) AL: C, symbol) will only open if the Key of Air is used (#298 AC: 4, HD: 4, HP: 17, 16, #AT: 3, DMG: 1d4/1d4/1d8*, D6). The muffled sound",
+      "_subtype": "Defiled Crypt",
+      "items": [
+        "Key of Air"
+      ]
+    },
+    "quiet_crypt_8_a8_a10": {
+      "id": "quiet_crypt_8_a8_a10",
+      "name": "Quiet Crypt 8",
+      "area": "seven",
+      "chunk": "a8_a10",
+      "desc": "The door is locked. The crypt is empty.           Inside is a large vaulted chamber 40-feet high supported.  Underneath a loose stone is the Key of Earth (#305). by large square columns. At the far end of the room is an altar. On the altar rests the Skull of Air with the elemental (#302 through #305): These four sepulchers are symbol engraved on its forehead. Wind swirls and gusts imbued with the ",
+      "_subtype": "Quiet Crypt",
+      "items": [
+        "Key of Earth",
+        "Skull of Air"
+      ]
+    },
+    "defiled_crypt_1_a8_a10": {
+      "id": "defiled_crypt_1_a8_a10",
+      "name": "Defiled Crypt 1",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "The door to this crypt is locked. Three          #AT: 1, DMG: 1d12*, have risen from their sarcophagi.  sarcophagi hold Mummies (3) AL: C, AC: 3, HD: 5+1, and stand motionless until the seal is broken on their tomb. HP: 32, 25, 23, #AT: 1, DMG: 1d12*, who will burst They wear Wooden Death Masks painted red that provide forth if their tomb is disrupted. Each sarcophagi holds two Silver Funerary Fig",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Mummies",
+          "count": 3,
+          "hd": "5"
+        }
+      ],
+      "treasure_coins": [
+        "500 gp"
+      ]
+    },
+    "defiled_crypt_2_a8_a10": {
+      "id": "defiled_crypt_2_a8_a10",
+      "name": "Defiled Crypt 2",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "This door is closed. A small group of              Inside his sarcophagus are two Ivory Canopic Jars inlaid.  Wights (3) AL: C, AC: 5, HD: 3, HP: 25 (19), 19 (13), 17 with Gold worth 2,500gp each and a strange necklace. (11), #AT: 1, DMG: Drain, are muttering to themselves in This is a Necklace of Prayer Beads. The necklace the darkness. They have gone completely mad. All three contains two Beads ",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Wights",
+          "count": 3,
+          "hd": "3"
+        }
+      ],
+      "treasure_coins": [
+        "2,500 gp",
+        "300 gp"
+      ]
+    },
+    "defiled_crypt_3_a8_a10": {
+      "id": "defiled_crypt_3_a8_a10",
+      "name": "Defiled Crypt 3",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "The door to this crypt is stuck. A group         357. The door to this crypt is stuck. There are three urns.  of evil men have risen as Sons of Gaxx (7) AL: C, AC: 8, on a low altar against the eastern wall. There is nothing HD: 3, HP: 20, 16, 16, 12, 12, 10, 9, #AT: 1, DMG: 2d4*. of value.",
+      "_subtype": "Defiled Crypt"
+    },
+    "quiet_crypt_4_a8_a10": {
+      "id": "quiet_crypt_4_a8_a10",
+      "name": "Quiet Crypt 4",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "The door to this crypt is locked and trapped.       320. A set of double-doors provides entry to this room..  A swinging-ball melee trap set above the door will strike Above the doorway, written in Ancient Common, reads",
+      "_subtype": "Quiet Crypt"
+    },
+    "quiet_crypt_1_a8_a10": {
+      "id": "quiet_crypt_1_a8_a10",
+      "name": "Quiet Crypt 1",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "The door to this crypt is ajar. The contents       plate is depressed, an audible click will be heard. A.  of the four 6-foot long horizontal alcoves (formerly stone slab will slide down from the ceiling, blocking the holding full skeletons) have been looted and dumped doorway. The secret door will then open and a group of on the floor. A single Bronze Canopic Jar can be found Crypt Knights (6) AL",
+      "_subtype": "Quiet Crypt",
+      "treasure_coins": [
+        "100 gp"
+      ]
+    },
+    "quiet_crypt_3_a8_a10": {
+      "id": "quiet_crypt_3_a8_a10",
+      "name": "Quiet Crypt 3",
+      "area": "eight",
+      "chunk": "a8_a10",
+      "desc": "The door to this crypt is actually a small set       and the second level spell Galaxina's Scintillating Spark.  of iron double doors. The handles to the doors have been Shower (see New Spells). bound with rope. A scarab signet has been imprinted in wax to one side. At the back wall of the crypt is a stone Quiet Crypt 8: The door to this crypt is closed. The room sarcophagus with the following epi",
+      "_subtype": "Quiet Crypt"
+    },
+    "quiet_crypt_2_a8_a10": {
+      "id": "quiet_crypt_2_a8_a10",
+      "name": "Quiet Crypt 2",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "The door to this crypt is swollen shut..  This crypt is quiet and filled with burial alcoves. A sarcophagus rests here undisturbed.",
+      "_subtype": "Quiet Crypt"
+    },
+    "defiled_crypt_6_a8_a10": {
+      "id": "defiled_crypt_6_a8_a10",
+      "name": "Defiled Crypt 6",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "The door to this crypt is open. The.  stench of rot is overpowering. The stench comes from Meerab was interred with his two wives, who have risen two Ghasts (2) AL: C, AC: 4, HD: 4, HP: 17, 16, #AT: 3, as enhanced Daughters of Gaxx (2) AL: C, AC: 3, HD: DMG: 1d4/1d4/1d8*, and a pack of Ghouls (10) AL: C, 7, HP: 36, 33, #AT: 1, DMG: 2d8*, with improved armor AC: 6, HD: 2*, HP: 13, 11, 11, 11, 11, 9",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Ghasts",
+          "count": 2,
+          "hd": "4"
+        }
+      ]
+    },
+    "quiet_crypt_7_a8_a10": {
+      "id": "quiet_crypt_7_a8_a10",
+      "name": "Quiet Crypt 7",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "The door to this crypt is locked. A pedestal          immediately, although it will take Meerab a moment to.  in the center of the room holds a small burial offering of remember Dhekeon and the role he played centuries jewels. The pedestal is trapped and will cause the ceiling ago. If Dhekeon is present, there could be an interesting above to partially collapse causing 4d6 (Dexterity check exchang",
+      "_subtype": "Quiet Crypt"
+    },
+    "defiled_crypt_8_a8_a10": {
+      "id": "defiled_crypt_8_a8_a10",
+      "name": "Defiled Crypt 8",
+      "area": "ten",
+      "chunk": "a8_a10",
+      "desc": "The door to this crypt is made of stone             Inside the crypt are two steel chests with 200gp each, a.  and sealed with rope and a wax imprint. A terrible funerary basket with 300ep, and an old Statue of Nergal Spectre (1) AL: C, AC: 2, HD: 6, HP: 26, #AT: 1, DMG: worth 8,000gp. This statue weighs 500 pounds. There 1d8*, now hovers and protects his remains, which are are also four jars of O",
+      "_subtype": "Defiled Crypt",
+      "monsters": [
+        {
+          "name": "Nergal Spectre",
+          "count": 1,
+          "hd": "6"
+        }
+      ],
+      "treasure_coins": [
+        "200 gp",
+        "300 ep",
+        "8,000 gp"
+      ]
+    }
+  }
+}
