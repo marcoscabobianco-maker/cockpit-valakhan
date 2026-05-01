@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Cockpit V6k1 — cache-bust automático + reset state si tenés problemas</title>
+<title>Cockpit V6k2 — iPad fixes: responsive layout + mapa liviano + touch + error handling</title>
 <style>
 :root {
   --bg: #1a1410;
@@ -483,6 +483,33 @@ svg.hexmap { display: block; }
   .grid-real-canvas { display:block; cursor:crosshair; image-rendering:pixelated; }
   .grid-mode-toggle { display:flex; gap:6px; align-items:center; margin-bottom:8px; flex-wrap:wrap; }
   .grid-mode-toggle .active { background: var(--accent); color: var(--bg); }
+  /* v6k2: Mobile/iPad responsive fixes */
+  @media (max-width: 1024px) {
+    .grid-real-wrap { max-height: 55vh !important; }
+    .card { padding: 8px !important; }
+    .card h3 { font-size: 14px !important; }
+    .grid-real-wrap { max-width: 100% !important; }
+    .btn { min-height: 36px !important; padding: 6px 10px !important; }
+  }
+  @media (max-width: 900px) {
+    /* Stack columns vertical en mobile */
+    #grid-crawler-container > div[style*='display:flex'] {
+      flex-direction: column !important;
+    }
+    #grid-crawler-container > div[style*='display:flex'] > div {
+      width: 100% !important; min-width: 0 !important; max-width: 100% !important;
+    }
+    .grid-real-wrap { max-height: 50vh !important; }
+    .grid-info { font-size: 11px !important; }
+  }
+  /* iPad portrait safety: ensure no horizontal overflow */
+  @media (max-width: 820px) {
+    body, #grid-crawler-container { overflow-x: hidden; }
+    .card { font-size: 12px; }
+    .card input[type=number] { width: 50px !important; min-height: 32px; }
+    .card label { font-size: 11px; }
+    .grid-controls button { min-width: 44px; min-height: 44px; font-size: 18px; }
+  }
   .grid-controls { display: grid; grid-template-columns: repeat(3, 60px); gap: 4px; margin-top: 8px; }
   .grid-controls button {
     background: var(--panel-2); color: var(--ink); border: 1px solid var(--border);
@@ -10782,9 +10809,11 @@ function dgRollMortalWound(pcId) {
   document.body.appendChild(tmp.firstChild);
 }
 
-// === v5x: Real-map mode (Barrowmaze stitched + vectorized walls) — v6k1: cache-bust ===
-const REAL_MAP_BG_SRC = 'maps/barrowmaze_real.webp' + _CACHE_BUST;
+// === v5x/v6k2: Real-map mode con detección de viewport para iPad ===
+const _IS_MOBILE = (typeof window !== 'undefined' && window.innerWidth <= 1024);
+const REAL_MAP_BG_SRC = (_IS_MOBILE ? 'maps/barrowmaze_real_mobile.webp' : 'maps/barrowmaze_real.webp') + _CACHE_BUST;
 const REAL_MAP_WALLMAP_SRC = 'maps/wallmap_barrowmaze.json' + _CACHE_BUST;
+console.log('[v6k2] Mobile mode:', _IS_MOBILE, '· BG src:', REAL_MAP_BG_SRC);
 let _realWallmap = null;
 let _realImg = null;
 let _realLoading = false;
@@ -11085,12 +11114,13 @@ function renderGridReal() {
   html += '<hr style="border:none;border-top:1px solid var(--border);margin:10px 0;">';
   // Inputs configurables
   html += '<div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:12px;">';
-  html += '<label>Party ft/turn:</label><input type="number" value="' + (g.partyFtPerTurn||200) + '" min="30" max="600" step="10" style="width:65px;" onchange="gridSetSpeed(this.value, null)">';
-  html += '<label>Cell ft:</label><input type="number" value="' + (g.cellFt||10) + '" min="1" max="50" step="1" style="width:50px;" onchange="gridSetSpeed(null, this.value)">';
-  html += '<label>Antorchas:</label><input type="number" value="' + (g.torchesInPack||0) + '" min="0" max="99" step="1" style="width:50px;" onchange="gridSetTorches(this.value)">';
-  html += '<label>Raciones:</label><input type="number" value="' + rations + '" min="0" max="999" step="1" style="width:55px;" onchange="dgSetRations(this.value)">';
-  html += '<label>Party size:</label><input type="number" value="' + partySize + '" min="1" max="50" step="1" style="width:45px;" onchange="dgSetPartySize(this.value)">';
-  html += '<label>Hora inicio:</label><input type="number" value="' + (dgT.startHour != null ? dgT.startHour : 9) + '" min="0" max="23" step="1" style="width:45px;" onchange="dgSetStartHour(this.value)">';
+  // v6k2: inputs touch-friendly con min-height
+  html += '<label>Party ft/turn:</label><input type="number" value="' + (g.partyFtPerTurn||200) + '" min="30" max="600" step="10" style="width:65px;min-height:32px;" onchange="gridSetSpeed(this.value, null)">';
+  html += '<label>Cell ft:</label><input type="number" value="' + (g.cellFt||10) + '" min="1" max="50" step="1" style="width:50px;min-height:32px;" onchange="gridSetSpeed(null, this.value)">';
+  html += '<label>Antorchas:</label><input type="number" value="' + (g.torchesInPack||0) + '" min="0" max="99" step="1" style="width:50px;min-height:32px;" onchange="gridSetTorches(this.value)">';
+  html += '<label>Raciones:</label><input type="number" value="' + rations + '" min="0" max="999" step="1" style="width:55px;min-height:32px;" onchange="dgSetRations(this.value)">';
+  html += '<label>Party size:</label><input type="number" value="' + partySize + '" min="1" max="50" step="1" style="width:45px;min-height:32px;" onchange="dgSetPartySize(this.value)">';
+  html += '<label>Hora inicio:</label><input type="number" value="' + (dgT.startHour != null ? dgT.startHour : 9) + '" min="0" max="23" step="1" style="width:45px;min-height:32px;" onchange="dgSetStartHour(this.value)">';
   html += '</div>';
   html += '<div style="margin-top:10px;display:grid;grid-template-columns:repeat(2,1fr);gap:6px;">';
   html += '<button class="btn" onclick="gridAddTurn()">+1 Turno (actividad)</button>';
@@ -11123,9 +11153,33 @@ function renderGridReal() {
   html += '</div>';
   html += '</div>';
   wrap.innerHTML = html;
-  // v6c+v6d: attach click handler. shift+click in DM mode → place trap. plain click → room info.
+  // v6c+v6d+v6k2: attach click + touch handlers
   const _cv = document.getElementById('grid-real-canvas');
   if (_cv) {
+    // v6k2: tap-to-move for iPad (single tap on adjacent cell moves party there)
+    _cv.addEventListener('dblclick', function(e) {
+      const _gg = gridState();
+      if (!_gg || !_realWallmap || !_realImg) return;
+      const rect = _cv.getBoundingClientRect();
+      const sx = _cv.width / rect.width;
+      const sy = _cv.height / rect.height;
+      const cx = (e.clientX - rect.left) * sx;
+      const cy = (e.clientY - rect.top) * sy;
+      const wm = _realWallmap;
+      const SCALE = _realImg.width / wm.stitched_image_dims[0];
+      const cellSizeDisp = wm.cell_size_px * SCALE;
+      const targetX = Math.floor(cx / cellSizeDisp);
+      const targetY = Math.floor(cy / cellSizeDisp);
+      const dx = targetX - _gg.realPlayer.x;
+      const dy = targetY - _gg.realPlayer.y;
+      if (Math.abs(dx) + Math.abs(dy) === 1) {
+        // Adjacent cell, move
+        if (dx === 1) gridMove('right');
+        else if (dx === -1) gridMove('left');
+        else if (dy === 1) gridMove('down');
+        else if (dy === -1) gridMove('up');
+      }
+    });
     _cv.addEventListener('click', function(e) {
       const rect = _cv.getBoundingClientRect();
       const sx = _cv.width / rect.width;
