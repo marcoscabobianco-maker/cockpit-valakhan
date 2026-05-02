@@ -78,9 +78,13 @@
     b.className = 'session-badge';
     b.id = 'session-badge';
     const roleLabel = role === 'dm' ? '🛡 DM' : '🎲 Players';
-    b.innerHTML = `${roleLabel} · <span id="session-status">conectando…</span>`;
+    b.innerHTML = `${roleLabel} · <span id="session-status">conectando…</span> · <a href="#" id="session-diag-toggle" style="margin-left:6px;color:inherit;text-decoration:underline;">diag</a>`;
     document.body.appendChild(b);
     _badgeEl = b;
+    setTimeout(() => {
+      const t = document.getElementById('session-diag-toggle');
+      if (t) t.onclick = (e) => { e.preventDefault(); toggleDiag(); };
+    }, 100);
     return b;
   }
 
@@ -92,6 +96,77 @@
     }
   }
 
+  // ---- in-app diagnostic panel (avoids needing devtools on iPad) ----
+  let _diagOpen = false;
+  let _diagLog = [];
+  function ensureDiag() {
+    let p = document.getElementById('session-diag-panel');
+    if (p) return p;
+    p = document.createElement('div');
+    p.id = 'session-diag-panel';
+    p.style.cssText = 'position:fixed;top:60px;right:8px;width:320px;max-height:60vh;overflow-y:auto;background:rgba(0,0,0,0.92);color:#7eef87;font-family:monospace;font-size:11px;padding:10px;border:1px solid #5dade2;border-radius:6px;z-index:9999;display:none;line-height:1.4;';
+    p.innerHTML = '<div style="display:flex;gap:6px;margin-bottom:6px;"><b style="color:#d4a04a;flex:1;">DIAG</b><button onclick="document.getElementById(\'session-diag-panel\').style.display=\'none\';" style="background:#c44a3a;color:#fff;border:0;padding:2px 8px;border-radius:3px;cursor:pointer;">x</button></div><div id="session-diag-state"></div><hr style="border:0;border-top:1px solid #444;margin:6px 0;"><div id="session-diag-log" style="max-height:30vh;overflow-y:auto;"></div>';
+    document.body.appendChild(p);
+    return p;
+  }
+  function toggleDiag() {
+    _diagOpen = !_diagOpen;
+    const p = ensureDiag();
+    p.style.display = _diagOpen ? 'block' : 'none';
+    if (_diagOpen) refreshDiagState();
+  }
+  function refreshDiagState() {
+    const s = document.getElementById('session-diag-state');
+    if (!s) return;
+    const g = (typeof window.gridState === 'function') ? window.gridState() : null;
+    const lines = [];
+    lines.push('role: ' + role);
+    lines.push('sessionId: ' + sessionId);
+    lines.push('localVersion: ' + _localVersion);
+    lines.push('apiBase: ' + API_BASE);
+    lines.push('---');
+    lines.push('typeof gridState: ' + typeof window.gridState);
+    lines.push('typeof gridMoveReal: ' + typeof window.gridMoveReal);
+    lines.push('typeof gridIsWalkableReal: ' + typeof window.gridIsWalkableReal);
+    lines.push('_realImg loaded: ' + (window._realImg ? 'YES' : 'no'));
+    lines.push('_realWallmap loaded: ' + (window._realWallmap ? 'YES' : 'no'));
+    if (window._realWallmap) {
+      lines.push('  cols×rows: ' + window._realWallmap.cols + '×' + window._realWallmap.rows);
+      lines.push('  sala_74A_cell: ' + JSON.stringify(window._realWallmap.sala_74A_cell));
+    }
+    lines.push('---');
+    if (g) {
+      lines.push('gridState.realPlayer: ' + JSON.stringify(g.realPlayer));
+      lines.push('gridState.realTail: ' + JSON.stringify(g.realTail));
+      lines.push('gridState.dmView: ' + g.dmView);
+      lines.push('gridState.steps: ' + g.steps);
+      lines.push('gridState.realSeen.length: ' + (g.realSeen ? g.realSeen.length : 'null'));
+    } else {
+      lines.push('gridState: NULL');
+    }
+    if (_state) {
+      lines.push('---');
+      lines.push('SERVER party: ' + JSON.stringify(_state.party));
+      lines.push('SERVER version: ' + _state.version);
+      lines.push('SERVER steps: ' + _state.steps);
+      lines.push('SERVER markers count: ' + (_state.markers ? _state.markers.length : 'N/A'));
+    }
+    s.innerHTML = lines.map(l => '<div>' + l.replace(/</g,'&lt;') + '</div>').join('');
+  }
+  function diag(tag, msg) {
+    const ts = new Date().toLocaleTimeString();
+    _diagLog.unshift(`[${ts}] ${tag}: ${msg}`);
+    if (_diagLog.length > 60) _diagLog.length = 60;
+    const el = document.getElementById('session-diag-log');
+    if (el) el.innerHTML = _diagLog.map(l => '<div style="border-bottom:1px solid #222;padding:2px 0;">' + l.replace(/</g,'&lt;') + '</div>').join('');
+    if (_diagOpen) refreshDiagState();
+    try { console.log('[Session] ' + tag + ': ' + msg); } catch(e){}
+  }
+  // Periodic refresh of diag state if open
+  setInterval(() => { if (_diagOpen) refreshDiagState(); }, 500);
+  // Expose for users to open from any tap
+  window._sessionDiag = toggleDiag;
+
   // ---- apply server state to local UI ----
   function applyServerState(state) {
     _state = state;
@@ -101,8 +176,10 @@
       // gridState may not be ready yet; try again later
       return;
     }
+    // V6k10.3: sync realPlayer + reset realTail to same position to avoid ghost markers
+    // (3-cuadrados bug: tail vieja persistía de standalone init mientras player estaba en server pos)
     g.realPlayer = { x: state.party.x, y: state.party.y };
-    g.realTail = g.realTail || { x: state.party.x, y: state.party.y };
+    g.realTail = { x: state.party.x, y: state.party.y };
     g.realSeen = state.seen || [];
     g.steps = state.steps || 0;
     g.cellFt = state.cellFt || 10;
@@ -159,31 +236,18 @@
     }
     const original = window.gridMoveReal;
     window.gridMoveReal = function(dir) {
-      console.log('[Session] gridMoveReal(' + dir + ') role=' + role);
-      if (role !== 'players') {
-        console.warn('[Session] DM no puede mover. El caller (players) controla movimiento.');
-        if (typeof window.dgToast === 'function') window.dgToast('DM no mueve. El caller mueve.', 'info');
-        return;
-      }
+      diag('move', 'gridMoveReal(' + dir + ') role=' + role);
+      // V6k10.3: ambos roles pueden mover. El primero que apriete tecla manda el delta.
       const g = window.gridState();
-      if (!g) {
-        console.warn('[Session] gridState() returned null');
-        return;
-      }
-      if (!window._realWallmap) {
-        console.warn('[Session] _realWallmap not loaded yet');
-        return;
-      }
+      if (!g) { diag('move-fail', 'gridState() null'); return; }
+      if (!window._realWallmap) { diag('move-fail', '_realWallmap not loaded'); return; }
       const d = window.GRID_DIRECTIONS && window.GRID_DIRECTIONS[dir];
-      if (!d) {
-        console.warn('[Session] unknown dir:', dir);
-        return;
-      }
+      if (!d) { diag('move-fail', 'unknown dir ' + dir); return; }
       const nx = g.realPlayer.x + d.dx;
       const ny = g.realPlayer.y + d.dy;
       if (typeof window.gridIsWalkableReal === 'function' && !window.gridIsWalkableReal(nx, ny)) {
-        console.warn('[Session] (' + nx + ',' + ny + ') NOT walkable. Current pos: (' + g.realPlayer.x + ',' + g.realPlayer.y + ')');
-        if (typeof window.dgToast === 'function') window.dgToast('Esa celda no es transitable', 'info');
+        diag('move-block', '(' + nx + ',' + ny + ') NOT walkable. From (' + g.realPlayer.x + ',' + g.realPlayer.y + ')');
+        if (typeof window.dgToast === 'function') window.dgToast('Celda no transitable', 'info');
         return;
       }
 
@@ -214,8 +278,8 @@
         try { window.redrawGridRealCanvas(); } catch(e){}
       }
 
-      // Send to server
-      fetch(`${API_BASE}/move?role=players&t=${encodeURIComponent(token)}`, {
+      // Send to server (V6k10.3: any role can move)
+      fetch(`${API_BASE}/move?role=${role}&t=${encodeURIComponent(token)}`, {
         method: 'PATCH',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({dx: d.dx, dy: d.dy, visible, seen: seenAdds}),
@@ -223,14 +287,17 @@
       .then(r => r.json())
       .then(data => {
         if (data.error) {
-          console.error('[Session] move error:', data.error);
+          diag('move-err', data.error);
           if (typeof window.dgToast === 'function') window.dgToast('Move: ' + data.error, 'error');
           return;
         }
-        if (data.state) applyServerState(data.state);
+        if (data.state) {
+          applyServerState(data.state);
+          diag('move-ok', 'v' + data.state.version + ' (' + data.state.party.x + ',' + data.state.party.y + ')');
+        }
       })
       .catch(err => {
-        console.error('[Session] move failed', err);
+        diag('move-err', String(err));
       });
     };
     return true;
@@ -334,27 +401,46 @@
     function tryBoot() {
       attempts++;
       if (typeof window.gridState === 'function' && typeof window.gridMoveReal === 'function') {
+        diag('boot', 'cockpit funcs ready, autoloading wallmap...');
         patchGridMove();
         patchToggleDM();
         applyRoleFlags();
-        console.log('[Session] cockpit functions ready, fetching state...');
-        fetchState().then(() => {
-          console.log('[Session] initial state applied. role=' + role);
-          if (typeof window.redrawGridRealCanvas === 'function') {
+        // V6k10.4: AUTO-LOAD wallmap + map image. Sin esto, el user tiene que ir
+        // manualmente a tab Dungeon → Barrowmaze antes de poder mover.
+        // Switch to dungeon tab + force grid mode 'real' + load assets.
+        try {
+          if (typeof window.setMode === 'function') window.setMode('dungeon');
+        } catch(e) { diag('boot-warn', 'setMode failed: ' + e); }
+        try {
+          if (typeof window.gridSetMode === 'function') window.gridSetMode('real');
+        } catch(e) { diag('boot-warn', 'gridSetMode failed: ' + e); }
+        const loadPromise = (typeof window.gridLoadRealMap === 'function')
+          ? window.gridLoadRealMap()
+          : Promise.resolve();
+
+        loadPromise.then(() => {
+          diag('boot', 'wallmap loaded ✓');
+          return fetchState();
+        }).then((state) => {
+          diag('boot', 'state applied v' + (state ? state.version : '?') + ' role=' + role);
+          if (typeof window.renderGridCrawler === 'function') {
+            try { window.renderGridCrawler(); } catch(e){}
+          } else if (typeof window.redrawGridRealCanvas === 'function') {
             try { window.redrawGridRealCanvas(); } catch(e){}
           }
           setInterval(() => {
             fetchState().catch(()=>{});
-            applyRoleFlags(); // re-apply in case toggle modified it
+            applyRoleFlags();
           }, 800);
         }).catch(err => {
-          console.error('[Session] Initial fetch failed', err);
+          diag('boot-err', String(err));
           setStatus('error inicial', '#c44a3a');
         });
         return;
       }
       if (attempts > 60) {
         setStatus('grid no cargó', '#c44a3a');
+        diag('boot-err', 'gridState/gridMoveReal NO disponibles tras 15s');
         return;
       }
       setTimeout(tryBoot, 250);
