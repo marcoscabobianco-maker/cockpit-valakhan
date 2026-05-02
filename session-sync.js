@@ -1,12 +1,9 @@
 // Session Sync layer para cockpit Valakhan.
 // Activa cuando la URL tiene ?sessionId=...&role=...&t=...
 // Sincroniza state via Worker en mc-prism-session.marcoscabobianco.workers.dev.
-//
-// Modos:
-//   role=dm:      ve mapa completo + markers DM. NO mueve. Ve party en vivo.
-//   role=players: solo ve fog + party. Mueve la party (caller). NO ve markers DM.
 
 (function(){
+  const SYNC_VERSION = 'v6k10p6'; // bump cada deploy de session-sync.js para verificar live
   const API_BASE_HOST = 'https://mc-prism-session.marcoscabobianco.workers.dev';
   const url = new URL(location.href);
   const sessionId = url.searchParams.get('sessionId');
@@ -78,7 +75,10 @@
     b.className = 'session-badge';
     b.id = 'session-badge';
     const roleLabel = role === 'dm' ? '🛡 DM' : '🎲 Players';
-    b.innerHTML = `${roleLabel} · <span id="session-status">conectando…</span> · <a href="#" id="session-diag-toggle" style="margin-left:6px;color:inherit;text-decoration:underline;">diag</a>`;
+    // Compact line 1 (role + status), line 2 (sync version + module + sessionId short)
+    b.innerHTML =
+      `<div>${roleLabel} · <span id="session-status">conectando…</span> · <a href="#" id="session-diag-toggle" style="color:inherit;text-decoration:underline;">diag</a></div>` +
+      `<div style="font-size:9px;opacity:0.85;margin-top:3px;font-family:monospace;">sync ${SYNC_VERSION} · <span id="session-module">…</span> · <span id="session-shortid">${(sessionId||'').slice(-8)}</span></div>`;
     document.body.appendChild(b);
     _badgeEl = b;
     setTimeout(() => {
@@ -120,11 +120,18 @@
     if (!s) return;
     const g = (typeof window.gridState === 'function') ? window.gridState() : null;
     const lines = [];
+    lines.push('SYNC version: ' + SYNC_VERSION);
+    lines.push('Cockpit ver: ' + (window._COCKPIT_VERSION || '?'));
     lines.push('role: ' + role);
     lines.push('sessionId: ' + sessionId);
     lines.push('localVersion: ' + _localVersion);
     lines.push('apiBase: ' + API_BASE);
     lines.push('---');
+    if (_state) {
+      lines.push('moduleId: ' + (_state.moduleId || '?'));
+      lines.push('sectionId: ' + (_state.sectionId || '?'));
+      lines.push('---');
+    }
     lines.push('typeof gridState: ' + typeof window.gridState);
     lines.push('typeof gridMoveReal: ' + typeof window.gridMoveReal);
     lines.push('typeof gridIsWalkableReal: ' + typeof window.gridIsWalkableReal);
@@ -205,6 +212,11 @@
     if (elSeen) elSeen.textContent = (state.seen || []).length;
 
     setStatus(`v${state.version} · ${(state.minutes||0).toFixed(1)}min`, '');
+    // Update module label in badge
+    const m = document.getElementById('session-module');
+    if (m && state.moduleId) {
+      m.textContent = state.moduleId + '/' + (state.sectionId || '?');
+    }
   }
 
   // ---- pull state from server ----
