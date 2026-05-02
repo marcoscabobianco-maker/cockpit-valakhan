@@ -3,7 +3,7 @@
 // Sincroniza state via Worker en mc-prism-session.marcoscabobianco.workers.dev.
 
 (function(){
-  const SYNC_VERSION = 'v6k10p11'; // bump cada deploy de session-sync.js para verificar live
+  const SYNC_VERSION = 'v6k10p12'; // bump cada deploy de session-sync.js para verificar live
   const API_BASE_HOST = 'https://mc-prism-session.marcoscabobianco.workers.dev';
   // V6k10.7: track wallmap-loaded localmente porque el cockpit usa `let`
   // (no `var`), así que window._realWallmap NUNCA es accesible. Bug en boot prev.
@@ -224,33 +224,28 @@
     g.cellFt = state.cellFt || 10;
     g.partyFtPerTurn = state.partyFtPerTurn || 120;
 
-    // Trigger dgAdvance for turn boundaries that were crossed remotely
-    if (stepDelta > 0 && state.cellFt > 0 && state.partyFtPerTurn > 0) {
+    // V6k10.12: dgAdvance() (wandering checks + antorcha + atardecer + traps)
+    // SOLO se ejecuta en role=dm. El DM es la fuente de verdad para mecánicas
+    // de turno. Players solo ve party + steps + minutes (server-tracked).
+    // Esto evita: doble roll, desincronía, players viendo banners DM-internos.
+    if (role === 'dm' && stepDelta > 0 && state.cellFt > 0 && state.partyFtPerTurn > 0) {
       const tps = state.cellFt / Math.max(1, state.partyFtPerTurn);
       const crossed = Math.floor(newSteps * tps) - Math.floor(oldSteps * tps);
-      // V6k10.11: relaxed check. dgAdvance internally accesses state.dungeon, so
-      // if it's null it just no-ops. Doesn't throw. Better than blocking advance.
       if (crossed > 0) {
         const hasDungeon = (typeof window.state !== 'undefined' && window.state.dungeon);
-        diag('remote-advance', 'cross ' + crossed + ' turn(s) (delta ' + stepDelta + ' steps) hasDungeon=' + !!hasDungeon);
+        diag('dm-advance', 'cross ' + crossed + ' turn(s) (delta ' + stepDelta + ') hasDungeon=' + !!hasDungeon);
         if (typeof window.dgAdvance === 'function') {
-          // If state.dungeon is null, force loadDungeon to init it
           if (!hasDungeon && typeof window.loadDungeon === 'function') {
-            try {
-              window.loadDungeon('barrowmaze');
-              diag('remote-advance', 'loadDungeon(barrowmaze) forzado pre-advance');
-            } catch(e) { diag('advance-err', 'loadDungeon: ' + e); }
+            try { window.loadDungeon('barrowmaze'); }
+            catch(e) { diag('advance-err', 'loadDungeon: ' + e); }
           }
           for (let i = 0; i < crossed; i++) {
             try { window.dgAdvance(); }
             catch(e) { diag('advance-err', String(e)); }
           }
-          // Re-render para mostrar banners de wandering/antorcha/atardecer
           if (typeof window.renderGridCrawler === 'function') {
             try { window.renderGridCrawler(); } catch(e){}
           }
-        } else {
-          diag('advance-err', 'dgAdvance no es function');
         }
       }
     }
@@ -303,53 +298,21 @@
       });
   }
 
-  // ---- override gridMoveReal: usa el ORIGINAL del cockpit + sync al server ----
-  // V6k10.9: refactor. Antes implementaba el move desde cero y se perdía:
-  //   - dgAdvance() (wandering checks, antorcha agotada, atardecer/noche)
-  //   - dgCheckTrapAtCell() (trap check al pisar)
-  //   - alertas / banners de turno
-  //   - renderGridCrawler() refresh on turn boundary
-  // Ahora delegamos al original (que hace TODO eso bien) y solo agregamos sync.
-  let _suppressSync = false; // flag para evitar loop si applyServerState llama a gridMoveReal (no debería)
+  // ---- override gridMoveReal: split por rol ----
+  // V6k10.12: DM delega al original (dispara dgAdvance + dgCheckTrapAtCell + alerts).
+  //           Players usa move-lite (solo mueve + reveal + redraw, NO advance).
+  // El DM es la fuente de verdad para mecánicas de turno.
+  // Players solo ven movement/seen, server tracks steps/minutes.
   function patchGridMove() {
     if (typeof window.gridMoveReal !== 'function') return false;
     const original = window.gridMoveReal;
-    window.gridMoveReal = function(dir) {
-      diag('move', 'gridMoveReal(' + dir + ') role=' + role);
-      const g = window.gridState();
-      if (!g) { diag('move-fail', 'gridState() null'); return; }
-      if (!_wallmapReady) { diag('move-fail', 'wallmap not ready (local flag)'); return; }
-      const d = DIRS[dir];
-      if (!d) { diag('move-fail', 'unknown dir ' + dir); return; }
 
-      // Capture pos antes del move
-      const beforeX = g.realPlayer.x;
-      const beforeY = g.realPlayer.y;
-
-      // Llamar al original — hace todo: walkable check, dgAdvance, dgCheckTrapAtCell,
-      // gridRevealFromReal, redraws, alerts.
-      try { original.call(this, dir); } catch (e) {
-        diag('move-err', 'original threw: ' + e);
-        return;
-      }
-
-      // ¿Cambió la posición?
-      const dx = g.realPlayer.x - beforeX;
-      const dy = g.realPlayer.y - beforeY;
-      if (dx === 0 && dy === 0) {
-        diag('move-block', '(' + (beforeX+d.dx) + ',' + (beforeY+d.dy) + ') no walkable o bloqueada');
-        return;
-      }
-      // Si por algún caso raro sumó >1 cell, igual mandamos el delta.
-
-      // Sync al server (any role)
-      if (_suppressSync) { return; }
+    function syncMoveToServer(dx, dy, g) {
       fetch(`${API_BASE}/move?role=${role}&t=${encodeURIComponent(token)}`, {
         method: 'PATCH',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
           dx, dy,
-          // Compartir el state final local para que el otro device lo vea idéntico
           visible: Array.isArray(g.realSeen) ? g.realSeen.slice(-50) : [],
           seen: Array.isArray(g.realSeen) ? g.realSeen : [],
         }),
@@ -362,17 +325,60 @@
           return;
         }
         if (data.state) {
-          // NO llamar applyServerState aquí — ya estamos en el state correcto local.
-          // Solo actualizamos los campos de version/minutes que el server calcula.
           _state = data.state;
           _localVersion = data.state.version;
           setStatus(`v${data.state.version} · ${(data.state.minutes||0).toFixed(1)}min`, '');
           diag('move-ok', 'v' + data.state.version + ' (' + data.state.party.x + ',' + data.state.party.y + ')');
         }
       })
-      .catch(err => {
-        diag('move-err', String(err));
-      });
+      .catch(err => diag('move-err', String(err)));
+    }
+
+    window.gridMoveReal = function(dir) {
+      diag('move', 'gridMoveReal(' + dir + ') role=' + role);
+      const g = window.gridState();
+      if (!g) { diag('move-fail', 'gridState() null'); return; }
+      if (!_wallmapReady) { diag('move-fail', 'wallmap not ready'); return; }
+      const d = DIRS[dir];
+      if (!d) { diag('move-fail', 'unknown dir ' + dir); return; }
+
+      const beforeX = g.realPlayer.x;
+      const beforeY = g.realPlayer.y;
+
+      if (role === 'dm') {
+        // DM: delegar al original. Dispara dgAdvance, dgCheckTrapAtCell, todo.
+        try { original.call(this, dir); }
+        catch (e) { diag('move-err', 'original threw: ' + e); return; }
+      } else {
+        // PLAYERS: move-lite. Sin dgAdvance, sin dgCheckTrapAtCell, sin alerts.
+        // Solo move visual + reveal + redraw.
+        const nx = beforeX + d.dx;
+        const ny = beforeY + d.dy;
+        if (typeof window.gridIsWalkableReal === 'function' && !window.gridIsWalkableReal(nx, ny)) {
+          diag('move-block', '(' + nx + ',' + ny + ') NOT walkable');
+          if (typeof window.dgToast === 'function') window.dgToast('Celda no transitable', 'info');
+          return;
+        }
+        g.realTail = { x: beforeX, y: beforeY };
+        g.realPlayer = { x: nx, y: ny };
+        g.steps = (g.steps || 0) + 1;
+        if (typeof window.gridRevealFromReal === 'function') {
+          try { window.gridRevealFromReal(nx, ny, 3); } catch(e){}
+        }
+        if (typeof window.redrawGridRealCanvas === 'function') {
+          try { window.redrawGridRealCanvas(); } catch(e){}
+        }
+      }
+
+      // Verificar si la pos cambió
+      const dx = g.realPlayer.x - beforeX;
+      const dy = g.realPlayer.y - beforeY;
+      if (dx === 0 && dy === 0) {
+        diag('move-block', 'sin movimiento neto');
+        return;
+      }
+
+      syncMoveToServer(dx, dy, g);
     };
     return true;
   }
