@@ -53,19 +53,18 @@
     body.session-dm .session-badge { border-color: #5dade2; color: #5dade2; }
     body.session-players .session-badge { border-color: #7eef87; color: #7eef87; }
     body.session-players .session-hide-players,
-    body.session-players #_dg-room-modal {
-      display: none !important;
-    }
-    body.session-players .mode-btn[data-mode-key="encounter"],
-    body.session-players .mode-btn[data-mode-key="bestiary"] {
-      opacity: 0.4; pointer-events: none;
-    }
+    body.session-players #_dg-room-modal,
     body.session-players #toggle-markers-btn {
       display: none !important;
     }
-    /* Players: discreet hint */
-    body.session-players::after {
-      content: '';
+    /* Hide the inline DM toggle button (no specific id, target by onclick) */
+    body.session-players button[onclick*="gridToggleDM"] {
+      display: none !important;
+    }
+    /* Hide Ctrl+click DM hint texts and similar DM-only controls in players */
+    body.session-players .mode-btn[data-mode-key="encounter"],
+    body.session-players .mode-btn[data-mode-key="bestiary"] {
+      opacity: 0.4; pointer-events: none;
     }
   `;
   const styleEl = document.createElement('style');
@@ -160,18 +159,33 @@
     }
     const original = window.gridMoveReal;
     window.gridMoveReal = function(dir) {
+      console.log('[Session] gridMoveReal(' + dir + ') role=' + role);
       if (role !== 'players') {
         console.warn('[Session] DM no puede mover. El caller (players) controla movimiento.');
         if (typeof window.dgToast === 'function') window.dgToast('DM no mueve. El caller mueve.', 'info');
         return;
       }
       const g = window.gridState();
-      if (!g || !window._realWallmap) return;
+      if (!g) {
+        console.warn('[Session] gridState() returned null');
+        return;
+      }
+      if (!window._realWallmap) {
+        console.warn('[Session] _realWallmap not loaded yet');
+        return;
+      }
       const d = window.GRID_DIRECTIONS && window.GRID_DIRECTIONS[dir];
-      if (!d) return;
+      if (!d) {
+        console.warn('[Session] unknown dir:', dir);
+        return;
+      }
       const nx = g.realPlayer.x + d.dx;
       const ny = g.realPlayer.y + d.dy;
-      if (typeof window.gridIsWalkableReal === 'function' && !window.gridIsWalkableReal(nx, ny)) return;
+      if (typeof window.gridIsWalkableReal === 'function' && !window.gridIsWalkableReal(nx, ny)) {
+        console.warn('[Session] (' + nx + ',' + ny + ') NOT walkable. Current pos: (' + g.realPlayer.x + ',' + g.realPlayer.y + ')');
+        if (typeof window.dgToast === 'function') window.dgToast('Esa celda no es transitable', 'info');
+        return;
+      }
 
       // Compute LoS at new position client-side (cockpit ya tiene la lógica)
       const visible = [];
@@ -268,7 +282,46 @@
     // Players nunca ven markers de rooms (Q1, D1, numbered) ni session markers DM
     if (role === 'players') {
       try { window._markersHidden = true; } catch(e){}
+      // Force dmView=false: players can never toggle to DM view
+      try {
+        const g = window.gridState && window.gridState();
+        if (g && g.dmView) g.dmView = false;
+      } catch(e){}
     }
+  }
+
+  // ---- override gridToggleDM: players cannot toggle to DM view ----
+  function patchToggleDM() {
+    if (typeof window.gridToggleDM !== 'function') return false;
+    const original = window.gridToggleDM;
+    window.gridToggleDM = function() {
+      if (role === 'players') {
+        console.log('[Session] players no puede activar Vista DM');
+        if (typeof window.dgToast === 'function') {
+          window.dgToast('Vista DM solo disponible para el master', 'info');
+        }
+        // Force back to player view
+        const g = window.gridState && window.gridState();
+        if (g) g.dmView = false;
+        return;
+      }
+      return original.apply(this, arguments);
+    };
+    return true;
+  }
+
+  // ---- if server position is not walkable, fallback to sala_74A_cell ----
+  function ensureWalkablePosition(state) {
+    if (typeof window._realWallmap === 'undefined' || !window._realWallmap) return state;
+    const wm = window._realWallmap;
+    if (typeof window.gridIsWalkableReal !== 'function') return state;
+    if (window.gridIsWalkableReal(state.party.x, state.party.y)) return state;
+    // Server position not walkable — log warning. The server is the source of truth,
+    // so we don't auto-fix client-side. The DM should reset session with proper coords.
+    console.warn(`[Session] Posición server (${state.party.x},${state.party.y}) NO es walkable en wallmap. ` +
+                 `Sala 74A canónica está en (${wm.sala_74A_cell ? wm.sala_74A_cell.join(',') : '?'}). ` +
+                 'El DM debe resetear la sesión con startX/Y correcto.');
+    return state;
   }
 
   // ---- bootstrap once cockpit is ready ----
@@ -282,8 +335,11 @@
       attempts++;
       if (typeof window.gridState === 'function' && typeof window.gridMoveReal === 'function') {
         patchGridMove();
+        patchToggleDM();
         applyRoleFlags();
+        console.log('[Session] cockpit functions ready, fetching state...');
         fetchState().then(() => {
+          console.log('[Session] initial state applied. role=' + role);
           if (typeof window.redrawGridRealCanvas === 'function') {
             try { window.redrawGridRealCanvas(); } catch(e){}
           }
