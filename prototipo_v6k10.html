@@ -8,7 +8,7 @@
 <title>Cockpit v6k10 · Valakhan ATEM Farol Club</title>
 <script>
   // V6k5: titulo dinamico (se actualiza con _COCKPIT_VERSION en cada release)
-  const _COCKPIT_VERSION = "v6k10.7";
+  const _COCKPIT_VERSION = "v6k10.9";
   window._COCKPIT_VERSION = _COCKPIT_VERSION; // expose for session-sync diag
   document.title = "Cockpit " + _COCKPIT_VERSION + " · Valakhan ATEM Farol Club";
 </script>
@@ -12956,7 +12956,7 @@ setInterval(saveState, 5000);
 <!-- ========================================================================
      V6k10: Session Sync (DM + Players)
      ======================================================================== -->
-<script src="session-sync.js?v=v6k10p8"></script>
+<script src="session-sync.js?v=v6k10p9"></script>
 <script>
 // Floating "Crear sesión compartida" button (visible only in standalone mode)
 (function(){
@@ -12983,7 +12983,7 @@ setInterval(saveState, 5000);
             <label style="flex:1;"><span style="font-size:12px;color:var(--ink-dim);">Start Y (Sala 74A=84)</span><input id="cs-y" type="number" value="84" style="width:100%;padding:8px;background:var(--bg-2);color:var(--ink);border:1px solid var(--border);border-radius:4px;margin-top:4px;"></label>
           </div>
           <div style="display:flex;gap:8px;margin-top:10px;">
-            <label style="flex:1;"><span style="font-size:12px;color:var(--ink-dim);">Party ft/turn</span><input id="cs-ftpt" type="number" value="240" style="width:100%;padding:8px;background:var(--bg-2);color:var(--ink);border:1px solid var(--border);border-radius:4px;margin-top:4px;"></label>
+            <label style="flex:1;"><span style="font-size:12px;color:var(--ink-dim);">Party ft/turn (ACKS expl=120, encumbered=90, light=240)</span><input id="cs-ftpt" type="number" value="120" style="width:100%;padding:8px;background:var(--bg-2);color:var(--ink);border:1px solid var(--border);border-radius:4px;margin-top:4px;"></label>
             <label style="flex:1;"><span style="font-size:12px;color:var(--ink-dim);">Cell ft</span><input id="cs-cellft" type="number" value="10" style="width:100%;padding:8px;background:var(--bg-2);color:var(--ink);border:1px solid var(--border);border-radius:4px;margin-top:4px;"></label>
           </div>
           <div style="display:flex;gap:8px;margin-top:16px;">
@@ -13000,9 +13000,9 @@ setInterval(saveState, 5000);
       const body = {
         moduleId: 'barrowmaze',
         sectionId: document.getElementById('cs-section').value || 'bm-upper-01',
-        startX: parseInt(document.getElementById('cs-x').value) || 12,
-        startY: parseInt(document.getElementById('cs-y').value) || 8,
-        partyFtPerTurn: parseInt(document.getElementById('cs-ftpt').value) || 240,
+        startX: parseInt(document.getElementById('cs-x').value) || 32,
+        startY: parseInt(document.getElementById('cs-y').value) || 84,
+        partyFtPerTurn: parseInt(document.getElementById('cs-ftpt').value) || 120,
         cellFt: parseInt(document.getElementById('cs-cellft').value) || 10,
       };
       document.getElementById('cs-create').textContent = 'Creando…';

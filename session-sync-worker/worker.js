@@ -119,7 +119,7 @@ export class SessionDO {
       steps: 0,
       turns: 0,
       minutes: 0,
-      partyFtPerTurn: Number.isFinite(partyFtPerTurn) ? partyFtPerTurn : 240,
+      partyFtPerTurn: Number.isFinite(partyFtPerTurn) ? partyFtPerTurn : 120,
       cellFt: Number.isFinite(cellFt) ? cellFt : 10,
       markers: [],
       version: 1,
@@ -189,7 +189,8 @@ export class SessionDO {
   }
 
   async handleMove(role, body) {
-    if (role !== 'players') return json({ error: 'Only players can move' }, 403);
+    // V6k10.3: ambos roles pueden mover. DM o players (el caller) — el primero
+    // que apriete tecla manda el delta. State es server-authoritative.
     const dx = Number(body?.dx ?? 0);
     const dy = Number(body?.dy ?? 0);
     if (!Number.isInteger(dx) || !Number.isInteger(dy) || (Math.abs(dx) + Math.abs(dy)) !== 1) {

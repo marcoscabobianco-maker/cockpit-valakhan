@@ -3,7 +3,7 @@
 // Sincroniza state via Worker en mc-prism-session.marcoscabobianco.workers.dev.
 
 (function(){
-  const SYNC_VERSION = 'v6k10p8'; // bump cada deploy de session-sync.js para verificar live
+  const SYNC_VERSION = 'v6k10p9'; // bump cada deploy de session-sync.js para verificar live
   const API_BASE_HOST = 'https://mc-prism-session.marcoscabobianco.workers.dev';
   // V6k10.7: track wallmap-loaded localmente porque el cockpit usa `let`
   // (no `var`), así que window._realWallmap NUNCA es accesible. Bug en boot prev.
@@ -263,71 +263,70 @@
       });
   }
 
-  // ---- override gridMoveReal: only players in session mode can move ----
+  // ---- override gridMoveReal: usa el ORIGINAL del cockpit + sync al server ----
+  // V6k10.9: refactor. Antes implementaba el move desde cero y se perdía:
+  //   - dgAdvance() (wandering checks, antorcha agotada, atardecer/noche)
+  //   - dgCheckTrapAtCell() (trap check al pisar)
+  //   - alertas / banners de turno
+  //   - renderGridCrawler() refresh on turn boundary
+  // Ahora delegamos al original (que hace TODO eso bien) y solo agregamos sync.
+  let _suppressSync = false; // flag para evitar loop si applyServerState llama a gridMoveReal (no debería)
   function patchGridMove() {
-    if (typeof window.gridMoveReal !== 'function') {
-      // Not loaded yet — retry
-      return false;
-    }
+    if (typeof window.gridMoveReal !== 'function') return false;
     const original = window.gridMoveReal;
     window.gridMoveReal = function(dir) {
       diag('move', 'gridMoveReal(' + dir + ') role=' + role);
-      // V6k10.3: ambos roles pueden mover. El primero que apriete tecla manda el delta.
       const g = window.gridState();
       if (!g) { diag('move-fail', 'gridState() null'); return; }
       if (!_wallmapReady) { diag('move-fail', 'wallmap not ready (local flag)'); return; }
       const d = DIRS[dir];
-      if (!d) { diag('move-fail', 'unknown dir ' + dir + ' (DIRS keys: ' + Object.keys(DIRS).join(',') + ')'); return; }
-      const nx = g.realPlayer.x + d.dx;
-      const ny = g.realPlayer.y + d.dy;
-      if (typeof window.gridIsWalkableReal === 'function' && !window.gridIsWalkableReal(nx, ny)) {
-        diag('move-block', '(' + nx + ',' + ny + ') NOT walkable. From (' + g.realPlayer.x + ',' + g.realPlayer.y + ')');
-        if (typeof window.dgToast === 'function') window.dgToast('Celda no transitable', 'info');
+      if (!d) { diag('move-fail', 'unknown dir ' + dir); return; }
+
+      // Capture pos antes del move
+      const beforeX = g.realPlayer.x;
+      const beforeY = g.realPlayer.y;
+
+      // Llamar al original — hace todo: walkable check, dgAdvance, dgCheckTrapAtCell,
+      // gridRevealFromReal, redraws, alerts.
+      try { original.call(this, dir); } catch (e) {
+        diag('move-err', 'original threw: ' + e);
         return;
       }
 
-      // Compute LoS at new position client-side (cockpit ya tiene la lógica)
-      const visible = [];
-      const seenAdds = [];
-      for (let dy=-3; dy<=3; dy++) {
-        for (let dx=-3; dx<=3; dx++) {
-          if (Math.abs(dx)+Math.abs(dy) > 3) continue;
-          const cx = nx+dx, cy = ny+dy;
-          if (typeof window.gridLineOfSightReal === 'function' &&
-              window.gridLineOfSightReal(nx, ny, cx, cy)) {
-            const k = window.gridKey(cx, cy);
-            visible.push(k);
-            seenAdds.push(k);
-          }
-        }
+      // ¿Cambió la posición?
+      const dx = g.realPlayer.x - beforeX;
+      const dy = g.realPlayer.y - beforeY;
+      if (dx === 0 && dy === 0) {
+        diag('move-block', '(' + (beforeX+d.dx) + ',' + (beforeY+d.dy) + ') no walkable o bloqueada');
+        return;
       }
+      // Si por algún caso raro sumó >1 cell, igual mandamos el delta.
 
-      // Optimistic local update
-      g.realTail = { x: g.realPlayer.x, y: g.realPlayer.y };
-      g.realPlayer = { x: nx, y: ny };
-      g.steps = (g.steps || 0) + 1;
-      const seenSet = new Set(g.realSeen || []);
-      for (const k of seenAdds) seenSet.add(k);
-      g.realSeen = Array.from(seenSet);
-      if (typeof window.redrawGridRealCanvas === 'function') {
-        try { window.redrawGridRealCanvas(); } catch(e){}
-      }
-
-      // Send to server (V6k10.3: any role can move)
+      // Sync al server (any role)
+      if (_suppressSync) { return; }
       fetch(`${API_BASE}/move?role=${role}&t=${encodeURIComponent(token)}`, {
         method: 'PATCH',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({dx: d.dx, dy: d.dy, visible, seen: seenAdds}),
+        body: JSON.stringify({
+          dx, dy,
+          // Compartir el state final local para que el otro device lo vea idéntico
+          visible: Array.isArray(g.realSeen) ? g.realSeen.slice(-50) : [],
+          seen: Array.isArray(g.realSeen) ? g.realSeen : [],
+        }),
       })
       .then(r => r.json())
       .then(data => {
         if (data.error) {
           diag('move-err', data.error);
-          if (typeof window.dgToast === 'function') window.dgToast('Move: ' + data.error, 'error');
+          if (typeof window.dgToast === 'function') window.dgToast('Sync: ' + data.error, 'error');
           return;
         }
         if (data.state) {
-          applyServerState(data.state);
+          // NO llamar applyServerState aquí — ya estamos en el state correcto local.
+          // Solo actualizamos los campos de version/minutes que el server calcula.
+          _state = data.state;
+          _localVersion = data.state.version;
+          setStatus(`v${data.state.version} · ${(data.state.minutes||0).toFixed(1)}min`, '');
           diag('move-ok', 'v' + data.state.version + ' (' + data.state.party.x + ',' + data.state.party.y + ')');
         }
       })
