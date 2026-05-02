@@ -3,7 +3,7 @@
 // Sincroniza state via Worker en mc-prism-session.marcoscabobianco.workers.dev.
 
 (function(){
-  const SYNC_VERSION = 'v6k10p10'; // bump cada deploy de session-sync.js para verificar live
+  const SYNC_VERSION = 'v6k10p11'; // bump cada deploy de session-sync.js para verificar live
   const API_BASE_HOST = 'https://mc-prism-session.marcoscabobianco.workers.dev';
   // V6k10.7: track wallmap-loaded localmente porque el cockpit usa `let`
   // (no `var`), así que window._realWallmap NUNCA es accesible. Bug en boot prev.
@@ -148,6 +148,9 @@
     lines.push('typeof gridMoveReal: ' + typeof window.gridMoveReal);
     lines.push('typeof gridIsWalkableReal: ' + typeof window.gridIsWalkableReal);
     lines.push('typeof gridLoadRealMap: ' + typeof window.gridLoadRealMap);
+    lines.push('typeof dgAdvance: ' + typeof window.dgAdvance);
+    lines.push('typeof loadDungeon: ' + typeof window.loadDungeon);
+    lines.push('state.dungeon: ' + (window.state && window.state.dungeon ? window.state.dungeon.id + ' (turns=' + window.state.dungeon.turns + ', torch=' + window.state.dungeon.torchTurnsLeft + ')' : 'NULL'));
     lines.push('wallmap ready (local): ' + (_wallmapReady ? 'YES ✓' : 'NO'));
     if (_wallmapInfo) {
       lines.push('  cols×rows: ' + _wallmapInfo.cols + '×' + _wallmapInfo.rows);
@@ -225,14 +228,29 @@
     if (stepDelta > 0 && state.cellFt > 0 && state.partyFtPerTurn > 0) {
       const tps = state.cellFt / Math.max(1, state.partyFtPerTurn);
       const crossed = Math.floor(newSteps * tps) - Math.floor(oldSteps * tps);
-      if (crossed > 0 && typeof window.dgAdvance === 'function' && typeof window.state !== 'undefined' && window.state.dungeon) {
-        diag('remote-advance', 'crossing ' + crossed + ' turn boundary(s) (delta ' + stepDelta + ' steps)');
-        for (let i = 0; i < crossed; i++) {
-          try { window.dgAdvance(); } catch(e) { diag('advance-err', String(e)); }
-        }
-        // Also re-render to show alerts banners
-        if (typeof window.renderGridCrawler === 'function') {
-          try { window.renderGridCrawler(); } catch(e){}
+      // V6k10.11: relaxed check. dgAdvance internally accesses state.dungeon, so
+      // if it's null it just no-ops. Doesn't throw. Better than blocking advance.
+      if (crossed > 0) {
+        const hasDungeon = (typeof window.state !== 'undefined' && window.state.dungeon);
+        diag('remote-advance', 'cross ' + crossed + ' turn(s) (delta ' + stepDelta + ' steps) hasDungeon=' + !!hasDungeon);
+        if (typeof window.dgAdvance === 'function') {
+          // If state.dungeon is null, force loadDungeon to init it
+          if (!hasDungeon && typeof window.loadDungeon === 'function') {
+            try {
+              window.loadDungeon('barrowmaze');
+              diag('remote-advance', 'loadDungeon(barrowmaze) forzado pre-advance');
+            } catch(e) { diag('advance-err', 'loadDungeon: ' + e); }
+          }
+          for (let i = 0; i < crossed; i++) {
+            try { window.dgAdvance(); }
+            catch(e) { diag('advance-err', String(e)); }
+          }
+          // Re-render para mostrar banners de wandering/antorcha/atardecer
+          if (typeof window.renderGridCrawler === 'function') {
+            try { window.renderGridCrawler(); } catch(e){}
+          }
+        } else {
+          diag('advance-err', 'dgAdvance no es function');
         }
       }
     }
@@ -467,6 +485,12 @@
         try {
           if (typeof window.setMode === 'function') window.setMode('dungeon');
         } catch(e) { diag('boot-warn', 'setMode failed: ' + e); }
+        // V6k10.11: forzar loadDungeon('barrowmaze') para inicializar state.dungeon
+        // (turns, torchTurnsLeft, wanderingTimer, dayInDungeon, partySize, rationsTotal).
+        // Sin esto, dgAdvance() se llama pero el cockpit ignora porque state.dungeon es null.
+        try {
+          if (typeof window.loadDungeon === 'function') window.loadDungeon('barrowmaze');
+        } catch(e) { diag('boot-warn', 'loadDungeon failed: ' + e); }
         try {
           if (typeof window.gridSetMode === 'function') window.gridSetMode('real');
         } catch(e) { diag('boot-warn', 'gridSetMode failed: ' + e); }
