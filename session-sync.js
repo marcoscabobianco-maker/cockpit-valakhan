@@ -263,19 +263,33 @@
     });
   };
 
+  // ---- force role-specific flags ----
+  function applyRoleFlags() {
+    // Players nunca ven markers de rooms (Q1, D1, numbered) ni session markers DM
+    if (role === 'players') {
+      try { window._markersHidden = true; } catch(e){}
+    }
+  }
+
   // ---- bootstrap once cockpit is ready ----
   function boot() {
     ensureBadge();
     setStatus('conectando…', '#a8967a');
+    applyRoleFlags();
     // Wait for grid functions to be available (cockpit JS is in same page, should be ready)
     let attempts = 0;
     function tryBoot() {
       attempts++;
       if (typeof window.gridState === 'function' && typeof window.gridMoveReal === 'function') {
         patchGridMove();
+        applyRoleFlags();
         fetchState().then(() => {
+          if (typeof window.redrawGridRealCanvas === 'function') {
+            try { window.redrawGridRealCanvas(); } catch(e){}
+          }
           setInterval(() => {
             fetchState().catch(()=>{});
+            applyRoleFlags(); // re-apply in case toggle modified it
           }, 800);
         }).catch(err => {
           console.error('[Session] Initial fetch failed', err);
