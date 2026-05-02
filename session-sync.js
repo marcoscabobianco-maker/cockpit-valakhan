@@ -431,6 +431,18 @@
           setInterval(() => {
             fetchState().catch(()=>{});
             applyRoleFlags();
+            // V6k10.5: retry wallmap load if still missing (defensive)
+            if (!window._realWallmap || !window._realImg) {
+              if (typeof window.gridLoadRealMap === 'function') {
+                diag('retry-load', 'wallmap missing, retrying...');
+                window.gridLoadRealMap().then(() => {
+                  diag('retry-load', 'wallmap NOW loaded ✓');
+                  if (typeof window.renderGridCrawler === 'function') {
+                    try { window.renderGridCrawler(); } catch(e){}
+                  }
+                }).catch(e => diag('retry-err', String(e)));
+              }
+            }
           }, 800);
         }).catch(err => {
           diag('boot-err', String(err));
