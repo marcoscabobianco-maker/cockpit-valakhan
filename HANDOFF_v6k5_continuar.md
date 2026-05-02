@@ -1,10 +1,10 @@
 # HANDOFF v6k5 · Cockpit Valakhan · Continuar iteración
 
-**Fecha cierre**: 2026-05-01
+**Fecha cierre**: 2026-05-02
 **Live URL**: https://mc-prism.pages.dev/cockpit
 **Última versión**: v6k5
-**Última commit**: (pendiente push, ver `git log` después de commit)
-**Última deploy CF**: (ver output de `wrangler pages deploy` o tail del background bash bf01oytt4)
+**Última commit**: 23faa87 (código) + commit handoff posterior
+**Última deploy CF**: b5eadd82 (preview: https://b5eadd82.mc-prism.pages.dev)
 
 ---
 
