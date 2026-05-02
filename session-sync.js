@@ -3,8 +3,12 @@
 // Sincroniza state via Worker en mc-prism-session.marcoscabobianco.workers.dev.
 
 (function(){
-  const SYNC_VERSION = 'v6k10p6'; // bump cada deploy de session-sync.js para verificar live
+  const SYNC_VERSION = 'v6k10p7'; // bump cada deploy de session-sync.js para verificar live
   const API_BASE_HOST = 'https://mc-prism-session.marcoscabobianco.workers.dev';
+  // V6k10.7: track wallmap-loaded localmente porque el cockpit usa `let`
+  // (no `var`), así que window._realWallmap NUNCA es accesible. Bug en boot prev.
+  let _wallmapReady = false;
+  let _wallmapInfo = null; // {cols, rows, sala_74A_cell}
   const url = new URL(location.href);
   const sessionId = url.searchParams.get('sessionId');
   const role = url.searchParams.get('role');
@@ -135,11 +139,22 @@
     lines.push('typeof gridState: ' + typeof window.gridState);
     lines.push('typeof gridMoveReal: ' + typeof window.gridMoveReal);
     lines.push('typeof gridIsWalkableReal: ' + typeof window.gridIsWalkableReal);
-    lines.push('_realImg loaded: ' + (window._realImg ? 'YES' : 'no'));
-    lines.push('_realWallmap loaded: ' + (window._realWallmap ? 'YES' : 'no'));
-    if (window._realWallmap) {
-      lines.push('  cols×rows: ' + window._realWallmap.cols + '×' + window._realWallmap.rows);
-      lines.push('  sala_74A_cell: ' + JSON.stringify(window._realWallmap.sala_74A_cell));
+    lines.push('typeof gridLoadRealMap: ' + typeof window.gridLoadRealMap);
+    lines.push('wallmap ready (local): ' + (_wallmapReady ? 'YES ✓' : 'NO'));
+    if (_wallmapInfo) {
+      lines.push('  cols×rows: ' + _wallmapInfo.cols + '×' + _wallmapInfo.rows);
+      lines.push('  sala_74A_cell: ' + JSON.stringify(_wallmapInfo.sala_74A_cell));
+    }
+    // Probe gridIsWalkableReal indirectly: if wallmap loaded internally, this
+    // should return true for sala 74A and false for (-1,-1).
+    if (typeof window.gridIsWalkableReal === 'function') {
+      try {
+        const a = window.gridIsWalkableReal(32, 84);
+        const b = window.gridIsWalkableReal(-1, -1);
+        lines.push('  probe walkable(32,84): ' + a + ' | (-1,-1): ' + b);
+      } catch(e) {
+        lines.push('  probe error: ' + e);
+      }
     }
     lines.push('---');
     if (g) {
@@ -252,7 +267,7 @@
       // V6k10.3: ambos roles pueden mover. El primero que apriete tecla manda el delta.
       const g = window.gridState();
       if (!g) { diag('move-fail', 'gridState() null'); return; }
-      if (!window._realWallmap) { diag('move-fail', '_realWallmap not loaded'); return; }
+      if (!_wallmapReady) { diag('move-fail', 'wallmap not ready (local flag)'); return; }
       const d = window.GRID_DIRECTIONS && window.GRID_DIRECTIONS[dir];
       if (!d) { diag('move-fail', 'unknown dir ' + dir); return; }
       const nx = g.realPlayer.x + d.dx;
@@ -428,10 +443,18 @@
         } catch(e) { diag('boot-warn', 'gridSetMode failed: ' + e); }
         const loadPromise = (typeof window.gridLoadRealMap === 'function')
           ? window.gridLoadRealMap()
-          : Promise.resolve();
+          : Promise.resolve(null);
 
-        loadPromise.then(() => {
-          diag('boot', 'wallmap loaded ✓');
+        loadPromise.then((res) => {
+          _wallmapReady = true;
+          if (res && res.wm) {
+            _wallmapInfo = {
+              cols: res.wm.cols,
+              rows: res.wm.rows,
+              sala_74A_cell: res.wm.sala_74A_cell,
+            };
+          }
+          diag('boot', 'wallmap loaded ✓ (local flag set)');
           return fetchState();
         }).then((state) => {
           diag('boot', 'state applied v' + (state ? state.version : '?') + ' role=' + role);
@@ -443,17 +466,24 @@
           setInterval(() => {
             fetchState().catch(()=>{});
             applyRoleFlags();
-            // V6k10.5: retry wallmap load if still missing (defensive)
-            if (!window._realWallmap || !window._realImg) {
-              if (typeof window.gridLoadRealMap === 'function') {
-                diag('retry-load', 'wallmap missing, retrying...');
-                window.gridLoadRealMap().then(() => {
-                  diag('retry-load', 'wallmap NOW loaded ✓');
-                  if (typeof window.renderGridCrawler === 'function') {
-                    try { window.renderGridCrawler(); } catch(e){}
-                  }
-                }).catch(e => diag('retry-err', String(e)));
-              }
+            // V6k10.7: retry only if our local flag says not ready
+            // (NO usar window._realWallmap porque cockpit usa let, no var)
+            if (!_wallmapReady && typeof window.gridLoadRealMap === 'function') {
+              diag('retry-load', 'wallmap missing, retrying...');
+              window.gridLoadRealMap().then((res) => {
+                _wallmapReady = true;
+                if (res && res.wm) {
+                  _wallmapInfo = {
+                    cols: res.wm.cols,
+                    rows: res.wm.rows,
+                    sala_74A_cell: res.wm.sala_74A_cell,
+                  };
+                }
+                diag('retry-load', 'wallmap NOW loaded ✓');
+                if (typeof window.renderGridCrawler === 'function') {
+                  try { window.renderGridCrawler(); } catch(e){}
+                }
+              }).catch(e => diag('retry-err', String(e)));
             }
           }, 800);
         }).catch(err => {
