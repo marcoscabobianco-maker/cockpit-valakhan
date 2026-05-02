@@ -3,7 +3,7 @@
 // Sincroniza state via Worker en mc-prism-session.marcoscabobianco.workers.dev.
 
 (function(){
-  const SYNC_VERSION = 'v6k10p9'; // bump cada deploy de session-sync.js para verificar live
+  const SYNC_VERSION = 'v6k10p10'; // bump cada deploy de session-sync.js para verificar live
   const API_BASE_HOST = 'https://mc-prism-session.marcoscabobianco.workers.dev';
   // V6k10.7: track wallmap-loaded localmente porque el cockpit usa `let`
   // (no `var`), así que window._realWallmap NUNCA es accesible. Bug en boot prev.
@@ -206,14 +206,36 @@
       // gridState may not be ready yet; try again later
       return;
     }
-    // V6k10.3: sync realPlayer + reset realTail to same position to avoid ghost markers
-    // (3-cuadrados bug: tail vieja persistía de standalone init mientras player estaba en server pos)
+    // V6k10.10: detect step delta to trigger dgAdvance() for turn boundaries crossed
+    // by the OTHER device. Without this, only the device that moves sees wandering
+    // checks / antorcha / atardecer alerts. DM (passive) needs the same alerts.
+    const oldSteps = g.steps || 0;
+    const newSteps = state.steps || 0;
+    const stepDelta = newSteps - oldSteps;
+
+    // V6k10.3: sync realPlayer + reset realTail to current pos (avoids ghost markers)
     g.realPlayer = { x: state.party.x, y: state.party.y };
     g.realTail = { x: state.party.x, y: state.party.y };
     g.realSeen = state.seen || [];
-    g.steps = state.steps || 0;
+    g.steps = newSteps;
     g.cellFt = state.cellFt || 10;
-    g.partyFtPerTurn = state.partyFtPerTurn || 240;
+    g.partyFtPerTurn = state.partyFtPerTurn || 120;
+
+    // Trigger dgAdvance for turn boundaries that were crossed remotely
+    if (stepDelta > 0 && state.cellFt > 0 && state.partyFtPerTurn > 0) {
+      const tps = state.cellFt / Math.max(1, state.partyFtPerTurn);
+      const crossed = Math.floor(newSteps * tps) - Math.floor(oldSteps * tps);
+      if (crossed > 0 && typeof window.dgAdvance === 'function' && typeof window.state !== 'undefined' && window.state.dungeon) {
+        diag('remote-advance', 'crossing ' + crossed + ' turn boundary(s) (delta ' + stepDelta + ' steps)');
+        for (let i = 0; i < crossed; i++) {
+          try { window.dgAdvance(); } catch(e) { diag('advance-err', String(e)); }
+        }
+        // Also re-render to show alerts banners
+        if (typeof window.renderGridCrawler === 'function') {
+          try { window.renderGridCrawler(); } catch(e){}
+        }
+      }
+    }
     // Force DM/players view based on role
     g.dmView = (role === 'dm');
 
