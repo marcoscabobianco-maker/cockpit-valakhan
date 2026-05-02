@@ -3,12 +3,20 @@
 // Sincroniza state via Worker en mc-prism-session.marcoscabobianco.workers.dev.
 
 (function(){
-  const SYNC_VERSION = 'v6k10p7'; // bump cada deploy de session-sync.js para verificar live
+  const SYNC_VERSION = 'v6k10p8'; // bump cada deploy de session-sync.js para verificar live
   const API_BASE_HOST = 'https://mc-prism-session.marcoscabobianco.workers.dev';
   // V6k10.7: track wallmap-loaded localmente porque el cockpit usa `let`
   // (no `var`), así que window._realWallmap NUNCA es accesible. Bug en boot prev.
   let _wallmapReady = false;
   let _wallmapInfo = null; // {cols, rows, sala_74A_cell}
+  // V6k10.8: GRID_DIRECTIONS tampoco está en window (es const local del cockpit).
+  // Defino mi propia tabla — debe matchear EXACTAMENTE la del cockpit.
+  const DIRS = {
+    up:    { dx: 0,  dy: -1 },
+    down:  { dx: 0,  dy: 1  },
+    left:  { dx: -1, dy: 0  },
+    right: { dx: 1,  dy: 0  },
+  };
   const url = new URL(location.href);
   const sessionId = url.searchParams.get('sessionId');
   const role = url.searchParams.get('role');
@@ -268,8 +276,8 @@
       const g = window.gridState();
       if (!g) { diag('move-fail', 'gridState() null'); return; }
       if (!_wallmapReady) { diag('move-fail', 'wallmap not ready (local flag)'); return; }
-      const d = window.GRID_DIRECTIONS && window.GRID_DIRECTIONS[dir];
-      if (!d) { diag('move-fail', 'unknown dir ' + dir); return; }
+      const d = DIRS[dir];
+      if (!d) { diag('move-fail', 'unknown dir ' + dir + ' (DIRS keys: ' + Object.keys(DIRS).join(',') + ')'); return; }
       const nx = g.realPlayer.x + d.dx;
       const ny = g.realPlayer.y + d.dy;
       if (typeof window.gridIsWalkableReal === 'function' && !window.gridIsWalkableReal(nx, ny)) {
