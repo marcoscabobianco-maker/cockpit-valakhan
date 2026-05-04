@@ -316,17 +316,25 @@ export class SessionDO {
   }
 
   // V6k10.14: push de evento dramático (sorpresa, combate, narrativa custom).
+  // V6k10.15: durationMs ahora puede ser null = modal manual hasta dismiss.
   // body: { type: 'surprise'|'combat'|'narrative', title?, subtitle?, color?, emoji?, durationMs? }
   async handleEvent(role, body) {
     if (role !== 'dm') return json({ error: 'Only DM can push events' }, 403);
+    let durationMs = null;
+    if (body && body.durationMs !== null && body.durationMs !== undefined) {
+      const n = Number(body.durationMs);
+      if (Number.isFinite(n) && n > 0) {
+        durationMs = Math.min(60000, Math.max(500, n));
+      }
+    }
     const evt = {
       id: 'e_' + shortId(),
       type: String(body?.type ?? 'narrative').slice(0, 20),
       title: String(body?.title ?? '').slice(0, 80),
-      subtitle: String(body?.subtitle ?? '').slice(0, 200),
+      subtitle: String(body?.subtitle ?? '').slice(0, 500),
       color: String(body?.color ?? '#c44a3a').slice(0, 20),
       emoji: String(body?.emoji ?? '⚔').slice(0, 8),
-      durationMs: Math.min(15000, Math.max(1000, Number(body?.durationMs ?? 4000))),
+      durationMs, // null = manual dismiss; numeric = auto-ack tras N ms
       pushedAt: nowIso(),
     };
     const data = await this.getData();

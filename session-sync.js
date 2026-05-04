@@ -3,7 +3,7 @@
 // Sincroniza state via Worker en mc-prism-session.marcoscabobianco.workers.dev.
 
 (function(){
-  const SYNC_VERSION = 'v6k10p14'; // bump cada deploy de session-sync.js para verificar live
+  const SYNC_VERSION = 'v6k10p15'; // bump cada deploy de session-sync.js para verificar live
   const API_BASE_HOST = 'https://mc-prism-session.marcoscabobianco.workers.dev';
   // V6k10.7: track wallmap-loaded localmente porque el cockpit usa `let`
   // (no `var`), así que window._realWallmap NUNCA es accesible. Bug en boot prev.
@@ -251,7 +251,8 @@
     o.innerHTML =
       '<div id="se-emoji" style="font-size:96px;margin-bottom:24px;animation:pulseEmoji 0.6s ease-in-out infinite alternate;">⚔</div>' +
       '<div id="se-title" style="font-size:48px;font-weight:bold;letter-spacing:6px;margin-bottom:18px;text-shadow:0 2px 12px rgba(0,0,0,0.8);">SORPRESA</div>' +
-      '<div id="se-subtitle" style="font-size:20px;max-width:600px;line-height:1.5;text-shadow:0 1px 6px rgba(0,0,0,0.8);"></div>';
+      '<div id="se-subtitle" style="font-size:20px;max-width:700px;line-height:1.5;text-shadow:0 1px 6px rgba(0,0,0,0.8);margin-bottom:36px;"></div>' +
+      '<button id="se-dismiss" style="background:rgba(255,255,255,0.92);color:#000;border:0;padding:14px 28px;border-radius:8px;font-weight:bold;font-size:16px;cursor:pointer;min-height:54px;min-width:200px;box-shadow:0 4px 14px rgba(0,0,0,0.5);">✓ Continuar</button>';
     document.body.appendChild(o);
     // Animation keyframes
     if (!document.getElementById('session-event-keyframes')) {
@@ -260,10 +261,19 @@
       style.textContent =
         '@keyframes pulseEmoji { from { transform: scale(1); } to { transform: scale(1.2); } }' +
         '@keyframes fadeInEvent { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }' +
-        '#session-event-overlay.show { display:flex !important; animation: fadeInEvent 0.4s ease-out; }';
+        '#session-event-overlay.show { display:flex !important; animation: fadeInEvent 0.4s ease-out; }' +
+        '#se-dismiss:active { transform: scale(0.95); }';
       document.head.appendChild(style);
     }
     return o;
+  }
+  function dismissEventOverlay() {
+    const o = document.getElementById('session-event-overlay');
+    if (o) { o.classList.remove('show'); o.style.display = 'none'; }
+    fetch(`${API_BASE}/event/ack?role=${role}&t=${encodeURIComponent(token)}`, { method: 'POST' })
+      .then(r => r.json())
+      .then(d => diag('event-ack', d.ok ? 'cleared' : 'err'))
+      .catch(e => diag('event-ack-err', String(e)));
   }
   function showEventOverlay(evt) {
     if (!evt || _activeEventId === evt.id) return;
@@ -273,17 +283,20 @@
     document.getElementById('se-emoji').textContent = evt.emoji || '⚔';
     document.getElementById('se-title').textContent = evt.title || 'EVENTO';
     document.getElementById('se-subtitle').textContent = evt.subtitle || '';
+    // Hook dismiss button (re-bind cada vez por seguridad)
+    const btn = document.getElementById('se-dismiss');
+    if (btn) {
+      btn.onclick = dismissEventOverlay;
+      btn.style.display = 'inline-block';
+    }
     o.classList.add('show');
-    diag('event-show', evt.type + ' ' + evt.title);
-    setTimeout(() => {
-      o.classList.remove('show');
-      o.style.display = 'none';
-      // Ack event server-side so it doesn't replay
-      fetch(`${API_BASE}/event/ack?role=${role}&t=${encodeURIComponent(token)}`, { method: 'POST' })
-        .then(r => r.json())
-        .then(d => diag('event-ack', d.ok ? 'cleared' : 'err'))
-        .catch(e => diag('event-ack-err', String(e)));
-    }, evt.durationMs || 4000);
+    diag('event-show', evt.type + ' ' + evt.title + ' (durationMs=' + evt.durationMs + ')');
+    // V6k10.15: si durationMs > 0 → auto-ack. Si null/undefined → modal hasta tap.
+    if (evt.durationMs && evt.durationMs > 0) {
+      setTimeout(() => {
+        if (_activeEventId === evt.id) dismissEventOverlay();
+      }, evt.durationMs);
+    }
   }
 
   // ---- apply server state to local UI ----
@@ -526,7 +539,9 @@
     });
   };
 
-  // V6k10.14: DM push de evento dramático
+  // V6k10.14: DM push de evento dramático.
+  // V6k10.15: además agrega entry al log del cockpit (timestamped) para que
+  // quede como marca histórica de la sesión.
   window.sessionPushEvent = function(opts) {
     if (role !== 'dm') return Promise.reject(new Error('Only DM'));
     return fetch(`${API_BASE}/event?role=dm&t=${encodeURIComponent(token)}`, {
@@ -537,11 +552,22 @@
     .then(r => r.json())
     .then(data => {
       if (data.state) applyServerState(data.state);
+      // Log integration: registrar en el log del cockpit para historial
+      if (typeof window.logEvent === 'function' && data.event) {
+        const evt = data.event;
+        const tag = evt.type === 'surprise' ? '💀 SORPRESA' :
+                    evt.type === 'combat'   ? '⚔ COMBATE' :
+                    '📜 NARRATIVA';
+        const txt = tag + (evt.title && evt.title !== tag ? ' ' + evt.title : '') +
+                    (evt.subtitle ? ': ' + evt.subtitle : '');
+        try { window.logEvent(txt); } catch(e) {}
+      }
       return data;
     });
   };
 
-  // Presets de eventos comunes (atajos para el DM)
+  // Presets de eventos comunes (atajos para el DM).
+  // V6k10.15: durationMs=null por default → modal manual hasta que players tap "Continuar".
   window.sessionPushSurprise = function(monster) {
     return window.sessionPushEvent({
       type: 'surprise',
@@ -549,7 +575,7 @@
       subtitle: monster ? 'Aparece: ' + monster : 'Algo emerge de las sombras',
       color: '#c44a3a',
       emoji: '💀',
-      durationMs: 4000,
+      durationMs: null,
     });
   };
   window.sessionPushCombat = function(monster) {
@@ -559,7 +585,7 @@
       subtitle: monster ? 'Enemigo: ' + monster : '¡Iniciativa!',
       color: '#8b0000',
       emoji: '⚔',
-      durationMs: 4000,
+      durationMs: null,
     });
   };
   window.sessionPushNarrative = function(text, emoji) {
@@ -569,7 +595,7 @@
       subtitle: text || '',
       color: '#2e8b7d',
       emoji: emoji || '📜',
-      durationMs: 5000,
+      durationMs: null,
     });
   };
 
