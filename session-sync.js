@@ -3,7 +3,7 @@
 // Sincroniza state via Worker en mc-prism-session.marcoscabobianco.workers.dev.
 
 (function(){
-  const SYNC_VERSION = 'v6k10p12'; // bump cada deploy de session-sync.js para verificar live
+  const SYNC_VERSION = 'v6k10p14'; // bump cada deploy de session-sync.js para verificar live
   const API_BASE_HOST = 'https://mc-prism-session.marcoscabobianco.workers.dev';
   // V6k10.7: track wallmap-loaded localmente porque el cockpit usa `let`
   // (no `var`), así que window._realWallmap NUNCA es accesible. Bug en boot prev.
@@ -200,6 +200,92 @@
   // Expose for users to open from any tap
   window._sessionDiag = toggleDiag;
 
+  // ---- V6k10.13: light source overlay (oscuridad total) ----
+  let _darkOverlayEl = null;
+  function ensureDarkOverlay() {
+    if (_darkOverlayEl) return _darkOverlayEl;
+    const o = document.createElement('div');
+    o.id = 'session-dark-overlay';
+    o.style.cssText = 'position:fixed;inset:0;background:#000;z-index:9990;display:none;flex-direction:column;align-items:center;justify-content:center;color:#7eef87;font-family:Georgia,serif;text-align:center;padding:30px;';
+    o.innerHTML =
+      '<div style="font-size:64px;margin-bottom:20px;">🌑</div>' +
+      '<div style="font-size:28px;font-weight:bold;letter-spacing:2px;margin-bottom:14px;">OSCURIDAD TOTAL</div>' +
+      '<div style="font-size:16px;color:#a8967a;max-width:400px;line-height:1.5;">Esperá las instrucciones del DM. Tu antorcha se apagó o algo bloqueó la luz.</div>';
+    document.body.appendChild(o);
+    _darkOverlayEl = o;
+    return o;
+  }
+  function applyLightSource(lightSource) {
+    const isDark = (lightSource === 'dark');
+    // Players: overlay fullscreen negro
+    if (role === 'players') {
+      const o = ensureDarkOverlay();
+      o.style.display = isDark ? 'flex' : 'none';
+    }
+    // DM: indicador discreto si players a ciegas
+    if (role === 'dm') {
+      let ind = document.getElementById('session-dm-light-indicator');
+      if (!ind) {
+        ind = document.createElement('div');
+        ind.id = 'session-dm-light-indicator';
+        ind.style.cssText = 'position:fixed;top:80px;right:8px;z-index:9000;padding:6px 10px;border-radius:14px;font-size:11px;font-weight:bold;background:rgba(0,0,0,0.85);border:1px solid #c44a3a;color:#c44a3a;';
+        document.body.appendChild(ind);
+      }
+      if (isDark) {
+        ind.style.display = 'block';
+        ind.textContent = '🌑 Players a ciegas';
+      } else {
+        ind.style.display = 'none';
+      }
+    }
+  }
+
+  // ---- V6k10.14: pending event overlay (sorpresa / combate / narrativa) ----
+  let _eventOverlayEl = null;
+  let _activeEventId = null;
+  function ensureEventOverlay() {
+    if (_eventOverlayEl) return _eventOverlayEl;
+    const o = document.createElement('div');
+    o.id = 'session-event-overlay';
+    o.style.cssText = 'position:fixed;inset:0;z-index:9995;display:none;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-family:Georgia,serif;text-align:center;padding:30px;animation:none;';
+    o.innerHTML =
+      '<div id="se-emoji" style="font-size:96px;margin-bottom:24px;animation:pulseEmoji 0.6s ease-in-out infinite alternate;">⚔</div>' +
+      '<div id="se-title" style="font-size:48px;font-weight:bold;letter-spacing:6px;margin-bottom:18px;text-shadow:0 2px 12px rgba(0,0,0,0.8);">SORPRESA</div>' +
+      '<div id="se-subtitle" style="font-size:20px;max-width:600px;line-height:1.5;text-shadow:0 1px 6px rgba(0,0,0,0.8);"></div>';
+    document.body.appendChild(o);
+    // Animation keyframes
+    if (!document.getElementById('session-event-keyframes')) {
+      const style = document.createElement('style');
+      style.id = 'session-event-keyframes';
+      style.textContent =
+        '@keyframes pulseEmoji { from { transform: scale(1); } to { transform: scale(1.2); } }' +
+        '@keyframes fadeInEvent { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }' +
+        '#session-event-overlay.show { display:flex !important; animation: fadeInEvent 0.4s ease-out; }';
+      document.head.appendChild(style);
+    }
+    return o;
+  }
+  function showEventOverlay(evt) {
+    if (!evt || _activeEventId === evt.id) return;
+    _activeEventId = evt.id;
+    const o = ensureEventOverlay();
+    o.style.background = 'radial-gradient(ellipse at center, ' + (evt.color || '#c44a3a') + ' 0%, #000 80%)';
+    document.getElementById('se-emoji').textContent = evt.emoji || '⚔';
+    document.getElementById('se-title').textContent = evt.title || 'EVENTO';
+    document.getElementById('se-subtitle').textContent = evt.subtitle || '';
+    o.classList.add('show');
+    diag('event-show', evt.type + ' ' + evt.title);
+    setTimeout(() => {
+      o.classList.remove('show');
+      o.style.display = 'none';
+      // Ack event server-side so it doesn't replay
+      fetch(`${API_BASE}/event/ack?role=${role}&t=${encodeURIComponent(token)}`, { method: 'POST' })
+        .then(r => r.json())
+        .then(d => diag('event-ack', d.ok ? 'cleared' : 'err'))
+        .catch(e => diag('event-ack-err', String(e)));
+    }, evt.durationMs || 4000);
+  }
+
   // ---- apply server state to local UI ----
   function applyServerState(state) {
     _state = state;
@@ -274,6 +360,20 @@
     const m = document.getElementById('session-module');
     if (m && state.moduleId) {
       m.textContent = state.moduleId + '/' + (state.sectionId || '?');
+    }
+    // V6k10.13: apply lightSource (oscuridad total para players)
+    applyLightSource(state.lightSource || 'lit');
+    // V6k10.14: show pendingEvent if there's a new one (only for players to see surprise)
+    if (state.pendingEvent && role === 'players') {
+      showEventOverlay(state.pendingEvent);
+    }
+    // DM also sees event briefly to confirm it was pushed
+    if (state.pendingEvent && role === 'dm' && _activeEventId !== state.pendingEvent.id) {
+      // DM gets a smaller toast instead of fullscreen overlay
+      _activeEventId = state.pendingEvent.id;
+      if (typeof window.dgToast === 'function') {
+        window.dgToast('🎬 Evento enviado a players: ' + state.pendingEvent.title, 'info');
+      }
     }
   }
 
@@ -410,6 +510,69 @@
     });
   };
 
+  // V6k10.13: DM toggle de luz
+  window.sessionToggleLight = function(lightSource) {
+    if (role !== 'dm') return Promise.reject(new Error('Only DM'));
+    const target = lightSource || (_state && _state.lightSource === 'dark' ? 'lit' : 'dark');
+    return fetch(`${API_BASE}/light?role=dm&t=${encodeURIComponent(token)}`, {
+      method: 'PATCH',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({lightSource: target}),
+    })
+    .then(r => r.json())
+    .then(data => {
+      if (data.state) applyServerState(data.state);
+      return data;
+    });
+  };
+
+  // V6k10.14: DM push de evento dramático
+  window.sessionPushEvent = function(opts) {
+    if (role !== 'dm') return Promise.reject(new Error('Only DM'));
+    return fetch(`${API_BASE}/event?role=dm&t=${encodeURIComponent(token)}`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(opts || {}),
+    })
+    .then(r => r.json())
+    .then(data => {
+      if (data.state) applyServerState(data.state);
+      return data;
+    });
+  };
+
+  // Presets de eventos comunes (atajos para el DM)
+  window.sessionPushSurprise = function(monster) {
+    return window.sessionPushEvent({
+      type: 'surprise',
+      title: '⚔ SORPRESA',
+      subtitle: monster ? 'Aparece: ' + monster : 'Algo emerge de las sombras',
+      color: '#c44a3a',
+      emoji: '💀',
+      durationMs: 4000,
+    });
+  };
+  window.sessionPushCombat = function(monster) {
+    return window.sessionPushEvent({
+      type: 'combat',
+      title: 'COMBATE',
+      subtitle: monster ? 'Enemigo: ' + monster : '¡Iniciativa!',
+      color: '#8b0000',
+      emoji: '⚔',
+      durationMs: 4000,
+    });
+  };
+  window.sessionPushNarrative = function(text, emoji) {
+    return window.sessionPushEvent({
+      type: 'narrative',
+      title: '',
+      subtitle: text || '',
+      color: '#2e8b7d',
+      emoji: emoji || '📜',
+      durationMs: 5000,
+    });
+  };
+
   window.sessionResetParty = function(startX, startY, clearMarkers) {
     if (role !== 'dm') return Promise.reject(new Error('Only DM'));
     return fetch(`${API_BASE}/reset?role=dm&t=${encodeURIComponent(token)}`, {
@@ -471,6 +634,44 @@
     return state;
   }
 
+  // ---- V6k10.13/14: DM control panel flotante (luz + eventos) ----
+  function ensureDmControls() {
+    if (role !== 'dm') return;
+    if (document.getElementById('session-dm-controls')) return;
+    const panel = document.createElement('div');
+    panel.id = 'session-dm-controls';
+    panel.style.cssText = 'position:fixed;bottom:calc(12px + var(--safe-bottom));right:12px;z-index:9000;display:flex;flex-direction:column;gap:6px;align-items:flex-end;';
+    panel.innerHTML =
+      '<button id="dm-btn-light" style="background:rgba(0,0,0,0.85);color:#7eef87;border:1px solid #7eef87;padding:8px 12px;border-radius:6px;font-weight:bold;font-size:13px;cursor:pointer;min-height:44px;box-shadow:0 2px 6px rgba(0,0,0,0.4);">🌑 Apagar luz players</button>' +
+      '<div style="display:flex;gap:6px;">' +
+        '<button id="dm-btn-surprise" style="background:rgba(196,74,58,0.9);color:#fff;border:1px solid #c44a3a;padding:8px 10px;border-radius:6px;font-weight:bold;font-size:12px;cursor:pointer;min-height:44px;">💀 Sorpresa</button>' +
+        '<button id="dm-btn-combat" style="background:rgba(139,0,0,0.9);color:#fff;border:1px solid #8b0000;padding:8px 10px;border-radius:6px;font-weight:bold;font-size:12px;cursor:pointer;min-height:44px;">⚔ Combate</button>' +
+        '<button id="dm-btn-custom" style="background:rgba(46,139,125,0.9);color:#fff;border:1px solid #2e8b7d;padding:8px 10px;border-radius:6px;font-weight:bold;font-size:12px;cursor:pointer;min-height:44px;">📜 Custom</button>' +
+      '</div>';
+    document.body.appendChild(panel);
+
+    document.getElementById('dm-btn-light').onclick = () => {
+      const isDark = _state && _state.lightSource === 'dark';
+      window.sessionToggleLight(isDark ? 'lit' : 'dark').then(() => {
+        document.getElementById('dm-btn-light').textContent = isDark ? '🌑 Apagar luz players' : '☀ Encender luz players';
+      });
+    };
+    document.getElementById('dm-btn-surprise').onclick = () => {
+      const m = prompt('Monstruo / texto de la sorpresa (opcional):', '') || '';
+      window.sessionPushSurprise(m);
+    };
+    document.getElementById('dm-btn-combat').onclick = () => {
+      const m = prompt('Enemigo (opcional):', '') || '';
+      window.sessionPushCombat(m);
+    };
+    document.getElementById('dm-btn-custom').onclick = () => {
+      const t = prompt('Texto narrativo:', '') || '';
+      if (!t) return;
+      const e = prompt('Emoji (opcional):', '📜') || '📜';
+      window.sessionPushNarrative(t, e);
+    };
+  }
+
   // ---- bootstrap once cockpit is ready ----
   function boot() {
     ensureBadge();
@@ -485,6 +686,7 @@
         patchGridMove();
         patchToggleDM();
         applyRoleFlags();
+        ensureDmControls(); // V6k10.13/14: panel DM flotante con botones de luz + eventos
         // V6k10.4: AUTO-LOAD wallmap + map image. Sin esto, el user tiene que ir
         // manualmente a tab Dungeon → Barrowmaze antes de poder mover.
         // Switch to dungeon tab + force grid mode 'real' + load assets.

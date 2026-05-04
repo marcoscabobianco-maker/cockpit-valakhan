@@ -90,6 +90,18 @@ export class SessionDO {
     if (path === '/reset' && method === 'POST') {
       return this.handleReset(role, await request.json());
     }
+    // V6k10.13: light source toggle (DM only)
+    if (path === '/light' && method === 'PATCH') {
+      return this.handleLight(role, await request.json());
+    }
+    // V6k10.14: push event (DM only)
+    if (path === '/event' && method === 'POST') {
+      return this.handleEvent(role, await request.json());
+    }
+    // V6k10.14: ack event (any role) — clears pendingEvent after players sees it
+    if (path === '/event/ack' && method === 'POST') {
+      return this.handleEventAck(role);
+    }
 
     return json({ error: 'Not found' }, 404);
   }
@@ -122,6 +134,10 @@ export class SessionDO {
       partyFtPerTurn: Number.isFinite(partyFtPerTurn) ? partyFtPerTurn : 120,
       cellFt: Number.isFinite(cellFt) ? cellFt : 10,
       markers: [],
+      // V6k10.13: control de luz (DM-only). Cuando 'dark', players ve overlay negro.
+      lightSource: 'lit',
+      // V6k10.14: pending event broadcast (sorpresa, combate, narrativa). DM dispara, players ve overlay.
+      pendingEvent: null,
       version: 1,
       updatedAt: nowIso(),
       expiresAt,
@@ -283,6 +299,45 @@ export class SessionDO {
       minutes: 0,
       markers: clearMarkers ? [] : data.markers,
     });
+    return json({ ok: true, state: next });
+  }
+
+  // V6k10.13: control de luz. DM puede toggle 'lit' / 'dark'.
+  // 'dark' = players ve pantalla completamente negra (oscuridad total).
+  async handleLight(role, body) {
+    if (role !== 'dm') return json({ error: 'Only DM can toggle light' }, 403);
+    const lightSource = String(body?.lightSource ?? 'lit');
+    if (lightSource !== 'lit' && lightSource !== 'dark') {
+      return json({ error: 'lightSource must be "lit" or "dark"' }, 400);
+    }
+    const data = await this.getData();
+    const next = await this.putData({ ...data, lightSource });
+    return json({ ok: true, state: next });
+  }
+
+  // V6k10.14: push de evento dramático (sorpresa, combate, narrativa custom).
+  // body: { type: 'surprise'|'combat'|'narrative', title?, subtitle?, color?, emoji?, durationMs? }
+  async handleEvent(role, body) {
+    if (role !== 'dm') return json({ error: 'Only DM can push events' }, 403);
+    const evt = {
+      id: 'e_' + shortId(),
+      type: String(body?.type ?? 'narrative').slice(0, 20),
+      title: String(body?.title ?? '').slice(0, 80),
+      subtitle: String(body?.subtitle ?? '').slice(0, 200),
+      color: String(body?.color ?? '#c44a3a').slice(0, 20),
+      emoji: String(body?.emoji ?? '⚔').slice(0, 8),
+      durationMs: Math.min(15000, Math.max(1000, Number(body?.durationMs ?? 4000))),
+      pushedAt: nowIso(),
+    };
+    const data = await this.getData();
+    const next = await this.putData({ ...data, pendingEvent: evt });
+    return json({ ok: true, event: evt, state: next });
+  }
+
+  async handleEventAck(role) {
+    const data = await this.getData();
+    if (!data.pendingEvent) return json({ ok: true, state: data });
+    const next = await this.putData({ ...data, pendingEvent: null });
     return json({ ok: true, state: next });
   }
 
