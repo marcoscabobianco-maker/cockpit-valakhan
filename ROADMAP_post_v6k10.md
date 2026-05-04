@@ -82,6 +82,44 @@
 
 ---
 
+## 🎨 Idea 5: AI Image Generation para Eventos (V6k10.16+)
+
+**Concepto** (de Marcos, post V6k10.15): cuando el DM ingresa el texto de un evento (sorpresa/combate/narrativa), el sistema **genera automáticamente una imagen** ilustrando la escena, vía API de un image generator.
+
+**Diseño**:
+- Server agrega field opcional `pendingEvent.imageUrl: string | null`.
+- Cuando DM pushea evento, se trigger un fetch async a una API de generación:
+  - **Opción Gemini (Imagen)**: `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-...`
+  - **Opción OpenAI (DALL-E 3)**: `https://api.openai.com/v1/images/generations`
+  - **Opción Stable Diffusion local**: si tenés GPU, comfyui o A1111 self-hosted en tu red.
+- Prompt construido del título + subtítulo + style hints ("oscuro, dungeon medieval, OSR illustration, atmospheric").
+- Mientras genera (~5-15 seg), el overlay players muestra spinner "🎨 generando ilustración...".
+- Cuando termina, la imagen aparece en el overlay sobre el background dramático.
+
+**Pros**:
+- Inmersión brutal — players ven la escena visualmente.
+- DM no necesita preparar arte previo.
+- Cada sesión genera arte único.
+
+**Contras / consideraciones**:
+- API key del DM (no players) — debería estar en config local del worker, NO hardcoded.
+- Costo: DALL-E 3 ~$0.04/imagen, Imagen ~$0.02. Si DM saca 20 eventos/sesión = ~$0.4-0.8 sesión. Aceptable.
+- Latencia: 5-15 seg. El overlay debería poder mostrar texto inmediato + imagen cuando llega.
+- Calidad / coherencia: prompts genéricos pueden producir imágenes off-tone. Style guide ayuda.
+
+**Implementación esbozada**:
+1. Agregar `IMAGE_API_KEY` como variable secreta del Worker (`wrangler secret put IMAGE_API_KEY`).
+2. Endpoint nuevo opcional: `POST /api/session/:id/event` con flag `generateImage:true` → server llama API → updates pendingEvent.imageUrl.
+3. Players client: si pendingEvent.imageUrl, mostrar `<img>` en el overlay.
+4. UI DM: checkbox "🎨 Generar ilustración" en los prompts de sorpresa/combate.
+5. Fallback: si la API falla o demora demasiado, mostrar overlay sin imagen.
+
+**Costo estimado**: 2-3h (worker call API + UI + manejo async).
+
+**Decisión recomendada**: cuando Marcos quiera, evaluar primero qué API usar (Gemini Imagen tiene buen pricing y calidad). Probar con un solo evento manual antes de integrar al UI.
+
+---
+
 ## 🎲 Idea 4: Solo Play Mode (V6k11+)
 
 **Concepto**: jugar la dungeon sin DM presente. El cockpit hace de DM automático.
